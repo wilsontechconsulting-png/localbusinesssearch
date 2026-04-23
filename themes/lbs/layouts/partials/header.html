@@ -1,0 +1,152 @@
+<header id="site-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="/" class="logo-lockup">
+      <img src="/images/lbs-icon.jpg" alt="LBS" class="logo-icon-img" />
+      <div class="logo-text-wrapper">
+        <div class="logo-text-main">
+          <span class="text-navy">LOCAL</span>
+          <span class="text-blue">BUSINESS</span>
+          <span class="text-navy">SEARCH</span>
+        </div>
+        <div class="logo-text-sub">
+          <span class="text-blue">AI.</span>
+          <span class="text-navy">BUSINESS PROCESS.</span>
+        </div>
+      </div>
+    </a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <ul>
+        {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+            <!-- Parent item with dropdown -->
+            <li class="has-dropdown">
+              <a href="{{ .URL }}" class="dropdown-toggle">
+                {{ .Name }}
+                <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                {{ range .Children }}
+                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            <!-- Regular menu item -->
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
+    
+    <!-- Desktop Contact Button -->
+    <a href="/contact/" class="header-cta-btn desktop-cta">Contact</a>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+  
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul>
+        {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+            <!-- Parent item with submenu -->
+            <li class="mobile-has-dropdown">
+              <a href="{{ .URL }}" class="mobile-dropdown-toggle">{{ .Name }}</a>
+              <ul class="mobile-submenu">
+                {{ range .Children }}
+                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            <!-- Regular menu item -->
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        {{ end }}
+        <li class="mobile-cta-item">
+          <a href="/contact/" class="mobile-cta-btn">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay"></div>
+
+<script>
+// Header scroll effect
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('site-header');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+// Mobile menu toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileOverlay = document.querySelector('.mobile-overlay');
+const body = document.body;
+
+function toggleMobileMenu() {
+  const isOpen = mobileNav.classList.contains('active');
+  
+  if (isOpen) {
+    mobileNav.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    mobileMenuToggle.classList.remove('active');
+    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    body.style.overflow = '';
+  } else {
+    mobileNav.classList.add('active');
+    mobileOverlay.classList.add('active');
+    mobileMenuToggle.classList.add('active');
+    mobileMenuToggle.setAttribute('aria-expanded', 'true');
+    body.style.overflow = 'hidden';
+  }
+}
+
+mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+// Close on link click (but not dropdown toggles)
+document.querySelectorAll('.mobile-nav a:not(.mobile-dropdown-toggle)').forEach(link => {
+  link.addEventListener('click', function() {
+    mobileNav.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    mobileMenuToggle.classList.remove('active');
+    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    body.style.overflow = '';
+  });
+});
+
+// Mobile dropdown toggle
+document.querySelectorAll('.mobile-dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const parent = this.parentElement;
+    parent.classList.toggle('active');
+  });
+});
+
+// Close on ESC key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+    toggleMobileMenu();
+  }
+});
+</script>

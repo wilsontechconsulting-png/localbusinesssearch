@@ -1,0 +1,48 @@
+{{/* Blog Card Component
+  Usage: For rendering blog post cards in lists
+*/}}
+{{ $post := . }}
+<article class="blog-card" data-href="{{ $post.Permalink }}" style="cursor: pointer;">
+  {{ if $post.Params.image }}
+  <img src="{{ $post.Params.image }}" alt="{{ $post.Title }}" class="blog-card-image">
+  {{ else }}
+  <div class="blog-card-image"></div>
+  {{ end }}
+  
+  <div class="blog-card-content">
+    {{ if $post.Params.category }}
+    <span class="blog-category">{{ $post.Params.category }}</span>
+    {{ end }}
+    
+    <h3 class="blog-card-title">
+      <a href="{{ $post.Permalink }}">{{ $post.Title }}</a>
+    </h3>
+    
+    {{ if $post.Params.tags }}
+    <div class="blog-card-tags">
+      {{ range first 3 $post.Params.tags }}
+        <span class="blog-tag">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+    
+    {{ if $post.Summary }}
+    <p class="blog-card-excerpt">{{ $post.Summary | truncate 140 }}</p>
+    {{ end }}
+    
+    <div class="blog-card-meta">
+      <div class="blog-meta-info">
+        {{ if $post.Date }}
+        <span>{{ $post.Date.Format "Jan 2, 2006" }}</span>
+        {{ end }}
+        {{ if $post.ReadingTime }}
+        <span>•</span>
+        <span>{{ $post.ReadingTime }} min</span>
+        {{ end }}
+      </div>
+      <a href="{{ $post.Permalink }}" class="blog-read-more">
+        Read <span>→</span>
+      </a>
+    </div>
+  </div>
+</article>

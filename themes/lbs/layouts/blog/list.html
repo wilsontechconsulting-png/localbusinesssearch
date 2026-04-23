@@ -1,0 +1,200 @@
+{{ define "main" }}
+<!-- Blog Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">{{ .Section | humanize }}</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        <p class="page-hero-subtitle">{{ .Description }}</p>
+    </div>
+</section>
+
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+{{ $featuredPost := index (first 1 $posts) 0 }}
+
+{{ if $featuredPost }}
+<!-- Featured Post -->
+<section class="section">
+    <div class="container-wide">
+        <div class="featured-blog">
+            {{ if $featuredPost.Params.image }}
+            <img src="{{ $featuredPost.Params.image }}" alt="{{ $featuredPost.Title }}" class="featured-blog-image">
+            {{ else }}
+            <div class="featured-blog-image"></div>
+            {{ end }}
+            
+            <div class="featured-blog-content">
+                <span class="featured-label">Featured Article</span>
+                
+                {{ if $featuredPost.Params.category }}
+                <span class="blog-category">{{ $featuredPost.Params.category }}</span>
+                {{ end }}
+                
+                <h2 style="font-size: 2.5rem; margin: 1rem 0;">
+                    <a href="{{ $featuredPost.Permalink }}" style="color: var(--navy); text-decoration: none;">{{ $featuredPost.Title }}</a>
+                </h2>
+                
+                {{ if $featuredPost.Summary }}
+                <p style="font-size: 1.125rem; color: var(--gray-dark); line-height: 1.8; margin-bottom: 1.5rem;">
+                    {{ $featuredPost.Summary | truncate 200 }}
+                </p>
+                {{ end }}
+                
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; font-size: 0.9375rem; color: var(--gray-medium);">
+                    {{ if $featuredPost.Date }}
+                    <span>{{ $featuredPost.Date.Format "January 2, 2006" }}</span>
+                    {{ end }}
+                    {{ if $featuredPost.ReadingTime }}
+                    <span>{{ $featuredPost.ReadingTime }} min read</span>
+                    {{ end }}
+                </div>
+                
+                <a href="{{ $featuredPost.Permalink }}" class="btn btn-primary">Read Article</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Recent Posts Grid -->
+<section class="section section-light">
+    <div class="container-wide">
+        <h2 class="section-title">Recent Articles</h2>
+        <p class="section-subtitle">Expert insights on business systems, AI automation, and growth strategies</p>
+        
+        <!-- Category Filter -->
+        <div class="blog-filters">
+            <div class="category-filters">
+                <button class="category-filter-btn active" data-category="all">All Articles</button>
+                <button class="category-filter-btn" data-category="AI Automation">AI Automation</button>
+                <button class="category-filter-btn" data-category="Business Systems">Business Systems</button>
+                <button class="category-filter-btn" data-category="Advertising">Advertising</button>
+                <button class="category-filter-btn" data-category="Case Studies">Case Studies</button>
+                <button class="category-filter-btn" data-category="Growth Strategies">Growth Strategies</button>
+            </div>
+            
+            <!-- Tag Filter (Collapsible) -->
+            <div class="tag-filters-wrapper">
+                <button class="tag-toggle" id="tagToggle">
+                    <span>Filter by Tags</span>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="tag-filters" id="tagFilters">
+                    {{ $allTags := slice }}
+                    {{ range .Site.RegularPages }}
+                        {{ if eq .Section "blog" }}
+                            {{ range .Params.tags }}
+                                {{ $allTags = $allTags | append . }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                    {{ $uniqueTags := $allTags | uniq }}
+                    {{ range $uniqueTags }}
+                        <button class="tag-filter-btn" data-tag="{{ . }}">{{ . }}</button>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        
+        {{ if $posts }}
+        <div class="blog-grid" id="blogGrid">
+            {{ range $posts }}
+                <div class="blog-post-item" 
+                     data-category="{{ .Params.category }}" 
+                     data-tags='{{ delimit .Params.tags "," }}'>
+                    {{ partial "components/blog-card.html" . }}
+                </div>
+            {{ end }}
+        </div>
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No articles found with the selected filters. Try a different category or tag.</p>
+        </div>
+        {{ else }}
+        <div style="text-align: center; padding: 3rem; color: var(--gray-medium);">
+            <p>No articles yet. Check back soon!</p>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "Want These Insights Applied to Your Business?" 
+    "subtitle" "Book a demo and see how we can transform your operations." 
+    "button_text" "Schedule a Demo" 
+    "button_link" "/demo/") 
+}}
+
+<script>
+(function() {
+  let activeCategory = 'all';
+  let activeTags = [];
+  
+  const categoryBtns = document.querySelectorAll('.category-filter-btn');
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      categoryBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      activeCategory = this.getAttribute('data-category');
+      filterPosts();
+    });
+  });
+  
+  const tagToggle = document.getElementById('tagToggle');
+  const tagFilters = document.getElementById('tagFilters');
+  
+  if (tagToggle && tagFilters) {
+    tagToggle.addEventListener('click', function() {
+      tagToggle.classList.toggle('active');
+      tagFilters.classList.toggle('active');
+    });
+  }
+  
+  const tagBtns = document.querySelectorAll('.tag-filter-btn');
+  tagBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const tag = this.getAttribute('data-tag');
+      
+      if (this.classList.contains('active')) {
+        this.classList.remove('active');
+        activeTags = activeTags.filter(t => t !== tag);
+      } else {
+        this.classList.add('active');
+        activeTags.push(tag);
+      }
+      
+      filterPosts();
+    });
+  });
+  
+  function filterPosts() {
+    const posts = document.querySelectorAll('.blog-post-item');
+    const noResults = document.getElementById('noResults');
+    let visibleCount = 0;
+    
+    posts.forEach(post => {
+      const postCategory = post.getAttribute('data-category');
+      const postTagsStr = post.getAttribute('data-tags');
+      const postTags = postTagsStr ? postTagsStr.split(',') : [];
+      
+      const categoryMatch = activeCategory === 'all' || postCategory === activeCategory;
+      const tagsMatch = activeTags.length === 0 || activeTags.some(tag => postTags.includes(tag));
+      
+      if (categoryMatch && tagsMatch) {
+        post.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        post.classList.add('hidden');
+      }
+    });
+    
+    if (visibleCount === 0) {
+      noResults.style.display = 'block';
+    } else {
+      noResults.style.display = 'none';
+    }
+  }
+})();
+</script>
+{{ end }}

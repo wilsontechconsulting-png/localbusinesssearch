@@ -1,0 +1,215 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">AI Automation</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="section section-light">
+    <div class="container-narrow">
+        <div style="background: white; padding: 3rem; border-radius: 1rem; box-shadow: 0 8px 24px rgba(10, 22, 40, 0.1); text-align: center;">
+            <h2 style="font-size: 2rem; color: var(--navy); margin-bottom: 1.5rem;">This Isn't Just About Leads.<br>It's About Operations.</h2>
+            <p style="font-size: 1.125rem; line-height: 1.8; color: var(--gray-dark); margin-bottom: 1.5rem;">
+                Most businesses think AI automation is just for marketing.
+            </p>
+            <p style="font-size: 1.125rem; line-height: 1.8; color: var(--gray-dark); margin-bottom: 1.5rem;">
+                But the biggest inefficiencies aren't in your ads—they're in your operations.
+            </p>
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid var(--bright-blue);">
+                <p style="font-size: 1.0625rem; font-weight: 600; color: var(--navy); margin: 0.25rem 0;">Manual follow-up.</p>
+                <p style="font-size: 1.0625rem; font-weight: 600; color: var(--navy); margin: 0.25rem 0;">Scheduling back-and-forth.</p>
+                <p style="font-size: 1.0625rem; font-weight: 600; color: var(--navy); margin: 0.25rem 0;">No-shows that waste time.</p>
+                <p style="font-size: 1.0625rem; font-weight: 600; color: var(--navy); margin: 0.25rem 0;">Customers who slip through the cracks.</p>
+            </div>
+            <p style="font-size: 1.25rem; font-weight: 600; color: var(--navy); margin-top: 1.5rem; margin-bottom: 0;">
+                AI automation fixes your operations. So your business runs efficiently, not chaotically.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- The Problem -->
+<section class="stats-section">
+    <div class="container">
+        <h2 class="section-title" style="color: white;">The Problem</h2>
+        <p style="font-size: 1.5rem; text-align: center; font-weight: 600; margin-bottom: 1rem;">Every minute you wait to follow up, your lead is calling someone else.</p>
+        
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 3rem; border-radius: 1rem; border: 2px solid rgba(255, 255, 255, 0.2); max-width: 700px; margin: 2rem auto;">
+            <p style="font-size: 3rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">78%</p>
+            <p style="font-size: 1.25rem; text-align: center; opacity: 0.9;">of customers buy from the first company to respond.</p>
+        </div>
+        
+        <p style="font-size: 1.25rem; text-align: center; margin-top: 2rem; font-weight: 600;">How fast is your follow-up?</p>
+    </div>
+</section>
+
+<!-- What AI Automation Does -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">What AI Automation Does</h2>
+        <p class="section-subtitle">Six core systems that transform your operations</p>
+        
+        <div class="grid-3">
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "⚡" 
+                "title" "Instant Lead Response" 
+                "description" "Missed call or form fill? AI responds in < 60 seconds via SMS/email. No more 'sorry we missed you' hours later.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "🎯" 
+                "title" "Smart Lead Qualification" 
+                "description" "AI scores leads based on intent signals. Routes hot leads to sales, nurtures cold leads automatically.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "📅" 
+                "title" "Appointment Booking" 
+                "description" "Leads book directly into your calendar. No back-and-forth, no phone tag.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "✉️" 
+                "title" "Follow-Up Sequences" 
+                "description" "Automated email + SMS nurture campaigns. Personalized, timely, no manual work.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "🔄" 
+                "title" "Reactivation Campaigns" 
+                "description" "Past customers who went cold? AI brings them back. Win-back offers, re-engagement flows.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "📞" 
+                "title" "Missed Call Recovery" 
+                "description" "Someone called and you didn't answer? Instant text with booking link. Capture leads even when you're busy.") 
+            }}
+        </div>
+    </div>
+</section>
+
+<!-- Cross-Department Impact -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Cross-Department Impact</h2>
+        <p class="section-subtitle">AI automation isn't just for one department—it improves your entire operation</p>
+        
+        <div class="grid-2">
+            <div class="role-card">
+                <div class="role-icon">⚙️</div>
+                <h3>For the COO (Operations)</h3>
+                <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Eliminates manual follow-up</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Automates appointment booking</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Reduces no-shows by 40%</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Frees up 15-20 hours/week of staff time</li>
+                </ul>
+            </div>
+            
+            <div class="role-card">
+                <div class="role-icon">📈</div>
+                <h3>For the CMO (Marketing)</h3>
+                <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Instant lead response (< 60 seconds)</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Higher conversion rates (automated nurture)</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Campaign performance visibility</li>
+                </ul>
+            </div>
+            
+            <div class="role-card">
+                <div class="role-icon">💰</div>
+                <h3>For the CFO (Finance)</h3>
+                <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Clear cost per lead</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Revenue attribution by campaign</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> ROI tracking across all channels</li>
+                </ul>
+            </div>
+            
+            <div class="role-card">
+                <div class="role-icon">📊</div>
+                <h3>For the CEO (Strategy)</h3>
+                <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Full operational visibility</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Data-driven insights</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Confidence in your systems</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <div style="background: white; padding: 2rem; border-radius: 1rem; border: 2px solid var(--bright-blue); max-width: 700px; margin: 0 auto;">
+                <p style="font-size: 1.25rem; font-weight: 600; color: var(--navy); margin: 0;">This is why AI automation isn't a "nice to have."<br>It's infrastructure.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Before/After Case Study -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="section-title" style="color: white;">Before/After: Home Services Company</h2>
+        
+        <div class="grid-2">
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(204, 0, 0, 0.3);">
+                <h3 style="color: #FF6B6B; margin-bottom: 1.5rem;">❌ Before</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.0625rem; line-height: 2;">
+                    <li>30 leads/month from ads</li>
+                    <li>Manual follow-up (calls back in 2-4 hours)</li>
+                    <li>Converts 6 leads (20%)</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(0, 170, 0, 0.3);">
+                <h3 style="color: #51CF66; margin-bottom: 1.5rem;">✅ After (with AI automation)</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.0625rem; line-height: 2;">
+                    <li>30 leads/month</li>
+                    <li>AI responds in < 1 minute</li>
+                    <li>Automated booking + nurture</li>
+                    <li>Converts 15 leads (50%)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <div style="background: var(--gradient-blue); padding: 2rem; border-radius: 1rem; max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 1.5rem; font-weight: 700; margin: 0;">Result: +150% conversion, zero extra work</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Works With Existing Tools -->
+<section class="section">
+    <div class="container-narrow">
+        <div style="background: var(--blue-tint); padding: 3rem; border-radius: 1rem; border: 2px solid var(--bright-blue); text-align: center;">
+            <h2 style="color: var(--navy); margin-bottom: 1rem;">Works With Your Existing Tools</h2>
+            <p style="font-size: 1.125rem; color: var(--gray-dark); margin-bottom: 0;">Connects to your CRM, calendar, phone system. No rip-and-replace.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+{{ partial "components/contact-cta.html" (dict 
+    "title" "Curious About AI for Your Business?" 
+    "subtitle" "Tell us what you're trying to automate and we'll give you honest feedback on what's possible." 
+    "button_text" "Ask Us Anything" 
+    "secondary_button" "Book an Audit" 
+    "secondary_link" "/demo/") 
+}}
+
+<!-- Final CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "See How Much Time (and Revenue) You're Losing" 
+    "subtitle" "Book a free audit. We'll map your current process and show you where AI can help." 
+    "button_text" "Schedule Your Audit" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

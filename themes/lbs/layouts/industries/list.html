@@ -1,0 +1,39 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Who We Help</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Industries Grid -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Specialized Systems by Industry</h2>
+        <p class="section-subtitle">AI-driven business systems tailored to your industry's specific needs</p>
+        
+        <div class="industries-grid">
+            {{ range .Pages }}
+            <a href="{{ .Permalink }}" class="industry-card">
+                <h3>{{ .Title }}</h3>
+                {{ if .Description }}
+                <p>{{ .Description }}</p>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "See How We Can Help Your Industry" 
+    "subtitle" "Every industry has unique challenges. We build systems that solve them." 
+    "button_text" "Schedule a Demo" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

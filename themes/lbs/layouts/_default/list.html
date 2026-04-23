@@ -1,0 +1,22 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="section">
+    <div class="container">
+        <article style="max-width: 900px; margin: 0 auto;">
+            <div style="line-height: 1.8; color: #333;">
+                {{ .Content }}
+            </div>
+        </article>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,206 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Proven Results</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Case Studies -->
+<section class="section">
+    <div class="container">
+        <!-- Case Study 1: HVAC -->
+        {{ partial "components/case-study-card.html" (dict 
+            "label" "Home Services" 
+            "title" "HVAC Company: +120% Revenue from Same Ad Spend"
+            "description" "**The Challenge:**<br>40 leads/month from Google + Facebook ads, missing 30% of calls (on job sites), manual follow-up taking 2-4 hours, booking only 37.5% of leads, no-shows wasting 10+ hours/week.<br><br>**What We Built:**<br>Missed call recovery system (instant SMS response), AI-powered lead qualification, automated appointment booking, no-show prevention with auto-reminders, dashboard tracking ad spend → lead → revenue.<br><br>**Owner:** 'We're booking twice as many jobs without adding staff. The system runs 24/7.'"
+            "metrics" (slice 
+                (dict "value" "+47%" "label" "Conversion Rate")
+                (dict "value" "−77%" "label" "No-Shows Reduced")
+                (dict "value" "+120%" "label" "Revenue Increase")
+                (dict "value" "15hrs" "label" "Time Saved/Week"))
+        ) }}
+        
+        <!-- Case Study 2: Dental -->
+        {{ partial "components/case-study-card.html" (dict 
+            "label" "Medical" 
+            "title" "Dental Practice: +73% New Patient Revenue"
+            "description" "**The Challenge:**<br>25 new patient inquiries/month, calling back in 3-6 hours (patients already calling competitors), booking 60% of inquiries, no-shows wasting valuable chair time, no system for reactivating inactive patients.<br><br>**What We Built:**<br>Instant new patient response (< 60 seconds), online appointment booking, automated no-show prevention system, patient reactivation campaigns, case acceptance follow-up automation.<br><br>**Practice Manager:** 'Our front desk used to spend 3 hours/day on scheduling. Now it's automated.'"
+            "metrics" (slice 
+                (dict "value" "+40%" "label" "New Patient Bookings")
+                (dict "value" "−76%" "label" "No-Shows Reduced")
+                (dict "value" "+73%" "label" "New Patient Revenue")
+                (dict "value" "45" "label" "Patients Reactivated/Month"))
+        ) }}
+        
+        <!-- Case Study 3: Legal - Personal Injury -->
+        {{ partial "components/case-study-card.html" (dict 
+            "label" "Legal" 
+            "title" "Personal Injury Law Firm: +120% Signed Cases"
+            "description" "**The Challenge:**<br>60 case inquiries/month, manual intake taking 15 min per lead (15 hours/week), responding in 4-8 hours (losing cases to faster firms), booking 42% of qualified leads, no tracking of case ROI by marketing channel.<br><br>**What We Built:**<br>AI case qualification (screens before attorney involvement), instant response system (< 60 seconds), automated consultation booking, digital intake forms (no manual data entry), ROI tracking by practice area.<br><br>**Managing Partner:** 'We sign more cases and spend less time on unqualified leads. Game changer.'"
+            "metrics" (slice 
+                (dict "value" "+60%" "label" "Qualified Consultations")
+                (dict "value" "+120%" "label" "Signed Cases")
+                (dict "value" "12hrs" "label" "Time Saved/Week")
+                (dict "value" "100%" "label" "ROI Visibility"))
+        ) }}
+        
+        <!-- Case Study 4: Legal - Family Law -->
+        {{ partial "components/case-study-card.html" (dict 
+            "label" "Legal" 
+            "title" "Family Law Firm: 50-90 Cases Per Attorney"
+            "description" "**The Challenge:**<br>Most divorce attorneys handle 10-15 cases on average. High manual intake workload, slow lead response, difficulty managing multi-case workflows, inconsistent retainer collection, attorneys overwhelmed with administrative tasks.<br><br>**What We Built:**<br>AI-powered lead qualification for family law matters, instant response system (< 60 seconds), automated consultation scheduling, document automation for intake packets, retainer tracking and payment automation, case management workflow optimization.<br><br>**Lead Attorney:** 'We've increased our caseload to 50-90 cases per attorney without sacrificing quality. The system handles the admin work so we can focus on clients.'<br><br><strong style='color: #00AA00;'>Industry Note:</strong> Most divorce lawyers average 10-15 cases. We've seen results as high as 50-90 per attorney with our systems."
+            "metrics" (slice 
+                (dict "value" "3-6x" "label" "Case Capacity Per Attorney")
+                (dict "value" "+85%" "label" "Consultation Bookings")
+                (dict "value" "18hrs" "label" "Time Saved/Week")
+                (dict "value" "+45%" "label" "Retainer Collection Rate"))
+        ) }}
+        
+        <!-- Case Study 5: Franchise -->
+        {{ partial "components/case-study-card.html" (dict 
+            "label" "Franchises" 
+            "title" "8-Location HVAC Franchise: +85% Conversions, −13% Ad Spend"
+            "description" "**The Challenge:**<br>8 separate Google Ads accounts (fragmented), no centralized reporting or automation, each location managing leads manually, $32K/month ad spend with 180 conversions, no cross-location intelligence.<br><br>**What We Built:**<br>Centralized advertising system (all locations in one account), unified AI automation across all locations, location routing (leads go to nearest location), franchise-wide dashboard, cross-location performance tracking.<br><br>**Franchise Owner:** 'We're spending less and converting more. And I finally know what's happening across all locations.'"
+            "metrics" (slice 
+                (dict "value" "−13%" "label" "Ad Spend Reduction")
+                (dict "value" "+85%" "label" "More Conversions")
+                (dict "value" "−46%" "label" "Cost Per Conversion")
+                (dict "value" "8" "label" "Locations Unified"))
+        ) }}
+    </div>
+</section>
+
+<!-- Aggregate Results -->
+<section class="stats-section">
+    <div class="container">
+        <h2 class="section-title" style="color: white;">Aggregate Results</h2>
+        <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">Across all clients in the last 12 months</p>
+        
+        <h3 style="color: white; text-align: center; margin: 2rem 0 1rem; font-size: 1.5rem;">Financial Impact</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">3.2x</div>
+                <div class="stat-label">Average ROI</div>
+                <div class="stat-note">Averaged across 50+ client implementations</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number">$24.5M</div>
+                <div class="stat-label">Total Revenue Generated</div>
+                <div class="stat-note">Tracked over 14 years, conservative estimate</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number">52%</div>
+                <div class="stat-label">Higher Conversion Rates</div>
+                <div class="stat-note">Compared to manual processes</div>
+            </div>
+        </div>
+        
+        <h3 style="color: white; text-align: center; margin: 3rem 0 1rem; font-size: 1.5rem;">Operational Efficiency</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">47%</div>
+                <div class="stat-label">Average Time Saved</div>
+                <div class="stat-note">On manual tasks and follow-up</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number">40%</div>
+                <div class="stat-label">Reduction in No-Shows</div>
+                <div class="stat-note">With automated reminder systems</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number">15-20hrs</div>
+                <div class="stat-label">Saved Per Business/Week</div>
+                <div class="stat-note">Freed up for revenue-generating work</div>
+            </div>
+        </div>
+        
+        <h3 style="color: white; text-align: center; margin: 3rem 0 1rem; font-size: 1.5rem;">System Performance</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">&lt;60sec</div>
+                <div class="stat-label">Average Lead Response</div>
+                <div class="stat-note">AI-powered instant follow-up</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number">84%</div>
+                <div class="stat-label">Conversion Rate Improvement</div>
+                <div class="stat-note">From baseline to optimized systems</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Automated Operations</div>
+                <div class="stat-note">Systems working while you sleep</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who This Works For -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Who This Works For</h2>
+        <div class="industries-grid">
+            <a href="/industries/home-services/" class="industry-card">
+                <h3>🏠 Home Services</h3>
+                <p>HVAC, Plumbing, Electrical, Roofing</p>
+            </a>
+            <a href="/industries/medical/" class="industry-card">
+                <h3>⚕️ Medical</h3>
+                <p>Dentists, Med Spas, Chiropractors</p>
+            </a>
+            <a href="/industries/legal/" class="industry-card">
+                <h3>⚖️ Legal</h3>
+                <p>Personal Injury, Family Law, Estate Planning</p>
+            </a>
+            <a href="/industries/local-retail/" class="industry-card">
+                <h3>🛍️ Local Retail</h3>
+                <p>Restaurants, Salons, Gyms, Shops</p>
+            </a>
+            <a href="/industries/franchises/" class="industry-card">
+                <h3>🏢 Franchises</h3>
+                <p>Multi-location Businesses</p>
+            </a>
+            <a href="/industries/municipalities/" class="industry-card">
+                <h3>🏛️ Municipalities</h3>
+                <p>Cities, Towns, Local Government</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Common Thread -->
+<section class="section">
+    <div class="container-narrow">
+        <div style="background: var(--blue-tint); padding: 3rem; border-radius: 1rem; border: 2px solid var(--bright-blue); text-align: center;">
+            <h2 style="color: var(--navy); margin-bottom: 1.5rem;">Common Thread</h2>
+            <p style="font-size: 1.25rem; color: var(--gray-dark); margin-bottom: 1rem;">Every successful client has the same thing:</p>
+            <p style="font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 1.5rem;">Connected systems. Not disconnected tactics.</p>
+            <ul style="list-style: none; padding: 0; font-size: 1.0625rem; line-height: 2.5; text-align: left; max-width: 500px; margin: 0 auto;">
+                <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> CEO gets visibility</li>
+                <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> CFO gets ROI tracking</li>
+                <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> CMO gets measurable growth</li>
+                <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> COO gets efficient operations</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "See What We Can Do for Your Business" 
+    "subtitle" "We'll review your current setup and show you exactly where you're losing revenue and time." 
+    "button_text" "Schedule Your Free Audit" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

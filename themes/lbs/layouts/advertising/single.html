@@ -1,0 +1,77 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Advertising Channel</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Main Content with Visual Structure -->
+<section class="section section-light">
+    <div class="container">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <article class="blog-article">
+                {{ .Content }}
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Connection to System -->
+<section class="section">
+    <div class="container">
+        <div style="background: var(--blue-tint); padding: 3rem; border-radius: 1rem; border: 2px solid var(--bright-blue); max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="color: var(--navy); margin-bottom: 1.5rem;">Connected to Your Growth System</h2>
+            <p style="font-size: 1.125rem; color: var(--gray-dark); margin-bottom: 2rem;">Every lead from this channel flows directly into your automated system. No manual work. Instant response. Automated booking.</p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <span style="padding: 1rem 1.5rem; background: white; border-radius: 0.5rem; font-weight: 600; color: var(--navy);">Traffic</span>
+                <span style="color: var(--bright-blue); font-size: 1.5rem;">→</span>
+                <span style="padding: 1rem 1.5rem; background: white; border-radius: 0.5rem; font-weight: 600; color: var(--navy);">Lead</span>
+                <span style="color: var(--bright-blue); font-size: 1.5rem;">→</span>
+                <span style="padding: 1rem 1.5rem; background: white; border-radius: 0.5rem; font-weight: 600; color: var(--navy);">AI Response</span>
+                <span style="color: var(--bright-blue); font-size: 1.5rem;">→</span>
+                <span style="padding: 1rem 1.5rem; background: white; border-radius: 0.5rem; font-weight: 600; color: var(--navy);">Booked</span>
+            </div>
+            <a href="/platform/" class="btn btn-primary">See How the System Works</a>
+        </div>
+    </div>
+</section>
+
+<!-- Related Advertising Channels -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Other Advertising Channels</h2>
+        <div class="grid-2">
+            {{ $currentPage := .RelPermalink }}
+            {{ range where .Site.RegularPages "Section" "advertising" }}
+                {{ if ne .RelPermalink $currentPage }}
+                {{ if ne .File.BaseFileName "_index" }}
+                <a href="{{ .RelPermalink }}" class="feature-card" style="text-decoration: none;">
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">
+                        {{ if eq .File.BaseFileName "paid-social" }}📱 {{ end }}
+                        {{ if eq .File.BaseFileName "google-ads" }}🔍 {{ end }}
+                        {{ if eq .File.BaseFileName "programmatic" }}📺 {{ end }}
+                        {{ if eq .File.BaseFileName "retargeting" }}🔄 {{ end }}
+                        {{ .Title }}
+                    </h3>
+                    <p style="color: var(--gray-dark);">{{ .Description }}</p>
+                </a>
+                {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "Ready to Get Started?" 
+    "subtitle" "We'll audit your current advertising and show you exactly how to improve performance." 
+    "button_text" "Schedule Your Free Audit" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

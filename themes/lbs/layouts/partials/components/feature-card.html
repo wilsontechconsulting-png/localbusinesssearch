@@ -1,0 +1,19 @@
+{{/* Feature Card Component
+  Usage: {{ partial "components/feature-card.html" (dict "icon" "🎯" "title" "Title" "description" "Description" "link" "/path/") }}
+*/}}
+<div class="feature-card">
+  {{ if .icon }}
+  <div class="card-icon">{{ .icon }}</div>
+  {{ end }}
+  {{ if .title }}
+  <h3 class="card-title">{{ .title }}</h3>
+  {{ end }}
+  {{ if .description }}
+  <p class="card-description">{{ .description | markdownify }}</p>
+  {{ end }}
+  {{ if .link }}
+  <a href="{{ .link }}" class="card-link">
+    Learn More <span>→</span>
+  </a>
+  {{ end }}
+</div>

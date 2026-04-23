@@ -1,0 +1,105 @@
+# Local Business Search - llms.txt
+# AI-Driven Business Systems for Local Companies
+
+## Company Information
+
+- Name: Local Business Search
+- Tagline: AI. Business Process.
+- Description: We build intelligent AI-driven business systems that improve how local companies operate—from lead generation to financial visibility to automated operations.
+- Address: 23343 Colina Way, Charlotte Harbor, FL 33980
+- Phone: +1-618-741-6143
+- Email: jed@powerofadvertising.com
+- Website: https://localbusinesssearch.com
+
+## Services
+
+### AI-Driven Business Systems
+Transform your business operations with custom AI automation that connects your existing tools, eliminates manual data entry, and provides real visibility into what's working.
+
+### Business Operations Optimization
+Streamline your operations with systems that actually work together. We connect your CRM, dispatch software, accounting, and marketing tools into one cohesive system.
+
+### Digital Advertising Management
+Strategic paid advertising campaigns across Google Ads, Facebook, and other platforms with real tracking of ROI and profitability—not just clicks and leads.
+
+## Industries We Serve
+
+- Home Services (Plumbing, HVAC, Electrical, Roofing, Landscaping)
+- Local Retail
+- Professional Services (Legal, Medical, Dental)
+- Franchises
+- Municipalities
+
+## Key Differentiators
+
+- We don't replace your existing software—we connect it and build what's missing
+- Focus on profitability, not just revenue
+- Real automation, not just marketing hype
+- Understanding of local business operations
+- Strategic systems, not just tools
+
+## Resources
+
+### Blog Topics
+- AI automation for local businesses
+- Business systems integration
+- Marketing tech stack optimization
+- Home services operations
+- CRM and dispatch software challenges
+- Real profitability tracking
+
+## Contact
+
+- Schedule a consultation: https://localbusinesssearch.com/contact/
+- Book a demo: https://localbusinesssearch.com/demo/
+- Learn about our platform: https://localbusinesssearch.com/platform/
+- View case studies: https://localbusinesssearch.com/results/
+
+## Social Media
+
+- Twitter/X: @Jed_X_Wilson
+
+## Target Audience
+
+Local business owners and operators who are:
+- Frustrated with disconnected software
+- Drowning in manual data entry
+- Unable to track real marketing ROI
+- Missing leads and follow-ups
+- Spending too much time on admin work
+- Looking to scale without operational chaos
+
+## Core Message
+
+Your business doesn't need more apps. It needs systems that actually talk to each other.
+
+Most local businesses are paying $700-1,500/month for software that doesn't work together, forcing them to become data entry operations instead of focusing on what they do best.
+
+We build intelligent systems that connect what you have, automate what can be automated, and give you real visibility into what's working and what's not.
+
+## Latest Content
+
+Blog: https://localbusinesssearch.com/blog/
+- "We Just Built This Entire Website in 12 Hours Using AI"
+- "Your Plumbing Business Doesn't Need More Apps—It Needs Systems That Actually Talk to Each Other"
+- "Your HVAC Business Is Buried in Software—And It's Costing You More Than Just Monthly Fees"
+
+## Technology Approach
+
+- Integration-first (not replacement)
+- API connections between existing tools
+- Custom automation where needed
+- Real-time data synchronization
+- Single source of truth
+- Profitability-focused analytics
+
+## Business Philosophy
+
+- Empathy for operators (not just business owners)
+- Realistic about software limitations
+- No product pitches, real solutions
+- Understanding of seasonal pressures
+- Commercial and residential experience
+- Outcomes over tools
+
+##End-of-file

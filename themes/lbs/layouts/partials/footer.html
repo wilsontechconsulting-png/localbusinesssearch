@@ -1,0 +1,86 @@
+<footer>
+  <div class="container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- Brand Section -->
+      <div class="footer-brand">
+        <div style="background: white; padding: 1.5rem 2rem; border-radius: 0.75rem; display: inline-block; margin-bottom: 1.5rem; width: 350px; text-align: center;">
+          <img src="/images/lbs-logo.jpg" alt="Local Business Search" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+        </div>
+        <p style="max-width: 350px; line-height: 1.7;">AI-driven business systems for local companies. We build the infrastructure. You run the business.</p>
+      </div>
+      
+      <!-- Footer Navigation Grid -->
+      <div class="footer-nav-grid">
+        <div class="footer-section">
+          <h4>Systems</h4>
+          <ul>
+            <li><a href="/platform/">The Platform</a></li>
+            <li><a href="/business-operations/">Business Systems</a></li>
+            <li><a href="/ai-automation/">AI Automation</a></li>
+            <li><a href="/advertising/">Advertising</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="/industries/home-services/">Home Services</a></li>
+            <li><a href="/industries/medical/">Medical</a></li>
+            <li><a href="/industries/legal/">Legal</a></li>
+            <li><a href="/industries/local-retail/">Local Retail</a></li>
+            <li><a href="/industries/franchises/">Franchises</a></li>
+            <li><a href="/industries/municipalities/">Municipalities</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/results/">Results</a></li>
+            <li><a href="/blog/">Resources</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/demo/">Book a Demo</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Disclaimer Section -->
+    <div style="background: rgba(255, 255, 255, 0.08); padding: 2rem; border-radius: 0.75rem; margin: 3rem 0 2rem; border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px);">
+      <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <p style="font-size: 0.875rem; line-height: 1.8; color: rgba(255, 255, 255, 0.8); margin: 0;">
+          <span style="color: var(--bright-blue); font-weight: 700; font-size: 1.25rem; margin-right: 0.25rem;">*</span>
+          <strong style="color: white;">Important Disclosure:</strong> Past performance and case study results shown on this site do not guarantee or predict future outcomes. Every business is unique, and results will vary based on your specific situation, market conditions, implementation, and many other factors.
+          <span style="display: block; margin-top: 1rem;">The AI and automation industry is evolving rapidly. We're navigating this transformation alongside our clients—learning, adapting, and building as the technology advances. We're committed to delivering real value, but we're all drinking from the fire hose together as this industry takes shape.</span>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} Local Business Search. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Make Blog Cards Clickable -->
+<script>
+(function() {
+  // Add click handlers to all blog cards
+  document.querySelectorAll('.blog-card[data-href]').forEach(function(card) {
+    card.addEventListener('click', function(e) {
+      // Don't trigger if clicking on a link or button
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        return;
+      }
+      
+      // Navigate to the post
+      const url = this.getAttribute('data-href');
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  });
+})();
+</script>

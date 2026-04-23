@@ -1,0 +1,65 @@
+baseURL = 'https://localbusinesssearch.com/'
+languageCode = 'en-us'
+title = 'Local Business Search - AI. Business Process.'
+theme = 'lbs'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = 'AI-driven business systems for local companies. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.'
+  author = 'Local Business Search'
+
+[menu]
+  [[menu.main]]
+    name = 'The System'
+    url = '/platform/'
+    weight = 1
+  [[menu.main]]
+    name = 'Business Systems'
+    url = '/business-operations/'
+    parent = 'The System'
+    weight = 2
+  [[menu.main]]
+    name = 'AI Automation'
+    url = '/ai-automation/'
+    parent = 'The System'
+    weight = 3
+  [[menu.main]]
+    name = 'Advertising'
+    url = '/advertising/'
+    weight = 4
+  [[menu.main]]
+    name = 'Industries'
+    url = '/industries/'
+    weight = 5
+  [[menu.main]]
+    name = 'Results'
+    url = '/results/'
+    weight = 6
+  [[menu.main]]
+    name = 'Resources'
+    url = '/blog/'
+    weight = 7
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 8
+
+# SEO Settings
+enableRobotsTXT = true
+canonifyURLs = true
+
+# Sitemap Configuration
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+# Output formats
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+  section = ['HTML', 'RSS']
+

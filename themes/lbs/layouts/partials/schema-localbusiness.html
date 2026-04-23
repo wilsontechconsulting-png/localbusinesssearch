@@ -1,0 +1,80 @@
+{{/* Local Business Schema Markup */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Local Business Search",
+  "description": "AI-driven business systems for local companies. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}images/lbs-logo.jpg",
+  "image": "{{ .Site.BaseURL }}images/lbs-logo.jpg",
+  "telephone": "+1-618-741-6143",
+  "email": "jed@powerofadvertising.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "23343 Colina Way",
+    "addressLocality": "Charlotte Harbor",
+    "addressRegion": "FL",
+    "postalCode": "33980",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "26.9617",
+    "longitude": "-82.0909"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Florida"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    }
+  ],
+  "priceRange": "$$",
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "sameAs": [
+    "https://twitter.com/Jed_X_Wilson"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-618-741-6143",
+    "contactType": "customer service",
+    "email": "jed@powerofadvertising.com",
+    "areaServed": "US",
+    "availableLanguage": "en"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Business Systems Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI-Driven Business Systems",
+          "description": "Custom AI automation and business process improvement"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Operations Optimization",
+          "description": "Streamline operations and improve efficiency"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Digital Advertising Management",
+          "description": "Strategic paid advertising campaigns"
+        }
+      }
+    ]
+  }
+}
+</script>

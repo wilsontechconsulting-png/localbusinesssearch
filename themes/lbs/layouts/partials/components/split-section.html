@@ -1,0 +1,22 @@
+{{/* Split Section Component
+  Usage: {{ partial "components/split-section.html" (dict "title" "Title" "content" "Content here" "visual_content" "Visual content" "reverse" false) }}
+*/}}
+<div class="split-section {{ if .reverse }}split-reverse{{ end }}">
+  <div class="split-content">
+    {{ if .label }}
+    <span class="section-label">{{ .label }}</span>
+    {{ end }}
+    {{ if .title }}
+    <h2>{{ .title }}</h2>
+    {{ end }}
+    {{ if .content }}
+    <div>{{ .content | markdownify }}</div>
+    {{ end }}
+    {{ if .button_link }}
+    <a href="{{ .button_link }}" class="btn btn-primary">{{ .button_text | default "Learn More" }}</a>
+    {{ end }}
+  </div>
+  <div class="split-visual">
+    {{ .visual_content | markdownify }}
+  </div>
+</div>

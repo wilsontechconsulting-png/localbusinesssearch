@@ -1,0 +1,241 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Business Systems</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- The Problem -->
+<section class="section section-light">
+    <div class="container">
+        <div style="background: white; padding: 3rem; border-radius: 1rem; box-shadow: 0 8px 24px rgba(10, 22, 40, 0.1); border-left: 4px solid var(--bright-blue); max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 1.125rem; line-height: 1.8; color: var(--gray-dark); margin-bottom: 1rem;">
+                Local businesses run on disconnected processes:
+            </p>
+            <ul style="list-style: none; padding: 0; font-size: 1.0625rem; line-height: 2; margin-bottom: 1.5rem;">
+                <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">→</span> Marketing brings in leads (but doesn't track them through to revenue)</li>
+                <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">→</span> Sales follows up manually (slow, inconsistent)</li>
+                <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">→</span> Operations books appointments by phone (time-consuming, error-prone)</li>
+                <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">→</span> Finance doesn't know which campaigns actually make money</li>
+            </ul>
+            <p style="font-size: 1.25rem; font-weight: 600; color: var(--navy); margin: 0;">You don't just need better marketing. You need better systems.</p>
+        </div>
+    </div>
+</section>
+
+<!-- The Four Systems -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">The Four Systems Every Business Needs</h2>
+        
+        <div class="grid-2" style="margin-top: 3rem;">
+            <div class="feature-card">
+                <span class="section-label">CEO Function</span>
+                <h3 class="card-title">1. Visibility (Strategy)</h3>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: #CC0000; margin-bottom: 0.5rem;">The Problem:</strong>
+                    <p>You're running blind. No clear view of what's working, what's not, or where to focus.</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--bright-blue); margin-bottom: 0.5rem;">The System:</strong>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Unified dashboard showing performance across marketing, sales, operations</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Real-time data on leads, appointments, conversions, revenue</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> KPIs that actually matter (not vanity metrics)</li>
+                    </ul>
+                </div>
+                <div style="background: var(--blue-tint); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid var(--bright-blue);">
+                    <strong style="color: var(--navy);">The Outcome:</strong>
+                    <p style="margin: 0.5rem 0 0; color: var(--gray-dark);">You make decisions based on data, not gut feel.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <span class="section-label">CFO Function</span>
+                <h3 class="card-title">2. Financial Clarity</h3>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: #CC0000; margin-bottom: 0.5rem;">The Problem:</strong>
+                    <p>You're spending money on ads, tools, and staff—but don't know the ROI.</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--bright-blue); margin-bottom: 0.5rem;">The System:</strong>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Track every dollar: ad spend → lead → customer → revenue</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Cost per acquisition by channel</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Lifetime value tracking</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Budget allocation based on performance, not guesswork</li>
+                    </ul>
+                </div>
+                <div style="background: var(--blue-tint); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid var(--bright-blue);">
+                    <strong style="color: var(--navy);">The Outcome:</strong>
+                    <p style="margin: 0.5rem 0 0; color: var(--gray-dark);">You know exactly where your money goes and what it returns.</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <span class="section-label">CMO Function</span>
+                <h3 class="card-title">3. Growth Systems</h3>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: #CC0000; margin-bottom: 0.5rem;">The Problem:</strong>
+                    <p>Marketing feels like throwing money at ads and hoping. Leads come in, but you don't know what actually drives revenue.</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--bright-blue); margin-bottom: 0.5rem;">The System:</strong>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Strategic advertising (Google, Meta, Programmatic)</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Conversion-optimized landing pages</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Funnel performance tracking</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Attribution: which campaigns → which customers → which revenue</li>
+                    </ul>
+                </div>
+                <div style="background: var(--blue-tint); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid var(--bright-blue);">
+                    <strong style="color: var(--navy);">The Outcome:</strong>
+                    <p style="margin: 0.5rem 0 0; color: var(--gray-dark);">Growth that's measurable, predictable, and scalable.</p>
+                </div>
+                <a href="/advertising/" class="btn btn-primary" style="margin-top: 1rem;">See Advertising Systems →</a>
+            </div>
+            
+            <div class="feature-card">
+                <span class="section-label">COO Function</span>
+                <h3 class="card-title">4. Operational Efficiency</h3>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: #CC0000; margin-bottom: 0.5rem;">The Problem:</strong>
+                    <p>Your team is drowning in manual work: following up on leads, scheduling appointments, chasing no-shows, updating spreadsheets.</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--bright-blue); margin-bottom: 0.5rem;">The System:</strong>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Automated lead handling (instant response, AI qualification)</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Appointment booking automation (no phone tag)</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Follow-up sequences that run automatically</li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> No-show reduction (auto-reminders)</li>
+                    </ul>
+                </div>
+                <div style="background: var(--blue-tint); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid var(--bright-blue);">
+                    <strong style="color: var(--navy);">The Outcome:</strong>
+                    <p style="margin: 0.5rem 0 0; color: var(--gray-dark);">Operations run efficiently. Your team focuses on high-value work, not repetitive tasks.</p>
+                </div>
+                <a href="/ai-automation/" class="btn btn-primary" style="margin-top: 1rem;">See AI Automation →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How They Connect -->
+<section class="section section-dark">
+    <div class="container-narrow">
+        <h2 class="section-title" style="color: white;">How the Systems Connect</h2>
+        <p style="font-size: 1.125rem; text-align: center; margin-bottom: 2rem; opacity: 0.9;">Your business isn't four separate departments. It's one operation.</p>
+        
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+            <div style="font-size: 1.125rem; line-height: 2.5; text-align: center;">
+                <p style="margin: 0.5rem 0;"><strong style="color: var(--bright-blue);">Marketing (CMO)</strong> generates traffic</p>
+                <p style="margin: 0.5rem 0; opacity: 0.7;">↓</p>
+                <p style="margin: 0.5rem 0;"><strong style="color: var(--bright-blue);">Operations (COO)</strong> handles and qualifies leads</p>
+                <p style="margin: 0.5rem 0; opacity: 0.7;">↓</p>
+                <p style="margin: 0.5rem 0;"><strong style="color: var(--bright-blue);">Finance (CFO)</strong> tracks cost and revenue</p>
+                <p style="margin: 0.5rem 0; opacity: 0.7;">↓</p>
+                <p style="margin: 0.5rem 0;"><strong style="color: var(--bright-blue);">Strategy (CEO)</strong> sees the full picture and makes decisions</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">When the systems are connected:</p>
+            <ul style="list-style: none; padding: 0; font-size: 1.0625rem; line-height: 2; max-width: 600px; margin: 0 auto;">
+                <li>✓ No leads slip through the cracks</li>
+                <li>✓ No manual handoffs or delays</li>
+                <li>✓ No blind spots or missing data</li>
+                <li>✓ No chaos</li>
+            </ul>
+            <p style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem;">Just efficient, profitable growth.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Before/After -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Before vs After</h2>
+        <div class="grid-2">
+            <div class="feature-card" style="border-left: 4px solid #CC0000;">
+                <h3 style="color: #CC0000; margin-bottom: 1.5rem;">❌ Before (Disconnected Systems)</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.0625rem; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0;">•</span> Marketing runs ads → leads come in</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0;">•</span> Sales calls back hours later (or never)</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0;">•</span> Appointments are booked manually (phone tag for days)</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0;">•</span> No-shows waste 20-30% of your time</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0;">•</span> Finance has no idea which marketing works</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0;">•</span> CEO makes decisions on gut feel</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card" style="border-left: 4px solid #00AA00;">
+                <h3 style="color: #00AA00; margin-bottom: 1.5rem;">✅ After (Connected Systems)</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.0625rem; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Marketing runs ads → leads captured instantly</li>
+                    <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> AI qualifies and responds in < 60 seconds</li>
+                    <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Appointments book automatically</li>
+                    <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Auto-reminders reduce no-shows by 40%</li>
+                    <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> Finance sees ad spend → lead → revenue in real time</li>
+                    <li style="padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">✓</span> CEO has dashboard visibility across all operations</li>
+                </ul>
+                <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.5rem; margin-top: 1.5rem; text-align: center;">
+                    <p style="font-size: 1.25rem; font-weight: 700; color: var(--navy); margin: 0;">Revenue up. Costs down. Chaos eliminated.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who This Is For -->
+<section class="section">
+    <div class="container-narrow">
+        <h2 class="section-title">Who This Is For</h2>
+        
+        <div class="grid-2">
+            <div style="background: #E8F7F0; padding: 2rem; border-radius: 1rem; border: 2px solid #00AA00;">
+                <h3 style="color: #00AA00; margin-bottom: 1rem;">✅ You should care about business systems if:</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You're tired of leads slipping through the cracks</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Your team is buried in manual work</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You don't know which marketing actually makes money</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You want your business to run like a system, not chaos</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You're ready to invest in infrastructure, not just tactics</li>
+                </ul>
+            </div>
+            
+            <div style="background: #FFF0F0; padding: 2rem; border-radius: 1rem; border: 2px solid #CC0000;">
+                <h3 style="color: #CC0000; margin-bottom: 1rem;">❌ You probably don't need this if:</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You don't currently have leads or customers</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You're just starting out (< $20K/month revenue)</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You want quick fixes or growth hacks</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You're not willing to implement systems</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+{{ partial "components/contact-cta.html" (dict 
+    "title" "Ready to Fix Your Systems?" 
+    "subtitle" "Tell us about your current process and we'll show you exactly where the gaps are." 
+    "button_text" "Contact Us" 
+    "secondary_button" "Book a Demo" 
+    "secondary_link" "/demo/") 
+}}
+
+<!-- Final CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "See It for Your Business" 
+    "subtitle" "We'll map your current systems (or lack thereof) and show you exactly what we'd build." 
+    "button_text" "Schedule a Demo" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

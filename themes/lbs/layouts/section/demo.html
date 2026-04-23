@@ -1,0 +1,192 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Get Started</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- What Happens on the Call -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">What Happens on the Call</h2>
+        <p class="section-subtitle">A 30-minute conversation to map your business and show you exactly what we'd build</p>
+        
+        <div class="grid-2">
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">1. Learn About Your Business <span style="color: var(--gray-medium); font-size: 1rem;">(5 min)</span></h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> What industry are you in?</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> How many leads per month?</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Current follow-up process?</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Biggest operational pain points?</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">2. Map Your Current Process <span style="color: var(--gray-medium); font-size: 1rem;">(10 min)</span></h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Where do leads come from?</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> How are they handled?</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> What's working? What's broken?</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Where are leads falling through?</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">3. Show You the System <span style="color: var(--gray-medium); font-size: 1rem;">(10 min)</span></h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Exactly what we'd build for you</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> How automation would handle leads</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> What your dashboard would look like</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Expected ROI and time savings</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">4. Build a Plan <span style="color: var(--gray-medium); font-size: 1rem;">(5 min)</span></h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Pricing tailored to your business</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Implementation timeline (2-4 weeks)</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Next steps if you want to move forward</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <p style="font-size: 1.25rem; font-weight: 600; color: var(--navy);">No pressure. No hard sell. Just clarity.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Who Should Book -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Who Should Book This Call</h2>
+        
+        <div class="grid-2" style="max-width: 1100px; margin: 0 auto;">
+            <div style="background: #E8F7F0; padding: 2.5rem; border-radius: 1rem; border: 2px solid #00AA00;">
+                <h3 style="color: #00AA00; margin-bottom: 1.5rem; font-size: 1.5rem;">✅ You Should Book If:</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You get leads but struggle with follow-up</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Your team is buried in manual work</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You don't know which marketing makes money</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You want to automate repetitive tasks</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You need better visibility into your business</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You're ready to invest in systems (not just tactics)</li>
+                </ul>
+            </div>
+            
+            <div style="background: #FFF0F0; padding: 2.5rem; border-radius: 1rem; border: 2px solid #CC0000;">
+                <h3 style="color: #CC0000; margin-bottom: 1.5rem; font-size: 1.5rem;">❌ You Probably Shouldn't Book If:</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You don't currently have leads or customers</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You're just starting out (< $20K/month revenue)</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You want quick fixes or growth hacks</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You're not willing to implement systems</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="feature-card" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">How much does it cost?</h3>
+                <p style="color: var(--gray-dark); line-height: 1.7; margin-bottom: 1rem;"><strong>It depends on your business:</strong></p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Small local businesses: $2,500-$4,000/month</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Multi-location or high-volume: $5,000-$7,500/month</li>
+                </ul>
+                <p style="color: var(--gray-dark); line-height: 1.7;"><strong>ROI Expectation:</strong> Most clients see 3-4x return within 90 days.</p>
+            </div>
+            
+            <div class="feature-card" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">Are there long-term contracts?</h3>
+                <p style="color: var(--gray-dark); line-height: 1.7;">No. We work <strong>month-to-month</strong>. If we're not delivering results, you can cancel anytime. (But we're confident you won't want to.)</p>
+            </div>
+            
+            <div class="feature-card" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">How long does setup take?</h3>
+                <p style="color: var(--gray-dark); line-height: 1.7; margin-bottom: 1rem;"><strong>Typical timeline:</strong></p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Week 1-2: Strategy, setup, and integration</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Week 3: Testing and optimization</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> Week 4: Go live and monitor</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">What results can we expect?</h3>
+                <p style="color: var(--gray-dark); line-height: 1.7; margin-bottom: 1rem;"><strong>Typical results within 90 days:</strong></p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> <strong>Conversion rates:</strong> +40-60% improvement</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> <strong>Time saved:</strong> 15-20 hours/week on manual tasks</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> <strong>No-shows reduced:</strong> 30-40%</li>
+                    <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue);">•</span> <strong>ROI:</strong> 3-4x return on investment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">What Clients Say</h2>
+        
+        <div class="grid-2">
+            {{ partial "components/quote-band.html" (dict 
+                "quote" "We're booking twice as many jobs without adding staff. The system runs 24/7." 
+                "author" "HVAC Company Owner") 
+            }}
+            
+            {{ partial "components/quote-band.html" (dict 
+                "quote" "Our front desk used to spend 3 hours/day on scheduling. Now it's automated." 
+                "author" "Dental Practice Manager") 
+            }}
+            
+            {{ partial "components/quote-band.html" (dict 
+                "quote" "We sign more cases and spend less time on unqualified leads. Game changer." 
+                "author" "Law Firm Managing Partner") 
+            }}
+            
+            {{ partial "components/quote-band.html" (dict 
+                "quote" "We're spending less and converting more. And I finally know what's happening across all locations." 
+                "author" "8-Location Franchise Owner") 
+            }}
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="/results/" class="btn btn-secondary">See Full Case Studies</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="section section-dark">
+    <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 2.5rem; color: white; margin-bottom: 1rem;">Ready? Let's Talk.</h2>
+            <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem;">Book a 30-minute demo. No pressure, just clarity.</p>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; margin-bottom: 2rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                <p style="font-size: 1.125rem; margin-bottom: 1rem;">📧 <a href="mailto:jed@powerofadvertising.com" style="color: var(--bright-blue); text-decoration: none; font-weight: 600;">jed@powerofadvertising.com</a></p>
+                <p style="font-size: 1.125rem; margin: 0;">📞 <a href="tel:+16187416143" style="color: var(--bright-blue); text-decoration: none; font-weight: 600;">(618) 741-6143</a></p>
+                <p style="opacity: 0.8; margin-top: 1rem; font-size: 0.9375rem;">Monday-Friday, 9am-5pm EST</p>
+            </div>
+            
+            <p style="opacity: 0.8; font-size: 0.9375rem;">P.S. If you're still not sure, check out our <a href="/results/" style="color: var(--bright-blue);">case studies</a> to see what we've built for businesses like yours.</p>
+        </div>
+    </div>
+</section>
+{{ end }}

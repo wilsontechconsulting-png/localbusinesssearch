@@ -1,0 +1,38 @@
+{{/* Service Schema Markup for Service Pages */}}
+{{ if or (eq .Section "advertising") (in .RelPermalink "platform") (in .RelPermalink "ai-automation") (in .RelPermalink "business-operations") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "{{ .Title }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Local Business Search",
+    "telephone": "+1-618-741-6143",
+    "email": "jed@powerofadvertising.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "23343 Colina Way",
+      "addressLocality": "Charlotte Harbor",
+      "addressRegion": "FL",
+      "postalCode": "33980",
+      "addressCountry": "US"
+    }
+  },
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "{{ .Permalink }}",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "+1-618-741-6143",
+      "contactType": "customer service"
+    }
+  }
+}
+</script>
+{{ end }}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{/* Comprehensive SEO Meta Tags */}}
+    {{ partial "seo-head.html" . }}
+    
+    {{/* Stylesheets */}}
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    
+    {{/* Schema Markup */}}
+    {{ partial "schema-website.html" . }}
+    {{ partial "schema-localbusiness.html" . }}
+    {{ partial "schema-blogpost.html" . }}
+    {{ partial "schema-service.html" . }}
+    {{ partial "schema-breadcrumb.html" . }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+    
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    {{ partial "footer.html" . }}
+</body>
+</html>

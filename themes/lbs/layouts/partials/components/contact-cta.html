@@ -1,0 +1,20 @@
+<!-- Contact CTA Section -->
+<section class="section" style="background: var(--blue-tint);">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="color: var(--navy); font-size: 2rem; margin-bottom: 1rem;">{{ .title | default "Questions? Let's Talk." }}</h2>
+            <p style="color: var(--gray-dark); font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.7;">{{ .subtitle | default "Tell us about your business and we'll show you what's possible." }}</p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/contact/" class="btn btn-primary">{{ .button_text | default "Get in Touch" }}</a>
+                {{ if .secondary_button }}
+                <a href="{{ .secondary_link | default "/demo/" }}" class="btn btn-secondary">{{ .secondary_button }}</a>
+                {{ end }}
+            </div>
+            
+            <p style="color: var(--gray-medium); font-size: 0.9375rem; margin-top: 1.5rem;">
+                Or email us directly: <a href="mailto:jed@powerofadvertising.com" style="color: var(--bright-blue); text-decoration: none; font-weight: 600;">jed@powerofadvertising.com</a>
+            </p>
+        </div>
+    </div>
+</section>

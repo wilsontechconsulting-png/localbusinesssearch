@@ -1,0 +1,249 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Industry Focus</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- The Problem -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">The Problem</h2>
+        <p class="section-subtitle">You're great at HVAC, plumbing, electrical, or roofing. But you're drowning in operational chaos.</p>
+        
+        <div class="grid-3">
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">📞 Missed Calls</h3>
+                <p style="color: var(--gray-dark);">Out on job sites when leads call. Losing business to competitors who answer first.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">⏰ Manual Follow-Up</h3>
+                <p style="color: var(--gray-dark);">Hours spent calling back leads, playing phone tag, manually scheduling appointments.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">🚫 No-Shows</h3>
+                <p style="color: var(--gray-dark);">20-30% of appointments don't show up. Wasted time, lost revenue, frustrated crews.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">❓ No Tracking</h3>
+                <p style="color: var(--gray-dark);">Can't tell which marketing actually works. Spending blind on ads.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">📋 Spreadsheet Hell</h3>
+                <p style="color: var(--gray-dark);">Leads in one place, schedule in another, invoices somewhere else. Nothing connects.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">💰 Revenue Leaks</h3>
+                <p style="color: var(--gray-dark);">Losing 30-40% of leads to slow follow-up and poor systems.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <p style="font-size: 1.25rem; font-weight: 600; color: var(--navy);">You need systems. Not more spreadsheets.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How We Help -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">How We Help</h2>
+        <p class="section-subtitle">Five systems that work together to capture every lead and fill your schedule</p>
+        
+        <div class="grid-2" style="gap: 2rem;">
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "📱" 
+                "title" "Missed Call Recovery (COO Function)" 
+                "description" "Out on a job when someone calls? AI sends instant SMS: 'Hey! We saw you called. Here's a link to book your appointment.' Capture leads even when you're busy.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "⚡" 
+                "title" "Instant Follow-Up (CMO Function)" 
+                "description" "Lead fills out a form → AI responds in < 60 seconds → Automated nurture if they're not ready yet. You're the first to respond. You get the job.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "📅" 
+                "title" "Automated Booking (COO Function)" 
+                "description" "No more phone tag. Customers book directly into your calendar. Auto-reminders reduce no-shows by 40%. Your schedule stays full with less wasted time.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "💰" 
+                "title" "ROI Tracking (CFO Function)" 
+                "description" "Know exactly which ads → which leads → which revenue. Stop guessing where to spend your marketing budget. Spend more on what works, cut what doesn't.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "📊" 
+                "title" "Dashboard Visibility (CEO Function)" 
+                "description" "See your entire operation in one place: leads, bookings, revenue, ad performance. Run your business with data, not gut feel.") 
+            }}
+        </div>
+    </div>
+</section>
+
+<!-- Before vs After -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Before vs After: HVAC Company</h2>
+        
+        <div class="grid-2" style="max-width: 1100px; margin: 0 auto;">
+            <div style="background: #FFF0F0; padding: 2rem; border-radius: 1rem; border: 2px solid #CC0000;">
+                <h3 style="color: #CC0000; margin-bottom: 1.5rem; font-size: 1.5rem;">❌ Before</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">•</span> 40 leads/month from ads</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">•</span> Misses 12 calls (on job sites)</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">•</span> Manual follow-up in 2-4 hours</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">•</span> Books 15 appointments (37.5%)</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">•</span> 5 no-shows waste 10 hours</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">•</span> <strong style="color: #CC0000;">Converts 10 jobs</strong></li>
+                </ul>
+            </div>
+            
+            <div style="background: #E8F7F0; padding: 2rem; border-radius: 1rem; border: 2px solid #00AA00;">
+                <h3 style="color: #00AA00; margin-bottom: 1.5rem; font-size: 1.5rem;">✅ After (With Our Systems)</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> 40 leads/month (same ad spend)</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> AI recovers missed calls instantly</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Responds in < 60 seconds to all leads</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Auto-booking: 28 appointments (70%)</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Auto-reminders: 2 no-shows (saves 6 hours)</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> <strong style="color: #00AA00;">Converts 22 jobs</strong></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 1rem; border: 2px solid var(--bright-blue); max-width: 700px; margin: 0 auto;">
+                <p style="font-size: 1.25rem; font-weight: 700; color: var(--navy); margin: 0;">+120% revenue, same ad spend, zero extra work</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Use Cases -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Use Cases</h2>
+        
+        <div class="grid-3">
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">❄️ Seasonal Slowdowns</h3>
+                <p style="color: var(--gray-dark);">Winter slow? Automated reactivation campaigns bring back past customers. "Time for your annual furnace check."</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">🚨 Emergency Services</h3>
+                <p style="color: var(--gray-dark);">Midnight call? AI routes to on-call tech. Sends instant response. Books emergency slot automatically.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">🚛 Multi-Truck Operations</h3>
+                <p style="color: var(--gray-dark);">Route leads to the right tech based on location, specialty, availability. All automated.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What You Get -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="section-title" style="color: white;">What You Get</h2>
+        
+        <div class="grid-3">
+            <div style="text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">Traffic</h3>
+                <p style="opacity: 0.9;">Strategic ads (Google, Meta) targeting homeowners in your service area</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">Lead Capture</h3>
+                <p style="opacity: 0.9;">Optimized landing pages connected to your CRM</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">AI Automation</h3>
+                <p style="opacity: 0.9;">Instant response, qualification, booking</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">Appointment System</h3>
+                <p style="opacity: 0.9;">Auto-scheduling and no-show reduction</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">Financial Tracking</h3>
+                <p style="opacity: 0.9;">Ad spend → lead → job → revenue visibility</p>
+            </div>
+            
+            <div style="text-align: center;">
+                <h3 style="color: white; margin-bottom: 1rem;">Dashboard</h3>
+                <p style="opacity: 0.9;">Real-time view of your entire operation</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <p style="font-size: 1.25rem; font-weight: 600; opacity: 0.9;">This is infrastructure. Not tactics.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Industries Served -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Trades We Serve</h2>
+        
+        <div class="grid-3">
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">🌡️ HVAC</h3>
+                <p style="color: var(--gray-dark); font-size: 0.9375rem;">Heating, Cooling, Ventilation</p>
+            </div>
+            
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">🚰 Plumbing</h3>
+                <p style="color: var(--gray-dark); font-size: 0.9375rem;">Residential & Commercial</p>
+            </div>
+            
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">⚡ Electrical</h3>
+                <p style="color: var(--gray-dark); font-size: 0.9375rem;">Service & Installation</p>
+            </div>
+            
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">🏠 Roofing</h3>
+                <p style="color: var(--gray-dark); font-size: 0.9375rem;">Repairs & Replacements</p>
+            </div>
+            
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">🌳 Landscaping</h3>
+                <p style="color: var(--gray-dark); font-size: 0.9375rem;">Lawn Care & Design</p>
+            </div>
+            
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                <h3 style="color: var(--navy); margin-bottom: 0.5rem;">🚪 Garage Doors</h3>
+                <p style="color: var(--gray-dark); font-size: 0.9375rem;">Service & Installation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "See It for Your Business" 
+    "subtitle" "We'll map your current process and show you exactly where you're losing leads and revenue." 
+    "button_text" "Schedule a Free Audit" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

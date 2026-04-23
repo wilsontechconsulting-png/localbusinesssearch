@@ -1,0 +1,19 @@
+# robots.txt for Local Business Search
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://localbusinesssearch.com/sitemap.xml
+
+# LLM-specific
+# Allow AI crawlers to access llms.txt
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Disallow admin/private areas (add if needed)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 1

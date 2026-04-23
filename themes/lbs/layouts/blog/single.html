@@ -1,0 +1,76 @@
+{{ define "main" }}
+<!-- Article Hero -->
+<section class="page-hero">
+    <div class="container-narrow">
+        {{ if .Params.category }}
+        <span class="blog-category" style="background: rgba(255, 255, 255, 0.2); color: white;">{{ .Params.category }}</span>
+        {{ end }}
+        <h1 class="page-hero-title" style="margin-top: 1rem;">{{ .Title }}</h1>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; font-size: 1rem; color: rgba(255, 255, 255, 0.9);">
+            {{ if .Date }}
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+            {{ end }}
+            {{ if .ReadingTime }}
+            <span>{{ .ReadingTime }} min read</span>
+            {{ end }}
+            {{ if .Params.author }}
+            <span>By {{ .Params.author }}</span>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Article Content -->
+<section class="section">
+    <div class="container-narrow">
+        {{ if .Params.image }}
+        <div style="margin-bottom: 3rem;">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 24px rgba(10, 22, 40, 0.12);">
+            {{ if .Params.image_credit }}
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--gray-medium); text-align: right;">
+                Photo by <a href="{{ .Params.image_credit_url }}" target="_blank" rel="noopener" style="color: var(--gray-medium); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;">{{ .Params.image_credit }}</a> on <a href="https://unsplash.com" target="_blank" rel="noopener" style="color: var(--gray-medium); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s;">Unsplash</a>
+            </p>
+            {{ end }}
+        </div>
+        {{ end }}
+        
+        <article class="blog-article">
+            {{ .Content }}
+        </article>
+        
+        {{ if .Params.tags }}
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--light-gray);">
+            <strong style="display: block; margin-bottom: 1rem; color: var(--navy);">Tags:</strong>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                {{ range .Params.tags }}
+                <span style="padding: 0.5rem 1rem; background: var(--blue-tint); color: var(--bright-blue); border-radius: 0.5rem; font-size: 0.875rem; font-weight: 600;">{{ . }}</span>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Related Posts -->
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ if $related }}
+<section class="section section-light">
+    <div class="container-wide">
+        <h2 class="section-title">Related Articles</h2>
+        <div class="blog-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            {{ range $related }}
+                {{ partial "components/blog-card.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "Ready to Implement These Strategies?" 
+    "subtitle" "Let's talk about transforming your business operations." 
+    "button_text" "Schedule a Demo" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

@@ -1,0 +1,14 @@
+{{/* CTA Band Component
+  Usage: {{ partial "components/cta-band.html" (dict "title" "Ready to get started?" "subtitle" "Book a demo" "button_text" "Schedule Now" "button_link" "/demo/") }}
+*/}}
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">{{ .title }}</h2>
+    {{ if .subtitle }}
+    <p class="cta-subtitle">{{ .subtitle }}</p>
+    {{ end }}
+    {{ if .button_link }}
+    <a href="{{ .button_link }}" class="btn btn-primary btn-large">{{ .button_text }}</a>
+    {{ end }}
+  </div>
+</section>

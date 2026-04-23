@@ -1,0 +1,54 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Industry Focus</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="section section-light">
+    <div class="container">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <article>
+                {{ .Content }}
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Related Industries -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Other Industries We Serve</h2>
+        <div class="industries-grid">
+            {{ $currentPage := .RelPermalink }}
+            {{ range where .Site.RegularPages "Section" "industries" }}
+                {{ if ne .RelPermalink $currentPage }}
+                <a href="{{ .RelPermalink }}" class="industry-card">
+                    {{ if eq .File.BaseFileName "home-services" }}<h3>🏠 Home Services</h3>{{ end }}
+                    {{ if eq .File.BaseFileName "medical" }}<h3>⚕️ Medical</h3>{{ end }}
+                    {{ if eq .File.BaseFileName "legal" }}<h3>⚖️ Legal</h3>{{ end }}
+                    {{ if eq .File.BaseFileName "local-retail" }}<h3>🛍️ Local Retail</h3>{{ end }}
+                    {{ if eq .File.BaseFileName "franchises" }}<h3>🏢 Franchises</h3>{{ end }}
+                    {{ if eq .File.BaseFileName "municipalities" }}<h3>🏛️ Municipalities</h3>{{ end }}
+                    <p>{{ .Description }}</p>
+                </a>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "See It for Your Business" 
+    "subtitle" "We'll map your current process and show you exactly where you're losing leads and revenue." 
+    "button_text" "Schedule a Free Audit" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

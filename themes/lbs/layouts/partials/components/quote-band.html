@@ -1,0 +1,18 @@
+{{/* Quote Band Component
+  Usage: {{ partial "components/quote-band.html" (dict "quote" "Quote text here" "author" "John Doe" "role" "CEO") }}
+*/}}
+<section class="quote-section">
+  <div class="container">
+    <div class="quote-content">
+      {{ if .quote }}
+      <blockquote class="quote-text">{{ .quote }}</blockquote>
+      {{ end }}
+      {{ if .author }}
+      <div class="quote-author">— {{ .author }}</div>
+      {{ end }}
+      {{ if .role }}
+      <div class="quote-role">{{ .role }}</div>
+      {{ end }}
+    </div>
+  </div>
+</section>

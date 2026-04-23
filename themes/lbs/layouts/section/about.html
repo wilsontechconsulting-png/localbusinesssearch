@@ -1,0 +1,250 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Our Story</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- The Story -->
+<section class="section section-light">
+    <div class="container-narrow">
+        <h2 class="section-title">The Story</h2>
+        
+        <div style="background: white; padding: 3rem; border-radius: 1rem; box-shadow: 0 8px 24px rgba(10, 22, 40, 0.1); border-left: 4px solid var(--bright-blue); margin-bottom: 2rem;">
+            <p style="font-size: 1.25rem; color: var(--gray-dark); margin-bottom: 1.5rem; text-align: center; font-weight: 600;">We started like every other marketing agency:</p>
+            <p style="font-size: 1.5rem; color: var(--navy); font-weight: 700; text-align: center; margin-bottom: 2rem;">Run ads. Get leads. Send a report. Repeat.</p>
+            
+            <p style="font-size: 1.0625rem; line-height: 1.8; color: var(--gray-dark); margin-bottom: 1.5rem;">And it worked—sort of. Our clients got leads. But they weren't converting them. Why?</p>
+            
+            <ul style="list-style: none; padding: 0; margin: 2rem 0;">
+                <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">•</span> They called back too slow</li>
+                <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">•</span> They got buried in manual work</li>
+                <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">•</span> They had no idea which marketing made money</li>
+                <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">•</span> Their operations were a mess</li>
+            </ul>
+            
+            <p style="font-size: 1.25rem; color: var(--navy); font-weight: 600; margin: 2rem 0;">We were generating leads. But we were also watching them die.</p>
+            
+            <div style="background: var(--blue-tint); padding: 2rem; border-radius: 0.75rem; margin-top: 2rem;">
+                <p style="font-size: 1.375rem; color: var(--navy); font-weight: 600; text-align: center; margin: 0;">"What if we didn't just bring in traffic? What if we built the systems to actually convert it?"</p>
+                <p style="text-align: center; margin-top: 1rem; color: var(--gray-dark);">That's when everything changed.</p>
+            </div>
+            
+            <p style="font-size: 1.0625rem; line-height: 1.8; color: var(--gray-dark); margin-top: 2rem; text-align: center;">We stopped being a marketing agency. We became a <strong style="color: var(--bright-blue);">business systems company</strong>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Our Mission -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+        <p style="font-size: 1.5rem; font-weight: 700; color: var(--navy); text-align: center; margin-bottom: 1rem;">Make Local Businesses Unstoppable</p>
+        <p style="font-size: 1.125rem; text-align: center; color: var(--gray-dark); margin-bottom: 3rem;">Not by running ads harder. By building better systems.</p>
+        
+        <div class="grid-2" style="gap: 2rem;">
+            <div style="background: var(--blue-tint); padding: 2.5rem; border-radius: 1rem; border: 2px solid var(--bright-blue);">
+                <h3 style="color: var(--navy); margin-bottom: 1.5rem; font-size: 1.5rem;">Systems That:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">✓</span> Capture every lead</li>
+                    <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">✓</span> Respond instantly</li>
+                    <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">✓</span> Automate operations</li>
+                    <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">✓</span> Track ROI clearly</li>
+                    <li style="padding: 0.75rem 0; padding-left: 1.5rem; position: relative; color: var(--gray-dark);"><span style="position: absolute; left: 0; color: var(--bright-blue); font-weight: 700;">✓</span> Give owners visibility and control</li>
+                </ul>
+            </div>
+            
+            <div style="display: flex; align-items: center; justify-content: center; background: white; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 8px 24px rgba(10, 22, 40, 0.1);">
+                <p style="font-size: 1.75rem; font-weight: 700; color: var(--navy); text-align: center; line-height: 1.4;">We build the infrastructure.<br><span style="color: var(--bright-blue);">You run the business.</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why This Matters -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Why This Matters</h2>
+        
+        <div class="grid-2" style="max-width: 1100px; margin: 0 auto;">
+            <div style="background: #FFF0F0; padding: 2rem; border-radius: 1rem; border: 2px solid #CC0000;">
+                <h3 style="color: #CC0000; margin-bottom: 1.5rem; font-size: 1.5rem;">Most Local Businesses (2005)</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> Manual follow-up</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> Phone tag for scheduling</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> No tracking beyond "how many clicks?"</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> Disconnected tools</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> Gut-feel decisions</li>
+                </ul>
+            </div>
+            
+            <div style="background: #E8F7F0; padding: 2rem; border-radius: 1rem; border: 2px solid #00AA00;">
+                <h3 style="color: #00AA00; margin-bottom: 1.5rem; font-size: 1.5rem;">Enterprise Companies (2026)</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Automated workflows</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> AI-powered systems</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Full attribution tracking</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Unified dashboards</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> Data-driven decision making</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <div style="background: var(--blue-tint); padding: 1.5rem; border-radius: 1rem; border: 2px solid var(--bright-blue); max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 1.5rem; font-weight: 700; color: var(--navy); margin: 0;">Why should only big companies have this?</p>
+                <p style="font-size: 1.125rem; color: var(--gray-dark); margin-top: 0.5rem;">They shouldn't. So we built it for local businesses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What Makes Us Different -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">What Makes Us Different</h2>
+        
+        <div class="grid-3" style="margin-top: 2rem;">
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "🚫" 
+                "title" "We're Not a Marketing Agency" 
+                "description" "We don't just send you leads and hope you close them. We build the systems that capture, qualify, nurture, and convert those leads—automatically.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "🔗" 
+                "title" "We Connect All Four Business Functions" 
+                "description" "CEO (Visibility) + CFO (ROI) + CMO (Growth) + COO (Operations). One system. Not four disconnected tools.") 
+            }}
+            
+            {{ partial "components/feature-card.html" (dict 
+                "icon" "📊" 
+                "title" "We Measure What Actually Matters" 
+                "description" "Not vanity metrics. Real business outcomes: cost per acquisition, lifetime value, revenue per campaign, time saved.") 
+            }}
+        </div>
+    </div>
+</section>
+
+<!-- Our Values -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="section-title" style="color: white;">Our Values</h2>
+        
+        <div class="grid-2" style="gap: 2rem;">
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="color: white; margin-bottom: 1rem;">1. Systems Over Tactics</h3>
+                <p style="opacity: 0.9;">We don't chase trends. We build infrastructure that works long-term.</p>
+            </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="color: white; margin-bottom: 1rem;">2. Results Over Reports</h3>
+                <p style="opacity: 0.9;">Pretty dashboards don't pay the bills. We optimize for revenue and efficiency.</p>
+            </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="color: white; margin-bottom: 1rem;">3. Automation Over Manual Work</h3>
+                <p style="opacity: 0.9;">If a human has to do it repeatedly, we automate it.</p>
+            </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="color: white; margin-bottom: 1rem;">4. Clarity Over Complexity</h3>
+                <p style="opacity: 0.9;">Business owners shouldn't need a PhD to understand their systems.</p>
+            </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; border: 2px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="color: white; margin-bottom: 1rem;">5. Partnership Over Transactions</h3>
+                <p style="opacity: 0.9;">We succeed when our clients succeed. Simple as that.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who We Work With -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Who We Work With</h2>
+        
+        <div class="grid-2" style="max-width: 1100px; margin: 0 auto; gap: 2rem;">
+            <div style="background: #E8F7F0; padding: 2.5rem; border-radius: 1rem; border: 2px solid #00AA00;">
+                <h3 style="color: #00AA00; margin-bottom: 1.5rem; font-size: 1.5rem;">✅ We're a Great Fit If:</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You have leads (but aren't converting them well)</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You want to automate repetitive work</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You need better visibility into what's working</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You're ready to invest in systems, not just tactics</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #00AA00; font-weight: 700;">✓</span> You generate at least $20K/month in revenue</li>
+                </ul>
+            </div>
+            
+            <div style="background: #FFF0F0; padding: 2.5rem; border-radius: 1rem; border: 2px solid #CC0000;">
+                <h3 style="color: #CC0000; margin-bottom: 1.5rem; font-size: 1.5rem;">❌ Probably Not a Fit If:</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You don't have leads yet (start with basic marketing first)</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You want quick fixes or growth hacks</li>
+                    <li style="padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You're not willing to implement systems</li>
+                    <li style="padding-left: 1.5rem; position: relative;"><span style="position: absolute; left: 0; color: #CC0000; font-weight: 700;">✗</span> You're just starting out (< $20K/month revenue)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industries -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Industries We Serve</h2>
+        <div class="industries-grid">
+            <a href="/industries/home-services/" class="industry-card">
+                <h3>🏠 Home Services</h3>
+                <p>HVAC, Plumbing, Electrical, Roofing</p>
+            </a>
+            <a href="/industries/medical/" class="industry-card">
+                <h3>⚕️ Medical</h3>
+                <p>Dentists, Med Spas, Chiropractors</p>
+            </a>
+            <a href="/industries/legal/" class="industry-card">
+                <h3>⚖️ Legal</h3>
+                <p>Personal Injury, Family Law</p>
+            </a>
+            <a href="/industries/local-retail/" class="industry-card">
+                <h3>🛍️ Local Retail</h3>
+                <p>Restaurants, Salons, Gyms</p>
+            </a>
+            <a href="/industries/franchises/" class="industry-card">
+                <h3>🏢 Franchises</h3>
+                <p>Multi-location Businesses</p>
+            </a>
+            <a href="/industries/municipalities/" class="industry-card">
+                <h3>🏛️ Municipalities</h3>
+                <p>Cities, Towns, Local Government</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Vision -->
+<section class="section">
+    <div class="container-narrow">
+        <div style="background: var(--blue-tint); padding: 3rem; border-radius: 1rem; border: 2px solid var(--bright-blue); text-align: center;">
+            <h2 style="color: var(--navy); margin-bottom: 1.5rem;">The Vision</h2>
+            <p style="font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem;">Give every local business the same advantages that enterprise companies have.</p>
+            <p style="font-size: 1.25rem; color: var(--gray-dark);">AI-powered automation. Intelligent systems. Full visibility. Efficient operations.</p>
+            <p style="font-size: 1.375rem; font-weight: 600; color: var(--bright-blue); margin-top: 1rem;">Not someday. Right now.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "Ready to Build Systems That Actually Work?" 
+    "subtitle" "We'll audit your current setup and show you exactly where you're losing time and revenue." 
+    "button_text" "Schedule Your Free Audit" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

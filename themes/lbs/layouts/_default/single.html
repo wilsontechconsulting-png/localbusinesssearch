@@ -1,0 +1,28 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="section section-light">
+    <div class="container">
+        <article class="blog-article" style="max-width: 900px; margin: 0 auto; background: white; padding: 3rem; border-radius: 1rem; box-shadow: 0 4px 16px rgba(10, 22, 40, 0.08);">
+            {{ .Content }}
+        </article>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "Ready to Get Started?" 
+    "subtitle" "Let's talk about how we can help your business grow." 
+    "button_text" "Schedule a Demo" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

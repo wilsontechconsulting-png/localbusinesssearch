@@ -1,0 +1,127 @@
+{{ define "main" }}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Industry Focus</span>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="section">
+    <div class="container-narrow">
+        <article class="blog-article">
+            {{ .Content }}
+        </article>
+    </div>
+</section>
+
+<!-- Case Studies Section -->
+<section class="section section-light">
+    <div class="container">
+        <h2 class="section-title">Real Results from Law Firms</h2>
+        <p class="section-subtitle">See how legal practices increased caseloads and revenue with intelligent systems</p>
+        
+        <div class="grid-2" style="margin-top: 3rem;">
+            <!-- Personal Injury Case Study -->
+            <div style="background: white; padding: 2.5rem; border-radius: 1rem; border: 2px solid var(--bright-blue); box-shadow: 0 8px 24px rgba(10, 22, 40, 0.1);">
+                <span style="display: inline-block; padding: 0.5rem 1rem; background: var(--bright-blue); color: white; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem;">Legal</span>
+                
+                <h3 style="font-size: 1.75rem; color: var(--navy); margin-bottom: 1.5rem;">Personal Injury Law Firm: +120% Signed Cases</h3>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--navy); margin-bottom: 0.75rem; font-size: 1.0625rem;">The Challenge:</strong>
+                    <p style="color: var(--gray-dark); line-height: 1.7;">60 case inquiries/month, manual intake taking 15 min per lead (15 hours/week), responding in 4-8 hours (losing cases to faster firms), booking 42% of qualified leads, no tracking of case ROI by marketing channel.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--navy); margin-bottom: 0.75rem; font-size: 1.0625rem;">What We Built:</strong>
+                    <p style="color: var(--gray-dark); line-height: 1.7;">AI case qualification (screens before attorney involvement), instant response system (< 60 seconds), automated consultation booking, digital intake forms (no manual data entry), ROI tracking by practice area.</p>
+                </div>
+                
+                <div style="background: var(--blue-tint); padding: 1.25rem; border-radius: 0.5rem; border-left: 3px solid var(--bright-blue); margin-bottom: 1.5rem;">
+                    <strong style="color: var(--navy); display: block; margin-bottom: 0.5rem;">Managing Partner:</strong>
+                    <p style="color: var(--gray-dark); font-style: italic; margin: 0;">"We sign more cases and spend less time on unqualified leads. Game changer."</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">+60%</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">Qualified Consultations</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">+120%</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">Signed Cases</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">12hrs</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">Time Saved/Week</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">100%</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">ROI Visibility</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Family Law / Divorce Case Study -->
+            <div style="background: white; padding: 2.5rem; border-radius: 1rem; border: 2px solid var(--bright-blue); box-shadow: 0 8px 24px rgba(10, 22, 40, 0.1);">
+                <span style="display: inline-block; padding: 0.5rem 1rem; background: var(--bright-blue); color: white; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem;">Legal</span>
+                
+                <h3 style="font-size: 1.75rem; color: var(--navy); margin-bottom: 1.5rem;">Family Law Firm: 50-90 Cases Per Attorney</h3>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--navy); margin-bottom: 0.75rem; font-size: 1.0625rem;">The Challenge:</strong>
+                    <p style="color: var(--gray-dark); line-height: 1.7;">Most divorce attorneys handle 10-15 cases on average. High manual intake workload, slow lead response, difficulty managing multi-case workflows, inconsistent retainer collection, attorneys overwhelmed with administrative tasks.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="display: block; color: var(--navy); margin-bottom: 0.75rem; font-size: 1.0625rem;">What We Built:</strong>
+                    <p style="color: var(--gray-dark); line-height: 1.7;">AI-powered lead qualification for family law matters, instant response system (< 60 seconds), automated consultation scheduling, document automation for intake packets, retainer tracking and payment automation, case management workflow optimization.</p>
+                </div>
+                
+                <div style="background: var(--blue-tint); padding: 1.25rem; border-radius: 0.5rem; border-left: 3px solid var(--bright-blue); margin-bottom: 1.5rem;">
+                    <strong style="color: var(--navy); display: block; margin-bottom: 0.5rem;">Lead Attorney:</strong>
+                    <p style="color: var(--gray-dark); font-style: italic; margin: 0;">"We've increased our caseload to 50-90 cases per attorney without sacrificing quality. The system handles the admin work so we can focus on clients."</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem; padding: 1rem; background: #E8F7F0; border-radius: 0.5rem; border: 2px solid #00AA00;">
+                    <p style="font-size: 0.9375rem; color: var(--gray-dark); margin: 0; text-align: center;">
+                        <strong style="color: #00AA00;">Industry Note:</strong> Most divorce lawyers average 10-15 cases. We've seen results as high as 50-90 per attorney with our systems.
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">3-6x</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">Case Capacity</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">+85%</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">Consultation Bookings</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">18hrs</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">Time Saved/Week</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--light-gray); border-radius: 0.5rem;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--bright-blue); margin-bottom: 0.25rem;">+45%</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-medium);">Retainer Collection</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+{{ partial "components/cta-band.html" (dict 
+    "title" "See It for Your Law Firm" 
+    "subtitle" "We'll map your current intake process and show you exactly where you're losing cases and revenue." 
+    "button_text" "Schedule a Free Audit" 
+    "button_link" "/demo/") 
+}}
+{{ end }}

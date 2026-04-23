@@ -1,0 +1,24 @@
+{{/* Case Study Card Component
+  Usage: {{ partial "components/case-study-card.html" (dict "label" "Home Services" "title" "HVAC Company" "description" "..." "metrics" (slice (dict "value" "+120%" "label" "Revenue"))) }}
+*/}}
+<div class="case-study-card">
+  {{ if .label }}
+  <span class="case-label">{{ .label }}</span>
+  {{ end }}
+  {{ if .title }}
+  <h3>{{ .title }}</h3>
+  {{ end }}
+  {{ if .description }}
+  <div>{{ .description | markdownify }}</div>
+  {{ end }}
+  {{ if .metrics }}
+  <div class="case-metrics">
+    {{ range .metrics }}
+    <div class="metric-item">
+      <div class="metric-value">{{ .value }}</div>
+      <div class="metric-label">{{ .label }}</div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
