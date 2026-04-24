@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Business Automation on Local Business Search - AI. Business Process.</title>
-    <link>https://localbusinesssearch.com/tags/business-automation/</link>
+    <link>http://localhost:1313/tags/business-automation/</link>
     <description>Recent content in Business Automation on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://localbusinesssearch.com/tags/business-automation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/business-automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We Just Built This Entire Website in 12 Hours Using AI—Here&#39;s What That Means for Your Business</title>
-      <link>https://localbusinesssearch.com/blog/building-website-with-ai/</link>
+      <link>http://localhost:1313/blog/building-website-with-ai/</link>
       <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/building-website-with-ai/</guid>
+      <guid>http://localhost:1313/blog/building-website-with-ai/</guid>
       <description>&lt;h2 id=&#34;let-me-be-honest-with-you&#34;&gt;Let Me Be Honest With You&lt;/h2&gt;&#xA;&lt;p&gt;Three days ago, this website didn&amp;rsquo;t exist.&lt;/p&gt;&#xA;&lt;p&gt;Today, you&amp;rsquo;re reading a blog post on a fully functional, professionally designed, multi-page website with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;18+ pages of content&lt;/li&gt;&#xA;&lt;li&gt;Custom contact forms&lt;/li&gt;&#xA;&lt;li&gt;Mobile-responsive design across all devices&lt;/li&gt;&#xA;&lt;li&gt;A complete blog system&lt;/li&gt;&#xA;&lt;li&gt;Strategic CTAs throughout&lt;/li&gt;&#xA;&lt;li&gt;Professional copywriting&lt;/li&gt;&#xA;&lt;li&gt;And it all works flawlessly&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Total time invested:&lt;/strong&gt; About 12 hours of actual work.&lt;/p&gt;&#xA;&lt;p&gt;No, I didn&amp;rsquo;t hire a $15,000 agency. No, I didn&amp;rsquo;t spend 6 weeks going back and forth with developers.&lt;/p&gt;</description>
     </item>
   </channel>

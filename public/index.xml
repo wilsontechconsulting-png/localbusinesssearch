@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI-Driven Business Systems for Local Companies on Local Business Search - AI. Business Process.</title>
-    <link>https://localbusinesssearch.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in AI-Driven Business Systems for Local Companies on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Apr 2026 15:27:00 -0500</lastBuildDate>
-    <atom:link href="https://localbusinesssearch.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Your HVAC Business Is Buried in Software—And It&#39;s Costing You More Than Just Monthly Fees</title>
-      <link>https://localbusinesssearch.com/blog/hvac-software-chaos/</link>
+      <link>http://localhost:1313/blog/hvac-software-chaos/</link>
       <pubDate>Thu, 23 Apr 2026 15:27:00 -0500</pubDate>
-      <guid>https://localbusinesssearch.com/blog/hvac-software-chaos/</guid>
+      <guid>http://localhost:1313/blog/hvac-software-chaos/</guid>
       <description>&lt;h2 id=&#34;how-many-tabs-do-you-have-open-right-now&#34;&gt;How Many Tabs Do You Have Open Right Now?&lt;/h2&gt;&#xA;&lt;p&gt;Let me guess what&amp;rsquo;s running on your phone (or computer) to manage your HVAC business:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ServiceTitan (or FieldEdge, or Jobber, or Housecall Pro)&lt;/li&gt;&#xA;&lt;li&gt;QuickBooks&lt;/li&gt;&#xA;&lt;li&gt;Your CRM (or the half-working one built into your dispatch software)&lt;/li&gt;&#xA;&lt;li&gt;Google Ads and Facebook Ads Manager&lt;/li&gt;&#xA;&lt;li&gt;Email (Gmail or Outlook)&lt;/li&gt;&#xA;&lt;li&gt;Texts with customers and techs&lt;/li&gt;&#xA;&lt;li&gt;Google Calendar (and maybe a separate booking tool)&lt;/li&gt;&#xA;&lt;li&gt;Zapier trying to make these things talk to each other&lt;/li&gt;&#xA;&lt;li&gt;Something for inventory and parts ordering&lt;/li&gt;&#xA;&lt;li&gt;Another tool for maintenance agreements&lt;/li&gt;&#xA;&lt;li&gt;Maybe a separate estimating tool&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;That&amp;rsquo;s 11+ different systems.&lt;/strong&gt; And we&amp;rsquo;re not even counting the spreadsheets you maintain because none of this software does exactly what you need.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Your Plumbing Business Doesn&#39;t Need More Apps—It Needs Systems That Actually Talk to Each Other</title>
-      <link>https://localbusinesssearch.com/blog/plumbing-tech-stack-overload/</link>
+      <link>http://localhost:1313/blog/plumbing-tech-stack-overload/</link>
       <pubDate>Thu, 23 Apr 2026 14:30:00 -0500</pubDate>
-      <guid>https://localbusinesssearch.com/blog/plumbing-tech-stack-overload/</guid>
+      <guid>http://localhost:1313/blog/plumbing-tech-stack-overload/</guid>
       <description>&lt;h2 id=&#34;lets-talk-about-your-phone&#34;&gt;Let&amp;rsquo;s Talk About Your Phone&lt;/h2&gt;&#xA;&lt;p&gt;How many apps do you have open right now to run your plumbing business?&lt;/p&gt;&#xA;&lt;p&gt;Let me guess:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ServiceTitan (or Housecall Pro, or Jobber)&lt;/li&gt;&#xA;&lt;li&gt;QuickBooks&lt;/li&gt;&#xA;&lt;li&gt;Your CRM (or maybe the CRM is built into your dispatch software)&lt;/li&gt;&#xA;&lt;li&gt;Something for advertising (Google Ads, Facebook)&lt;/li&gt;&#xA;&lt;li&gt;Email (probably Gmail)&lt;/li&gt;&#xA;&lt;li&gt;Text messages with customers&lt;/li&gt;&#xA;&lt;li&gt;Calendar (probably Google Calendar, maybe Calendly)&lt;/li&gt;&#xA;&lt;li&gt;Maybe Zapier to connect some of this stuff&lt;/li&gt;&#xA;&lt;li&gt;Possibly another tool for estimates&lt;/li&gt;&#xA;&lt;li&gt;Another for invoicing&lt;/li&gt;&#xA;&lt;li&gt;One more for inventory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;That&amp;rsquo;s 11+ apps.&lt;/strong&gt; And that&amp;rsquo;s before we count the spreadsheets you&amp;rsquo;re maintaining because none of these tools quite do what you need.&lt;/p&gt;</description>
     </item>
     <item>
       <title>We Just Built This Entire Website in 12 Hours Using AI—Here&#39;s What That Means for Your Business</title>
-      <link>https://localbusinesssearch.com/blog/building-website-with-ai/</link>
+      <link>http://localhost:1313/blog/building-website-with-ai/</link>
       <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/building-website-with-ai/</guid>
+      <guid>http://localhost:1313/blog/building-website-with-ai/</guid>
       <description>&lt;h2 id=&#34;let-me-be-honest-with-you&#34;&gt;Let Me Be Honest With You&lt;/h2&gt;&#xA;&lt;p&gt;Three days ago, this website didn&amp;rsquo;t exist.&lt;/p&gt;&#xA;&lt;p&gt;Today, you&amp;rsquo;re reading a blog post on a fully functional, professionally designed, multi-page website with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;18+ pages of content&lt;/li&gt;&#xA;&lt;li&gt;Custom contact forms&lt;/li&gt;&#xA;&lt;li&gt;Mobile-responsive design across all devices&lt;/li&gt;&#xA;&lt;li&gt;A complete blog system&lt;/li&gt;&#xA;&lt;li&gt;Strategic CTAs throughout&lt;/li&gt;&#xA;&lt;li&gt;Professional copywriting&lt;/li&gt;&#xA;&lt;li&gt;And it all works flawlessly&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Total time invested:&lt;/strong&gt; About 12 hours of actual work.&lt;/p&gt;&#xA;&lt;p&gt;No, I didn&amp;rsquo;t hire a $15,000 agency. No, I didn&amp;rsquo;t spend 6 weeks going back and forth with developers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Systems for Home Services</title>
-      <link>https://localbusinesssearch.com/industries/home-services/</link>
+      <link>http://localhost:1313/industries/home-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/industries/home-services/</guid>
+      <guid>http://localhost:1313/industries/home-services/</guid>
       <description>&lt;p&gt;Stop losing leads to slow follow-up. We build automated systems that capture every call, respond instantly, and book appointments automatically—so you can focus on the work, not chasing leads.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;You&amp;rsquo;re great at HVAC, plumbing, electrical, or roofing. But you&amp;rsquo;re drowning in operational chaos:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Missed calls&lt;/strong&gt; while you&amp;rsquo;re on a job site&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Manual follow-up&lt;/strong&gt; that takes hours&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Appointment scheduling&lt;/strong&gt; (endless phone tag)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;No-shows&lt;/strong&gt; that waste 20-30% of your time&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Can&amp;rsquo;t track&lt;/strong&gt; which marketing actually works&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You need systems. Not more spreadsheets.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Systems for Law Firms</title>
-      <link>https://localbusinesssearch.com/industries/legal/</link>
+      <link>http://localhost:1313/industries/legal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/industries/legal/</guid>
+      <guid>http://localhost:1313/industries/legal/</guid>
       <description>&lt;p&gt;Automate case intake, qualify leads instantly, and track ROI by practice area. Built for personal injury, family law, estate planning, and legal practices.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;You&amp;rsquo;re a great attorney. But your intake process is costing you cases:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lead response is slow&lt;/strong&gt; (hours or days)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Case qualification is manual&lt;/strong&gt; (wasted time on unqualified leads)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Intake forms are paper-based&lt;/strong&gt; (inefficient, error-prone)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Can&amp;rsquo;t track&lt;/strong&gt; which marketing brings in profitable cases&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Retainer collection&lt;/strong&gt; is inconsistent&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;By the time you call back, they&amp;rsquo;ve already signed with someone else.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Systems for Local Retail</title>
-      <link>https://localbusinesssearch.com/industries/local-retail/</link>
+      <link>http://localhost:1313/industries/local-retail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/industries/local-retail/</guid>
+      <guid>http://localhost:1313/industries/local-retail/</guid>
       <description>&lt;p&gt;Automate customer retention, increase foot traffic, and maximize lifetime value. Built for restaurants, coffee shops, boutiques, salons, and local retail businesses.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;You get customers in the door. But they don&amp;rsquo;t come back:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;One-time customers&lt;/strong&gt; (no repeat business)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;No follow-up system&lt;/strong&gt; (they forget about you)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Manual loyalty tracking&lt;/strong&gt; (punch cards get lost)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Can&amp;rsquo;t measure&lt;/strong&gt; what brings people in&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Slow seasons&lt;/strong&gt; kill cash flow&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You need systems that keep customers coming back.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Systems for Medical &amp; Healthcare</title>
-      <link>https://localbusinesssearch.com/industries/medical/</link>
+      <link>http://localhost:1313/industries/medical/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/industries/medical/</guid>
+      <guid>http://localhost:1313/industries/medical/</guid>
       <description>&lt;p&gt;Automate patient acquisition, reduce no-shows, and increase case acceptance—while staying HIPAA compliant. Built for dentists, med spas, chiropractors, and healthcare practices.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;Your practice is excellent. But your operations are inefficient:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;New patient inquiries&lt;/strong&gt; sit unanswered for hours&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Appointment scheduling&lt;/strong&gt; is manual (phone tag)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;No-shows&lt;/strong&gt; waste 15-25% of your schedule&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Case acceptance&lt;/strong&gt; is inconsistent (follow-up is manual)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Can&amp;rsquo;t track&lt;/strong&gt; which marketing brings in profitable patients&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You need systems that work as well as you do.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Systems for Multi-Location Franchises</title>
-      <link>https://localbusinesssearch.com/industries/franchises/</link>
+      <link>http://localhost:1313/industries/franchises/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/industries/franchises/</guid>
+      <guid>http://localhost:1313/industries/franchises/</guid>
       <description>&lt;p&gt;Centralized intelligence with local execution. Manage advertising, automation, and reporting across all locations from one unified system.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;You have multiple locations. But they operate like separate businesses:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;No centralized reporting&lt;/strong&gt; (each location is a black box)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Inconsistent processes&lt;/strong&gt; (every manager does it differently)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Can&amp;rsquo;t compare performance&lt;/strong&gt; across locations&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Advertising is fragmented&lt;/strong&gt; (duplicate spend, no economies of scale)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Customer data is siloed&lt;/strong&gt; (one location doesn&amp;rsquo;t know what another is doing)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You&amp;rsquo;re leaving money on the table.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Communication Systems for Cities &amp; Local Government</title>
-      <link>https://localbusinesssearch.com/industries/municipalities/</link>
+      <link>http://localhost:1313/industries/municipalities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/industries/municipalities/</guid>
+      <guid>http://localhost:1313/industries/municipalities/</guid>
       <description>&lt;p&gt;Modern digital communication for municipalities. Reach residents effectively, promote public services, increase event attendance, and improve community engagement.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;Your city has important information to share. But residents aren&amp;rsquo;t seeing it:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Public service messages&lt;/strong&gt; get lost in the noise&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Event attendance is low&lt;/strong&gt; (town halls, festivals, meetings)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resident engagement is poor&lt;/strong&gt; (nobody reads the newsletter)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Can&amp;rsquo;t measure&lt;/strong&gt; what&amp;rsquo;s working&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Limited budget&lt;/strong&gt; for communication&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You need modern systems that actually reach people.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Google Ads Management</title>
-      <link>https://localbusinesssearch.com/advertising/google-ads/</link>
+      <link>http://localhost:1313/advertising/google-ads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/advertising/google-ads/</guid>
+      <guid>http://localhost:1313/advertising/google-ads/</guid>
       <description>&lt;h1 id=&#34;google-ads-management&#34;&gt;Google Ads Management&lt;/h1&gt;&#xA;&lt;p&gt;Reach customers with high intent—people actively searching for your services right now.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-we-do&#34;&gt;What We Do&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Search Ads&lt;/strong&gt;: Show up when people search for your services&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Local Services Ads&lt;/strong&gt;: Google-verified badge, pay per lead&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Display Ads&lt;/strong&gt;: Visual campaigns across Google&amp;rsquo;s network&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;YouTube Ads&lt;/strong&gt;: Video campaigns for local reach&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Performance Max&lt;/strong&gt;: AI-powered campaigns across all Google properties&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-google-ads-work&#34;&gt;Why Google Ads Work&lt;/h2&gt;&#xA;&lt;p&gt;People searching for &amp;ldquo;plumber near me&amp;rdquo; or &amp;ldquo;best dentist in [city]&amp;rdquo; have immediate intent. They&amp;rsquo;re ready to buy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Message Received!</title>
-      <link>https://localbusinesssearch.com/contact/success/</link>
+      <link>http://localhost:1313/contact/success/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/contact/success/</guid>
+      <guid>http://localhost:1313/contact/success/</guid>
       <description></description>
     </item>
     <item>
       <title>Meta / Paid Social Advertising</title>
-      <link>https://localbusinesssearch.com/advertising/paid-social/</link>
+      <link>http://localhost:1313/advertising/paid-social/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/advertising/paid-social/</guid>
+      <guid>http://localhost:1313/advertising/paid-social/</guid>
       <description>&lt;h1 id=&#34;meta--paid-social-advertising&#34;&gt;Meta / Paid Social Advertising&lt;/h1&gt;&#xA;&lt;p&gt;Hyper-targeted campaigns on Facebook and Instagram that reach your ideal local customers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-we-do&#34;&gt;What We Do&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Audience Targeting&lt;/strong&gt;: Demographics, interests, behaviors, and lookalike audiences&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Creative Testing&lt;/strong&gt;: Multiple ad variations to find what resonates&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Local Focus&lt;/strong&gt;: Geo-targeting to your service area&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Conversion Optimization&lt;/strong&gt;: Landing pages designed to convert&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Performance Tracking&lt;/strong&gt;: Real metrics that matter (leads, appointments, revenue)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-it-works-for-local-businesses&#34;&gt;Why It Works for Local Businesses&lt;/h2&gt;&#xA;&lt;p&gt;Facebook and Instagram have unmatched local targeting capabilities:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Programmatic / OTT / CTV Advertising</title>
-      <link>https://localbusinesssearch.com/advertising/programmatic/</link>
+      <link>http://localhost:1313/advertising/programmatic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/advertising/programmatic/</guid>
+      <guid>http://localhost:1313/advertising/programmatic/</guid>
       <description>&lt;h1 id=&#34;programmatic--ott--ctv-advertising&#34;&gt;Programmatic / OTT / CTV Advertising&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;TV-Quality Advertising. Digital Precision.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Reach local customers on streaming TV, connected devices, and premium apps—with targeting that traditional TV can&amp;rsquo;t match.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-programmatic-ottctv&#34;&gt;What Is Programmatic OTT/CTV?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Programmatic advertising&lt;/strong&gt; means smart, automated ad buying.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Over-The-Top (OTT)&lt;/strong&gt;: Streaming apps (Hulu, Roku, etc.)&lt;br&gt;&#xA;&lt;strong&gt;Connected TV (CTV)&lt;/strong&gt;: Smart TVs and streaming devices&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-it-works-for-local-businesses&#34;&gt;Why It Works for Local Businesses&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;TV-quality creative&lt;/strong&gt; (big brand feel)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Digital targeting&lt;/strong&gt; (age, location, interests, behavior)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Measurable results&lt;/strong&gt; (unlike traditional TV)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Affordable&lt;/strong&gt; for local budgets&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;use-cases&#34;&gt;Use Cases&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Home Services&lt;/strong&gt;: Reach homeowners in your service area watching home improvement shows&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retargeting Campaigns</title>
-      <link>https://localbusinesssearch.com/advertising/retargeting/</link>
+      <link>http://localhost:1313/advertising/retargeting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/advertising/retargeting/</guid>
+      <guid>http://localhost:1313/advertising/retargeting/</guid>
       <description>&lt;h1 id=&#34;retargeting-campaigns&#34;&gt;Retargeting Campaigns&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bring Back the Ones Who Got Away&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Strategic remarketing that turns website visitors into customers.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-retargeting-works&#34;&gt;Why Retargeting Works&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Only 2-3% of website visitors convert on their first visit.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The other 97%? They leave.&lt;/p&gt;&#xA;&lt;p&gt;Retargeting brings them back by:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reminding them of your services&lt;/li&gt;&#xA;&lt;li&gt;Showing social proof and offers&lt;/li&gt;&#xA;&lt;li&gt;Staying top-of-mind until they&amp;rsquo;re ready&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-we-do-it&#34;&gt;How We Do It&lt;/h2&gt;&#xA;&lt;h3 id=&#34;multi-channel-remarketing&#34;&gt;Multi-Channel Remarketing&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Facebook/Instagram&lt;/strong&gt;: Visual ads to past visitors&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Google Display&lt;/strong&gt;: Banners across millions of websites&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;YouTube&lt;/strong&gt;: Video ads to engaged visitors&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Search Retargeting&lt;/strong&gt;: Show up when they search later&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;audience-segmentation&#34;&gt;Audience Segmentation&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Visited specific service pages&lt;/li&gt;&#xA;&lt;li&gt;Abandoned forms&lt;/li&gt;&#xA;&lt;li&gt;Spent 2+ minutes on site&lt;/li&gt;&#xA;&lt;li&gt;Past customers (reactivation)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;sequential-messaging&#34;&gt;Sequential Messaging&lt;/h3&gt;&#xA;&lt;p&gt;Day 1: Remind them what you offer&lt;br&gt;&#xA;Day 3: Share a testimonial or case study&lt;br&gt;&#xA;Day 7: Special offer or urgency&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1888,11 +1888,11 @@ footer p {
   transition: right 0.3s ease;
   z-index: 1000;
   overflow-y: auto;
-  display: none;
+  display: block !important;
 }
 
 .mobile-nav.active {
-  right: 0;
+  right: 0 !important;
 }
 
 .mobile-nav nav {
@@ -2003,20 +2003,49 @@ footer p {
     padding: 1rem 1.25rem;
   }
   
+  /* Hide desktop navigation completely on mobile */
   .desktop-nav {
-    display: none;
+    display: none !important;
+  }
+  
+  .desktop-nav ul,
+  .desktop-nav li,
+  .desktop-nav a {
+    display: none !important;
   }
   
   .desktop-cta {
-    display: none;
+    display: none !important;
   }
   
+  /* Show mobile menu toggle (hamburger) */
   .mobile-menu-toggle {
     display: flex !important;
   }
   
+  /* Mobile nav is positioned off-screen by default, slides in when .active */
   .mobile-nav {
-    display: block;
+    display: block !important;
+  }
+  
+  /* Disable all desktop dropdown behavior on mobile */
+  .desktop-nav .has-dropdown,
+  .desktop-nav .dropdown-menu,
+  .desktop-nav .dropdown-toggle {
+    display: none !important;
+  }
+  
+  /* Ensure mobile dropdowns work correctly */
+  .mobile-has-dropdown {
+    position: relative !important;
+  }
+  
+  .mobile-submenu {
+    position: static !important;
+    width: 100%;
+    transform: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
   }
 }
 
@@ -2054,16 +2083,27 @@ footer p {
 
 /* Desktop - Hide Mobile Nav Components */
 @media (min-width: 769px) {
-  .mobile-nav {
+  /* Hide all mobile navigation components on desktop */
+  .mobile-nav,
+  .mobile-nav.active,
+  .mobile-overlay,
+  .mobile-overlay.active,
+  .mobile-menu-toggle,
+  .mobile-menu-toggle.active {
     display: none !important;
   }
   
-  .mobile-overlay {
-    display: none !important;
+  /* Ensure desktop navigation is visible */
+  .desktop-nav {
+    display: flex !important;
   }
   
-  .mobile-menu-toggle {
-    display: none !important;
+  .desktop-nav ul {
+    display: flex !important;
+  }
+  
+  .desktop-cta {
+    display: inline-block !important;
   }
 }
 
@@ -2145,56 +2185,66 @@ footer p {
 .mobile-dropdown-toggle {
   position: relative;
   padding-right: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-dropdown-toggle::after {
   content: '›';
   position: absolute;
-  right: 0;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
   font-size: 1.5rem;
   transition: transform var(--transition-base);
+  color: var(--bright-blue);
 }
 
 .mobile-has-dropdown.active .mobile-dropdown-toggle::after {
   transform: translateY(-50%) rotate(-90deg);
 }
 
+/* Mobile submenu: inline expansion, not absolute positioning */
 .mobile-submenu {
+  position: static !important;
   list-style: none;
   padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  background: var(--gray-light);
-  border-radius: var(--radius-sm);
-  margin-top: 0.5rem;
+  margin: 0.75rem 0 0 0;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transform: none;
 }
 
 .mobile-has-dropdown.active .mobile-submenu {
-  max-height: 300px;
+  display: flex;
 }
 
 .mobile-submenu li {
-  border-bottom: 1px solid rgba(10, 22, 40, 0.05);
-}
-
-.mobile-submenu li:last-child {
-  border-bottom: none;
+  margin: 0;
+  border: none;
 }
 
 .mobile-submenu a {
-  padding: 0.875rem 1.5rem !important;
+  display: block;
+  padding: 0.875rem 1.25rem !important;
   font-size: 0.9375rem !important;
   color: var(--gray-dark) !important;
+  text-align: center;
+  border-radius: var(--radius-md);
+  background: rgba(10, 22, 40, 0.04) !important;
+  transition: all var(--transition-base);
 }
 
 .mobile-submenu a:hover {
-  background: white;
+  background: rgba(0, 102, 255, 0.08) !important;
   color: var(--bright-blue) !important;
-  padding-left: 2rem !important;
+  padding-left: 1.25rem !important;
 }
 
 /* Prevent dropdown arrow from getting underline */

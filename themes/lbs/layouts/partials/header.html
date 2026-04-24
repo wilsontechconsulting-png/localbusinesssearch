@@ -62,7 +62,7 @@
           {{ if .HasChildren }}
             <!-- Parent item with submenu -->
             <li class="mobile-has-dropdown">
-              <a href="{{ .URL }}" class="mobile-dropdown-toggle">{{ .Name }}</a>
+              <a href="{{ .URL }}" class="mobile-dropdown-toggle" aria-expanded="false">{{ .Name }}</a>
               <ul class="mobile-submenu">
                 {{ range .Children }}
                   <li><a href="{{ .URL }}">{{ .Name }}</a></li>
@@ -106,11 +106,19 @@ function toggleMobileMenu() {
   const isOpen = mobileNav.classList.contains('active');
   
   if (isOpen) {
+    // Close main menu
     mobileNav.classList.remove('active');
     mobileOverlay.classList.remove('active');
     mobileMenuToggle.classList.remove('active');
     mobileMenuToggle.setAttribute('aria-expanded', 'false');
     body.style.overflow = '';
+    
+    // Close all open submenus
+    document.querySelectorAll('.mobile-has-dropdown.active').forEach(dropdown => {
+      dropdown.classList.remove('active');
+      const toggle = dropdown.querySelector('.mobile-dropdown-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
   } else {
     mobileNav.classList.add('active');
     mobileOverlay.classList.add('active');
@@ -139,7 +147,19 @@ document.querySelectorAll('.mobile-dropdown-toggle').forEach(toggle => {
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
     const parent = this.parentElement;
+    const isOpen = parent.classList.contains('active');
+    
+    // Close all other dropdowns first
+    document.querySelectorAll('.mobile-has-dropdown.active').forEach(item => {
+      if (item !== parent) {
+        item.classList.remove('active');
+        item.querySelector('.mobile-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Toggle this dropdown
     parent.classList.toggle('active');
+    this.setAttribute('aria-expanded', !isOpen);
   });
 });
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.159.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.159.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     
 
@@ -27,7 +27,7 @@
 <meta name="author" content="Local Business Search">
 
 
-<link rel="canonical" href="http://localhost:1314/">
+<link rel="canonical" href="http://localhost:1313/">
 
 
 <meta name="robots" content="index, follow">
@@ -38,10 +38,10 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:1314/">
+<meta property="og:url" content="http://localhost:1313/">
 <meta property="og:title" content="Local Business Search - AI. Business Process.">
 <meta property="og:description" content="We don&#39;t just run ads. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.">
-<meta property="og:image" content="http://localhost:1314/images/lbs-logo.jpg">
+<meta property="og:image" content="http://localhost:1313/images/lbs-logo.jpg">
 <meta property="og:site_name" content="Local Business Search - AI. Business Process.">
 <meta property="og:locale" content="en_US">
 
@@ -49,16 +49,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Jed_X_Wilson">
 <meta name="twitter:creator" content="@Jed_X_Wilson">
-<meta name="twitter:url" content="http://localhost:1314/">
+<meta name="twitter:url" content="http://localhost:1313/">
 <meta name="twitter:title" content="Local Business Search - AI. Business Process.">
 <meta name="twitter:description" content="We don&#39;t just run ads. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.">
-<meta name="twitter:image" content="http://localhost:1314/images/lbs-logo.jpg">
+<meta name="twitter:image" content="http://localhost:1313/images/lbs-logo.jpg">
 
 
 
 
 
-<link rel="icon" type="image/x-icon" href="http://localhost:1314/favicon.ico">
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
 
 
 <meta name="theme-color" content="#0A1628">
@@ -85,21 +85,21 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Local Business Search - AI. Business Process.",
-  "url": "http:\/\/localhost:1314\/",
+  "url": "http:\/\/localhost:1313\/",
   "description": "AI-driven business systems for local companies. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.",
   "publisher": {
     "@type": "Organization",
     "name": "Local Business Search",
     "logo": {
       "@type": "ImageObject",
-      "url": "http:\/\/localhost:1314\/images/lbs-logo.jpg"
+      "url": "http:\/\/localhost:1313\/images/lbs-logo.jpg"
     }
   },
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "http:\/\/localhost:1314\/search/?q={search_term_string}"
+      "urlTemplate": "http:\/\/localhost:1313\/search/?q={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   },
@@ -114,9 +114,9 @@
   "@type": "LocalBusiness",
   "name": "Local Business Search",
   "description": "AI-driven business systems for local companies. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.",
-  "url": "http:\/\/localhost:1314\/",
-  "logo": "http:\/\/localhost:1314\/images/lbs-logo.jpg",
-  "image": "http:\/\/localhost:1314\/images/lbs-logo.jpg",
+  "url": "http:\/\/localhost:1313\/",
+  "logo": "http:\/\/localhost:1313\/images/lbs-logo.jpg",
+  "image": "http:\/\/localhost:1313\/images/lbs-logo.jpg",
   "telephone": "+1-618-741-6143",
   "email": "jed@powerofadvertising.com",
   "address": {
@@ -287,7 +287,7 @@
           
             
             <li class="mobile-has-dropdown">
-              <a href="/platform/" class="mobile-dropdown-toggle">The System</a>
+              <a href="/platform/" class="mobile-dropdown-toggle" aria-expanded="false">The System</a>
               <ul class="mobile-submenu">
                 
                   <li><a href="/business-operations/">Business Systems</a></li>
@@ -355,11 +355,19 @@ function toggleMobileMenu() {
   const isOpen = mobileNav.classList.contains('active');
   
   if (isOpen) {
+    
     mobileNav.classList.remove('active');
     mobileOverlay.classList.remove('active');
     mobileMenuToggle.classList.remove('active');
     mobileMenuToggle.setAttribute('aria-expanded', 'false');
     body.style.overflow = '';
+    
+    
+    document.querySelectorAll('.mobile-has-dropdown.active').forEach(dropdown => {
+      dropdown.classList.remove('active');
+      const toggle = dropdown.querySelector('.mobile-dropdown-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
   } else {
     mobileNav.classList.add('active');
     mobileOverlay.classList.add('active');
@@ -388,7 +396,19 @@ document.querySelectorAll('.mobile-dropdown-toggle').forEach(toggle => {
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
     const parent = this.parentElement;
+    const isOpen = parent.classList.contains('active');
+    
+    
+    document.querySelectorAll('.mobile-has-dropdown.active').forEach(item => {
+      if (item !== parent) {
+        item.classList.remove('active');
+        item.querySelector('.mobile-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    
     parent.classList.toggle('active');
+    this.setAttribute('aria-expanded', !isOpen);
   });
 });
 
@@ -483,7 +503,7 @@ document.addEventListener('keydown', function(e) {
             
                 
 
-<article class="blog-card" data-href="http://localhost:1314/blog/hvac-software-chaos/" style="cursor: pointer;">
+<article class="blog-card" data-href="http://localhost:1313/blog/hvac-software-chaos/" style="cursor: pointer;">
   
   <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1200&amp;auto=format&amp;fit=crop" alt="Your HVAC Business Is Buried in Software—And It&#39;s Costing You More Than Just Monthly Fees" class="blog-card-image">
   
@@ -494,7 +514,7 @@ document.addEventListener('keydown', function(e) {
     
     
     <h3 class="blog-card-title">
-      <a href="http://localhost:1314/blog/hvac-software-chaos/">Your HVAC Business Is Buried in Software—And It&#39;s Costing You More Than Just Monthly Fees</a>
+      <a href="http://localhost:1313/blog/hvac-software-chaos/">Your HVAC Business Is Buried in Software—And It&#39;s Costing You More Than Just Monthly Fees</a>
     </h3>
     
     
@@ -524,7 +544,7 @@ document.addEventListener('keydown', function(e) {
         <span>9 min</span>
         
       </div>
-      <a href="http://localhost:1314/blog/hvac-software-chaos/" class="blog-read-more">
+      <a href="http://localhost:1313/blog/hvac-software-chaos/" class="blog-read-more">
         Read <span>→</span>
       </a>
     </div>
@@ -534,7 +554,7 @@ document.addEventListener('keydown', function(e) {
             
                 
 
-<article class="blog-card" data-href="http://localhost:1314/blog/plumbing-tech-stack-overload/" style="cursor: pointer;">
+<article class="blog-card" data-href="http://localhost:1313/blog/plumbing-tech-stack-overload/" style="cursor: pointer;">
   
   <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&amp;auto=format&amp;fit=crop" alt="Your Plumbing Business Doesn&#39;t Need More Apps—It Needs Systems That Actually Talk to Each Other" class="blog-card-image">
   
@@ -545,7 +565,7 @@ document.addEventListener('keydown', function(e) {
     
     
     <h3 class="blog-card-title">
-      <a href="http://localhost:1314/blog/plumbing-tech-stack-overload/">Your Plumbing Business Doesn&#39;t Need More Apps—It Needs Systems That Actually Talk to Each Other</a>
+      <a href="http://localhost:1313/blog/plumbing-tech-stack-overload/">Your Plumbing Business Doesn&#39;t Need More Apps—It Needs Systems That Actually Talk to Each Other</a>
     </h3>
     
     
@@ -578,7 +598,7 @@ document.addEventListener('keydown', function(e) {
         <span>8 min</span>
         
       </div>
-      <a href="http://localhost:1314/blog/plumbing-tech-stack-overload/" class="blog-read-more">
+      <a href="http://localhost:1313/blog/plumbing-tech-stack-overload/" class="blog-read-more">
         Read <span>→</span>
       </a>
     </div>
@@ -588,7 +608,7 @@ document.addEventListener('keydown', function(e) {
             
                 
 
-<article class="blog-card" data-href="http://localhost:1314/blog/building-website-with-ai/" style="cursor: pointer;">
+<article class="blog-card" data-href="http://localhost:1313/blog/building-website-with-ai/" style="cursor: pointer;">
   
   <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&amp;auto=format&amp;fit=crop" alt="We Just Built This Entire Website in 12 Hours Using AI—Here&#39;s What That Means for Your Business" class="blog-card-image">
   
@@ -599,7 +619,7 @@ document.addEventListener('keydown', function(e) {
     
     
     <h3 class="blog-card-title">
-      <a href="http://localhost:1314/blog/building-website-with-ai/">We Just Built This Entire Website in 12 Hours Using AI—Here&#39;s What That Means for Your Business</a>
+      <a href="http://localhost:1313/blog/building-website-with-ai/">We Just Built This Entire Website in 12 Hours Using AI—Here&#39;s What That Means for Your Business</a>
     </h3>
     
     
@@ -630,7 +650,7 @@ document.addEventListener('keydown', function(e) {
         <span>5 min</span>
         
       </div>
-      <a href="http://localhost:1314/blog/building-website-with-ai/" class="blog-read-more">
+      <a href="http://localhost:1313/blog/building-website-with-ai/" class="blog-read-more">
         Read <span>→</span>
       </a>
     </div>
