@@ -62,7 +62,10 @@
           {{ if .HasChildren }}
             <!-- Parent item with submenu -->
             <li class="mobile-has-dropdown">
-              <a href="{{ .URL }}" class="mobile-dropdown-toggle" aria-expanded="false">{{ .Name }}</a>
+              <a href="{{ .URL }}" class="mobile-dropdown-toggle" aria-expanded="false">
+                <span>{{ .Name }}</span>
+                <span class="dropdown-caret">▾</span>
+              </a>
               <ul class="mobile-submenu">
                 {{ range .Children }}
                   <li><a href="{{ .URL }}">{{ .Name }}</a></li>

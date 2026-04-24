@@ -1926,7 +1926,7 @@ footer p {
 
 .mobile-nav a:hover {
   color: var(--bright-blue);
-  padding-left: 0.5rem;
+  /* Removed padding-left to prevent jitter */
 }
 
 .mobile-cta-item {
@@ -2046,6 +2046,25 @@ footer p {
     transform: none !important;
     box-shadow: none !important;
     background: transparent !important;
+  }
+  
+  /* Remove hover movement/transforms on mobile to prevent jitter */
+  .mobile-nav a:hover,
+  .mobile-dropdown-toggle:hover {
+    transform: none !important;
+    padding-left: inherit !important;
+    padding-right: inherit !important;
+  }
+  
+  /* Remove any pseudo-elements that could create lines */
+  .mobile-nav li::before,
+  .mobile-nav li::after,
+  .mobile-has-dropdown::before,
+  .mobile-has-dropdown::after,
+  .dropdown::before,
+  .dropdown::after {
+    display: none !important;
+    content: none !important;
   }
 }
 
@@ -2184,25 +2203,42 @@ footer p {
 
 .mobile-dropdown-toggle {
   position: relative;
-  padding-right: 2rem !important;
-  display: flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0 !important;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
 }
 
-.mobile-dropdown-toggle::after {
-  content: '›';
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-  font-size: 1.5rem;
-  transition: transform var(--transition-base);
+/* Remove any pseudo-elements that could create vertical lines */
+.mobile-dropdown-toggle::before,
+.mobile-dropdown-toggle::after,
+.mobile-has-dropdown::before,
+.mobile-has-dropdown::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Simple inline caret using text character */
+.mobile-dropdown-toggle .dropdown-caret {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  font-size: 0.75rem;
   color: var(--bright-blue);
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+  line-height: 1;
 }
 
-.mobile-has-dropdown.active .mobile-dropdown-toggle::after {
-  transform: translateY(-50%) rotate(-90deg);
+.mobile-has-dropdown.active .mobile-dropdown-toggle .dropdown-caret {
+  transform: rotate(180deg);
 }
 
 /* Mobile submenu: inline expansion, not absolute positioning */
@@ -2244,7 +2280,7 @@ footer p {
 .mobile-submenu a:hover {
   background: rgba(0, 102, 255, 0.08) !important;
   color: var(--bright-blue) !important;
-  padding-left: 1.25rem !important;
+  /* Removed padding-left to prevent jitter */
 }
 
 /* Prevent dropdown arrow from getting underline */
