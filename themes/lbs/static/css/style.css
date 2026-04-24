@@ -1888,11 +1888,11 @@ footer p {
   transition: right 0.3s ease;
   z-index: 1000;
   overflow-y: auto;
-  display: none;
+  display: block !important;
 }
 
 .mobile-nav.active {
-  right: 0;
+  right: 0 !important;
 }
 
 .mobile-nav nav {
