@@ -5,8 +5,9 @@ draft: false
 categories: ["AI Automation"]
 tags: ["AI", "Business Automation", "Productivity", "Real-Time", "ProductiveBot"]
 author: "Jed Wilson"
-featured_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80"
-image_credit: "Photo by <a href='https://unsplash.com/@levart_photographer' target='_blank' rel='noopener'>Levart Photographer</a> on <a href='https://unsplash.com/photos/a-computer-generated-image-of-a-cube-surrounded-by-spheres-kPxsqUGneXQ' target='_blank' rel='noopener'>Unsplash</a>"
+image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80"
+image_credit: "Levart Photographer"
+image_credit_url: "https://unsplash.com/@levart_photographer"
 description: "Right now, as you read this, an AI is writing it. Not editing. Not suggesting. Writing. Here's what that actually means for your business."
 ---
 
