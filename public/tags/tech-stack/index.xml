@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tech Stack on Local Business Search - AI. Business Process.</title>
-    <link>http://localhost:1313/tags/tech-stack/</link>
-    <description>Recent content in Tech Stack on Local Business Search - AI. Business Process.</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 15:27:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tech-stack/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Your HVAC Business Is Buried in Software—And It&#39;s Costing You More Than Just Monthly Fees</title>
-      <link>http://localhost:1313/blog/hvac-software-chaos/</link>
-      <pubDate>Thu, 23 Apr 2026 15:27:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/hvac-software-chaos/</guid>
-      <description>&lt;h2 id=&#34;how-many-tabs-do-you-have-open-right-now&#34;&gt;How Many Tabs Do You Have Open Right Now?&lt;/h2&gt;&#xA;&lt;p&gt;Let me guess what&amp;rsquo;s running on your phone (or computer) to manage your HVAC business:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ServiceTitan (or FieldEdge, or Jobber, or Housecall Pro)&lt;/li&gt;&#xA;&lt;li&gt;QuickBooks&lt;/li&gt;&#xA;&lt;li&gt;Your CRM (or the half-working one built into your dispatch software)&lt;/li&gt;&#xA;&lt;li&gt;Google Ads and Facebook Ads Manager&lt;/li&gt;&#xA;&lt;li&gt;Email (Gmail or Outlook)&lt;/li&gt;&#xA;&lt;li&gt;Texts with customers and techs&lt;/li&gt;&#xA;&lt;li&gt;Google Calendar (and maybe a separate booking tool)&lt;/li&gt;&#xA;&lt;li&gt;Zapier trying to make these things talk to each other&lt;/li&gt;&#xA;&lt;li&gt;Something for inventory and parts ordering&lt;/li&gt;&#xA;&lt;li&gt;Another tool for maintenance agreements&lt;/li&gt;&#xA;&lt;li&gt;Maybe a separate estimating tool&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;That&amp;rsquo;s 11+ different systems.&lt;/strong&gt; And we&amp;rsquo;re not even counting the spreadsheets you maintain because none of this software does exactly what you need.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech Stack on Local Business Search - AI. Business Process.</title><link>https://localbusinesssearch.com/tags/tech-stack/</link><description>Recent content in Tech Stack on Local Business Search - AI. Business Process.</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 23 Apr 2026 15:27:00 -0500</lastBuildDate><atom:link href="https://localbusinesssearch.com/tags/tech-stack/index.xml" rel="self" type="application/rss+xml"/><item><title>Your HVAC Business Is Buried in Software—And It's Costing You More Than Just Monthly Fees</title><link>https://localbusinesssearch.com/blog/hvac-software-chaos/</link><pubDate>Thu, 23 Apr 2026 15:27:00 -0500</pubDate><guid>https://localbusinesssearch.com/blog/hvac-software-chaos/</guid><description>&lt;h2 id="how-many-tabs-do-you-have-open-right-now"&gt;How Many Tabs Do You Have Open Right Now?&lt;/h2&gt;
+&lt;p&gt;Let me guess what&amp;rsquo;s running on your phone (or computer) to manage your HVAC business:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ServiceTitan (or FieldEdge, or Jobber, or Housecall Pro)&lt;/li&gt;
+&lt;li&gt;QuickBooks&lt;/li&gt;
+&lt;li&gt;Your CRM (or the half-working one built into your dispatch software)&lt;/li&gt;
+&lt;li&gt;Google Ads and Facebook Ads Manager&lt;/li&gt;
+&lt;li&gt;Email (Gmail or Outlook)&lt;/li&gt;
+&lt;li&gt;Texts with customers and techs&lt;/li&gt;
+&lt;li&gt;Google Calendar (and maybe a separate booking tool)&lt;/li&gt;
+&lt;li&gt;Zapier trying to make these things talk to each other&lt;/li&gt;
+&lt;li&gt;Something for inventory and parts ordering&lt;/li&gt;
+&lt;li&gt;Another tool for maintenance agreements&lt;/li&gt;
+&lt;li&gt;Maybe a separate estimating tool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;That&amp;rsquo;s 11+ different systems.&lt;/strong&gt; And we&amp;rsquo;re not even counting the spreadsheets you maintain because none of this software does exactly what you need.&lt;/p&gt;</description></item></channel></rss>
