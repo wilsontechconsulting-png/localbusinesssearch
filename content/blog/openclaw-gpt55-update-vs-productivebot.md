@@ -6,8 +6,8 @@ description: "OpenClaw just shipped GPT-5.5, image generation, and subagents—b
 categories: ["AI", "Automation", "Business Tools"]
 tags: ["OpenClaw", "ProductiveBot", "GPT-5.5", "AI Assistants", "Business Automation"]
 author: "Local Business Search Team"
-featured_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80"
-image_credit: "Photo by Google DeepMind on Unsplash"
+featured_image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80"
+image_credit: "Photo by Aideal Hwa on Unsplash"
 ---
 
 If you're following AI automation tools for local businesses, you've probably heard about **OpenClaw's latest update**. Version 2026.4.23 just dropped with some genuinely impressive features: **GPT-5.5 support**, **image generation and editing**, and **multi-agent workflows** (subagents).
