@@ -3,7 +3,9 @@
 */}}
 {{ $post := . }}
 <article class="blog-card" data-href="{{ $post.Permalink }}" style="cursor: pointer;">
-  {{ if $post.Params.image }}
+  {{ if $post.Params.featured_image }}
+  <img src="{{ $post.Params.featured_image }}" alt="{{ $post.Title }}" class="blog-card-image">
+  {{ else if $post.Params.image }}
   <img src="{{ $post.Params.image }}" alt="{{ $post.Title }}" class="blog-card-image">
   {{ else }}
   <div class="blog-card-image"></div>
