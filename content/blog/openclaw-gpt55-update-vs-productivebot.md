@@ -77,10 +77,10 @@ That 5-step gap? That's where days (or weeks) disappear.
 
 ## The ProductiveBot.AI Difference
 
-We switched to **ProductiveBot.AI** for our clients after watching this pattern repeat across multiple self-hosted tools. Here's why it works:
+We switched to **[ProductiveBot.AI](https://productivebot-hardware.pages.dev)** for our clients after watching this pattern repeat across multiple self-hosted tools. Here's why it works:
 
 ### 1. Zero Setup Required
-No OAuth puzzles. No version management. No Discord dependency. You get a working AI assistant in **minutes**, not days.
+No OAuth puzzles. No version management. No Discord dependency. You get a working AI assistant in **minutes**, not days with [pre-configured hardware bundles](https://productivebot-hardware.pages.dev).
 
 ### 2. Managed Reliability
 When updates ship, they're **tested before you see them**. No "agent couldn't generate a response" surprises on Monday morning.
@@ -163,7 +163,7 @@ Interested in AI automation that actually saves time instead of consuming it?
 - ✅ **Multi-agent workflows** (automatic task delegation)
 - ✅ **Managed reliability** (updates that don't break things)
 
-**Learn more:** [ProductiveBot.AI](https://productivebot.ai)
+**Ready to get started?** [Get your own ProductiveBot here](https://productivebot-hardware.pages.dev) — fully managed hardware + software bundles that work out of the box.
 
 Or contact Local Business Search to discuss how AI automation can work **for** your business instead of becoming another project **on** your plate.
 
