@@ -22,5 +22,10 @@
     </main>
     
     {{ partial "footer.html" . }}
+    
+    {{/* Blog Alert Auto-Scroll Script */}}
+    {{ if eq .Page.RelPermalink "/" }}
+    <script src="{{ "js/blog-alert.js" | relURL }}"></script>
+    {{ end }}
 </body>
 </html>

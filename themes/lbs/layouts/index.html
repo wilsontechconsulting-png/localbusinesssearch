@@ -1,4 +1,29 @@
 {{ define "main" }}
+<!-- Latest Blog Post Alert Banner -->
+{{ $latestPosts := first 2 (where .Site.RegularPages "Section" "blog") }}
+{{ if $latestPosts }}
+<div class="blog-alert-banner">
+    <div class="blog-alert-container">
+        <div class="blog-alert-label">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 1L10.5 6L16 7L12 11L13 16L8 13.5L3 16L4 11L0 7L5.5 6L8 1Z" fill="currentColor"/>
+            </svg>
+            <span>NEW</span>
+        </div>
+        <div class="blog-alert-content">
+            {{ range $index, $post := $latestPosts }}
+            <div class="blog-alert-item {{ if eq $index 0 }}active{{ end }}" data-index="{{ $index }}">
+                <a href="{{ $post.Permalink }}" class="blog-alert-link">
+                    <span class="blog-alert-title">{{ $post.Title }}</span>
+                    <span class="blog-alert-arrow">→</span>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
+
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
