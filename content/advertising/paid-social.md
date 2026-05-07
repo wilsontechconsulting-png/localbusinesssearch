@@ -32,3 +32,4 @@ Traffic → Lead → AI Response → Booked Appointment
 ---
 
 [See How It Works](/platform/)
+layout: "paid-social"

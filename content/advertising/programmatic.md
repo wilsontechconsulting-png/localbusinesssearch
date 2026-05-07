@@ -46,3 +46,4 @@ OTT/CTV ad → Landing page → AI capture → Automated follow-up → Booked ap
 ---
 
 [See How It Works](/platform/)
+layout: "programmatic"
