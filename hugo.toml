@@ -32,21 +32,25 @@ theme = 'lbs'
     url = '/advertising/'
     weight = 4
   [[menu.main]]
+    name = 'Baselayer'
+    url = '/baselayer/'
+    weight = 5
+  [[menu.main]]
     name = 'Industries'
     url = '/industries/'
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = 'Results'
     url = '/results/'
-    weight = 6
+    weight = 7
   [[menu.main]]
     name = 'Resources'
     url = '/blog/'
-    weight = 7
+    weight = 8
   [[menu.main]]
     name = 'About'
     url = '/about/'
-    weight = 8
+    weight = 9
 
 # SEO Settings
 enableRobotsTXT = true

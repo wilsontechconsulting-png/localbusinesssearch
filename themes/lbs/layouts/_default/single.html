@@ -1,5 +1,20 @@
 {{ define "main" }}
 <!-- Page Hero -->
+{{ if .Params.hero_image }}
+<section class="page-hero" style="background-image: linear-gradient(rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.7)), url('{{ .Params.hero_image }}'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center;">
+    <div class="container" style="position: relative;">
+        <h1 class="page-hero-title" style="color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-hero-subtitle" style="color: rgba(255,255,255,0.95); text-shadow: 0 1px 4px rgba(0,0,0,0.3);">{{ . }}</p>
+        {{ end }}
+        {{ with .Params.hero_credit }}
+        <p style="position: absolute; bottom: -30px; right: 0; font-size: 0.75rem; color: rgba(255,255,255,0.7);">
+            Photo by <a href="{{ $.Params.hero_credit_url }}" target="_blank" style="color: rgba(255,255,255,0.9);">{{ . }}</a> on Unsplash
+        </p>
+        {{ end }}
+    </div>
+</section>
+{{ else }}
 <section class="page-hero">
     <div class="container">
         <h1 class="page-hero-title">{{ .Title }}</h1>
@@ -8,6 +23,7 @@
         {{ end }}
     </div>
 </section>
+{{ end }}
 
 <!-- Content -->
 <section class="section section-light">
