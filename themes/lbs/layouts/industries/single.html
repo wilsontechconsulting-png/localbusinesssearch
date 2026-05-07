@@ -1,19 +1,23 @@
 {{ define "main" }}
-<!-- Page Hero -->
-<section class="page-hero">
+
+<!-- Hero Section -->
+<section class="hero">
     <div class="container">
-        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Industry Focus</span>
-        <h1 class="page-hero-title">{{ .Title }}</h1>
-        {{ with .Description }}
-        <p class="page-hero-subtitle">{{ . }}</p>
-        {{ end }}
+        <h1 class="hero-title">
+            {{ .Title }}
+        </h1>
+        <p class="hero-subtitle">{{ .Description }}</p>
+        <div class="hero-cta">
+            <a href="/demo/" class="btn btn-primary btn-large">Book a Demo</a>
+            <a href="/industries/" class="btn btn-secondary btn-large">All Industries</a>
+        </div>
     </div>
 </section>
 
-<!-- Main Content with Visual Sections -->
+<!-- Content -->
 <section class="section section-light">
-    <div class="container">
-        <article class="blog-article" style="max-width: 1100px; margin: 0 auto;">
+    <div class="container-narrow">
+        <article class="blog-article" style="max-width: 900px; margin: 0 auto; background: white; padding: 3rem; border-radius: 1rem; box-shadow: 0 4px 16px rgba(10, 22, 40, 0.08);">
             {{ .Content }}
         </article>
     </div>
@@ -22,31 +26,79 @@
 <!-- Related Industries -->
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Other Industries We Serve</h2>
+        <span class="section-label">Other Industries</span>
+        <h2 class="section-title">We Also Serve</h2>
+        
         <div class="industries-grid">
-            {{ $currentPage := .RelPermalink }}
-            {{ range where .Site.RegularPages "Section" "industries" }}
-                {{ if ne .RelPermalink $currentPage }}
-                <a href="{{ .RelPermalink }}" class="industry-card">
-                    {{ if eq .File.BaseFileName "home-services" }}<h3>🏠 Home Services</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "medical" }}<h3>⚕️ Medical</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "legal" }}<h3>⚖️ Legal</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "local-retail" }}<h3>🛍️ Local Retail</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "franchises" }}<h3>🏢 Franchises</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "municipalities" }}<h3>🏛️ Municipalities</h3>{{ end }}
-                    <p>{{ .Description }}</p>
-                </a>
-                {{ end }}
-            {{ end }}
+            <a href="/industries/home-services/" class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&auto=format&fit=crop&q=80" alt="Home Services" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Home Services</h3>
+                    <p>HVAC, Plumbing, Electrical, Roofing</p>
+                </div>
+            </a>
+            
+            <a href="/industries/medical/" class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&auto=format&fit=crop&q=80" alt="Medical" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Medical</h3>
+                    <p>Dentists, Med Spas, Chiropractors</p>
+                </div>
+            </a>
+            
+            <a href="/industries/legal/" class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&auto=format&fit=crop&q=80" alt="Legal" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Legal</h3>
+                    <p>Personal Injury, Family Law</p>
+                </div>
+            </a>
+            
+            <a href="/industries/local-retail/" class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&auto=format&fit=crop&q=80" alt="Local Retail" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Local Retail</h3>
+                    <p>Restaurants, Salons, Gyms</p>
+                </div>
+            </a>
+            
+            <a href="/industries/franchises/" class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80" alt="Franchises" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Franchises</h3>
+                    <p>Multi-location Businesses</p>
+                </div>
+            </a>
+            
+            <a href="/industries/municipalities/" class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&auto=format&fit=crop&q=80" alt="Municipalities" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Municipalities</h3>
+                    <p>Cities, Towns, Government</p>
+                </div>
+            </a>
         </div>
     </div>
 </section>
 
-<!-- CTA -->
+<!-- Final CTA -->
 {{ partial "components/cta-band.html" (dict 
-    "title" "See It for Your Business" 
-    "subtitle" "We'll map your current process and show you exactly where you're losing leads and revenue." 
-    "button_text" "Schedule a Free Audit" 
+    "title" "Ready to Build Systems for Your Business?" 
+    "subtitle" "We understand your industry. Let's talk about your specific challenges." 
+    "button_text" "Schedule Your Consultation" 
     "button_link" "/demo/") 
 }}
+
 {{ end }}
