@@ -1,17 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Local Business Search - AI. Business Process.</title><link>https://localbusinesssearch.com/tags/ai/</link><description>Recent content in AI on Local Business Search - AI. Business Process.</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 24 Apr 2026 16:11:00 -0500</lastBuildDate><atom:link href="https://localbusinesssearch.com/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>This Blog Post Is Writing Itself: A Real-Time Look at ProductiveBot.AI in Action</title><link>https://localbusinesssearch.com/blog/productivebot-ai-business-assistant/</link><pubDate>Fri, 24 Apr 2026 16:11:00 -0500</pubDate><guid>https://localbusinesssearch.com/blog/productivebot-ai-business-assistant/</guid><description>&lt;p&gt;&lt;strong&gt;Meta moment:&lt;/strong&gt; The blog post you&amp;rsquo;re reading right now is being written in real-time by ProductiveBot.AI while I (Jed) talk through what I want to say. Not tomorrow. Not after I draft it. &lt;em&gt;Right now.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;And that&amp;rsquo;s exactly the point.&lt;/p&gt;
-&lt;h2 id="what-just-happened-here"&gt;What Just Happened Here&lt;/h2&gt;
-&lt;p&gt;Five minutes ago, I told my AI assistant, Maven: &amp;ldquo;Write a blog post about ProductiveBot.AI and what it does for consumers and businesses. We&amp;rsquo;re talking about this right now on a live feed, so write it professionally, match our brand, pull an image from Unsplash, and make it fit our Local Business Search positioning.&amp;rdquo;&lt;/p&gt;</description></item><item><title>We Just Built This Entire Website in 12 Hours Using AI—Here's What That Means for Your Business</title><link>https://localbusinesssearch.com/blog/building-website-with-ai/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/building-website-with-ai/</guid><description>&lt;h2 id="let-me-be-honest-with-you"&gt;Let Me Be Honest With You&lt;/h2&gt;
-&lt;p&gt;Three days ago, this website didn&amp;rsquo;t exist.&lt;/p&gt;
-&lt;p&gt;Today, you&amp;rsquo;re reading a blog post on a fully functional, professionally designed, multi-page website with:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;18+ pages of content&lt;/li&gt;
-&lt;li&gt;Custom contact forms&lt;/li&gt;
-&lt;li&gt;Mobile-responsive design across all devices&lt;/li&gt;
-&lt;li&gt;A complete blog system&lt;/li&gt;
-&lt;li&gt;Strategic CTAs throughout&lt;/li&gt;
-&lt;li&gt;Professional copywriting&lt;/li&gt;
-&lt;li&gt;And it all works flawlessly&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Total time invested:&lt;/strong&gt; About 12 hours of actual work.&lt;/p&gt;
-&lt;p&gt;No, I didn&amp;rsquo;t hire a $15,000 agency. No, I didn&amp;rsquo;t spend 6 weeks going back and forth with developers.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Local Business Search - AI. Business Process.</title>
+    <link>http://localhost:1314/tags/ai/</link>
+    <description>Recent content in AI on Local Business Search - AI. Business Process.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1314/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Most Local Businesses Don&#39;t Need More Software—They Need Better Systems</title>
+      <link>http://localhost:1314/blog/why-local-businesses-dont-need-more-software/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1314/blog/why-local-businesses-dont-need-more-software/</guid>
+      <description>&lt;h2 id=&#34;the-problem-usually-isnt-a-missing-tool&#34;&gt;The Problem Usually Isn&amp;rsquo;t a Missing Tool&lt;/h2&gt;&#xA;&lt;p&gt;When a local business feels messy, the first instinct is usually:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;We probably need software for that.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you add another tool.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Pretty soon you&amp;rsquo;re paying for a CRM, an email platform, scheduling software, lead forms, a quoting tool, accounting software, a text platform, ad dashboards, and whatever random spreadsheet is holding the whole thing together.&lt;/p&gt;&#xA;&lt;p&gt;And somehow, even after all that, things still feel disorganized.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This Blog Post Is Writing Itself: A Real-Time Look at ProductiveBot.AI in Action</title>
+      <link>http://localhost:1314/blog/productivebot-ai-business-assistant/</link>
+      <pubDate>Fri, 24 Apr 2026 16:11:00 -0500</pubDate>
+      <guid>http://localhost:1314/blog/productivebot-ai-business-assistant/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Meta moment:&lt;/strong&gt; The blog post you&amp;rsquo;re reading right now is being written in real-time by ProductiveBot.AI while I (Jed) talk through what I want to say. Not tomorrow. Not after I draft it. &lt;em&gt;Right now.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;And that&amp;rsquo;s exactly the point.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-just-happened-here&#34;&gt;What Just Happened Here&lt;/h2&gt;&#xA;&lt;p&gt;Five minutes ago, I told my AI assistant, Maven: &amp;ldquo;Write a blog post about ProductiveBot.AI and what it does for consumers and businesses. We&amp;rsquo;re talking about this right now on a live feed, so write it professionally, match our brand, pull an image from Unsplash, and make it fit our Local Business Search positioning.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>We Just Built This Entire Website in 12 Hours Using AI—Here&#39;s What That Means for Your Business</title>
+      <link>http://localhost:1314/blog/building-website-with-ai/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1314/blog/building-website-with-ai/</guid>
+      <description>&lt;h2 id=&#34;let-me-be-honest-with-you&#34;&gt;Let Me Be Honest With You&lt;/h2&gt;&#xA;&lt;p&gt;Three days ago, this website didn&amp;rsquo;t exist.&lt;/p&gt;&#xA;&lt;p&gt;Today, you&amp;rsquo;re reading a blog post on a fully functional, professionally designed, multi-page website with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;18+ pages of content&lt;/li&gt;&#xA;&lt;li&gt;Custom contact forms&lt;/li&gt;&#xA;&lt;li&gt;Mobile-responsive design across all devices&lt;/li&gt;&#xA;&lt;li&gt;A complete blog system&lt;/li&gt;&#xA;&lt;li&gt;Strategic CTAs throughout&lt;/li&gt;&#xA;&lt;li&gt;Professional copywriting&lt;/li&gt;&#xA;&lt;li&gt;And it all works flawlessly&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Total time invested:&lt;/strong&gt; About 12 hours of actual work.&lt;/p&gt;&#xA;&lt;p&gt;No, I didn&amp;rsquo;t hire a $15,000 agency. No, I didn&amp;rsquo;t spend 6 weeks going back and forth with developers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
