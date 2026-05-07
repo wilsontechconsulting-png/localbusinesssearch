@@ -1,54 +1,193 @@
 {{ define "main" }}
-<!-- Page Hero -->
-<section class="page-hero">
-    <div class="container">
-        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Industry Focus</span>
-        <h1 class="page-hero-title">{{ .Title }}</h1>
-        {{ with .Description }}
-        <p class="page-hero-subtitle">{{ . }}</p>
-        {{ end }}
-    </div>
-</section>
 
-<!-- Main Content -->
-<section class="section section-light">
+<!-- Hero Section -->
+<section class="hero">
     <div class="container">
-        <div style="max-width: 1100px; margin: 0 auto;">
-            <article>
-                {{ .Content }}
-            </article>
+        <h1 class="hero-title">
+            Business Systems for <span class="highlight">Local Retail</span>
+        </h1>
+        <p class="hero-subtitle">Drive foot traffic, capture walk-ins, and build loyal customers with automated marketing and retention systems that work 24/7.</p>
+        <div class="hero-cta">
+            <a href="/demo/" class="btn btn-primary btn-large">Schedule Free Audit</a>
+            <a href="#problem" class="btn btn-secondary btn-large">Learn More</a>
         </div>
     </div>
 </section>
 
-<!-- Related Industries -->
+<!-- The Problem -->
+<section id="problem" class="section section-light">
+    <div class="container">
+        <span class="section-label">The Challenge</span>
+        <h2 class="section-title">Online Competition Is Crushing Local Retail</h2>
+        
+        <div class="split-section" style="gap: var(--spacing-3xl); align-items: center;">
+            <div style="flex: 1;">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&auto=format&fit=crop&q=80" 
+                     alt="Local Retail Store" 
+                     style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);"
+                     loading="lazy">
+            </div>
+            <div style="flex: 1;">
+                <p style="font-size: 1.25rem; line-height: 1.8; color: var(--gray-dark); margin-bottom: var(--spacing-xl);">
+                    You have foot traffic. But you're losing revenue:
+                </p>
+                <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--spacing-md);">
+                    <li style="display: flex; align-items: start; gap: var(--spacing-md);">
+                        <span style="color: var(--bright-blue); font-size: 1.5rem; font-weight: 700;">×</span>
+                        <span style="font-size: 1.125rem; color: var(--gray-dark);"><strong>Walk-ins don't come back</strong> (no capture system)</span>
+                    </li>
+                    <li style="display: flex; align-items: start; gap: var(--spacing-md);">
+                        <span style="color: var(--bright-blue); font-size: 1.5rem; font-weight: 700;">×</span>
+                        <span style="font-size: 1.125rem; color: var(--gray-dark);"><strong>No email or SMS list</strong> to drive repeat business</span>
+                    </li>
+                    <li style="display: flex; align-items: start; gap: var(--spacing-md);">
+                        <span style="color: var(--bright-blue); font-size: 1.5rem; font-weight: 700;">×</span>
+                        <span style="font-size: 1.125rem; color: var(--gray-dark);"><strong>Slow periods</strong> with no automated way to fill them</span>
+                    </li>
+                    <li style="display: flex; align-items: start; gap: var(--spacing-md);">
+                        <span style="color: var(--bright-blue); font-size: 1.5rem; font-weight: 700;">×</span>
+                        <span style="font-size: 1.125rem; color: var(--gray-dark);"><strong>Competing with Amazon</strong> (but people still want local)</span>
+                    </li>
+                </ul>
+                <div style="margin-top: var(--spacing-2xl); padding: var(--spacing-lg); background: var(--blue-soft); border-radius: var(--radius-md); border-left: 4px solid var(--bright-blue);">
+                    <p style="font-weight: 600; color: var(--navy); font-size: 1.125rem; margin: 0;">
+                        You need systems to capture, retain, and reactivate customers automatically.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How We Help -->
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Other Industries We Serve</h2>
+        <span class="section-label">Solutions</span>
+        <h2 class="section-title">How We Help</h2>
+        
         <div class="industries-grid">
-            {{ $currentPage := .RelPermalink }}
-            {{ range where .Site.RegularPages "Section" "industries" }}
-                {{ if ne .RelPermalink $currentPage }}
-                <a href="{{ .RelPermalink }}" class="industry-card">
-                    {{ if eq .File.BaseFileName "home-services" }}<h3>🏠 Home Services</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "medical" }}<h3>⚕️ Medical</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "legal" }}<h3>⚖️ Legal</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "local-retail" }}<h3>🛍️ Local Retail</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "franchises" }}<h3>🏢 Franchises</h3>{{ end }}
-                    {{ if eq .File.BaseFileName "municipalities" }}<h3>🏛️ Municipalities</h3>{{ end }}
-                    <p>{{ .Description }}</p>
-                </a>
-                {{ end }}
-            {{ end }}
+            <div class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=80" alt="Customer Capture" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Customer Capture</h3>
+                    <p>QR codes, text-to-join, WiFi capture. Turn walk-ins into contacts you can market to.</p>
+                    <p style="color: var(--bright-blue); font-weight: 600; margin-top: 0.5rem;">→ Build your list automatically.</p>
+                </div>
+            </div>
+            
+            <div class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&auto=format&fit=crop&q=80" alt="Retention Campaigns" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Retention Campaigns</h3>
+                    <p>Automated SMS/email with promotions, events, new arrivals. Stay top-of-mind.</p>
+                    <p style="color: var(--bright-blue); font-weight: 600; margin-top: 0.5rem;">→ Drive repeat visits effortlessly.</p>
+                </div>
+            </div>
+            
+            <div class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1607863680198-23d4b2565df0?w=800&auto=format&fit=crop&q=80" alt="Slow Period Filling" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Slow Period Filling</h3>
+                    <p>Auto-blast "Tuesday 20% off" to your list when traffic is slow.</p>
+                    <p style="color: var(--bright-blue); font-weight: 600; margin-top: 0.5rem;">→ Fill gaps and smooth revenue.</p>
+                </div>
+            </div>
+            
+            <div class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=800&auto=format&fit=crop&q=80" alt="Local Ads" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Hyper-Local Ads</h3>
+                    <p>Facebook/Instagram geo-targeting within 5-10 miles. Drive foot traffic.</p>
+                    <p style="color: var(--bright-blue); font-weight: 600; margin-top: 0.5rem;">→ Get neighbors through the door.</p>
+                </div>
+            </div>
+            
+            <div class="industry-card">
+                <div class="industry-image">
+                    <img src="https://images.unsplash.com/photo-1556742400-b5b7b55c94d0?w=800&auto=format&fit=crop&q=80" alt="Loyalty Programs" loading="lazy">
+                </div>
+                <div class="industry-content">
+                    <h3>Loyalty Programs</h3>
+                    <p>Automated points, rewards, VIP tiers. Incentivize repeat purchases.</p>
+                    <p style="color: var(--bright-blue); font-weight: 600; margin-top: 0.5rem;">→ Turn customers into regulars.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- CTA -->
+<!-- Industries -->
+<section class="stats-section">
+    <div class="container">
+        <span class="section-label" style="color: rgba(255, 255, 255, 0.8);">Who We Work With</span>
+        <h2 class="section-title" style="color: white;">Local Retail Industries We Serve</h2>
+        
+        <div class="industries-grid">
+            <div class="industry-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <div class="industry-content" style="padding: var(--spacing-2xl); text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🍕</div>
+                    <h3 style="color: white;">Restaurants</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Fill slow nights, build regulars</p>
+                </div>
+            </div>
+            
+            <div class="industry-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <div class="industry-content" style="padding: var(--spacing-2xl); text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">✂️</div>
+                    <h3 style="color: white;">Salons & Spas</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Book appointments, reduce no-shows</p>
+                </div>
+            </div>
+            
+            <div class="industry-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <div class="industry-content" style="padding: var(--spacing-2xl); text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🏋️</div>
+                    <h3 style="color: white;">Gyms & Fitness</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Membership retention, class booking</p>
+                </div>
+            </div>
+            
+            <div class="industry-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <div class="industry-content" style="padding: var(--spacing-2xl); text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🛍️</div>
+                    <h3 style="color: white;">Boutiques</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">New arrivals, VIP events</p>
+                </div>
+            </div>
+            
+            <div class="industry-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <div class="industry-content" style="padding: var(--spacing-2xl); text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">☕</div>
+                    <h3 style="color: white;">Cafés & Coffee Shops</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Loyalty programs, daily specials</p>
+                </div>
+            </div>
+            
+            <div class="industry-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <div class="industry-content" style="padding: var(--spacing-2xl); text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🍺</div>
+                    <h3 style="color: white;">Bars & Breweries</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Event promotion, specials</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
 {{ partial "components/cta-band.html" (dict 
-    "title" "See It for Your Business" 
-    "subtitle" "We'll map your current process and show you exactly where you're losing leads and revenue." 
-    "button_text" "Schedule a Free Audit" 
+    "title" "See It for Your Store" 
+    "subtitle" "We'll show you how to capture walk-ins, fill slow periods, and build a loyal customer base." 
+    "button_text" "Schedule Free Audit" 
     "button_link" "/demo/") 
 }}
+
 {{ end }}
