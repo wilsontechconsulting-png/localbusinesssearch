@@ -1,6 +1,7 @@
 ---
 title: "We Used to Just Run Ads. Then We Realized That Wasn't Enough."
 description: "The story of how we evolved from a digital advertising agency into a business systems company that helps local businesses actually operate better."
+layout: "about"
 ---
 
 The story of how we evolved from a digital advertising agency into a business systems company that helps local businesses actually operate better.
