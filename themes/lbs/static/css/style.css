@@ -3584,3 +3584,126 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ============ BASELAYER IMAGE CARDS ============ */
+
+/* Service Cards with Images */
+.service-cards-with-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.service-card-image {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--light-gray);
+}
+
+.service-card-image:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--bright-blue);
+}
+
+.service-card-image .service-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-card-image .service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.service-card-image:hover .service-image img {
+  transform: scale(1.05);
+}
+
+.service-card-image .service-content {
+  padding: var(--spacing-xl);
+}
+
+.service-card-image .service-content h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: var(--spacing-md);
+}
+
+.service-card-image .service-content p {
+  color: var(--gray-dark);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Partner Cards with Images */
+.partner-card-image {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--light-gray);
+}
+
+.partner-card-image:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--bright-blue);
+}
+
+.partner-card-image .partner-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.partner-card-image .partner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.partner-card-image:hover .partner-image img {
+  transform: scale(1.05);
+}
+
+.partner-card-image .partner-content {
+  padding: var(--spacing-lg);
+}
+
+.partner-card-image .partner-content h3 {
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin-bottom: var(--spacing-sm);
+}
+
+.partner-card-image .partner-content p {
+  color: var(--gray-dark);
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive adjustments for image cards */
+@media (max-width: 768px) {
+  .service-cards-with-images {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-card-image .service-image {
+    height: 180px;
+  }
+  
+  .partner-card-image .partner-image {
+    height: 150px;
+  }
+}
