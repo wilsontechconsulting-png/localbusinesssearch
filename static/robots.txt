@@ -2,6 +2,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /pizza-world-branson/
 
 # Sitemaps
 Sitemap: https://localbusinesssearch.com/sitemap.xml
