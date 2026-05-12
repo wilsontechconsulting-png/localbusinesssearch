@@ -100,9 +100,9 @@
             <a href="/blog/" class="btn btn-primary">View All Posts</a>
         </div>
         
-        <div class="blog-grid">
+        <div class="home-blog-grid">
             {{ range $latestPosts }}
-                {{ partial "components/blog-card.html" . }}
+                {{ partial "components/home-blog-card.html" . }}
             {{ end }}
         </div>
     </div>

@@ -1,0 +1,30 @@
+{{/* Homepage Blog Card Component
+  Minimal card for homepage: image, category/tags, title only.
+*/}}
+{{ $post := . }}
+<a href="{{ $post.Permalink }}" class="home-blog-card" aria-label="Read {{ $post.Title }}">
+  <div class="home-blog-card-image-wrap">
+    {{ if $post.Params.featured_image }}
+    <img src="{{ $post.Params.featured_image }}" alt="{{ $post.Title }}" class="home-blog-card-image">
+    {{ else if $post.Params.image }}
+    <img src="{{ $post.Params.image }}" alt="{{ $post.Title }}" class="home-blog-card-image">
+    {{ else }}
+    <div class="home-blog-card-image home-blog-card-image-placeholder" aria-hidden="true"></div>
+    {{ end }}
+  </div>
+
+  <div class="home-blog-card-content">
+    <div class="home-blog-card-taxonomy" aria-label="Post categories and tags">
+      {{ if $post.Params.category }}
+      <span class="home-blog-category">{{ $post.Params.category }}</span>
+      {{ end }}
+      {{ if $post.Params.tags }}
+        {{ range first 3 $post.Params.tags }}
+        <span class="home-blog-tag">{{ . }}</span>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <h3 class="home-blog-card-title">{{ $post.Title }}</h3>
+  </div>
+</a>
