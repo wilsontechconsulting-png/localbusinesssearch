@@ -3752,3 +3752,12 @@ body {
     padding-right: 0;
   }
 }
+
+/* Baselayer pricing badge fit */
+.baselayer-pricing-grid .pricing-badge {
+  white-space: nowrap;
+  max-width: calc(100% - 2rem);
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
