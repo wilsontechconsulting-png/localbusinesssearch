@@ -3592,3 +3592,120 @@ footer p {
   }
 }
 
+
+/* Baselayer page refinements */
+.comparison-image,
+.stat-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+  background: var(--light-gray);
+}
+
+.comparison-image {
+  aspect-ratio: 16 / 10;
+}
+
+.stat-image {
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.comparison-image img,
+.stat-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.baselayer-pricing-grid {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  align-items: stretch;
+}
+
+.baselayer-pricing-grid .pricing-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.baselayer-pricing-grid .pricing-specs {
+  flex: 1;
+}
+
+.baselayer-pricing-grid .spec-item {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.baselayer-pricing-grid .spec-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--bright-blue);
+  box-shadow: 0 0 0 4px var(--blue-soft);
+}
+
+.baselayer-button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .comparison-card {
+    padding: var(--spacing-lg);
+  }
+
+  .baselayer-button-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .baselayer-button-row .btn,
+  .baselayer-pricing-grid .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Mobile overflow hardening */
+html,
+body {
+  overflow-x: clip;
+}
+
+.mobile-nav {
+  right: 0 !important;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-nav.active {
+  right: 0 !important;
+  transform: translateX(0);
+}
+
+.footer-brand > div[style*="width: 350px"],
+.footer-brand p[style*="max-width: 350px"] {
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
