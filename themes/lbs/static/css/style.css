@@ -3709,3 +3709,23 @@ body {
   width: 100% !important;
   box-sizing: border-box;
 }
+
+/* Baselayer stats image sizing fix */
+.stats-section .stat-card .stat-image {
+  height: 150px;
+  flex: 0 0 150px;
+}
+
+@media (min-width: 1024px) {
+  .stats-section .stat-card .stat-image {
+    height: 135px;
+    flex-basis: 135px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-section .stat-card .stat-image {
+    height: 180px;
+    flex-basis: 180px;
+  }
+}
