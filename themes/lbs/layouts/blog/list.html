@@ -103,7 +103,7 @@
                 <div class="blog-post-item" 
                      data-category="{{ .Params.category }}" 
                      data-tags='{{ delimit .Params.tags "," }}'>
-                    {{ partial "components/blog-card.html" . }}
+                    {{ partial "components/home-blog-card.html" . }}
                 </div>
             {{ end }}
         </div>
