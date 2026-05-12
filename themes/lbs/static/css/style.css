@@ -3729,3 +3729,26 @@ body {
     flex-basis: 180px;
   }
 }
+
+/* Keep Baselayer stats cards on one desktop row */
+.stats-section .stats-grid {
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 1024px) {
+  .stats-section .stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .stats-section .stat-card {
+    min-width: 0;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  .stats-section .stat-number {
+    font-size: clamp(1.8rem, 2.4vw, 2.65rem);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
