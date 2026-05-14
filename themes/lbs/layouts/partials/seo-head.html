@@ -39,12 +39,25 @@
 {{/* Language */}}
 <meta name="language" content="English">
 
+{{/* Social sharing image */}}
+{{ $rawSocialImage := or .Params.image .Params.featured_image .Params.featuredImage .Params.thumbnail .Params.cover }}
+{{ $socialImage := $rawSocialImage | default (.Site.Params.defaultSocialImage | default "images/social-card-default.png") }}
+{{ $socialImageURL := $socialImage }}
+{{ if not (or (hasPrefix $socialImage "http://") (hasPrefix $socialImage "https://")) }}
+  {{ $socialImageURL = $socialImage | absURL }}
+{{ end }}
+{{ $socialImageAlt := printf "%s - %s" (cond .IsHome .Site.Title .Title) .Site.Title }}
+
 {{/* Open Graph / Facebook */}}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ $description }}">
-<meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}{{ .Site.BaseURL }}images/lbs-logo.jpg{{ end }}">
+<meta property="og:image" content="{{ $socialImageURL }}">
+<meta property="og:image:secure_url" content="{{ $socialImageURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $socialImageAlt }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="en_US">
 
@@ -55,7 +68,8 @@
 <meta name="twitter:url" content="{{ .Permalink }}">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ $description }}">
-<meta name="twitter:image" content="{{ with .Params.image }}{{ . }}{{ else }}{{ .Site.BaseURL }}images/lbs-logo.jpg{{ end }}">
+<meta name="twitter:image" content="{{ $socialImageURL }}">
+<meta name="twitter:image:alt" content="{{ $socialImageAlt }}">
 
 {{/* Article Specific (for blog posts) */}}
 {{ if and .IsPage (eq .Section "blog") }}
