@@ -32,7 +32,9 @@
   h1 { font-size: 42px; line-height: 1.08; margin: 0 0 14px; color: var(--navy); letter-spacing: -1px; }
   .lead { font-size: 18px; color: #31415a; margin: 0 0 20px; }
   .ad-preview { border: 1px solid var(--line); border-radius: 18px; background: #fff; padding: 12px; box-shadow: 0 12px 28px rgba(6, 26, 64, .10); }
+  .creative-stack { display: grid; gap: 16px; }
   .ad-preview img { width: 100%; display: block; border-radius: 12px; }
+  .ad-label { font-size: 12px; font-weight: 800; color: var(--blue-dark); letter-spacing: 1.4px; text-transform: uppercase; margin: 2px 4px 10px; }
   .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 0; }
   .pill { background: #eef5ff; color: var(--blue-dark); border: 1px solid #cfe2ff; padding: 7px 11px; border-radius: 999px; font-size: 13px; font-weight: 700; }
   h2 { font-size: 26px; line-height: 1.2; color: var(--navy); margin: 34px 0 14px; }
@@ -83,8 +85,15 @@
        <span class="pill">No-index Client Preview</span>
       </div>
      </div>
-     <div class="ad-preview">
-      <img src="/images/pizza-world-branson-campaign-preview.png" alt="Pizza World Branson campaign creative preview">
+     <div class="creative-stack">
+      <div class="ad-preview">
+       <div class="ad-label">Primary Campaign Creative</div>
+       <img src="/images/pizza-world-branson-campaign-preview.png" alt="Pizza World Branson campaign creative preview">
+      </div>
+      <div class="ad-preview">
+       <div class="ad-label">Cross Creek Location Image</div>
+       <img src="/images/pizza-world-cross-creek-location.jpg" alt="Pizza World Cross Creek location image">
+      </div>
      </div>
     </section>
 
