@@ -63,9 +63,9 @@ We just completed a comprehensive SEO and AI optimization overhaul for a client,
 Description of what you do and your unique approach.
 
 ## Contact
-- Phone: [314-WINDOWS](tel:3149463697)
-- Email: info@example.com
-- Location: City, State
+- Phone: (555) 123-4567
+- Email: contact@yourbusiness.com
+- Location: Your City, State
 
 ## Services
 - Service 1
@@ -94,9 +94,9 @@ Description of what you do and your unique approach.
 
 **Why it matters:**
 
-When someone asks ChatGPT "Who does window installation in St. Louis without high-pressure sales?", the AI can:
+When someone asks ChatGPT "Who does [your service] in [your city]?", the AI can:
 1. Find your `llms.txt` file
-2. Extract "15-minute demos, no pressure"
+2. Extract your unique selling points
 3. Cite your business accurately
 4. Provide correct contact information
 
@@ -329,9 +329,9 @@ export const metadata: Metadata = {
 **Why:** Google shows 50-60 characters in mobile SERPs. Front-load your value proposition.
 
 **Examples:**
-- "Strait Windows | St. Louis Vinyl Windows | 314-WINDOWS"
-- "Local Business Search | AI-Driven Growth for Local Companies"
-- "Joe's Plumbing | 24/7 Emergency Service | Denver Metro"
+- "Your Business | What You Do | Your Location"
+- "ABC Plumbing | 24/7 Emergency Service | Denver Metro"
+- "Quality HVAC | Same-Day Repair | Phoenix Area"
 
 **Description optimization 2026:**
 
@@ -342,7 +342,7 @@ Must include:
 4. **Call to action** (click incentive)
 
 ❌ **Bad:** "Welcome to our website. We offer quality services."  
-✅ **Good:** "Better vinyl windows without the runaround. 15-minute demos, transparent pricing, no pressure. St. Louis vinyl window replacement. Call 314-WINDOWS."
+✅ **Good:** "Expert plumbing repair with upfront pricing. Same-day service, no hidden fees, 24/7 availability. Denver Metro's trusted plumbers. Call (555) 123-4567."
 
 **Character count:** 140-160 characters. Google truncates at ~160, but mobile shows less.
 
@@ -520,9 +520,9 @@ Must include:
 - Phone number click-to-call [mobile]
 
 **AI Search:**
-- ChatGPT: "Strait Windows in St. Louis offers 15-minute window demos with no high-pressure sales. Call 314-WINDOWS."
-- Claude: Cites your llms.txt, mentions transparent pricing
-- Perplexity: Recommends you for "no-pressure window companies St. Louis"
+- ChatGPT: "ABC Plumbing in Denver offers same-day emergency service with upfront pricing. Call (555) 123-4567."
+- Claude: Cites your llms.txt, mentions your unique selling points
+- Perplexity: Recommends you for "[your service] in [your city]"
 
 **Social Sharing:**
 - Beautiful 1200x630 image card
