@@ -21,7 +21,7 @@ Today? That's only half the battle.
 
 **Your customers are asking ChatGPT where to buy windows.** They're using Claude to research contractors. Perplexity is recommending service providers. And if your business isn't optimized for AI discovery, you're invisible to an entirely new generation of search.
 
-We just completed a comprehensive SEO and AI optimization overhaul for a client, implementing 2026's technical standards. Here's everything that's changed—and exactly what you need to do about it.
+We recently completed a comprehensive SEO and AI optimization overhaul implementing 2026's technical standards. Here's everything that's changed—and exactly what you need to do about it.
 
 ---
 
