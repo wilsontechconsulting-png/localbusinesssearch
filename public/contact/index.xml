@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Let&#39;s Build Systems That Actually Work on Local Business Search - AI. Business Process.</title>
-    <link>http://localhost:1314/contact/</link>
+    <link>https://localbusinesssearch.com/contact/</link>
     <description>Recent content in Let&#39;s Build Systems That Actually Work on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1314/contact/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://localbusinesssearch.com/contact/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Message Received!</title>
-      <link>http://localhost:1314/contact/success/</link>
+      <link>https://localbusinesssearch.com/contact/success/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/contact/success/</guid>
+      <guid>https://localbusinesssearch.com/contact/success/</guid>
       <description></description>
     </item>
   </channel>

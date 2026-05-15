@@ -2,52 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Insights &amp; Resources on Local Business Search - AI. Business Process.</title>
-    <link>http://localhost:1314/blog/</link>
+    <link>https://localbusinesssearch.com/blog/</link>
     <description>Recent content in Insights &amp; Resources on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1314/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://localbusinesssearch.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The New SEO Playbook: How to Optimize for Google AND AI in 2026</title>
+      <link>https://localbusinesssearch.com/blog/seo-llm-indexing-2026-standards/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/seo-llm-indexing-2026-standards/</guid>
+      <description>&lt;h1 id=&#34;the-new-seo-playbook-how-to-optimize-for-google-and-ai-in-2026&#34;&gt;The New SEO Playbook: How to Optimize for Google AND AI in 2026&lt;/h1&gt;&#xA;&lt;p&gt;Search isn&amp;rsquo;t what it used to be.&lt;/p&gt;&#xA;&lt;p&gt;Five years ago, SEO meant one thing: &lt;strong&gt;rank on Google&lt;/strong&gt;. You optimized title tags, built backlinks, published content, and watched your rankings climb.&lt;/p&gt;&#xA;&lt;p&gt;Today? That&amp;rsquo;s only half the battle.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Your customers are asking ChatGPT where to buy windows.&lt;/strong&gt; They&amp;rsquo;re using Claude to research contractors. Perplexity is recommending service providers. And if your business isn&amp;rsquo;t optimized for AI discovery, you&amp;rsquo;re invisible to an entirely new generation of search.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Most Local Businesses Don&#39;t Need More Software—They Need Better Systems</title>
-      <link>http://localhost:1314/blog/why-local-businesses-dont-need-more-software/</link>
+      <link>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/blog/why-local-businesses-dont-need-more-software/</guid>
+      <guid>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</guid>
       <description>&lt;h2 id=&#34;the-problem-usually-isnt-a-missing-tool&#34;&gt;The Problem Usually Isn&amp;rsquo;t a Missing Tool&lt;/h2&gt;&#xA;&lt;p&gt;When a local business feels messy, the first instinct is usually:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;We probably need software for that.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you add another tool.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Pretty soon you&amp;rsquo;re paying for a CRM, an email platform, scheduling software, lead forms, a quoting tool, accounting software, a text platform, ad dashboards, and whatever random spreadsheet is holding the whole thing together.&lt;/p&gt;&#xA;&lt;p&gt;And somehow, even after all that, things still feel disorganized.&lt;/p&gt;</description>
     </item>
     <item>
       <title>OpenClaw&#39;s GPT-5.5 Update: Impressive Speed, Real Pain Points (And Why We Switched to ProductiveBot)</title>
-      <link>http://localhost:1314/blog/openclaw-gpt55-update-vs-productivebot/</link>
+      <link>https://localbusinesssearch.com/blog/openclaw-gpt55-update-vs-productivebot/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/blog/openclaw-gpt55-update-vs-productivebot/</guid>
+      <guid>https://localbusinesssearch.com/blog/openclaw-gpt55-update-vs-productivebot/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re following AI automation tools for local businesses, you&amp;rsquo;ve probably heard about &lt;strong&gt;OpenClaw&amp;rsquo;s latest update&lt;/strong&gt;. Version 2026.4.23 just dropped with some genuinely impressive features: &lt;strong&gt;GPT-5.5 support&lt;/strong&gt;, &lt;strong&gt;image generation and editing&lt;/strong&gt;, and &lt;strong&gt;multi-agent workflows&lt;/strong&gt; (subagents).&lt;/p&gt;&#xA;&lt;p&gt;The community response? A mix of &lt;strong&gt;excitement&lt;/strong&gt; and &lt;strong&gt;frustration&lt;/strong&gt; that perfectly illustrates why we made the switch to &lt;strong&gt;ProductiveBot.AI&lt;/strong&gt; for our clients.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-openclaw-just-shipped&#34;&gt;What OpenClaw Just Shipped&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s start with what&amp;rsquo;s actually new:&lt;/p&gt;&#xA;&lt;h3 id=&#34;gpt-55-integration&#34;&gt;GPT-5.5 Integration&lt;/h3&gt;&#xA;&lt;p&gt;OpenClaw now supports OpenAI&amp;rsquo;s latest GPT-5.5 model, giving users access to cutting-edge language capabilities. On paper, this is huge—better reasoning, longer context windows, and more reliable outputs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>This Blog Post Is Writing Itself: A Real-Time Look at ProductiveBot.AI in Action</title>
-      <link>http://localhost:1314/blog/productivebot-ai-business-assistant/</link>
+      <link>https://localbusinesssearch.com/blog/productivebot-ai-business-assistant/</link>
       <pubDate>Fri, 24 Apr 2026 16:11:00 -0500</pubDate>
-      <guid>http://localhost:1314/blog/productivebot-ai-business-assistant/</guid>
+      <guid>https://localbusinesssearch.com/blog/productivebot-ai-business-assistant/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Meta moment:&lt;/strong&gt; The blog post you&amp;rsquo;re reading right now is being written in real-time by ProductiveBot.AI while I (Jed) talk through what I want to say. Not tomorrow. Not after I draft it. &lt;em&gt;Right now.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;And that&amp;rsquo;s exactly the point.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-just-happened-here&#34;&gt;What Just Happened Here&lt;/h2&gt;&#xA;&lt;p&gt;Five minutes ago, I told my AI assistant, Maven: &amp;ldquo;Write a blog post about ProductiveBot.AI and what it does for consumers and businesses. We&amp;rsquo;re talking about this right now on a live feed, so write it professionally, match our brand, pull an image from Unsplash, and make it fit our Local Business Search positioning.&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Your HVAC Business Is Buried in Software—And It&#39;s Costing You More Than Just Monthly Fees</title>
-      <link>http://localhost:1314/blog/hvac-software-chaos/</link>
+      <link>https://localbusinesssearch.com/blog/hvac-software-chaos/</link>
       <pubDate>Thu, 23 Apr 2026 15:27:00 -0500</pubDate>
-      <guid>http://localhost:1314/blog/hvac-software-chaos/</guid>
+      <guid>https://localbusinesssearch.com/blog/hvac-software-chaos/</guid>
       <description>&lt;h2 id=&#34;how-many-tabs-do-you-have-open-right-now&#34;&gt;How Many Tabs Do You Have Open Right Now?&lt;/h2&gt;&#xA;&lt;p&gt;Let me guess what&amp;rsquo;s running on your phone (or computer) to manage your HVAC business:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ServiceTitan (or FieldEdge, or Jobber, or Housecall Pro)&lt;/li&gt;&#xA;&lt;li&gt;QuickBooks&lt;/li&gt;&#xA;&lt;li&gt;Your CRM (or the half-working one built into your dispatch software)&lt;/li&gt;&#xA;&lt;li&gt;Google Ads and Facebook Ads Manager&lt;/li&gt;&#xA;&lt;li&gt;Email (Gmail or Outlook)&lt;/li&gt;&#xA;&lt;li&gt;Texts with customers and techs&lt;/li&gt;&#xA;&lt;li&gt;Google Calendar (and maybe a separate booking tool)&lt;/li&gt;&#xA;&lt;li&gt;Zapier trying to make these things talk to each other&lt;/li&gt;&#xA;&lt;li&gt;Something for inventory and parts ordering&lt;/li&gt;&#xA;&lt;li&gt;Another tool for maintenance agreements&lt;/li&gt;&#xA;&lt;li&gt;Maybe a separate estimating tool&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;That&amp;rsquo;s 11+ different systems.&lt;/strong&gt; And we&amp;rsquo;re not even counting the spreadsheets you maintain because none of this software does exactly what you need.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Your Plumbing Business Doesn&#39;t Need More Apps—It Needs Systems That Actually Talk to Each Other</title>
-      <link>http://localhost:1314/blog/plumbing-tech-stack-overload/</link>
+      <link>https://localbusinesssearch.com/blog/plumbing-tech-stack-overload/</link>
       <pubDate>Thu, 23 Apr 2026 14:30:00 -0500</pubDate>
-      <guid>http://localhost:1314/blog/plumbing-tech-stack-overload/</guid>
+      <guid>https://localbusinesssearch.com/blog/plumbing-tech-stack-overload/</guid>
       <description>&lt;h2 id=&#34;lets-talk-about-your-phone&#34;&gt;Let&amp;rsquo;s Talk About Your Phone&lt;/h2&gt;&#xA;&lt;p&gt;How many apps do you have open right now to run your plumbing business?&lt;/p&gt;&#xA;&lt;p&gt;Let me guess:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ServiceTitan (or Housecall Pro, or Jobber)&lt;/li&gt;&#xA;&lt;li&gt;QuickBooks&lt;/li&gt;&#xA;&lt;li&gt;Your CRM (or maybe the CRM is built into your dispatch software)&lt;/li&gt;&#xA;&lt;li&gt;Something for advertising (Google Ads, Facebook)&lt;/li&gt;&#xA;&lt;li&gt;Email (probably Gmail)&lt;/li&gt;&#xA;&lt;li&gt;Text messages with customers&lt;/li&gt;&#xA;&lt;li&gt;Calendar (probably Google Calendar, maybe Calendly)&lt;/li&gt;&#xA;&lt;li&gt;Maybe Zapier to connect some of this stuff&lt;/li&gt;&#xA;&lt;li&gt;Possibly another tool for estimates&lt;/li&gt;&#xA;&lt;li&gt;Another for invoicing&lt;/li&gt;&#xA;&lt;li&gt;One more for inventory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;That&amp;rsquo;s 11+ apps.&lt;/strong&gt; And that&amp;rsquo;s before we count the spreadsheets you&amp;rsquo;re maintaining because none of these tools quite do what you need.&lt;/p&gt;</description>
     </item>
     <item>
       <title>We Just Built This Entire Website in 12 Hours Using AI—Here&#39;s What That Means for Your Business</title>
-      <link>http://localhost:1314/blog/building-website-with-ai/</link>
+      <link>https://localbusinesssearch.com/blog/building-website-with-ai/</link>
       <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1314/blog/building-website-with-ai/</guid>
+      <guid>https://localbusinesssearch.com/blog/building-website-with-ai/</guid>
       <description>&lt;h2 id=&#34;let-me-be-honest-with-you&#34;&gt;Let Me Be Honest With You&lt;/h2&gt;&#xA;&lt;p&gt;Three days ago, this website didn&amp;rsquo;t exist.&lt;/p&gt;&#xA;&lt;p&gt;Today, you&amp;rsquo;re reading a blog post on a fully functional, professionally designed, multi-page website with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;18+ pages of content&lt;/li&gt;&#xA;&lt;li&gt;Custom contact forms&lt;/li&gt;&#xA;&lt;li&gt;Mobile-responsive design across all devices&lt;/li&gt;&#xA;&lt;li&gt;A complete blog system&lt;/li&gt;&#xA;&lt;li&gt;Strategic CTAs throughout&lt;/li&gt;&#xA;&lt;li&gt;Professional copywriting&lt;/li&gt;&#xA;&lt;li&gt;And it all works flawlessly&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Total time invested:&lt;/strong&gt; About 12 hours of actual work.&lt;/p&gt;&#xA;&lt;p&gt;No, I didn&amp;rsquo;t hire a $15,000 agency. No, I didn&amp;rsquo;t spend 6 weeks going back and forth with developers.&lt;/p&gt;</description>
     </item>
   </channel>
