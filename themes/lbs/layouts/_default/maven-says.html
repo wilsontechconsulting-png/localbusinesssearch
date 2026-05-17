@@ -1,32 +1,61 @@
 {{ define "main" }}
 <section class="maven-says-hero">
   <div class="container">
-    <span class="maven-says-kicker">Private client resource index</span>
-    <h1>Maven Says</h1>
-    <p>Client-specific links are grouped here so they stay organized and easy to send when needed.</p>
+    <div class="maven-says-hero-content">
+      <span class="maven-says-kicker">Private client resources</span>
+      <h1>Maven Says</h1>
+      <p>A simple private index for client-facing pages, quotes, estimates, campaign previews, and other links we need to send out quickly.</p>
+    </div>
   </div>
 </section>
 
-<section class="section section-light">
+<section class="section section-light maven-says-section">
   <div class="container">
-    <div class="maven-says-panel">
-      <div class="maven-says-panel-header">
-        <div>
-          <span class="maven-says-label">Client</span>
-          <h2>Pizza World Branson</h2>
-        </div>
-        <span class="maven-says-status">Private / no-index</span>
-      </div>
+    <div class="maven-says-shell">
+      <aside class="maven-says-sidebar">
+        <span class="maven-says-sidebar-label">Clients</span>
+        <a class="maven-says-client-nav active" href="#pizza-world-branson">
+          <strong>Pizza World Branson</strong>
+          <small>2 links</small>
+        </a>
+      </aside>
 
-      <div class="maven-says-link-grid">
-        <a class="maven-says-card" href="/pizza-world-branson/" rel="nofollow" data-nosnippet>
-          <span>Social advertising estimate</span>
-          <small>Campaign overview and estimate</small>
-        </a>
-        <a class="maven-says-card" href="/pizza-world-branson-quote/" rel="nofollow" data-nosnippet>
-          <span>Social advertising quote</span>
-          <small>Quote page for client review</small>
-        </a>
+      <div class="maven-says-directory">
+        <div class="maven-says-directory-header">
+          <div>
+            <span class="maven-says-label">Resource directory</span>
+            <h2>Client Links</h2>
+          </div>
+          <span class="maven-says-status">No-index</span>
+        </div>
+
+        <article class="maven-says-client-card" id="pizza-world-branson">
+          <div class="maven-says-client-card-header">
+            <div>
+              <span class="maven-says-client-type">Restaurant / Franchise</span>
+              <h3>Pizza World Branson</h3>
+            </div>
+            <span class="maven-says-count">2 resources</span>
+          </div>
+
+          <div class="maven-says-resource-list">
+            <a class="maven-says-resource" href="/pizza-world-branson/" rel="nofollow" data-nosnippet>
+              <div>
+                <span>Social Advertising Estimate</span>
+                <small>Campaign overview and budget estimate page.</small>
+              </div>
+              <em>Open</em>
+            </a>
+
+            <a class="maven-says-resource" href="/pizza-world-branson-quote/" rel="nofollow" data-nosnippet>
+              <div>
+                <span>Social Advertising Quote</span>
+                <small>Client quote page for review and approval.</small>
+              </div>
+              <em>Open</em>
+            </a>
+          </div>
+        </article>
       </div>
     </div>
   </div>

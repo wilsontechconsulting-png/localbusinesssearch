@@ -3956,17 +3956,25 @@ body {
 /* ============ MAVEN SAYS PRIVATE INDEX ============ */
 .maven-says-hero {
   background:
-    radial-gradient(circle at top left, rgba(0, 102, 255, 0.22), transparent 34rem),
+    radial-gradient(circle at top left, rgba(0, 102, 255, 0.24), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(31, 42, 68, 0.85), transparent 32rem),
     linear-gradient(135deg, var(--navy) 0%, #0f2744 100%);
   color: var(--white);
+  overflow: hidden;
   padding: calc(var(--spacing-3xl) + 2rem) 0 var(--spacing-3xl);
 }
 
+.maven-says-hero-content {
+  max-width: 760px;
+}
+
 .maven-says-kicker,
-.maven-says-label {
+.maven-says-label,
+.maven-says-sidebar-label,
+.maven-says-client-type {
   color: var(--bright-blue);
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -3974,96 +3982,197 @@ body {
 
 .maven-says-hero h1 {
   color: var(--white);
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  letter-spacing: -0.06em;
-  line-height: 0.95;
+  font-size: clamp(3.25rem, 8vw, 6rem);
+  letter-spacing: -0.065em;
+  line-height: 0.92;
   margin: 0.85rem 0 1rem;
 }
 
 .maven-says-hero p {
   color: rgba(255, 255, 255, 0.78);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
-  max-width: 680px;
+  line-height: 1.65;
+  max-width: 700px;
 }
 
-.maven-says-panel {
+.maven-says-section {
+  padding-top: var(--spacing-3xl);
+}
+
+.maven-says-shell {
+  align-items: start;
+  display: grid;
+  gap: var(--spacing-xl);
+  grid-template-columns: 280px minmax(0, 1fr);
+}
+
+.maven-says-sidebar {
   background: var(--white);
   border: 1px solid rgba(10, 22, 40, 0.08);
   border-radius: 1.25rem;
-  box-shadow: 0 18px 50px rgba(10, 22, 40, 0.1);
-  padding: clamp(1.5rem, 4vw, 2.5rem);
+  box-shadow: 0 12px 36px rgba(10, 22, 40, 0.07);
+  padding: 1.25rem;
+  position: sticky;
+  top: 110px;
 }
 
-.maven-says-panel-header {
+.maven-says-sidebar-label {
+  color: var(--gray-medium);
+  margin-bottom: 0.85rem;
+}
+
+.maven-says-client-nav {
+  align-items: center;
+  background: rgba(0, 102, 255, 0.07);
+  border: 1px solid rgba(0, 102, 255, 0.14);
+  border-radius: 0.95rem;
+  color: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.95rem;
+  text-decoration: none;
+}
+
+.maven-says-client-nav strong {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.maven-says-client-nav small {
+  color: var(--bright-blue);
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.maven-says-directory {
+  background: var(--white);
+  border: 1px solid rgba(10, 22, 40, 0.08);
+  border-radius: 1.35rem;
+  box-shadow: 0 18px 50px rgba(10, 22, 40, 0.1);
+  padding: clamp(1.35rem, 4vw, 2.5rem);
+}
+
+.maven-says-directory-header,
+.maven-says-client-card-header {
   align-items: flex-start;
   display: flex;
   gap: var(--spacing-lg);
   justify-content: space-between;
+}
+
+.maven-says-directory-header {
+  border-bottom: 1px solid rgba(10, 22, 40, 0.08);
   margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
 }
 
-.maven-says-panel h2 {
+.maven-says-directory h2 {
   color: var(--navy);
-  font-size: clamp(1.8rem, 4vw, 2.75rem);
-  letter-spacing: -0.04em;
-  margin: 0.4rem 0 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.045em;
+  margin: 0.35rem 0 0;
 }
 
-.maven-says-status {
+.maven-says-status,
+.maven-says-count {
   background: rgba(0, 102, 255, 0.08);
   border: 1px solid rgba(0, 102, 255, 0.16);
   border-radius: 999px;
   color: var(--bright-blue);
   flex: 0 0 auto;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
-  padding: 0.5rem 0.85rem;
+  padding: 0.48rem 0.8rem;
   text-transform: uppercase;
 }
 
-.maven-says-link-grid {
-  display: grid;
-  gap: var(--spacing-md);
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.maven-says-client-card {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border: 1px solid rgba(10, 22, 40, 0.08);
+  border-radius: 1.1rem;
+  padding: clamp(1.1rem, 3vw, 1.6rem);
 }
 
-.maven-says-card {
-  background: #f8fafc;
-  border: 1px solid rgba(10, 22, 40, 0.08);
-  border-radius: 1rem;
+.maven-says-client-card h3 {
   color: var(--navy);
-  display: block;
-  padding: 1.25rem;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  letter-spacing: -0.035em;
+  margin: 0.35rem 0 0;
+}
+
+.maven-says-resource-list {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: var(--spacing-lg);
+}
+
+.maven-says-resource {
+  align-items: center;
+  background: var(--white);
+  border: 1px solid rgba(10, 22, 40, 0.08);
+  border-radius: 0.95rem;
+  color: var(--navy);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1.1rem;
   text-decoration: none;
   transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
-.maven-says-card:hover {
+.maven-says-resource:hover {
   border-color: rgba(0, 102, 255, 0.28);
-  box-shadow: 0 14px 30px rgba(10, 22, 40, 0.09);
+  box-shadow: 0 12px 26px rgba(10, 22, 40, 0.08);
   transform: translateY(-2px);
 }
 
-.maven-says-card span {
+.maven-says-resource span {
   display: block;
-  font-size: 1.08rem;
+  font-size: 1.02rem;
   font-weight: 800;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 
-.maven-says-card small {
+.maven-says-resource small {
   color: var(--gray-medium);
   display: block;
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-size: 0.91rem;
+  line-height: 1.45;
+}
+
+.maven-says-resource em {
+  background: var(--navy);
+  border-radius: 999px;
+  color: var(--white);
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 800;
+  padding: 0.48rem 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .maven-says-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .maven-says-sidebar {
+    position: static;
+  }
 }
 
 @media (max-width: 768px) {
-  .maven-says-panel-header {
+  .maven-says-directory-header,
+  .maven-says-client-card-header,
+  .maven-says-resource {
+    align-items: flex-start;
     flex-direction: column;
   }
 
-  .maven-says-link-grid {
-    grid-template-columns: 1fr;
+  .maven-says-resource em {
+    align-self: flex-start;
   }
 }
