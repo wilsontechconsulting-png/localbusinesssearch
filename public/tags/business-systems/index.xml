@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Business Systems on Local Business Search - AI. Business Process.</title>
-    <link>https://localbusinesssearch.com/tags/business-systems/</link>
+    <link>http://localhost:1314/tags/business-systems/</link>
     <description>Recent content in Business Systems on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://localbusinesssearch.com/tags/business-systems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/business-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Most Local Businesses Don&#39;t Need More Software—They Need Better Systems</title>
-      <link>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</link>
+      <link>http://localhost:1314/blog/why-local-businesses-dont-need-more-software/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</guid>
+      <guid>http://localhost:1314/blog/why-local-businesses-dont-need-more-software/</guid>
       <description>&lt;h2 id=&#34;the-problem-usually-isnt-a-missing-tool&#34;&gt;The Problem Usually Isn&amp;rsquo;t a Missing Tool&lt;/h2&gt;&#xA;&lt;p&gt;When a local business feels messy, the first instinct is usually:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;We probably need software for that.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you add another tool.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Pretty soon you&amp;rsquo;re paying for a CRM, an email platform, scheduling software, lead forms, a quoting tool, accounting software, a text platform, ad dashboards, and whatever random spreadsheet is holding the whole thing together.&lt;/p&gt;&#xA;&lt;p&gt;And somehow, even after all that, things still feel disorganized.&lt;/p&gt;</description>
     </item>
   </channel>
