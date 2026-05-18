@@ -11,10 +11,10 @@ description: "Most local businesses do not have an advertising problem first. Th
 summary: "A field note from Jed Wilson: many local businesses are not losing because advertising stopped working. They are losing because leads come in, sit there, and never get properly followed up on."
 ---
 
-<div style="background: linear-gradient(135deg, #0A1628 0%, #102848 100%); color: white; padding: 2rem; border-radius: 1.25rem; margin-bottom: 2.5rem; box-shadow: 0 18px 45px rgba(10, 22, 40, 0.18);">
-  <p style="margin: 0 0 0.75rem; color: #66A3FF; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.85rem;">Here’s What We’re Noticing</p>
-  <h2 style="margin: 0 0 1rem; color: white; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1;">The lead is not the problem. The follow-up is.</h2>
-  <p style="margin: 0; color: rgba(255,255,255,0.86); font-size: 1.1rem; line-height: 1.7;">A field note from Jed Wilson, President of Local Business Search, after watching the same issue show up again and again across local service businesses.</p>
+<div class="field-note-callout">
+  <p class="field-note-kicker">Here’s What We’re Noticing</p>
+  <h2>The lead is not the problem. The follow-up is.</h2>
+  <p class="field-note-summary">A field note from Jed Wilson, President of Local Business Search, after watching the same issue show up again and again across local service businesses.</p>
 </div>
 
 I want to say this plainly because I see it every day.
