@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Local Business Search - AI. Business Process.</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://localbusinesssearch.com/categories/</link>
     <description>Recent content in Categories on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://localbusinesssearch.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/categories/ai/</link>
+      <link>https://localbusinesssearch.com/categories/ai/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/ai/</guid>
+      <guid>https://localbusinesssearch.com/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>SEO</title>
-      <link>http://localhost:1313/categories/seo/</link>
+      <link>https://localbusinesssearch.com/categories/seo/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/seo/</guid>
+      <guid>https://localbusinesssearch.com/categories/seo/</guid>
       <description></description>
     </item>
     <item>
       <title>Technical Marketing</title>
-      <link>http://localhost:1313/categories/technical-marketing/</link>
+      <link>https://localbusinesssearch.com/categories/technical-marketing/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/technical-marketing/</guid>
+      <guid>https://localbusinesssearch.com/categories/technical-marketing/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>http://localhost:1313/categories/automation/</link>
+      <link>https://localbusinesssearch.com/categories/automation/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/automation/</guid>
+      <guid>https://localbusinesssearch.com/categories/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Business Tools</title>
-      <link>http://localhost:1313/categories/business-tools/</link>
+      <link>https://localbusinesssearch.com/categories/business-tools/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/business-tools/</guid>
+      <guid>https://localbusinesssearch.com/categories/business-tools/</guid>
       <description></description>
     </item>
     <item>
       <title>AI Automation</title>
-      <link>http://localhost:1313/categories/ai-automation/</link>
+      <link>https://localbusinesssearch.com/categories/ai-automation/</link>
       <pubDate>Fri, 24 Apr 2026 16:11:00 -0500</pubDate>
-      <guid>http://localhost:1313/categories/ai-automation/</guid>
+      <guid>https://localbusinesssearch.com/categories/ai-automation/</guid>
       <description></description>
     </item>
   </channel>

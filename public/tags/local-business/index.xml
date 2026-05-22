@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Local Business on Local Business Search - AI. Business Process.</title>
-    <link>http://localhost:1313/tags/local-business/</link>
+    <link>https://localbusinesssearch.com/tags/local-business/</link>
     <description>Recent content in Local Business on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2026 10:25:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/local-business/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 May 2026 10:55:00 -0500</lastBuildDate>
+    <atom:link href="https://localbusinesssearch.com/tags/local-business/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What We’re Noticing in Branson: Google Ads Should Follow the Tourist Traffic</title>
+      <link>https://localbusinesssearch.com/blog/branson-restaurant-google-ads-tourist-traffic/</link>
+      <pubDate>Mon, 18 May 2026 10:55:00 -0500</pubDate>
+      <guid>https://localbusinesssearch.com/blog/branson-restaurant-google-ads-tourist-traffic/</guid>
+      <description>Branson restaurants are not just competing for clicks. They are competing for hungry families already moving through attraction corridors, shopping centers, lake areas, and hotel zones.</description>
+    </item>
     <item>
       <title>What We’re Noticing: Local Businesses Are Losing Leads Because Nobody Follows Up</title>
-      <link>http://localhost:1313/blog/local-businesses-are-losing-leads-because-nobody-follows-up/</link>
+      <link>https://localbusinesssearch.com/blog/local-businesses-are-losing-leads-because-nobody-follows-up/</link>
       <pubDate>Mon, 18 May 2026 10:25:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/local-businesses-are-losing-leads-because-nobody-follows-up/</guid>
+      <guid>https://localbusinesssearch.com/blog/local-businesses-are-losing-leads-because-nobody-follows-up/</guid>
       <description>A field note from Jed Wilson: many local businesses are not losing because advertising stopped working. They are losing because leads come in, sit there, and never get properly followed up on.</description>
     </item>
     <item>
       <title>Most Local Businesses Don&#39;t Need More Software—They Need Better Systems</title>
-      <link>http://localhost:1313/blog/why-local-businesses-dont-need-more-software/</link>
+      <link>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/why-local-businesses-dont-need-more-software/</guid>
+      <guid>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</guid>
       <description>&lt;h2 id=&#34;the-problem-usually-isnt-a-missing-tool&#34;&gt;The Problem Usually Isn&amp;rsquo;t a Missing Tool&lt;/h2&gt;&#xA;&lt;p&gt;When a local business feels messy, the first instinct is usually:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;We probably need software for that.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you add another tool.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Pretty soon you&amp;rsquo;re paying for a CRM, an email platform, scheduling software, lead forms, a quoting tool, accounting software, a text platform, ad dashboards, and whatever random spreadsheet is holding the whole thing together.&lt;/p&gt;&#xA;&lt;p&gt;And somehow, even after all that, things still feel disorganized.&lt;/p&gt;</description>
     </item>
   </channel>

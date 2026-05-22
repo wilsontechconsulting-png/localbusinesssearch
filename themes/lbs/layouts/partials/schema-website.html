@@ -3,25 +3,111 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "{{ .Site.Title }}",
-  "url": "{{ .Site.BaseURL }}",
-  "description": "{{ .Site.Params.description }}",
+  "@id": {{ printf "%s#website" .Site.BaseURL | jsonify | safeJS }},
+  "name": {{ .Site.Title | jsonify | safeJS }},
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
+  "description": {{ .Site.Params.description | jsonify | safeJS }},
   "publisher": {
-    "@type": "Organization",
-    "name": "Local Business Search",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ .Site.BaseURL }}images/lbs-logo.jpg"
-    }
+    "@id": {{ printf "%s#organization" .Site.BaseURL | jsonify | safeJS }}
   },
+  "about": {
+    "@id": {{ printf "%s#localbusiness" .Site.BaseURL | jsonify | safeJS }}
+  },
+  "inLanguage": "en-US",
+  "hasPart": [
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Platform",
+      "url": {{ "/platform/" | absURL | jsonify | safeJS }}
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Business Systems",
+      "url": {{ "/business-operations/" | absURL | jsonify | safeJS }}
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "AI Automation",
+      "url": {{ "/ai-automation/" | absURL | jsonify | safeJS }}
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Advertising",
+      "url": {{ "/advertising/" | absURL | jsonify | safeJS }}
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Industries",
+      "url": {{ "/industries/" | absURL | jsonify | safeJS }}
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Resources",
+      "url": {{ "/blog/" | absURL | jsonify | safeJS }}
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Contact",
+      "url": {{ "/contact/" | absURL | jsonify | safeJS }}
+    }
+  ],
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "{{ .Site.BaseURL }}search/?q={search_term_string}"
+      "urlTemplate": {{ printf "%ssearch/?q={search_term_string}" .Site.BaseURL | jsonify | safeJS }}
     },
     "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ cond .IsHome "WebPage" (cond .IsSection "CollectionPage" "WebPage") | jsonify | safeJS }},
+  "@id": {{ printf "%s#webpage" .Permalink | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "name": {{ cond .IsHome .Site.Title .Title | jsonify | safeJS }},
+  "description": {{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | truncate 160 | jsonify | safeJS }}{{ end }},
+  "isPartOf": {
+    "@id": {{ printf "%s#website" .Site.BaseURL | jsonify | safeJS }}
   },
-  "inLanguage": "en-US"
+  "about": {
+    "@id": {{ printf "%s#localbusiness" .Site.BaseURL | jsonify | safeJS }}
+  },
+  "publisher": {
+    "@id": {{ printf "%s#organization" .Site.BaseURL | jsonify | safeJS }}
+  },
+  "inLanguage": "en-US"{{ if not .Lastmod.IsZero }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }}{{ end }}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": {{ printf "%s#organization" .Site.BaseURL | jsonify | safeJS }},
+  "name": {{ .Site.Params.businessName | jsonify | safeJS }},
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
+  "logo": {
+    "@type": "ImageObject",
+    "url": {{ "images/lbs-logo.jpg" | absURL | jsonify | safeJS }}
+  },
+  "image": {{ "images/lbs-logo.jpg" | absURL | jsonify | safeJS }},
+  "description": {{ .Site.Params.description | jsonify | safeJS }},
+  "email": {{ .Site.Params.businessEmail | jsonify | safeJS }},
+  "telephone": {{ .Site.Params.businessPhone | jsonify | safeJS }},
+  "sameAs": {{ .Site.Params.sameAs | jsonify | safeJS }},
+  "knowsAbout": {{ .Site.Params.knowsAbout | jsonify | safeJS }},
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": {{ .Site.Params.businessPhone | jsonify | safeJS }},
+    "contactType": "sales and customer support",
+    "email": {{ .Site.Params.businessEmail | jsonify | safeJS }},
+    "areaServed": "US",
+    "availableLanguage": "en"
+  }
 }
 </script>

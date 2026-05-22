@@ -1,105 +1,115 @@
-# Local Business Search - llms.txt
-# AI-Driven Business Systems for Local Companies
+# Local Business Search
 
-## Company Information
+Local Business Search builds AI-driven business systems for local companies. The company connects advertising, lead capture, AI follow-up, business process automation, and reporting so owners can see what is working and reduce manual operational work.
+
+The core positioning is: local businesses do not need more disconnected apps. They need systems that talk to each other, respond quickly, track revenue, and help teams operate with less manual follow-up.
+
+## Canonical Site
+
+- Website: https://localbusinesssearch.com/
+- Sitemap: https://localbusinesssearch.com/sitemap.xml
+- Robots: https://localbusinesssearch.com/robots.txt
+- Contact: https://localbusinesssearch.com/contact/
+- Demo: https://localbusinesssearch.com/demo/
+- Blog: https://localbusinesssearch.com/blog/
+
+## Business Entity
 
 - Name: Local Business Search
 - Tagline: AI. Business Process.
-- Description: We build intelligent AI-driven business systems that improve how local companies operate—from lead generation to financial visibility to automated operations.
-- Address: 23343 Colina Way, Charlotte Harbor, FL 33980
-- Phone: +1-618-741-6143
+- Type: local business systems, AI automation, and advertising operations company
 - Email: jed@powerofadvertising.com
-- Website: https://localbusinesssearch.com
+- Phone: +1-618-741-6143
+- Address: 23343 Colina Way, Charlotte Harbor, FL 33980
+- Primary market: United States local and regional businesses
+- Social: https://twitter.com/Jed_X_Wilson
 
 ## Services
 
-### AI-Driven Business Systems
-Transform your business operations with custom AI automation that connects your existing tools, eliminates manual data entry, and provides real visibility into what's working.
+### AI-Driven Growth System
+
+Page: https://localbusinesssearch.com/platform/
+
+Local Business Search builds connected growth systems that capture leads, qualify them with AI, trigger follow-up, book appointments, and show owners what is driving revenue.
 
 ### Business Operations Optimization
-Streamline your operations with systems that actually work together. We connect your CRM, dispatch software, accounting, and marketing tools into one cohesive system.
 
-### Digital Advertising Management
-Strategic paid advertising campaigns across Google Ads, Facebook, and other platforms with real tracking of ROI and profitability—not just clicks and leads.
+Page: https://localbusinesssearch.com/business-operations/
 
-## Industries We Serve
+The company connects core business systems across leadership visibility, financial clarity, marketing performance, and operational execution. Typical work includes process mapping, CRM and workflow integration, lead handling, reporting, and automation.
 
-- Home Services (Plumbing, HVAC, Electrical, Roofing, Landscaping)
-- Local Retail
-- Professional Services (Legal, Medical, Dental)
-- Franchises
-- Municipalities
+### AI Automation
 
-## Key Differentiators
+Page: https://localbusinesssearch.com/ai-automation/
 
-- We don't replace your existing software—we connect it and build what's missing
-- Focus on profitability, not just revenue
-- Real automation, not just marketing hype
-- Understanding of local business operations
-- Strategic systems, not just tools
+AI automation services include instant lead response, missed-call recovery, lead qualification, appointment booking, follow-up sequences, customer reactivation, and operational handoff automation.
 
-## Resources
+### Digital Advertising
 
-### Blog Topics
-- AI automation for local businesses
-- Business systems integration
-- Marketing tech stack optimization
-- Home services operations
-- CRM and dispatch software challenges
-- Real profitability tracking
+Page: https://localbusinesssearch.com/advertising/
 
-## Contact
+Advertising services include Google Ads, Meta paid social, retargeting, programmatic advertising, OTT/CTV campaigns, landing page strategy, and campaign performance tracking tied to real business outcomes.
 
-- Schedule a consultation: https://localbusinesssearch.com/contact/
-- Book a demo: https://localbusinesssearch.com/demo/
-- Learn about our platform: https://localbusinesssearch.com/platform/
-- View case studies: https://localbusinesssearch.com/results/
+Detailed advertising pages:
 
-## Social Media
+- Google Ads: https://localbusinesssearch.com/advertising/google-ads/
+- Meta / Paid Social: https://localbusinesssearch.com/advertising/paid-social/
+- Programmatic / OTT / CTV: https://localbusinesssearch.com/advertising/programmatic/
+- Retargeting: https://localbusinesssearch.com/advertising/retargeting/
 
-- Twitter/X: @Jed_X_Wilson
+### Baselayer
 
-## Target Audience
+Page: https://localbusinesssearch.com/baselayer/
 
-Local business owners and operators who are:
-- Frustrated with disconnected software
-- Drowning in manual data entry
-- Unable to track real marketing ROI
-- Missing leads and follow-ups
-- Spending too much time on admin work
-- Looking to scale without operational chaos
+Baselayer is managed website hosting, maintenance, security, backups, performance support, and conversion stability for businesses that want their site handled without managing hosting and technical maintenance themselves.
 
-## Core Message
+## Industries Served
 
-Your business doesn't need more apps. It needs systems that actually talk to each other.
+Index: https://localbusinesssearch.com/industries/
 
-Most local businesses are paying $700-1,500/month for software that doesn't work together, forcing them to become data entry operations instead of focusing on what they do best.
+- Home services: https://localbusinesssearch.com/industries/home-services/
+- Law firms: https://localbusinesssearch.com/industries/legal/
+- Medical and healthcare practices: https://localbusinesssearch.com/industries/medical/
+- Local retail, restaurants, salons, and local storefront businesses: https://localbusinesssearch.com/industries/local-retail/
+- Multi-location franchises: https://localbusinesssearch.com/industries/franchises/
+- Cities and local government communication: https://localbusinesssearch.com/industries/municipalities/
 
-We build intelligent systems that connect what you have, automate what can be automated, and give you real visibility into what's working and what's not.
+## Common Business Problems Addressed
 
-## Latest Content
+- Leads are missed because calls, forms, and messages are not followed up quickly.
+- Teams use too many disconnected tools that require repeated manual data entry.
+- Owners cannot tell which campaigns produce revenue instead of just clicks or leads.
+- Scheduling, intake, reminders, and customer follow-up depend too heavily on staff memory.
+- Marketing reports do not connect ad spend to booked appointments, closed jobs, or profit.
+- Businesses want AI automation but need it tied to practical workflow outcomes.
 
-Blog: https://localbusinesssearch.com/blog/
-- "We Just Built This Entire Website in 12 Hours Using AI"
-- "Your Plumbing Business Doesn't Need More Apps—It Needs Systems That Actually Talk to Each Other"
-- "Your HVAC Business Is Buried in Software—And It's Costing You More Than Just Monthly Fees"
+## What Local Business Search Does Not Claim
 
-## Technology Approach
+- The company does not claim fabricated ratings, review counts, awards, licenses, or certifications.
+- The company does not position AI as a replacement for every employee or every business system.
+- The company does not recommend replacing all existing software when integration and automation can solve the problem.
+- The company does not treat ad clicks as the final measure of success; revenue and operational outcomes matter more.
 
-- Integration-first (not replacement)
-- API connections between existing tools
-- Custom automation where needed
-- Real-time data synchronization
-- Single source of truth
-- Profitability-focused analytics
+## Important Public Pages
 
-## Business Philosophy
+- Home: https://localbusinesssearch.com/
+- About: https://localbusinesssearch.com/about/
+- Results: https://localbusinesssearch.com/results/
+- Contact: https://localbusinesssearch.com/contact/
+- Demo: https://localbusinesssearch.com/demo/
+- Resources: https://localbusinesssearch.com/blog/
 
-- Empathy for operators (not just business owners)
-- Realistic about software limitations
-- No product pitches, real solutions
-- Understanding of seasonal pressures
-- Commercial and residential experience
-- Outcomes over tools
+## Recent Resources
 
-##End-of-file
+- What Real-Time Transcription Changes for Local Business Operations: https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/
+- Why Smaller AI Models Matter for Local Business Owners: https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/
+- Local Businesses Are Losing Leads Because Nobody Follows Up: https://localbusinesssearch.com/blog/local-businesses-are-losing-leads-because-nobody-follows-up/
+- The New SEO Playbook: How to Optimize for Google AND AI in 2026: https://localbusinesssearch.com/blog/seo-llm-indexing-2026-standards/
+- Most Local Businesses Don't Need More Software - They Need Better Systems: https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/
+
+## Machine-Readable Site Notes
+
+- Public content is intended to be crawlable by search engines and answer engines.
+- Private proposal, report, and client-specific pages are marked noindex and blocked in robots.txt where appropriate.
+- The sitemap is the canonical discovery list for public URLs.
+- JSON-LD schema is present for the website, organization, local business entity, service pages, blog posts, breadcrumbs, and the visible FAQ content on the demo page.

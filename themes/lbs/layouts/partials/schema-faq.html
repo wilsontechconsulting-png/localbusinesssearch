@@ -1,0 +1,44 @@
+{{/* FAQPage schema only where matching FAQ content is visibly present on the page. */}}
+{{ if eq .RelPermalink "/demo/" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": {{ printf "%s#faq" .Permalink | jsonify | safeJS }},
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing depends on the business. Small local businesses are typically listed at $2,500-$4,000 per month, while multi-location or high-volume businesses are typically listed at $5,000-$7,500 per month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there long-term contracts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Local Business Search works month-to-month, and clients can cancel if the system is not delivering results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does setup take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The typical setup timeline is four weeks: strategy and integration in weeks one and two, testing and optimization in week three, then launch and monitoring in week four."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What results can we expect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typical results shown on the page include 40-60% conversion improvement, 15-20 hours per week saved on manual tasks, 30-40% fewer no-shows, and 3-4x return on investment within 90 days."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}

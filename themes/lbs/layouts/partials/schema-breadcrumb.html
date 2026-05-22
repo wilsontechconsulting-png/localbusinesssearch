@@ -4,26 +4,27 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": {{ printf "%s#breadcrumb" .Permalink | jsonify | safeJS }},
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "{{ .Site.BaseURL }}"
+      "item": {{ .Site.BaseURL | jsonify | safeJS }}
     }
     {{ if .Parent }}
     ,{
       "@type": "ListItem",
       "position": 2,
-      "name": "{{ .Parent.Title }}",
-      "item": "{{ .Parent.Permalink }}"
+      "name": {{ .Parent.Title | jsonify | safeJS }},
+      "item": {{ .Parent.Permalink | jsonify | safeJS }}
     }
     {{ end }}
     ,{
       "@type": "ListItem",
       "position": {{ if .Parent }}3{{ else }}2{{ end }},
-      "name": "{{ .Title }}",
-      "item": "{{ .Permalink }}"
+      "name": {{ .Title | jsonify | safeJS }},
+      "item": {{ .Permalink | jsonify | safeJS }}
     }
   ]
 }

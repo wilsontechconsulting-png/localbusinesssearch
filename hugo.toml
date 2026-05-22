@@ -11,6 +11,33 @@ theme = 'lbs'
 [params]
   description = 'AI-driven business systems for local companies. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.'
   author = 'Local Business Search'
+  businessName = 'Local Business Search'
+  businessTagline = 'AI. Business Process.'
+  businessType = 'ProfessionalService'
+  businessEmail = 'jed@powerofadvertising.com'
+  businessPhone = '+1-618-741-6143'
+  businessStreet = '23343 Colina Way'
+  businessCity = 'Charlotte Harbor'
+  businessRegion = 'FL'
+  businessPostalCode = '33980'
+  businessCountry = 'US'
+  businessLatitude = '26.9617'
+  businessLongitude = '-82.0909'
+  businessPriceRange = '$$'
+  businessHours = 'Mo-Fr 09:00-17:00'
+  defaultSocialImage = 'images/social-card-default.png'
+  twitterHandle = '@Jed_X_Wilson'
+  serviceArea = ['United States', 'Florida', 'local and regional service businesses']
+  sameAs = ['https://twitter.com/Jed_X_Wilson']
+  knowsAbout = [
+    'AI automation for local businesses',
+    'business process automation',
+    'digital advertising management',
+    'lead response automation',
+    'CRM and operations integration',
+    'marketing attribution',
+    'local business systems'
+  ]
 
 [menu]
   [[menu.main]]
@@ -64,6 +91,5 @@ canonifyURLs = true
 
 # Output formats
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']
+  home = ['HTML', 'RSS']
   section = ['HTML', 'RSS']
-

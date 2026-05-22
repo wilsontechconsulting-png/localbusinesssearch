@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Local AI on Local Business Search - AI. Business Process.</title>
+    <link>https://localbusinesssearch.com/tags/local-ai/</link>
+    <description>Recent content in Local AI on Local Business Search - AI. Business Process.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://localbusinesssearch.com/tags/local-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Smaller AI Models Matter for Local Business Owners</title>
+      <link>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</guid>
+      <description>&lt;p&gt;Google Research recently published a post about TurboQuant, a new set of compression techniques designed to make large AI models and vector search systems more memory efficient.&lt;/p&gt;&#xA;&lt;p&gt;That sounds technical because it is.&lt;/p&gt;&#xA;&lt;p&gt;But the business takeaway is simple: AI is moving toward smaller, faster, more efficient systems.&lt;/p&gt;&#xA;&lt;p&gt;That matters because not every useful AI tool should require a giant cloud bill, a complicated server setup, or a team of machine learning engineers. A lot of everyday business automation should eventually be able to run on smaller local machines, including devices like a Mac mini.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

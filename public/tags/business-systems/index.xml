@@ -2,17 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Business Systems on Local Business Search - AI. Business Process.</title>
-    <link>http://localhost:1313/tags/business-systems/</link>
+    <link>https://localbusinesssearch.com/tags/business-systems/</link>
     <description>Recent content in Business Systems on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/business-systems/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://localbusinesssearch.com/tags/business-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Real-Time Transcription Changes for Local Business Operations</title>
+      <link>https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/</guid>
+      <description>&lt;p&gt;Mistral&amp;rsquo;s Voxtral Transcribe 2 release is not just another speech-to-text announcement.&lt;/p&gt;&#xA;&lt;p&gt;The bigger shift is that voice data is becoming operational data.&lt;/p&gt;&#xA;&lt;p&gt;That matters for local businesses because a lot of real work still happens in conversations: sales calls, intake calls, service calls, estimates, team meetings, customer support, field notes, and handoffs between departments.&lt;/p&gt;&#xA;&lt;p&gt;Most companies already have those conversations. The problem is that the information often dies inside call recordings, scattered notes, text threads, or someone&amp;rsquo;s memory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why Smaller AI Models Matter for Local Business Owners</title>
+      <link>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</guid>
+      <description>&lt;p&gt;Google Research recently published a post about TurboQuant, a new set of compression techniques designed to make large AI models and vector search systems more memory efficient.&lt;/p&gt;&#xA;&lt;p&gt;That sounds technical because it is.&lt;/p&gt;&#xA;&lt;p&gt;But the business takeaway is simple: AI is moving toward smaller, faster, more efficient systems.&lt;/p&gt;&#xA;&lt;p&gt;That matters because not every useful AI tool should require a giant cloud bill, a complicated server setup, or a team of machine learning engineers. A lot of everyday business automation should eventually be able to run on smaller local machines, including devices like a Mac mini.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Most Local Businesses Don&#39;t Need More Software—They Need Better Systems</title>
-      <link>http://localhost:1313/blog/why-local-businesses-dont-need-more-software/</link>
+      <link>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/why-local-businesses-dont-need-more-software/</guid>
+      <guid>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</guid>
       <description>&lt;h2 id=&#34;the-problem-usually-isnt-a-missing-tool&#34;&gt;The Problem Usually Isn&amp;rsquo;t a Missing Tool&lt;/h2&gt;&#xA;&lt;p&gt;When a local business feels messy, the first instinct is usually:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;We probably need software for that.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you add another tool.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Pretty soon you&amp;rsquo;re paying for a CRM, an email platform, scheduling software, lead forms, a quoting tool, accounting software, a text platform, ad dashboards, and whatever random spreadsheet is holding the whole thing together.&lt;/p&gt;&#xA;&lt;p&gt;And somehow, even after all that, things still feel disorganized.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,77 +1,96 @@
-{{/* Local Business Schema Markup */}}
+{{/* Local Business / Professional Service Schema Markup */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Local Business Search",
-  "description": "AI-driven business systems for local companies. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.",
-  "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ .Site.BaseURL }}images/lbs-logo.jpg",
-  "image": "{{ .Site.BaseURL }}images/lbs-logo.jpg",
-  "telephone": "+1-618-741-6143",
-  "email": "jed@powerofadvertising.com",
+  "@type": ["LocalBusiness", {{ .Site.Params.businessType | default "ProfessionalService" | jsonify | safeJS }}],
+  "@id": {{ printf "%s#localbusiness" .Site.BaseURL | jsonify | safeJS }},
+  "name": {{ .Site.Params.businessName | jsonify | safeJS }},
+  "alternateName": "LBS",
+  "slogan": {{ .Site.Params.businessTagline | jsonify | safeJS }},
+  "description": {{ .Site.Params.description | jsonify | safeJS }},
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
+  "logo": {{ "images/lbs-logo.jpg" | absURL | jsonify | safeJS }},
+  "image": {{ "images/social-card-default.png" | absURL | jsonify | safeJS }},
+  "telephone": {{ .Site.Params.businessPhone | jsonify | safeJS }},
+  "email": {{ .Site.Params.businessEmail | jsonify | safeJS }},
+  "priceRange": {{ .Site.Params.businessPriceRange | jsonify | safeJS }},
+  "openingHours": {{ .Site.Params.businessHours | jsonify | safeJS }},
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "23343 Colina Way",
-    "addressLocality": "Charlotte Harbor",
-    "addressRegion": "FL",
-    "postalCode": "33980",
-    "addressCountry": "US"
+    "streetAddress": {{ .Site.Params.businessStreet | jsonify | safeJS }},
+    "addressLocality": {{ .Site.Params.businessCity | jsonify | safeJS }},
+    "addressRegion": {{ .Site.Params.businessRegion | jsonify | safeJS }},
+    "postalCode": {{ .Site.Params.businessPostalCode | jsonify | safeJS }},
+    "addressCountry": {{ .Site.Params.businessCountry | jsonify | safeJS }}
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "26.9617",
-    "longitude": "-82.0909"
+    "latitude": {{ .Site.Params.businessLatitude | jsonify | safeJS }},
+    "longitude": {{ .Site.Params.businessLongitude | jsonify | safeJS }}
   },
-  "areaServed": [
-    {
-      "@type": "State",
-      "name": "Florida"
-    },
-    {
-      "@type": "Country",
-      "name": "United States"
-    }
-  ],
-  "priceRange": "$$",
-  "openingHours": "Mo-Fr 09:00-17:00",
-  "sameAs": [
-    "https://twitter.com/Jed_X_Wilson"
-  ],
+  "areaServed": {{ .Site.Params.serviceArea | jsonify | safeJS }},
+  "sameAs": {{ .Site.Params.sameAs | jsonify | safeJS }},
+  "knowsAbout": {{ .Site.Params.knowsAbout | jsonify | safeJS }},
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+1-618-741-6143",
-    "contactType": "customer service",
-    "email": "jed@powerofadvertising.com",
+    "telephone": {{ .Site.Params.businessPhone | jsonify | safeJS }},
+    "contactType": "sales and customer support",
+    "email": {{ .Site.Params.businessEmail | jsonify | safeJS }},
     "areaServed": "US",
     "availableLanguage": "en"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Business Systems Services",
+    "name": "Local Business Systems Services",
     "itemListElement": [
       {
         "@type": "Offer",
+        "url": {{ "/platform/" | absURL | jsonify | safeJS }},
         "itemOffered": {
           "@type": "Service",
-          "name": "AI-Driven Business Systems",
-          "description": "Custom AI automation and business process improvement"
+          "@id": {{ "/platform/#service" | absURL | jsonify | safeJS }},
+          "name": "AI-Driven Growth System",
+          "description": "A connected growth system for lead capture, AI qualification, automated follow-up, attribution, and operational visibility."
         }
       },
       {
         "@type": "Offer",
+        "url": {{ "/business-operations/" | absURL | jsonify | safeJS }},
         "itemOffered": {
           "@type": "Service",
+          "@id": {{ "/business-operations/#service" | absURL | jsonify | safeJS }},
           "name": "Business Operations Optimization",
-          "description": "Streamline operations and improve efficiency"
+          "description": "Systems integration and process automation that connects CRM, scheduling, reporting, advertising, and customer follow-up."
         }
       },
       {
         "@type": "Offer",
+        "url": {{ "/ai-automation/" | absURL | jsonify | safeJS }},
         "itemOffered": {
           "@type": "Service",
+          "@id": {{ "/ai-automation/#service" | absURL | jsonify | safeJS }},
+          "name": "AI Automation",
+          "description": "AI-powered lead response, qualification, booking, missed-call recovery, follow-up, and reactivation workflows."
+        }
+      },
+      {
+        "@type": "Offer",
+        "url": {{ "/advertising/" | absURL | jsonify | safeJS }},
+        "itemOffered": {
+          "@type": "Service",
+          "@id": {{ "/advertising/#service" | absURL | jsonify | safeJS }},
           "name": "Digital Advertising Management",
-          "description": "Strategic paid advertising campaigns"
+          "description": "Google Ads, paid social, retargeting, and programmatic campaigns connected to conversion and ROI tracking systems."
+        }
+      },
+      {
+        "@type": "Offer",
+        "url": {{ "/baselayer/" | absURL | jsonify | safeJS }},
+        "itemOffered": {
+          "@type": "Service",
+          "@id": {{ "/baselayer/#service" | absURL | jsonify | safeJS }},
+          "name": "Managed Website Hosting and Maintenance",
+          "description": "Managed hosting, maintenance, security, backups, performance support, and conversion stability for business websites."
         }
       }
     ]

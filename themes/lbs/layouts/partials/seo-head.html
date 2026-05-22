@@ -19,7 +19,7 @@
 {{ else }}
   {{ $description = .Site.Params.description }}
 {{ end }}
-<meta name="description" content="{{ $description }}">
+<meta name="description" content="{{ $description | plainify }}">
 
 {{/* Keywords */}}
 {{ with .Params.tags }}
@@ -58,7 +58,7 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta property="og:description" content="{{ $description }}">
+<meta property="og:description" content="{{ $description | plainify }}">
 <meta property="og:image" content="{{ $socialImageURL }}">
 <meta property="og:image:secure_url" content="{{ $socialImageURL }}">
 <meta property="og:image:width" content="1200">
@@ -69,11 +69,11 @@
 
 {{/* Twitter Card */}}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@Jed_X_Wilson">
-<meta name="twitter:creator" content="@Jed_X_Wilson">
+<meta name="twitter:site" content="{{ .Site.Params.twitterHandle | default "@Jed_X_Wilson" }}">
+<meta name="twitter:creator" content="{{ .Site.Params.twitterHandle | default "@Jed_X_Wilson" }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:description" content="{{ $description | plainify }}">
 <meta name="twitter:image" content="{{ $socialImageURL }}">
 <meta name="twitter:image:alt" content="{{ $socialImageAlt }}">
 
@@ -97,14 +97,15 @@
 
 {{/* Theme Color */}}
 <meta name="theme-color" content="#0A1628">
+<meta name="format-detection" content="telephone=yes">
 
 {{/* Business Information for Local SEO */}}
-<meta name="geo.region" content="US-FL">
-<meta name="geo.placename" content="Charlotte Harbor">
-<meta name="geo.position" content="26.9617;-82.0909">
-<meta name="ICBM" content="26.9617, -82.0909">
+<meta name="geo.region" content="{{ .Site.Params.businessCountry }}-{{ .Site.Params.businessRegion }}">
+<meta name="geo.placename" content="{{ .Site.Params.businessCity }}">
+<meta name="geo.position" content="{{ .Site.Params.businessLatitude }};{{ .Site.Params.businessLongitude }}">
+<meta name="ICBM" content="{{ .Site.Params.businessLatitude }}, {{ .Site.Params.businessLongitude }}">
 
 {{/* Contact Information */}}
-<meta name="contact" content="jed@powerofadvertising.com">
-<meta name="telephone" content="+1-618-741-6143">
-<meta name="address" content="23343 Colina Way, Charlotte Harbor, FL 33980">
+<meta name="contact" content="{{ .Site.Params.businessEmail }}">
+<meta name="telephone" content="{{ .Site.Params.businessPhone }}">
+<meta name="address" content="{{ .Site.Params.businessStreet }}, {{ .Site.Params.businessCity }}, {{ .Site.Params.businessRegion }} {{ .Site.Params.businessPostalCode }}">

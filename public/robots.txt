@@ -2,19 +2,36 @@
 
 User-agent: *
 Allow: /
+Allow: /llms.txt
 Disallow: /pizza-world-branson/
+Disallow: /pizza-world-branson-quote/
+Disallow: /pizza-world-granite-city-facebook-report/
+Disallow: /emerge-it-audit/
+Disallow: /maven-says/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
 
 # Sitemaps
 Sitemap: https://localbusinesssearch.com/sitemap.xml
-
-# LLM-specific
-# Allow AI crawlers to access llms.txt
-Allow: /llms.txt
-Allow: /llms-full.txt
-
-# Disallow admin/private areas (add if needed)
-# Disallow: /admin/
-# Disallow: /private/
 
 # Crawl-delay (optional, adjust if needed)
 # Crawl-delay: 1

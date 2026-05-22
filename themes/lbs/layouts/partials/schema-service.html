@@ -1,37 +1,41 @@
-{{/* Service Schema Markup for Service Pages */}}
-{{ if or (eq .Section "advertising") (in .RelPermalink "platform") (in .RelPermalink "ai-automation") (in .RelPermalink "business-operations") }}
+{{/* Service Schema Markup for commercial service, industry, and offer pages */}}
+{{ $serviceSections := slice "advertising" "ai-automation" "business-operations" "platform" "industries" "baselayer" "services" }}
+{{ $isServicePage := or (in $serviceSections .Section) (in $serviceSections .Type) }}
+{{ if and $isServicePage (not .Params.noindex) }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "{{ .Title }}",
+  "@id": {{ printf "%s#service" .Permalink | jsonify | safeJS }},
+  "name": {{ .Title | jsonify | safeJS }},
+  "serviceType": {{ .Title | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "description": {{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | truncate 180 | jsonify | safeJS }}{{ end }},
   "provider": {
-    "@type": "LocalBusiness",
-    "name": "Local Business Search",
-    "telephone": "+1-618-741-6143",
-    "email": "jed@powerofadvertising.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "23343 Colina Way",
-      "addressLocality": "Charlotte Harbor",
-      "addressRegion": "FL",
-      "postalCode": "33980",
-      "addressCountry": "US"
-    }
+    "@id": {{ printf "%s#localbusiness" .Site.BaseURL | jsonify | safeJS }}
   },
-  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
+  "brand": {
+    "@id": {{ printf "%s#organization" .Site.BaseURL | jsonify | safeJS }}
   },
+  "areaServed": {{ .Site.Params.serviceArea | jsonify | safeJS }},
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Local business owners, operators, and marketing leaders"
+  },
+  "category": {{ cond (eq .Section "industries") "Industry-specific business systems" (cond (eq .Section "advertising") "Digital advertising" "Business process automation") | jsonify | safeJS }},
   "availableChannel": {
     "@type": "ServiceChannel",
-    "serviceUrl": "{{ .Permalink }}",
+    "serviceUrl": {{ .Permalink | jsonify | safeJS }},
     "servicePhone": {
       "@type": "ContactPoint",
-      "telephone": "+1-618-741-6143",
-      "contactType": "customer service"
+      "telephone": {{ .Site.Params.businessPhone | jsonify | safeJS }},
+      "contactType": "sales and customer support"
     }
+  },
+  "potentialAction": {
+    "@type": "ContactAction",
+    "target": {{ "/contact/" | absURL | jsonify | safeJS }},
+    "name": "Request a consultation"
   }
 }
 </script>
