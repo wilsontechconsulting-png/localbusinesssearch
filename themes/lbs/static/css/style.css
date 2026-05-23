@@ -422,6 +422,23 @@ nav a:hover::after {
   color: var(--navy);
 }
 
+.contact-cta-section {
+  background: var(--blue-tint);
+}
+
+.contact-cta-secondary {
+  background: var(--white);
+  color: var(--navy);
+  border-color: rgba(0, 102, 255, 0.35);
+  box-shadow: 0 8px 22px rgba(10, 22, 40, 0.08);
+}
+
+.contact-cta-secondary:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
 .btn-large {
   padding: 1.25rem 2.5rem;
   font-size: 1.125rem;
