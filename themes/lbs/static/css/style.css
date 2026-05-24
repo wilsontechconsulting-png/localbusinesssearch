@@ -2286,6 +2286,13 @@ footer p {
   transform: none;
 }
 
+.desktop-nav .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: stretch;
+}
+
 .has-dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
