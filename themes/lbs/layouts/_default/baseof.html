@@ -5,7 +5,7 @@
     {{ partial "seo-head.html" . }}
     
     {{/* Stylesheets */}}
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v={{ now.Unix }}">
     
     {{/* Schema Markup */}}
     {{ partial "schema-website.html" . }}
