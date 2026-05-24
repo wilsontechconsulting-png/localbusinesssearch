@@ -234,6 +234,60 @@ That makes it more than a hobby platform.
 
 It is a preview of personal infrastructure: software you control, running on hardware you own, connected to the physical world around you.
 
+## Good Devices and Brands to Start With
+
+The smartest Home Assistant setup usually starts with boring reliability, not the flashiest gadget.
+
+Before buying anything, check three things:
+
+- Does it have a Home Assistant integration?
+- Can it run locally, or does it depend on a cloud account?
+- Does it use a solid protocol like Zigbee, Z-Wave, Matter, Thread, or a well-supported local bridge?
+
+Home Assistant has official support for Zigbee Home Automation, Z-Wave JS, Matter, Philips Hue, Lutron Caseta, ecobee, Yale Home, Zooz, Tailwind garage controllers, and many other integrations. That does not mean every product from every brand is perfect, but it gives buyers a much better starting point than random Wi-Fi gadgets.
+
+Source: [Home Assistant integrations](https://www.home-assistant.io/integrations/)
+
+Here is a practical shortlist.
+
+**Best starter hub:** Home Assistant Green is the cleanest entry point for most people. It is purpose-built, already has Home Assistant installed, and avoids the "build a server first" problem. If you want Zigbee, Thread, or Matter devices, pair it with a Home Assistant Connect ZBT-1 or ZBT-2 adapter. If you want Z-Wave devices, use a compatible Z-Wave adapter such as Home Assistant Connect ZWA-2.
+
+Source: [Home Assistant hardware](https://www.home-assistant.io/)
+
+**Best smart lights:** Philips Hue is still one of the safest premium choices because the Hue Bridge integrates cleanly and locally with Home Assistant. For lower-cost Zigbee lighting and sensors, IKEA, Aqara, SONOFF, and Third Reality are common Home Assistant-friendly options, especially when paired through Zigbee Home Automation or Zigbee2MQTT.
+
+Source: [Philips Hue integration](https://www.home-assistant.io/integrations/hue/)
+
+**Best wall switches and dimmers:** Lutron Caseta is the boring-but-great answer for many homes. It is reliable, widely used, and works well through the Lutron bridge. For Z-Wave switches, Zooz is a strong Home Assistant-native choice and is part of the Works with Home Assistant program. Inovelli is also popular with Home Assistant users who want advanced switch behavior, LED bars, scene controls, and smart-bulb mode.
+
+Sources: [Lutron Caseta integration](https://www.home-assistant.io/integrations/lutron_caseta/), [Zooz integration](https://www.home-assistant.io/integrations/zooz/)
+
+**Best thermostats:** ecobee is a practical mainstream option because Home Assistant can control the thermostat and view sensor data. For people who want less cloud dependence, Z-Wave thermostats such as Honeywell/Resideo T6 Pro Z-Wave-style models are often worth considering, but compatibility should be checked by exact model number before buying.
+
+Source: [ecobee integration](https://www.home-assistant.io/integrations/ecobee/)
+
+**Best sensors:** Aqara, Third Reality, SONOFF, Zooz, and Aeotec are good names to research for motion, contact, leak, temperature, humidity, vibration, and presence sensors. In general, Zigbee is strong for low-cost battery sensors. Z-Wave is strong for reliability and less Wi-Fi interference. Matter is improving, but buyers should still check real Home Assistant support before assuming a Matter logo means every feature will work perfectly.
+
+Sources: [Zigbee Home Automation](https://www.home-assistant.io/integrations/zha/), [Z-Wave](https://www.home-assistant.io/docs/z-wave/), [Matter](https://www.home-assistant.io/integrations/matter/)
+
+**Best locks:** Yale is one of the better-known lock brands with Home Assistant support. Z-Wave versions of smart locks are often a good fit for people who want local control through a Z-Wave network. The practical rule is simple: choose the lock by exact model and radio type, not just the brand name.
+
+Source: [Yale Home integration](https://www.home-assistant.io/integrations/yale/)
+
+**Best garage door options:** Be careful here. Garage doors are one category where cloud lock-in and manufacturer changes can cause real headaches. If you want Home Assistant control, look at Tailwind, Garadget, ratgdo/ESPHome-style controllers, or a simple relay-plus-sensor setup for compatible openers. Do not assume Chamberlain, LiftMaster, or myQ will be the easiest path for local Home Assistant control. They may work in some setups, but they have a history of changing access and breaking integrations, so compatibility needs to be checked before buying.
+
+Sources: [Tailwind integration](https://www.home-assistant.io/integrations/tailwind/), [Garadget integration](https://www.home-assistant.io/integrations/garadget/)
+
+**Best smart plugs and outlets:** Zooz, Third Reality, SONOFF, Shelly, and TP-Link/Kasa are common names to evaluate. For energy monitoring, make sure the exact plug exposes power and energy sensors to Home Assistant. For critical appliances, avoid cheap no-name plugs and pay attention to load ratings.
+
+**Best cameras and doorbells:** This is where expectations need to be managed. Many consumer cameras are cloud-first. For privacy-minded setups, local RTSP/ONVIF camera support is usually better than buying a camera that only works through a vendor app. Reolink, UniFi Protect, Amcrest, and Frigate-compatible cameras are common research paths for Home Assistant users, but camera choice depends heavily on whether you want recording, object detection, doorbell support, PoE wiring, or local AI detection.
+
+**Best energy and utility monitoring:** Emporia Vue, Shelly, Sense, smart plugs with energy reporting, solar inverter integrations, battery integrations, and utility meter data can all feed useful dashboards. The key is not the brand alone; it is whether Home Assistant can read clean sensor data for watts, kilowatt-hours, voltage, battery state, solar production, or water usage.
+
+Source: [Home Assistant energy management](https://www.home-assistant.io/integrations/energy/)
+
+The rule of thumb: buy devices that keep working when the internet is down. If a product requires a cloud account for every basic action, it may still be useful, but it is not the best fit for a privacy-first Home Assistant build.
+
 ## The Bottom Line
 
 Home Assistant is not just another smart home app.
