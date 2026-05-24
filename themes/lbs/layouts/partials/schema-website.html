@@ -15,36 +15,14 @@
   },
   "inLanguage": "en-US",
   "hasPart": [
+    {{- range $index, $item := .Site.Menus.main }}
+    {{- if $index }},{{ end }}
     {
       "@type": "SiteNavigationElement",
-      "name": "Platform",
-      "url": {{ "/platform/" | absURL | jsonify | safeJS }}
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "name": "Business Systems",
-      "url": {{ "/business-operations/" | absURL | jsonify | safeJS }}
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "name": "AI Automation",
-      "url": {{ "/ai-automation/" | absURL | jsonify | safeJS }}
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "name": "Advertising",
-      "url": {{ "/advertising/" | absURL | jsonify | safeJS }}
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "name": "Industries",
-      "url": {{ "/industries/" | absURL | jsonify | safeJS }}
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "name": "Resources",
-      "url": {{ "/blog/" | absURL | jsonify | safeJS }}
-    },
+      "name": {{ $item.Name | jsonify | safeJS }},
+      "url": {{ $item.URL | absURL | jsonify | safeJS }}
+    }
+    {{- end }},
     {
       "@type": "SiteNavigationElement",
       "name": "Contact",

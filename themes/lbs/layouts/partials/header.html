@@ -31,13 +31,13 @@
               </a>
               <ul class="dropdown-menu">
                 {{ range .Children }}
-                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  <li><a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
                 {{ end }}
               </ul>
             </li>
           {{ else }}
             <!-- Regular menu item -->
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <li><a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
           {{ end }}
         {{ end }}
       </ul>
@@ -68,13 +68,13 @@
               </a>
               <ul class="mobile-submenu">
                 {{ range .Children }}
-                  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                  <li><a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
                 {{ end }}
               </ul>
             </li>
           {{ else }}
             <!-- Regular menu item -->
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <li><a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
           {{ end }}
         {{ end }}
         <li class="mobile-cta-item">

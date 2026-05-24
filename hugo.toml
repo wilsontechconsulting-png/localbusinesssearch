@@ -41,43 +41,82 @@ theme = 'lbs'
 
 [menu]
   [[menu.main]]
-    name = 'The System'
+    name = 'Business Process'
     url = '/platform/'
+    weight = 1
+  [[menu.main]]
+    name = 'The Platform'
+    url = '/platform/'
+    parent = 'Business Process'
     weight = 1
   [[menu.main]]
     name = 'Business Systems'
     url = '/business-operations/'
-    parent = 'The System'
+    parent = 'Business Process'
+    weight = 2
+  [[menu.main]]
+    name = 'Advertising'
+    url = '/advertising/'
+    parent = 'Business Process'
+    weight = 3
+  [[menu.main]]
+    name = 'Baselayer'
+    url = '/baselayer/'
+    parent = 'Business Process'
+    weight = 4
+  [[menu.main]]
+    name = 'Artificial Intelligence'
+    url = '/ai-automation/'
     weight = 2
   [[menu.main]]
     name = 'AI Automation'
     url = '/ai-automation/'
-    parent = 'The System'
+    parent = 'Artificial Intelligence'
+    weight = 1
+  [[menu.main]]
+    name = 'Artificial Analysis Models'
+    url = 'https://artificialanalysis.ai/leaderboards/models'
+    parent = 'Artificial Intelligence'
+    weight = 2
+    [menu.main.params]
+      external = true
+  [[menu.main]]
+    name = 'Vellum LLM Leaderboard'
+    url = 'https://www.vellum.ai/open-llm-leaderboard'
+    parent = 'Artificial Intelligence'
     weight = 3
+    [menu.main.params]
+      external = true
   [[menu.main]]
-    name = 'Advertising'
-    url = '/advertising/'
+    name = 'Hugging Face'
+    url = 'https://huggingface.co'
+    parent = 'Artificial Intelligence'
     weight = 4
+    [menu.main.params]
+      external = true
   [[menu.main]]
-    name = 'Baselayer'
-    url = '/baselayer/'
+    name = 'OpenRouter Rankings'
+    url = 'https://openrouter.ai/rankings'
+    parent = 'Artificial Intelligence'
     weight = 5
+    [menu.main.params]
+      external = true
   [[menu.main]]
     name = 'Industries'
     url = '/industries/'
-    weight = 6
+    weight = 3
   [[menu.main]]
     name = 'Results'
     url = '/results/'
-    weight = 7
+    weight = 4
   [[menu.main]]
     name = 'Resources'
     url = '/blog/'
-    weight = 8
+    weight = 5
   [[menu.main]]
     name = 'About'
     url = '/about/'
-    weight = 9
+    weight = 6
 
 # SEO Settings
 enableRobotsTXT = true
