@@ -165,9 +165,28 @@
   const tagFilters = document.getElementById('tagFilters');
   
   if (tagToggle && tagFilters) {
-    tagToggle.addEventListener('click', function() {
+    tagToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
       tagToggle.classList.toggle('active');
       tagFilters.classList.toggle('active');
+    });
+
+    tagFilters.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.tag-filters-wrapper')) {
+        tagToggle.classList.remove('active');
+        tagFilters.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        tagToggle.classList.remove('active');
+        tagFilters.classList.remove('active');
+      }
     });
   }
   

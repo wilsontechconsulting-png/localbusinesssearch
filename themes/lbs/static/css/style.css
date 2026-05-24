@@ -2255,7 +2255,8 @@ footer p {
   transition: transform var(--transition-base);
 }
 
-.has-dropdown:hover .dropdown-arrow {
+.has-dropdown:hover .dropdown-arrow,
+.has-dropdown.open .dropdown-arrow {
   transform: rotate(180deg);
 }
 
@@ -2293,7 +2294,8 @@ footer p {
   align-items: stretch;
 }
 
-.has-dropdown:hover .dropdown-menu {
+.has-dropdown:hover .dropdown-menu,
+.has-dropdown.open .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: calc(100% + 0.5rem);
