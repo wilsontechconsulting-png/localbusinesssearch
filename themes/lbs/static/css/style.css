@@ -428,15 +428,20 @@ nav a:hover::after {
 
 .contact-cta-secondary {
   background: var(--white);
-  color: var(--navy);
-  border-color: rgba(0, 102, 255, 0.35);
-  box-shadow: 0 8px 22px rgba(10, 22, 40, 0.08);
+  color: var(--bright-blue);
+  border-color: var(--bright-blue);
+  box-shadow: 0 10px 24px rgba(10, 22, 40, 0.12);
 }
 
 .contact-cta-secondary:hover {
-  background: var(--navy);
+  background: var(--bright-blue);
   color: var(--white);
-  border-color: var(--navy);
+  border-color: var(--bright-blue);
+}
+
+.contact-cta-secondary:focus-visible {
+  outline: 3px solid rgba(0, 102, 255, 0.35);
+  outline-offset: 3px;
 }
 
 .btn-large {
