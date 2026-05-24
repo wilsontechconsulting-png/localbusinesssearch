@@ -2276,6 +2276,12 @@ footer p {
   list-style: none;
 }
 
+.desktop-nav .dropdown-align-right .dropdown-menu {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
 .has-dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;

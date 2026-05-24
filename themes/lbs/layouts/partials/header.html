@@ -22,7 +22,7 @@
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <!-- Parent item with dropdown -->
-            <li class="has-dropdown">
+            <li class="has-dropdown{{ if or (eq .Name "Resources") (eq .Name "About") }} dropdown-align-right{{ end }}">
               <a href="{{ .URL }}" class="dropdown-toggle">
                 {{ .Name }}
                 <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
