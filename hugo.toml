@@ -114,6 +114,46 @@ theme = 'lbs'
     url = '/blog/'
     weight = 5
   [[menu.main]]
+    name = 'All Articles'
+    url = '/blog/'
+    parent = 'Resources'
+    weight = 1
+  [[menu.main]]
+    name = 'AI Automation'
+    url = '/blog/'
+    parent = 'Resources'
+    weight = 2
+    [menu.main.params]
+      href = '/blog/?category=AI%20Automation'
+  [[menu.main]]
+    name = 'Business Systems'
+    url = '/blog/'
+    parent = 'Resources'
+    weight = 3
+    [menu.main.params]
+      href = '/blog/?category=Business%20Systems'
+  [[menu.main]]
+    name = 'Advertising'
+    url = '/blog/'
+    parent = 'Resources'
+    weight = 4
+    [menu.main.params]
+      href = '/blog/?category=Advertising'
+  [[menu.main]]
+    name = 'SEO & AI Search'
+    url = '/blog/'
+    parent = 'Resources'
+    weight = 5
+    [menu.main.params]
+      href = '/blog/?category=SEO'
+  [[menu.main]]
+    name = 'Business Tools'
+    url = '/blog/'
+    parent = 'Resources'
+    weight = 6
+    [menu.main.params]
+      href = '/blog/?category=Business%20Tools'
+  [[menu.main]]
     name = 'About'
     url = '/about/'
     weight = 6

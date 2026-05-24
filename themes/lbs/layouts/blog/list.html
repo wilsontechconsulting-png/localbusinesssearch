@@ -65,11 +65,19 @@
         <div class="blog-filters">
             <div class="category-filters">
                 <button class="category-filter-btn active" data-category="all">All Articles</button>
-                <button class="category-filter-btn" data-category="AI Automation">AI Automation</button>
-                <button class="category-filter-btn" data-category="Business Systems">Business Systems</button>
-                <button class="category-filter-btn" data-category="Advertising">Advertising</button>
-                <button class="category-filter-btn" data-category="Case Studies">Case Studies</button>
-                <button class="category-filter-btn" data-category="Growth Strategies">Growth Strategies</button>
+                {{ $allCategories := slice }}
+                {{ range $posts }}
+                    {{ with .Params.category }}
+                        {{ $allCategories = $allCategories | append . }}
+                    {{ else }}
+                        {{ range .Params.categories }}
+                            {{ $allCategories = $allCategories | append . }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                {{ range sort ($allCategories | uniq) }}
+                    <button class="category-filter-btn" data-category="{{ . }}">{{ . }}</button>
+                {{ end }}
             </div>
             
             <!-- Tag Filter (Collapsible) -->
@@ -100,8 +108,16 @@
         {{ if $posts }}
         <div class="blog-grid" id="blogGrid">
             {{ range $posts }}
-                <div class="blog-post-item" 
-                     data-category="{{ .Params.category }}" 
+                {{ $postCategories := slice }}
+                {{ with .Params.category }}
+                    {{ $postCategories = $postCategories | append . }}
+                {{ else }}
+                    {{ range .Params.categories }}
+                        {{ $postCategories = $postCategories | append . }}
+                    {{ end }}
+                {{ end }}
+                <div class="blog-post-item"
+                     data-categories='{{ delimit $postCategories "," }}'
                      data-tags='{{ delimit .Params.tags "," }}'>
                     {{ partial "components/home-blog-card.html" . }}
                 </div>
@@ -130,6 +146,9 @@
 (function() {
   let activeCategory = 'all';
   let activeTags = [];
+  const params = new URLSearchParams(window.location.search);
+  const initialCategory = params.get('category');
+  const initialTag = params.get('tag');
   
   const categoryBtns = document.querySelectorAll('.category-filter-btn');
   categoryBtns.forEach(btn => {
@@ -137,6 +156,7 @@
       categoryBtns.forEach(b => b.classList.remove('active'));
       this.classList.add('active');
       activeCategory = this.getAttribute('data-category');
+      updateFilterUrl();
       filterPosts();
     });
   });
@@ -164,21 +184,59 @@
         activeTags.push(tag);
       }
       
+      updateFilterUrl();
       filterPosts();
     });
   });
-  
+
+  if (initialCategory) {
+    const matchingCategoryBtn = Array.from(categoryBtns).find(btn => btn.getAttribute('data-category') === initialCategory);
+    if (matchingCategoryBtn) {
+      categoryBtns.forEach(btn => btn.classList.remove('active'));
+      matchingCategoryBtn.classList.add('active');
+      activeCategory = initialCategory;
+    }
+  }
+
+  if (initialTag) {
+    const matchingTagBtn = Array.from(tagBtns).find(btn => btn.getAttribute('data-tag') === initialTag);
+    if (matchingTagBtn) {
+      matchingTagBtn.classList.add('active');
+      activeTags = [initialTag];
+      if (tagFilters) tagFilters.classList.add('active');
+      if (tagToggle) tagToggle.classList.add('active');
+    }
+  }
+
+  filterPosts();
+
+  function updateFilterUrl() {
+    const nextParams = new URLSearchParams();
+
+    if (activeCategory !== 'all') {
+      nextParams.set('category', activeCategory);
+    }
+
+    if (activeTags.length === 1) {
+      nextParams.set('tag', activeTags[0]);
+    }
+
+    const nextUrl = nextParams.toString() ? `${window.location.pathname}?${nextParams.toString()}` : window.location.pathname;
+    window.history.replaceState({}, '', nextUrl);
+  }
+
   function filterPosts() {
     const posts = document.querySelectorAll('.blog-post-item');
     const noResults = document.getElementById('noResults');
     let visibleCount = 0;
     
     posts.forEach(post => {
-      const postCategory = post.getAttribute('data-category');
+      const postCategoriesStr = post.getAttribute('data-categories');
+      const postCategories = postCategoriesStr ? postCategoriesStr.split(',') : [];
       const postTagsStr = post.getAttribute('data-tags');
       const postTags = postTagsStr ? postTagsStr.split(',') : [];
       
-      const categoryMatch = activeCategory === 'all' || postCategory === activeCategory;
+      const categoryMatch = activeCategory === 'all' || postCategories.includes(activeCategory);
       const tagsMatch = activeTags.length === 0 || activeTags.some(tag => postTags.includes(tag));
       
       if (categoryMatch && tagsMatch) {
