@@ -2265,6 +2265,10 @@ footer p {
   left: 50%;
   transform: translateX(-50%);
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: stretch;
   background: white;
   border-radius: var(--radius-md);
   box-shadow: 0 8px 24px rgba(10, 22, 40, 0.12);
