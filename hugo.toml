@@ -88,8 +88,8 @@ theme = 'lbs'
     [menu.main.params]
       external = true
   [[menu.main]]
-    name = 'Hugging Face'
-    url = 'https://huggingface.co'
+    name = 'Hugging Face Leaderboard'
+    url = 'https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard'
     parent = 'Artificial Intelligence'
     weight = 4
     [menu.main.params]
