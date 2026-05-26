@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ollama on Local Business Search - AI. Business Process.</title>
+    <link>https://localbusinesssearch.com/tags/ollama/</link>
+    <description>Recent content in Ollama on Local Business Search - AI. Business Process.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://localbusinesssearch.com/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How OpenClaw, Ollama, Hermes, Telegram, and Local AI Models Fit Together</title>
+      <link>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</guid>
+      <description>&lt;p&gt;A lot of people get confused when they first hear terms like OpenClaw, Ollama, Hermes, local AI models, Telegram agents, fallback routing, autonomous workflows, and cloud model providers.&lt;/p&gt;&#xA;&lt;p&gt;That is understandable.&lt;/p&gt;&#xA;&lt;p&gt;Most AI tools are presented as if the model is the whole product. You open ChatGPT, Claude, Gemini, or another app, type into a box, and get an answer back.&lt;/p&gt;&#xA;&lt;p&gt;But the more interesting shift is not just better chat windows.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -6,8 +6,22 @@
     <description>Recent content in Automation on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://localbusinesssearch.com/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Assistant and Private Smart Homes: What It Can and Can&#39;t Do</title>
+      <link>https://localbusinesssearch.com/blog/home-assistant-private-smart-home-ai/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/home-assistant-private-smart-home-ai/</guid>
+      <description>&lt;p&gt;Most people think a smart home means buying a few devices from Amazon, Google, Apple, Ring, Nest, Philips, Samsung, or another brand, then controlling them from whatever app came in the box.&lt;/p&gt;&#xA;&lt;p&gt;That works up to a point.&lt;/p&gt;&#xA;&lt;p&gt;The problem is that every brand wants to be the center of the house. One app controls lights. Another controls cameras. Another controls locks. Another controls thermostats. Another controls garage doors. Another controls speakers. Then voice assistants sit on top of all of it, usually depending on cloud services to understand what you said and decide what happens next.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How OpenClaw, Ollama, Hermes, Telegram, and Local AI Models Fit Together</title>
+      <link>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</link>
+      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</guid>
+      <description>&lt;p&gt;A lot of people get confused when they first hear terms like OpenClaw, Ollama, Hermes, local AI models, Telegram agents, fallback routing, autonomous workflows, and cloud model providers.&lt;/p&gt;&#xA;&lt;p&gt;That is understandable.&lt;/p&gt;&#xA;&lt;p&gt;Most AI tools are presented as if the model is the whole product. You open ChatGPT, Claude, Gemini, or another app, type into a box, and get an answer back.&lt;/p&gt;&#xA;&lt;p&gt;But the more interesting shift is not just better chat windows.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>What Real-Time Transcription Changes for Local Business Operations</title>
       <link>https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/</link>

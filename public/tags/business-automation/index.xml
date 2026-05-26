@@ -6,8 +6,29 @@
     <description>Recent content in Business Automation on Local Business Search - AI. Business Process.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://localbusinesssearch.com/tags/business-automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How ComfyUI, OpenClaw, and Hermes Could Work Together for Local Business Marketing</title>
+      <link>https://localbusinesssearch.com/blog/comfyui-openclaw-hermes-visual-ai-workflows/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://localbusinesssearch.com/blog/comfyui-openclaw-hermes-visual-ai-workflows/</guid>
+      <description>&lt;p&gt;Most local business owners do not need another AI toy.&lt;/p&gt;&#xA;&lt;p&gt;They need repeatable work.&lt;/p&gt;&#xA;&lt;p&gt;That is what makes &lt;a href=&#34;https://www.comfy.org/&#34;&gt;ComfyUI&lt;/a&gt; interesting. It is not just an image generator where someone types a prompt, gets a picture, and hopes the result is usable.&lt;/p&gt;&#xA;&lt;p&gt;ComfyUI is a workflow system for visual AI. It lets users connect models, processing steps, parameters, and outputs through a node-based canvas. The official Comfy site describes it as a creation engine for visual professionals who want control over every model, parameter, and output.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Telnyx and the Rise of AI Voice Agents for Small Business</title>
+      <link>https://localbusinesssearch.com/blog/telnyx-ai-voice-agents-small-business/</link>
+      <pubDate>Sun, 24 May 2026 22:05:00 -0400</pubDate>
+      <guid>https://localbusinesssearch.com/blog/telnyx-ai-voice-agents-small-business/</guid>
+      <description>&lt;p&gt;Most small businesses do not lose money because they lack software.&lt;/p&gt;&#xA;&lt;p&gt;They lose money because the phone rings at the wrong time, a lead waits too long, a customer needs a simple answer after hours, or a team member forgets to follow up.&lt;/p&gt;&#xA;&lt;p&gt;That is why &lt;a href=&#34;https://telnyx.com/&#34;&gt;Telnyx&lt;/a&gt; is worth paying attention to.&lt;/p&gt;&#xA;&lt;p&gt;Telnyx is a communications platform for developers and businesses. The simple version: it gives software access to phone calls, text messages, phone numbers, call routing, speech-to-text, text-to-speech, and AI infrastructure through APIs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paperclip and the Shift From AI Chatbots to AI Agent Teams</title>
+      <link>https://localbusinesssearch.com/blog/paperclip-ai-agent-control-plane/</link>
+      <pubDate>Sun, 24 May 2026 20:50:00 -0400</pubDate>
+      <guid>https://localbusinesssearch.com/blog/paperclip-ai-agent-control-plane/</guid>
+      <description>&lt;p&gt;Most people still think about AI as a chat window.&lt;/p&gt;&#xA;&lt;p&gt;You open ChatGPT, Claude, Gemini, or another tool. You type a prompt. You get an answer. Maybe you copy that answer into a document, email, spreadsheet, website, or project management system.&lt;/p&gt;&#xA;&lt;p&gt;That model is useful, but it is limited.&lt;/p&gt;&#xA;&lt;p&gt;The bigger shift happening right now is not just better prompts or smarter models. It is the move from AI as a single assistant to AI as an organized work system.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>OpenClaw&#39;s GPT-5.5 Update: Impressive Speed, Real Pain Points (And Why We Switched to ProductiveBot)</title>
       <link>https://localbusinesssearch.com/blog/openclaw-gpt55-update-vs-productivebot/</link>
