@@ -1,33 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>OpenClaw on Local Business Search - AI. Business Process.</title>
-    <link>https://localbusinesssearch.com/tags/openclaw/</link>
-    <description>Recent content in OpenClaw on Local Business Search - AI. Business Process.</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://localbusinesssearch.com/tags/openclaw/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How ComfyUI, OpenClaw, and Hermes Could Work Together for Local Business Marketing</title>
-      <link>https://localbusinesssearch.com/blog/comfyui-openclaw-hermes-visual-ai-workflows/</link>
-      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/comfyui-openclaw-hermes-visual-ai-workflows/</guid>
-      <description>&lt;p&gt;Most local business owners do not need another AI toy.&lt;/p&gt;&#xA;&lt;p&gt;They need repeatable work.&lt;/p&gt;&#xA;&lt;p&gt;That is what makes &lt;a href=&#34;https://www.comfy.org/&#34;&gt;ComfyUI&lt;/a&gt; interesting. It is not just an image generator where someone types a prompt, gets a picture, and hopes the result is usable.&lt;/p&gt;&#xA;&lt;p&gt;ComfyUI is a workflow system for visual AI. It lets users connect models, processing steps, parameters, and outputs through a node-based canvas. The official Comfy site describes it as a creation engine for visual professionals who want control over every model, parameter, and output.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How OpenClaw, Ollama, Hermes, Telegram, and Local AI Models Fit Together</title>
-      <link>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</link>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</guid>
-      <description>&lt;p&gt;A lot of people get confused when they first hear terms like OpenClaw, Ollama, Hermes, local AI models, Telegram agents, fallback routing, autonomous workflows, and cloud model providers.&lt;/p&gt;&#xA;&lt;p&gt;That is understandable.&lt;/p&gt;&#xA;&lt;p&gt;Most AI tools are presented as if the model is the whole product. You open ChatGPT, Claude, Gemini, or another app, type into a box, and get an answer back.&lt;/p&gt;&#xA;&lt;p&gt;But the more interesting shift is not just better chat windows.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OpenClaw&#39;s GPT-5.5 Update: Impressive Speed, Real Pain Points (And Why We Switched to ProductiveBot)</title>
-      <link>https://localbusinesssearch.com/blog/openclaw-gpt55-update-vs-productivebot/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/openclaw-gpt55-update-vs-productivebot/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re following AI automation tools for local businesses, you&amp;rsquo;ve probably heard about &lt;strong&gt;OpenClaw&amp;rsquo;s latest update&lt;/strong&gt;. Version 2026.4.23 just dropped with some genuinely impressive features: &lt;strong&gt;GPT-5.5 support&lt;/strong&gt;, &lt;strong&gt;image generation and editing&lt;/strong&gt;, and &lt;strong&gt;multi-agent workflows&lt;/strong&gt; (subagents).&lt;/p&gt;&#xA;&lt;p&gt;The community response? A mix of &lt;strong&gt;excitement&lt;/strong&gt; and &lt;strong&gt;frustration&lt;/strong&gt; that perfectly illustrates why we made the switch to &lt;strong&gt;ProductiveBot.AI&lt;/strong&gt; for our clients.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-openclaw-just-shipped&#34;&gt;What OpenClaw Just Shipped&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s start with what&amp;rsquo;s actually new:&lt;/p&gt;&#xA;&lt;h3 id=&#34;gpt-55-integration&#34;&gt;GPT-5.5 Integration&lt;/h3&gt;&#xA;&lt;p&gt;OpenClaw now supports OpenAI&amp;rsquo;s latest GPT-5.5 model, giving users access to cutting-edge language capabilities. On paper, this is huge—better reasoning, longer context windows, and more reliable outputs.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenClaw on Local Business Search - AI. Business Process.</title><link>https://localbusinesssearch.com/tags/openclaw/</link><description>Recent content in OpenClaw on Local Business Search - AI. Business Process.</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://localbusinesssearch.com/tags/openclaw/index.xml" rel="self" type="application/rss+xml"/><item><title>How ComfyUI, OpenClaw, and Hermes Could Work Together for Local Business Marketing</title><link>https://localbusinesssearch.com/blog/comfyui-openclaw-hermes-visual-ai-workflows/</link><pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/comfyui-openclaw-hermes-visual-ai-workflows/</guid><description>&lt;p&gt;Most local business owners do not need another AI toy.&lt;/p&gt;
+&lt;p&gt;They need repeatable work.&lt;/p&gt;
+&lt;p&gt;That is what makes &lt;a href="https://www.comfy.org/"&gt;ComfyUI&lt;/a&gt; interesting. It is not just an image generator where someone types a prompt, gets a picture, and hopes the result is usable.&lt;/p&gt;
+&lt;p&gt;ComfyUI is a workflow system for visual AI. It lets users connect models, processing steps, parameters, and outputs through a node-based canvas. The official Comfy site describes it as a creation engine for visual professionals who want control over every model, parameter, and output.&lt;/p&gt;</description></item><item><title>How OpenClaw, Ollama, Hermes, Telegram, and Local AI Models Fit Together</title><link>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</link><pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</guid><description>&lt;p&gt;A lot of people get confused when they first hear terms like OpenClaw, Ollama, Hermes, local AI models, Telegram agents, fallback routing, autonomous workflows, and cloud model providers.&lt;/p&gt;
+&lt;p&gt;That is understandable.&lt;/p&gt;
+&lt;p&gt;Most AI tools are presented as if the model is the whole product. You open ChatGPT, Claude, Gemini, or another app, type into a box, and get an answer back.&lt;/p&gt;
+&lt;p&gt;But the more interesting shift is not just better chat windows.&lt;/p&gt;</description></item><item><title>OpenClaw's GPT-5.5 Update: Impressive Speed, Real Pain Points (And Why We Switched to ProductiveBot)</title><link>https://localbusinesssearch.com/blog/openclaw-gpt55-update-vs-productivebot/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/openclaw-gpt55-update-vs-productivebot/</guid><description>&lt;p&gt;If you&amp;rsquo;re following AI automation tools for local businesses, you&amp;rsquo;ve probably heard about &lt;strong&gt;OpenClaw&amp;rsquo;s latest update&lt;/strong&gt;. Version 2026.4.23 just dropped with some genuinely impressive features: &lt;strong&gt;GPT-5.5 support&lt;/strong&gt;, &lt;strong&gt;image generation and editing&lt;/strong&gt;, and &lt;strong&gt;multi-agent workflows&lt;/strong&gt; (subagents).&lt;/p&gt;
+&lt;p&gt;The community response? A mix of &lt;strong&gt;excitement&lt;/strong&gt; and &lt;strong&gt;frustration&lt;/strong&gt; that perfectly illustrates why we made the switch to &lt;strong&gt;ProductiveBot.AI&lt;/strong&gt; for our clients.&lt;/p&gt;
+&lt;h2 id="what-openclaw-just-shipped"&gt;What OpenClaw Just Shipped&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with what&amp;rsquo;s actually new:&lt;/p&gt;
+&lt;h3 id="gpt-55-integration"&gt;GPT-5.5 Integration&lt;/h3&gt;
+&lt;p&gt;OpenClaw now supports OpenAI&amp;rsquo;s latest GPT-5.5 model, giving users access to cutting-edge language capabilities. On paper, this is huge—better reasoning, longer context windows, and more reliable outputs.&lt;/p&gt;</description></item></channel></rss>

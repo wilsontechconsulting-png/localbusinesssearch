@@ -1,47 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Automation on Local Business Search - AI. Business Process.</title>
-    <link>https://localbusinesssearch.com/tags/automation/</link>
-    <description>Recent content in Automation on Local Business Search - AI. Business Process.</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://localbusinesssearch.com/tags/automation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Home Assistant and Private Smart Homes: What It Can and Can&#39;t Do</title>
-      <link>https://localbusinesssearch.com/blog/home-assistant-private-smart-home-ai/</link>
-      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/home-assistant-private-smart-home-ai/</guid>
-      <description>&lt;p&gt;Most people think a smart home means buying a few devices from Amazon, Google, Apple, Ring, Nest, Philips, Samsung, or another brand, then controlling them from whatever app came in the box.&lt;/p&gt;&#xA;&lt;p&gt;That works up to a point.&lt;/p&gt;&#xA;&lt;p&gt;The problem is that every brand wants to be the center of the house. One app controls lights. Another controls cameras. Another controls locks. Another controls thermostats. Another controls garage doors. Another controls speakers. Then voice assistants sit on top of all of it, usually depending on cloud services to understand what you said and decide what happens next.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How OpenClaw, Ollama, Hermes, Telegram, and Local AI Models Fit Together</title>
-      <link>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</link>
-      <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</guid>
-      <description>&lt;p&gt;A lot of people get confused when they first hear terms like OpenClaw, Ollama, Hermes, local AI models, Telegram agents, fallback routing, autonomous workflows, and cloud model providers.&lt;/p&gt;&#xA;&lt;p&gt;That is understandable.&lt;/p&gt;&#xA;&lt;p&gt;Most AI tools are presented as if the model is the whole product. You open ChatGPT, Claude, Gemini, or another app, type into a box, and get an answer back.&lt;/p&gt;&#xA;&lt;p&gt;But the more interesting shift is not just better chat windows.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What Real-Time Transcription Changes for Local Business Operations</title>
-      <link>https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/</link>
-      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/</guid>
-      <description>&lt;p&gt;Mistral&amp;rsquo;s Voxtral Transcribe 2 release is not just another speech-to-text announcement.&lt;/p&gt;&#xA;&lt;p&gt;The bigger shift is that voice data is becoming operational data.&lt;/p&gt;&#xA;&lt;p&gt;That matters for local businesses because a lot of real work still happens in conversations: sales calls, intake calls, service calls, estimates, team meetings, customer support, field notes, and handoffs between departments.&lt;/p&gt;&#xA;&lt;p&gt;Most companies already have those conversations. The problem is that the information often dies inside call recordings, scattered notes, text threads, or someone&amp;rsquo;s memory.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why Smaller AI Models Matter for Local Business Owners</title>
-      <link>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</link>
-      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</guid>
-      <description>&lt;p&gt;Google Research recently published a post about TurboQuant, a new set of compression techniques designed to make large AI models and vector search systems more memory efficient.&lt;/p&gt;&#xA;&lt;p&gt;That sounds technical because it is.&lt;/p&gt;&#xA;&lt;p&gt;But the business takeaway is simple: AI is moving toward smaller, faster, more efficient systems.&lt;/p&gt;&#xA;&lt;p&gt;That matters because not every useful AI tool should require a giant cloud bill, a complicated server setup, or a team of machine learning engineers. A lot of everyday business automation should eventually be able to run on smaller local machines, including devices like a Mac mini.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Most Local Businesses Don&#39;t Need More Software—They Need Better Systems</title>
-      <link>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</link>
-      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</guid>
-      <description>&lt;h2 id=&#34;the-problem-usually-isnt-a-missing-tool&#34;&gt;The Problem Usually Isn&amp;rsquo;t a Missing Tool&lt;/h2&gt;&#xA;&lt;p&gt;When a local business feels messy, the first instinct is usually:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;We probably need software for that.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you add another tool.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Then another.&lt;/p&gt;&#xA;&lt;p&gt;Pretty soon you&amp;rsquo;re paying for a CRM, an email platform, scheduling software, lead forms, a quoting tool, accounting software, a text platform, ad dashboards, and whatever random spreadsheet is holding the whole thing together.&lt;/p&gt;&#xA;&lt;p&gt;And somehow, even after all that, things still feel disorganized.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Automation on Local Business Search - AI. Business Process.</title><link>https://localbusinesssearch.com/tags/automation/</link><description>Recent content in Automation on Local Business Search - AI. Business Process.</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://localbusinesssearch.com/tags/automation/index.xml" rel="self" type="application/rss+xml"/><item><title>Home Assistant and Private Smart Homes: What It Can and Can't Do</title><link>https://localbusinesssearch.com/blog/home-assistant-private-smart-home-ai/</link><pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/home-assistant-private-smart-home-ai/</guid><description>&lt;p&gt;Most people think a smart home means buying a few devices from Amazon, Google, Apple, Ring, Nest, Philips, Samsung, or another brand, then controlling them from whatever app came in the box.&lt;/p&gt;
+&lt;p&gt;That works up to a point.&lt;/p&gt;
+&lt;p&gt;The problem is that every brand wants to be the center of the house. One app controls lights. Another controls cameras. Another controls locks. Another controls thermostats. Another controls garage doors. Another controls speakers. Then voice assistants sit on top of all of it, usually depending on cloud services to understand what you said and decide what happens next.&lt;/p&gt;</description></item><item><title>How OpenClaw, Ollama, Hermes, Telegram, and Local AI Models Fit Together</title><link>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</link><pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/openclaw-ollama-hermes-telegram-local-ai-stack/</guid><description>&lt;p&gt;A lot of people get confused when they first hear terms like OpenClaw, Ollama, Hermes, local AI models, Telegram agents, fallback routing, autonomous workflows, and cloud model providers.&lt;/p&gt;
+&lt;p&gt;That is understandable.&lt;/p&gt;
+&lt;p&gt;Most AI tools are presented as if the model is the whole product. You open ChatGPT, Claude, Gemini, or another app, type into a box, and get an answer back.&lt;/p&gt;
+&lt;p&gt;But the more interesting shift is not just better chat windows.&lt;/p&gt;</description></item><item><title>What Real-Time Transcription Changes for Local Business Operations</title><link>https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/</guid><description>&lt;p&gt;Mistral&amp;rsquo;s Voxtral Transcribe 2 release is not just another speech-to-text announcement.&lt;/p&gt;
+&lt;p&gt;The bigger shift is that voice data is becoming operational data.&lt;/p&gt;
+&lt;p&gt;That matters for local businesses because a lot of real work still happens in conversations: sales calls, intake calls, service calls, estimates, team meetings, customer support, field notes, and handoffs between departments.&lt;/p&gt;
+&lt;p&gt;Most companies already have those conversations. The problem is that the information often dies inside call recordings, scattered notes, text threads, or someone&amp;rsquo;s memory.&lt;/p&gt;</description></item><item><title>Why Smaller AI Models Matter for Local Business Owners</title><link>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</link><pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/</guid><description>&lt;p&gt;Google Research recently published a post about TurboQuant, a new set of compression techniques designed to make large AI models and vector search systems more memory efficient.&lt;/p&gt;
+&lt;p&gt;That sounds technical because it is.&lt;/p&gt;
+&lt;p&gt;But the business takeaway is simple: AI is moving toward smaller, faster, more efficient systems.&lt;/p&gt;
+&lt;p&gt;That matters because not every useful AI tool should require a giant cloud bill, a complicated server setup, or a team of machine learning engineers. A lot of everyday business automation should eventually be able to run on smaller local machines, including devices like a Mac mini.&lt;/p&gt;</description></item><item><title>Most Local Businesses Don't Need More Software—They Need Better Systems</title><link>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</link><pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate><guid>https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/</guid><description>&lt;h2 id="the-problem-usually-isnt-a-missing-tool"&gt;The Problem Usually Isn&amp;rsquo;t a Missing Tool&lt;/h2&gt;
+&lt;p&gt;When a local business feels messy, the first instinct is usually:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;We probably need software for that.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So you add another tool.&lt;/p&gt;
+&lt;p&gt;Then another.&lt;/p&gt;
+&lt;p&gt;Then another.&lt;/p&gt;
+&lt;p&gt;Pretty soon you&amp;rsquo;re paying for a CRM, an email platform, scheduling software, lead forms, a quoting tool, accounting software, a text platform, ad dashboards, and whatever random spreadsheet is holding the whole thing together.&lt;/p&gt;
+&lt;p&gt;And somehow, even after all that, things still feel disorganized.&lt;/p&gt;</description></item></channel></rss>
