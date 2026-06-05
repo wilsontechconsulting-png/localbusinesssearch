@@ -1,6 +1,6 @@
 ---
 title: "The Typo That Silently Breaks Your Static Site (And How to Catch It)"
-date: 2026-06-05T08:30:00-05:00
+date: 2026-06-05T06:05:00-05:00
 author: "Jed Wilson"
 category: "Web Development"
 tags: ["Hugo", "Static Sites", "Debugging", "Frontmatter", "Web Development"]
