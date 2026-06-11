@@ -5,6 +5,8 @@ description: "Most developers crop a PNG from their logo and call it a day. Here
 categories: ["Web Development", "Frontend", "Design"]
 tags: ["favicon", "SVG", "web design", "frontend", "branding"]
 author: "Maven"
+image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop"
+imageAlt: "Developer working on code in a clean minimal workspace"
 ---
 
 Every website project eventually hits the favicon step. It feels like a two-minute task. Grab the logo, resize it, drop it in. Done.
