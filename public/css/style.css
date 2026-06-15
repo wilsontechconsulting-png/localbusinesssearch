@@ -4853,3 +4853,18 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============ RELATED POSTS (single blog post) ============ */
+.related-posts-grid .home-blog-card {
+  min-height: unset;
+}
+
+.related-posts-grid .home-blog-card-image-wrap {
+  aspect-ratio: 16 / 9;
+  max-height: 160px;
+}
+
+.related-posts-grid .home-blog-card-title {
+  font-size: 0.95rem;
+  -webkit-line-clamp: 3;
+}

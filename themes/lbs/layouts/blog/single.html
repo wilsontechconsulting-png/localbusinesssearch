@@ -55,11 +55,11 @@
 {{ $related := .Site.RegularPages.Related . | first 3 }}
 {{ if $related }}
 <section class="section section-light">
-    <div class="container-wide">
-        <h2 class="section-title">Related Articles</h2>
-        <div class="blog-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+    <div class="container-narrow">
+        <h2 class="section-title" style="font-size: 1.25rem; margin-bottom: 0;">Related Articles</h2>
+        <div class="home-blog-grid related-posts-grid">
             {{ range $related }}
-                {{ partial "components/blog-card.html" . }}
+                {{ partial "components/home-blog-card.html" . }}
             {{ end }}
         </div>
     </div>
