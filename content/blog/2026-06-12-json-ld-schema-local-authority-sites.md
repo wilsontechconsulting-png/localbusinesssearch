@@ -4,6 +4,9 @@ date: 2026-06-12T06:00:00-05:00
 draft: false
 description: "Most websites launch without structured data. In 2026, that's a real cost — AI search tools depend on JSON-LD to understand who you are, what you do, and why you matter."
 tags: ["SEO", "GEO", "structured data", "JSON-LD", "local search", "AI search"]
+image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=1200&q=80&auto=format&fit=crop"
+image_credit: "Merakist on Unsplash"
+image_credit_url: "https://unsplash.com/@merakist"
 ---
 
 Most websites launch without it. Most clients don't ask for it. And most AI search tools quietly penalize the absence of it.
