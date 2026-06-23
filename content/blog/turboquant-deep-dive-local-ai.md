@@ -1,12 +1,12 @@
 ---
 title: "TurboQuant Deep Dive: Why Local AI Is Getting More Practical"
-date: 2026-06-23T00:30:00-04:00
+date: 2026-06-23T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["TurboQuant", "Local AI", "AI Infrastructure", "Business Systems", "Automation"]
 image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1200&q=80&auto=format&fit=crop"
-image_credit: "Domenico Loia"
+image_credit: "Domenico Loia on Unsplash"
 image_credit_url: "https://unsplash.com/@domenicoloia"
 description: "A practical deep dive into why AI model compression matters for local business automation, private workflows, and smaller hardware."
 summary: "TurboQuant points toward a future where AI systems need less memory, run closer to the business, and make private local automation more practical for small teams."
