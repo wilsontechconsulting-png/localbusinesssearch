@@ -1,6 +1,7 @@
 ---
 title: "Unleashing Local AI Power"
 date: 2026-06-23T00:00:00-04:00
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["Local AI", "AI Automation", "Business Systems", "Productivity", "Private AI"]

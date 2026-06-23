@@ -1,6 +1,7 @@
 ---
 title: "TurboQuant Deep Dive: Why Local AI Is Getting More Practical"
 date: 2026-06-23T00:30:00-04:00
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["TurboQuant", "Local AI", "AI Infrastructure", "Business Systems", "Automation"]
