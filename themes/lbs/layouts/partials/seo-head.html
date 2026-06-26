@@ -1,4 +1,5 @@
 {{/* Comprehensive SEO Meta Tags */}}
+{{ $pageTitle := partial "page-title.html" . }}
 
 {{/* Basic Meta Tags */}}
 <meta charset="UTF-8">
@@ -6,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 {{/* Title */}}
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ $pageTitle }} | {{ .Site.Title }}{{ end }}</title>
 
 {{/* Description */}}
 {{ $description := "" }}
@@ -52,12 +53,12 @@
 {{ if not (or (hasPrefix $socialImage "http://") (hasPrefix $socialImage "https://")) }}
   {{ $socialImageURL = $socialImage | absURL }}
 {{ end }}
-{{ $socialImageAlt := printf "%s - %s" (cond .IsHome .Site.Title .Title) .Site.Title }}
+{{ $socialImageAlt := printf "%s - %s" (cond .IsHome .Site.Title $pageTitle) .Site.Title }}
 
 {{/* Open Graph / Facebook */}}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ $pageTitle }}{{ end }}">
 <meta property="og:description" content="{{ $description | plainify }}">
 <meta property="og:image" content="{{ $socialImageURL }}">
 <meta property="og:image:secure_url" content="{{ $socialImageURL }}">
@@ -72,7 +73,7 @@
 <meta name="twitter:site" content="{{ .Site.Params.twitterHandle | default "@Jed_X_Wilson" }}">
 <meta name="twitter:creator" content="{{ .Site.Params.twitterHandle | default "@Jed_X_Wilson" }}">
 <meta name="twitter:url" content="{{ .Permalink }}">
-<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ $pageTitle }}{{ end }}">
 <meta name="twitter:description" content="{{ $description | plainify }}">
 <meta name="twitter:image" content="{{ $socialImageURL }}">
 <meta name="twitter:image:alt" content="{{ $socialImageAlt }}">

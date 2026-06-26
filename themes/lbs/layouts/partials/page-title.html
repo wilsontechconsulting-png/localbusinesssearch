@@ -1,0 +1,14 @@
+{{- $title := .Title -}}
+{{- if and (eq .Kind "term") .Data.Term -}}
+  {{- $acronyms := dict "ai" "AI" "seo" "SEO" "geo" "GEO" "ux" "UX" "json" "JSON" "ld" "LD" "gpt" "GPT" "http" "HTTP" "crm" "CRM" "svg" "SVG" "hvac" "HVAC" "llms.txt" "llms.txt" "next.js" "Next.js" "wordpress" "WordPress" -}}
+  {{- range $index, $part := split .Data.Term "-" -}}
+    {{- if $index }} {{ end -}}
+    {{- with index $acronyms $part -}}
+      {{- . -}}
+    {{- else -}}
+      {{- $part | humanize | title -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- $title -}}
+{{- end -}}

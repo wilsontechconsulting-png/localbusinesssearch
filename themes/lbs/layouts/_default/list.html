@@ -1,8 +1,9 @@
 {{ define "main" }}
+{{ $pageTitle := partial "page-title.html" . }}
 <!-- Page Hero -->
 <section class="page-hero">
     <div class="container">
-        <h1 class="page-hero-title">{{ .Title }}</h1>
+        <h1 class="page-hero-title">{{ $pageTitle }}</h1>
         {{ with .Description }}
         <p class="page-hero-subtitle">{{ . }}</p>
         {{ end }}

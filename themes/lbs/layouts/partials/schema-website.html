@@ -1,4 +1,5 @@
 {{/* Website Schema Markup */}}
+{{ $pageTitle := partial "page-title.html" . }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,7 +47,7 @@
   "@type": {{ cond .IsHome "WebPage" (cond .IsSection "CollectionPage" "WebPage") | jsonify | safeJS }},
   "@id": {{ printf "%s#webpage" .Permalink | jsonify | safeJS }},
   "url": {{ .Permalink | jsonify | safeJS }},
-  "name": {{ cond .IsHome .Site.Title .Title | jsonify | safeJS }},
+  "name": {{ cond .IsHome .Site.Title $pageTitle | jsonify | safeJS }},
   "description": {{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | truncate 160 | jsonify | safeJS }}{{ end }},
   "isPartOf": {
     "@id": {{ printf "%s#website" .Site.BaseURL | jsonify | safeJS }}
