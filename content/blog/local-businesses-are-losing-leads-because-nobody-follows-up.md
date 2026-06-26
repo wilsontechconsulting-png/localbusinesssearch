@@ -1,10 +1,13 @@
 ---
 title: "What We’re Noticing: Local Businesses Are Losing Leads Because Nobody Follows Up"
 date: 2026-05-18T10:25:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "Business Systems"
 tags: ["Lead Follow-Up", "Local Business", "Advertising", "Business Operations", "Facebook Leads"]
 image: "/images/blog/lead-follow-up-field-note.jpg"
+image_credit: "Local Business Search"
+image_credit_url: "https://localbusinesssearch.com/"
 description: "Most local businesses do not have an advertising problem first. They have a follow-up problem. Here is what we are noticing from the field."
 summary: "A field note from Jed Wilson: many local businesses are not losing because advertising stopped working. They are losing because leads come in, sit there, and never get properly followed up on."
 ---

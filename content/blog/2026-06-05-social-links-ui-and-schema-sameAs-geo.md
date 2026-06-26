@@ -1,6 +1,7 @@
 ---
 title: "Your Social Links Need to Live in Two Places (And Most Sites Only Have One)"
 date: 2026-06-05T06:00:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "GEO"
 tags: ["GEO", "Schema", "Local SEO", "Structured Data", "Social Media"]

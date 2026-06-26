@@ -1,6 +1,7 @@
 ---
 title: "Most Local Businesses Don't Need More Software—They Need Better Systems"
 date: 2026-05-04
+draft: false
 author: "Jed Wilson"
 category: "Business Systems"
 tags: ["Local Business", "Business Systems", "Automation", "Operations", "AI"]

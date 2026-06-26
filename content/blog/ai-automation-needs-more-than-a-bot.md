@@ -1,6 +1,7 @@
 ---
 title: "AI Automation Needs More Than a Bot"
 date: 2026-06-22T06:00:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "Business Systems"
 tags: ["AI Automation", "Local Business", "Lead Generation", "Business Systems", "Operations"]

@@ -1,6 +1,7 @@
 ---
 title: "Why Smaller AI Models Matter for Local Business Owners"
 date: 2026-05-22
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["AI", "Local AI", "Business Systems", "Automation", "Productivity"]

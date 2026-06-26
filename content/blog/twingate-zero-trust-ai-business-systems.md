@@ -1,6 +1,7 @@
 ---
 title: "Twingate and the New Security Layer for AI-Powered Business Systems"
 date: 2026-05-26
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["AI", "Business Systems", "Security", "Zero Trust", "Remote Access"]

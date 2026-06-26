@@ -1,6 +1,7 @@
 ---
 title: "The 6 Security Headers Most WordPress Sites Are Missing (And How to Add Them on Managed Hosting)"
 date: 2026-06-08T06:00:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "Security"
 tags: ["WordPress", "Security", "HTTP Headers", "SiteGround", "Managed Hosting", ".htaccess"]

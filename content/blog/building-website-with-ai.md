@@ -1,6 +1,7 @@
 ---
 title: "We Just Built This Entire Website in 12 Hours Using AI—Here's What That Means for Your Business"
 date: 2026-04-23
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["AI", "Business Automation", "Web Development", "Efficiency", "Real Results"]

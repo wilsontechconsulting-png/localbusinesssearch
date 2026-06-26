@@ -1,6 +1,7 @@
 ---
 title: "What We’re Noticing in Branson: Google Ads Should Follow the Tourist Traffic"
 date: 2026-05-18T10:55:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "Advertising"
 tags: ["Google Ads", "Local Business", "Restaurants", "Branson", "Tourism Marketing"]

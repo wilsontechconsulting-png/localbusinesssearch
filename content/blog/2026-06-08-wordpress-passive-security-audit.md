@@ -1,6 +1,7 @@
 ---
 title: "How to Run a Passive Security Audit on Any WordPress Site"
 date: 2026-06-08T06:00:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "Security"
 tags: ["WordPress", "Security", "Audit", "DevOps", "Web Security"]

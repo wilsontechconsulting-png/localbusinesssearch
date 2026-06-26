@@ -1,6 +1,7 @@
 ---
 title: "Your Plumbing Business Doesn't Need More Apps—It Needs Systems That Actually Talk to Each Other"
 date: 2026-04-23T14:30:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "Business Systems"
 tags: ["Home Services", "Business Operations", "CRM", "Plumbing"]

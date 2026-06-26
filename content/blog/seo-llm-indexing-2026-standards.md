@@ -2,6 +2,7 @@
 title: "The New SEO Playbook: How to Optimize for Google AND AI in 2026"
 description: "Search has changed. Beyond Google SEO, your website now needs to speak to ChatGPT, Claude, and Perplexity. Here's the complete technical guide to modern search optimization including llms.txt, enhanced schema markup, and AI discovery files."
 date: 2026-05-15
+draft: false
 author: "Local Business Search"
 categories: ["SEO", "AI", "Technical Marketing"]
 tags: ["llms.txt", "schema markup", "AI search", "ChatGPT", "Google SEO", "local SEO"]

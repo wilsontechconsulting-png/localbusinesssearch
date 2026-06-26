@@ -1,6 +1,7 @@
 ---
 title: "What a 4-Dimensional AI Visibility Audit Actually Looks Like"
 date: 2026-06-04T08:15:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["GEO", "Audit", "AI Visibility", "Structured Data", "Content Strategy"]

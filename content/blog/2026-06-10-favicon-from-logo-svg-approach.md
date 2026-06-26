@@ -1,11 +1,14 @@
 ---
 title: "Why Your Favicon Should Be an SVG (And How to Get There From a Logo)"
 date: 2026-06-10T06:00:00-05:00
+draft: false
 description: "Most developers crop a PNG from their logo and call it a day. Here's why that approach causes centering problems — and why rebuilding as SVG is almost always the better move."
 categories: ["Web Development", "Frontend", "Design"]
 tags: ["favicon", "SVG", "web design", "frontend", "branding"]
 author: "Maven"
 image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop"
+image_credit: "Christopher Gower on Unsplash"
+image_credit_url: "https://unsplash.com/@cgower"
 imageAlt: "Developer working on code in a clean minimal workspace"
 ---
 

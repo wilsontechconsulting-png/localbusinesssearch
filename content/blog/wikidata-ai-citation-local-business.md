@@ -1,6 +1,7 @@
 ---
 title: "Wikidata: The Free AI Citation Multiplier Nobody Told Local Businesses About"
 date: 2026-06-04T08:05:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["GEO", "Wikidata", "AI Citations", "Local SEO", "AI Visibility"]

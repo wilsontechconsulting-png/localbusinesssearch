@@ -1,6 +1,7 @@
 ---
 title: "The Google vs. Everyone Else GEO Problem"
 date: 2026-06-04T08:10:00-05:00
+draft: false
 author: "Jed Wilson"
 category: "AI Automation"
 tags: ["GEO", "llms.txt", "ClaudeBot", "Perplexity", "ChatGPT", "AI Visibility"]
