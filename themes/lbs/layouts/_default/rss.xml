@@ -1,6 +1,6 @@
 {{- $pageTitle := partial "page-title.html" . -}}
-{{- $title := cond .IsHome .Site.Title (printf "%s on %s" $pageTitle .Site.Title) -}}
-{{- $description := cond .IsHome .Site.Params.description (printf "Recent content in %s on %s" $pageTitle .Site.Title) -}}
+{{- $title := cond .IsHome .Site.Title (printf "%s on %s" $pageTitle .Site.Title) | htmlUnescape -}}
+{{- $description := cond .IsHome .Site.Params.description (printf "Recent content in %s on %s" $pageTitle .Site.Title) | htmlUnescape -}}
 {{- $pages := .Pages -}}
 {{- if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end -}}
 {{- $pages = where $pages "Params.private" "!=" true -}}
