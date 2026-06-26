@@ -1,7 +1,13 @@
 {{- $title := .Title -}}
+{{- $term := "" -}}
 {{- if and (eq .Kind "term") .Data.Term -}}
+  {{- $term = .Data.Term -}}
+{{- else if and (hasPrefix .RelPermalink "/tags/") (ne .RelPermalink "/tags/") -}}
+  {{- $term = replaceRE "^/tags/|/$" "" .RelPermalink -}}
+{{- end -}}
+{{- if $term -}}
   {{- $acronyms := dict "ai" "AI" "seo" "SEO" "geo" "GEO" "ux" "UX" "json" "JSON" "ld" "LD" "gpt" "GPT" "http" "HTTP" "crm" "CRM" "svg" "SVG" "hvac" "HVAC" "llms.txt" "llms.txt" "next.js" "Next.js" "wordpress" "WordPress" -}}
-  {{- range $index, $part := split .Data.Term "-" -}}
+  {{- range $index, $part := split $term "-" -}}
     {{- if $index }} {{ end -}}
     {{- with index $acronyms $part -}}
       {{- . -}}
