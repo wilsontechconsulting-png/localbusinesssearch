@@ -1,6 +1,6 @@
 ---
 title: "From 35 to 93: What Actually Moves Structured Data Scores for Local Businesses"
-date: 2026-06-04T08:00:00-05:00
+date: 2026-06-04T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "AI Automation"

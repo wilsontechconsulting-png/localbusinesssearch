@@ -1,6 +1,6 @@
 ---
 title: "How OpenClaw, Ollama, Hermes, Telegram, and Local AI Models Fit Together"
-date: 2026-05-23
+date: 2026-05-23T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "AI Automation"

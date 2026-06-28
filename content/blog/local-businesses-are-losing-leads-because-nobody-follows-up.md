@@ -1,6 +1,6 @@
 ---
 title: "What We’re Noticing: Local Businesses Are Losing Leads Because Nobody Follows Up"
-date: 2026-05-18T10:25:00-05:00
+date: 2026-05-18T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "Business Systems"

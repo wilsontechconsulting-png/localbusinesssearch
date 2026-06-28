@@ -1,6 +1,6 @@
 ---
 title: "The Terminal Toolkit Behind Our AI Agent Infrastructure"
-date: 2026-06-11T00:00:00-05:00
+date: 2026-06-11T06:00:00-05:00
 draft: false
 description: "When AI agents run across multiple machines, the right terminal tools are the difference between a fragile setup and a resilient one. Here's the exact toolkit installed on our VPS to support distributed agent operations."
 tags: ["AI Infrastructure", "Automation", "Build in Public", "DevOps"]

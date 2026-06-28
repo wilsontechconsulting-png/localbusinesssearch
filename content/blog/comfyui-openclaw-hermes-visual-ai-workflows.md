@@ -1,6 +1,6 @@
 ---
 title: "How ComfyUI, OpenClaw, and Hermes Could Work Together for Local Business Marketing"
-date: 2026-05-26
+date: 2026-05-26T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "AI Automation"

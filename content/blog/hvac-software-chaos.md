@@ -1,6 +1,6 @@
 ---
 title: "Your HVAC Business Is Buried in Software—And It's Costing You More Than Just Monthly Fees"
-date: 2026-04-23T15:27:00-05:00
+date: 2026-04-23T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "Business Systems"

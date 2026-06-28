@@ -1,6 +1,6 @@
 ---
 title: "Home Assistant and Private Smart Homes: What It Can and Can't Do"
-date: 2026-05-24
+date: 2026-05-24T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "AI Automation"

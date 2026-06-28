@@ -1,6 +1,6 @@
 ---
 title: "What Real-Time Transcription Changes for Local Business Operations"
-date: 2026-05-22
+date: 2026-05-22T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "AI Automation"

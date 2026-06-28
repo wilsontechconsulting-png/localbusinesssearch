@@ -1,6 +1,6 @@
 ---
 title: "Telnyx and the Rise of AI Voice Agents for Small Business"
-date: 2026-05-24T22:05:00-04:00
+date: 2026-05-24T06:00:00-05:00
 draft: false
 categories: ["AI Automation"]
 tags: ["AI", "Voice AI", "Business Automation", "AI Agents", "Lead Follow-Up"]
