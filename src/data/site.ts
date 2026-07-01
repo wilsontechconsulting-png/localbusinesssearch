@@ -44,66 +44,80 @@ export type NavItem = {
   external?: boolean;
 };
 
-export const mainNav = [
+export const mainNav: { name: string; href: string; children: NavItem[] }[] = [
   {
     name: 'Services',
     href: '/services/',
     children: [
       { name: 'Services Overview', href: '/services/', group: 'Growth Services' },
-      { name: 'Digital Advertising', href: '/advertising/', group: 'Growth Services' },
-      { name: 'Search Visibility', href: '/blog/?category=SEO', group: 'Growth Services' },
       { name: 'Websites & Conversion', href: '/baselayer/', group: 'Growth Services' },
+      { name: 'Search & SEO', href: '/search-seo/', group: 'Growth Services' },
+      { name: 'Digital Advertising', href: '/advertising/', group: 'Growth Services' },
       { name: 'Business Software', href: '/business-operations/', group: 'Technology & Operations' },
       { name: 'Automation', href: '/ai-automation/', group: 'Technology & Operations' },
       { name: 'Analytics & Reporting', href: '/platform/', group: 'Technology & Operations' },
-      {
-        name: 'Artificial Analysis Models',
-        href: 'https://artificialanalysis.ai/leaderboards/models',
-        group: 'AI Research Links',
-        external: true,
-      },
-      {
-        name: 'Vellum LLM Leaderboard',
-        href: 'https://www.vellum.ai/open-llm-leaderboard',
-        group: 'AI Research Links',
-        external: true,
-      },
-      {
-        name: 'Hugging Face Leaderboard',
-        href: 'https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard',
-        group: 'AI Research Links',
-        external: true,
-      },
-      {
-        name: 'OpenRouter Rankings',
-        href: 'https://openrouter.ai/rankings',
-        group: 'AI Research Links',
-        external: true,
-      },
-      { name: 'Industries', href: '/industries/', group: 'Markets & Proof' },
-      { name: 'Results', href: '/results/', group: 'Markets & Proof' },
+    ] satisfies NavItem[],
+  },
+  {
+    name: 'Industries',
+    href: '/industries/',
+    children: [
+      { name: 'Industries Overview', href: '/industries/', group: 'Industries' },
+      { name: 'Home Services', href: '/industries/home-services/', group: 'Industries' },
+      { name: 'Medical', href: '/industries/medical/', group: 'Industries' },
+      { name: 'Legal', href: '/industries/legal/', group: 'Industries' },
+      { name: 'Local Retail', href: '/industries/local-retail/', group: 'Industries' },
+      { name: 'Franchises', href: '/industries/franchises/', group: 'Industries' },
+      { name: 'Municipalities', href: '/industries/municipalities/', group: 'Industries' },
+    ] satisfies NavItem[],
+  },
+  {
+    name: 'Resources',
+    href: '/blog/',
+    children: [
       { name: 'All Articles', href: '/blog/', group: 'Resources' },
-      { name: 'AI Automation Articles', href: '/blog/?category=AI%20Automation', group: 'Resources' },
-      { name: 'Business Systems Articles', href: '/blog/?category=Business%20Systems', group: 'Resources' },
       { name: 'Advertising Articles', href: '/blog/?category=Advertising', group: 'Resources' },
-      { name: 'SEO & AI Search', href: '/blog/?category=SEO', group: 'Resources' },
-      { name: 'Business Tools', href: '/blog/?category=Business%20Tools', group: 'Resources' },
-      { name: 'About', href: '/about/', group: 'Company' },
+      { name: 'SEO & Search Articles', href: '/blog/?category=SEO', group: 'Resources' },
+      { name: 'Automation Articles', href: '/blog/?category=AI%20Automation', group: 'Resources' },
+      { name: 'Business Systems Articles', href: '/blog/?category=Business%20Systems', group: 'Resources' },
+      { name: 'Business Tools Articles', href: '/blog/?category=Business%20Tools', group: 'Resources' },
+    ] satisfies NavItem[],
+  },
+  {
+    name: 'Results',
+    href: '/results/',
+    children: [
+      { name: 'Results Overview', href: '/results/', group: 'Proof' },
+      { name: 'Business Growth Platform', href: '/platform/', group: 'Proof' },
+      { name: 'About Local Business Search', href: '/about/', group: 'Company' },
+      { name: 'Book a Demo', href: '/demo/', group: 'Company' },
     ] satisfies NavItem[],
   },
 ];
 
-export const navGroups = ['Growth Services', 'Technology & Operations', 'Markets & Proof', 'Resources', 'Company', 'AI Research Links'];
+export const navGroups = ['Growth Services', 'Technology & Operations', 'Industries', 'Resources', 'Proof', 'Company'];
 
 export const footerGroups = [
+  {
+    title: 'Company',
+    links: [
+      { name: 'Home', href: '/' },
+      { name: 'About', href: '/about/' },
+      { name: 'Results', href: '/results/' },
+      { name: 'Blog / Resources', href: '/blog/' },
+      { name: 'Contact', href: '/contact/' },
+    ],
+  },
   {
     title: 'Services',
     links: [
       { name: 'Services Overview', href: '/services/' },
-      { name: 'Advertising', href: '/advertising/' },
       { name: 'Websites & Conversion', href: '/baselayer/' },
+      { name: 'Search / SEO', href: '/search-seo/' },
+      { name: 'Advertising', href: '/advertising/' },
       { name: 'Automation', href: '/ai-automation/' },
-      { name: 'Analytics', href: '/platform/' },
+      { name: 'Analytics / Reporting', href: '/platform/' },
+      { name: 'Business Software', href: '/business-operations/' },
     ],
   },
   {
@@ -118,11 +132,10 @@ export const footerGroups = [
     ],
   },
   {
-    title: 'Company',
+    title: 'Legal',
     links: [
-      { name: 'Results', href: '/results/' },
-      { name: 'Resources', href: '/blog/' },
-      { name: 'About', href: '/about/' },
+      { name: 'Privacy Policy', href: '/privacy-policy/' },
+      { name: 'Terms', href: '/terms/' },
       { name: 'Book a Demo', href: '/demo/' },
     ],
   },

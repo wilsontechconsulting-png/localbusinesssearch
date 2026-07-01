@@ -277,6 +277,44 @@ img {
   padding: clamp(4rem, 8vw, 7rem) 0;
 }
 
+.page-hero-professional {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(9, 29, 52, 0.9) 48%, rgba(7, 17, 31, 0.72)),
+    var(--hero-image) center / cover;
+}
+
+.page-hero-professional::before {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 42%),
+    radial-gradient(circle at 72% 22%, rgba(36, 168, 101, 0.18), transparent 32%);
+  content: '';
+}
+
+.page-hero-professional::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.34), transparent);
+  content: '';
+}
+
+.page-hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.52fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.page-hero-copy {
+  display: grid;
+  gap: 1rem;
+}
+
 .hero-kicker {
   margin: 0 0 0.85rem;
   color: var(--accent);
@@ -299,6 +337,89 @@ img {
   color: rgba(255, 255, 255, 0.78);
   font-size: 1.1rem;
   line-height: 1.7;
+}
+
+.page-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border-radius: 0.45rem;
+  padding: 0 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-1px);
+}
+
+.hero-button-primary {
+  background: var(--blue);
+  color: white;
+  box-shadow: 0 16px 34px rgba(7, 88, 216, 0.32);
+}
+
+.hero-button-primary:hover {
+  background: #0b63ef;
+}
+
+.hero-button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.hero-button-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.page-hero-panel {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.65rem;
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+}
+
+.page-hero-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transform: scale(1.01);
+}
+
+.page-hero-proof {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+}
+
+.page-hero-proof span {
+  border-radius: 0.42rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.76rem;
+  font-weight: 900;
+  line-height: 1.25;
+  padding: 0.55rem;
+  text-align: center;
 }
 
 .prose {
@@ -487,6 +608,10 @@ img {
   background: white;
   padding: 1.25rem;
   text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .enhancement-card h3 {
@@ -505,6 +630,8 @@ img {
 a.enhancement-card:hover {
   border-color: rgba(7, 88, 216, 0.36);
   color: inherit;
+  box-shadow: 0 18px 40px rgba(10, 22, 40, 0.08);
+  transform: translateY(-2px);
 }
 
 .content-cta {
@@ -682,14 +809,31 @@ a.enhancement-card:hover {
 }
 
 .site-footer {
-  background: var(--footer);
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(7, 17, 31, 0.98), rgba(9, 29, 52, 0.96)),
+    url('/images/social-card-default.png') center / cover;
   color: white;
   padding: 4rem 0 1.5rem;
 }
 
+.site-footer::before {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 17, 31, 0.82), rgba(7, 17, 31, 0.98)),
+    radial-gradient(circle at 82% 20%, rgba(36, 168, 101, 0.16), transparent 30%);
+  content: '';
+}
+
+.site-footer > * {
+  position: relative;
+}
+
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
+  grid-template-columns: minmax(260px, 0.68fr) 1.32fr;
   gap: 3rem;
 }
 
@@ -710,7 +854,7 @@ a.enhancement-card:hover {
 
 .footer-nav {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -730,6 +874,24 @@ a.enhancement-card:hover {
 .footer-bottom a {
   color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-bottom a:hover {
+  color: white;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 520ms ease,
+    transform 520ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .footer-disclosure {
@@ -773,6 +935,7 @@ a.enhancement-card:hover {
   .post-card,
   .content-shell,
   .content-cta,
+  .page-hero-grid,
   .enhancement-top,
   .enhancement-grid,
   .enhancement-grid-wide {
@@ -813,5 +976,29 @@ a.enhancement-card:hover {
 
   .page-hero {
     padding: 3.25rem 0;
+  }
+
+  .page-hero-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero-actions .hero-button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }

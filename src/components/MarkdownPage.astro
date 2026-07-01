@@ -14,14 +14,187 @@ const currentItem = internalNav.find((item) => item.href.split('?')[0] === path)
 const relatedLinks = currentItem?.group
   ? internalNav.filter((item) => item.group === currentItem.group && !item.href.includes('?'))
   : [];
+
+type HeroDesign = {
+  eyebrow: string;
+  headline?: string;
+  subheadline?: string;
+  image: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+  proof?: string[];
+};
+
+const defaultHero: HeroDesign = {
+  eyebrow: currentItem?.group ?? 'Local Business Search',
+  image: '/images/blog/seo-llm-2026.jpg',
+  ctaLabel: 'Request a Consultation',
+  ctaHref: '/contact/',
+  secondaryLabel: 'Explore Services',
+  secondaryHref: '/services/',
+  proof: ['Strategy', 'Execution', 'Reporting'],
+};
+
+const heroDesigns: Record<string, HeroDesign> = {
+  '/services/': {
+    eyebrow: 'Growth Services',
+    headline: 'One growth system for visibility, conversion, follow-up, and clarity.',
+    subheadline:
+      'We connect marketing, websites, advertising, automation, analytics, and consulting so owners can see what is working and move faster.',
+    image: '/images/blog/seo-llm-2026.jpg',
+    proof: ['Digital marketing', 'Websites', 'Automation'],
+  },
+  '/baselayer/': {
+    eyebrow: 'Websites & Conversion',
+    headline: 'A better website should make the business easier to trust and easier to contact.',
+    subheadline:
+      'We build fast, credible pages that explain the offer, support search visibility, and turn more qualified visitors into conversations.',
+    image: '/images/lbs-logo.jpg',
+    proof: ['Clear offers', 'Fast pages', 'Conversion paths'],
+  },
+  '/search-seo/': {
+    eyebrow: 'Search & SEO',
+    headline: 'Get found by the people already looking for what you sell.',
+    subheadline:
+      'Local SEO, technical search structure, service pages, and answer-ready content built around real customer intent.',
+    image: '/images/blog/seo-llm-2026.jpg',
+    proof: ['Local discovery', 'Service pages', 'Search clarity'],
+  },
+  '/advertising/': {
+    eyebrow: 'Paid Advertising',
+    headline: 'Campaigns that connect spend to opportunities, not just traffic.',
+    subheadline:
+      'We pair paid media with sharper landing pages, better routing, cleaner follow-up, and reporting owners can actually use.',
+    image: '/images/pizza-world-branson-campaign-preview.png',
+    proof: ['Google', 'Social', 'Retargeting'],
+  },
+  '/business-operations/': {
+    eyebrow: 'Business Software',
+    headline: 'Cleaner systems behind the growth so fewer opportunities slip through.',
+    subheadline:
+      'CRM workflows, lead routing, reporting, reminders, and operational tools that make marketing easier to manage.',
+    image: '/images/triple-crown-logo.jpg',
+    proof: ['CRM workflows', 'Lead routing', 'Owner visibility'],
+  },
+  '/ai-automation/': {
+    eyebrow: 'Automation',
+    headline: 'Automation that improves speed and consistency without making the business feel robotic.',
+    subheadline:
+      'AI is one tool in the system. We use it where it improves response, research, analysis, and follow-up.',
+    image: '/images/blog/lead-follow-up-field-note.jpg',
+    proof: ['Fast response', 'Better handoffs', 'Smarter follow-up'],
+  },
+  '/platform/': {
+    eyebrow: 'Analytics & Reporting',
+    headline: 'Know what is working, where money is leaking, and what to fix next.',
+    subheadline:
+      'A practical reporting layer for owners who need clearer decisions from marketing, sales, and operations data.',
+    image: '/images/blog/lead-follow-up-field-note.jpg',
+    proof: ['Attribution', 'Dashboards', 'Decisions'],
+  },
+  '/industries/': {
+    eyebrow: 'Industries',
+    headline: 'Growth systems for businesses where missed opportunities are expensive.',
+    subheadline:
+      'Different markets need different playbooks, but every business needs stronger visibility, faster response, and clearer reporting.',
+    image: '/images/blog/seo-llm-2026.jpg',
+    proof: ['Home services', 'Medical', 'Legal'],
+  },
+  '/results/': {
+    eyebrow: 'Proof & Outcomes',
+    headline: 'The work is measured by better opportunities and better decisions.',
+    subheadline:
+      'Results come from connecting the full path: visibility, credibility, response, conversion, and reporting.',
+    image: '/images/pizza-world-branson-campaign-preview.png',
+    proof: ['Visibility', 'Conversion', 'Accountability'],
+  },
+  '/about/': {
+    eyebrow: 'About',
+    headline: 'A business growth partner built for owners who want practical execution.',
+    subheadline:
+      'Local Business Search blends marketing strategy, websites, automation, software, and analytics into clear growth systems.',
+    image: '/images/lbs-logo.jpg',
+    proof: ['Practical', 'Modern', 'Accountable'],
+  },
+  '/contact/': {
+    eyebrow: 'Contact',
+    headline: 'Start with a clear conversation about where growth is getting stuck.',
+    subheadline:
+      'Tell us what you are trying to improve. We will look at visibility, website performance, lead flow, follow-up, and reporting.',
+    image: '/images/blog/seo-llm-2026.jpg',
+    ctaLabel: 'Send a Message',
+    ctaHref: 'mailto:jed@powerofadvertising.com',
+    secondaryLabel: 'View Services',
+    secondaryHref: '/services/',
+    proof: ['No pressure', 'Plain English', 'Next steps'],
+  },
+  '/demo/': {
+    eyebrow: 'Demo',
+    headline: 'See how a clearer growth system would work for your business.',
+    subheadline:
+      'A demo is a focused walkthrough of the kind of visibility, follow-up, and reporting structure your business may need.',
+    image: '/images/blog/lead-follow-up-field-note.jpg',
+    proof: ['Website', 'Follow-up', 'Reporting'],
+  },
+  '/privacy-policy/': {
+    eyebrow: 'Privacy',
+    headline: 'Plain-language privacy information for visitors, prospects, and clients.',
+    subheadline: 'How we handle contact details, analytics, communication data, and service-related information.',
+    image: '/images/lbs-icon.jpg',
+    secondaryLabel: 'Contact Us',
+    secondaryHref: '/contact/',
+    proof: ['No data sales', 'Trusted tools', 'Clear use'],
+  },
+  '/terms/': {
+    eyebrow: 'Terms',
+    headline: 'General terms for using the Local Business Search website.',
+    subheadline: 'A straightforward explanation of website use, service expectations, and performance disclosures.',
+    image: '/images/lbs-icon.jpg',
+    secondaryLabel: 'Contact Us',
+    secondaryHref: '/contact/',
+    proof: ['Clear scope', 'Written work', 'No guarantees'],
+  },
+};
+
+const industryHero = path.startsWith('/industries/')
+  ? {
+      eyebrow: currentItem?.name ?? 'Industry Growth Systems',
+      headline: `${title} growth systems built around visibility, response, and follow-through.`,
+      subheadline:
+        description ??
+        'A practical blend of search visibility, websites, advertising, automation, and reporting for this market.',
+      image: path.includes('local-retail') || path.includes('franchises') || path.includes('municipalities')
+        ? '/images/pizza-world-cross-creek-location.jpg'
+        : '/images/blog/lead-follow-up-field-note.jpg',
+      proof: ['Get found', 'Respond faster', 'Measure better'],
+    }
+  : undefined;
+
+const design: HeroDesign = { ...defaultHero, ...(heroDesigns[path] ?? industryHero ?? {}) };
+const heroHeadline = design.headline ?? title;
+const heroSubheadline = design.subheadline ?? description;
 ---
 
 <article class="markdown-page">
-  <section class="page-hero">
-    <div class="container">
-      {currentItem?.group && <p class="hero-kicker">{currentItem.group}</p>}
-      <h1>{title}</h1>
-      {description && <p>{description}</p>}
+  <section class="page-hero page-hero-professional" style={`--hero-image: url('${design.image}')`}>
+    <div class="container page-hero-grid">
+      <div class="page-hero-copy">
+        <p class="hero-kicker">{design.eyebrow}</p>
+        <h1>{heroHeadline}</h1>
+        {heroSubheadline && <p>{heroSubheadline}</p>}
+        <div class="page-hero-actions">
+          {design.ctaLabel && design.ctaHref && <a class="hero-button hero-button-primary" href={design.ctaHref}>{design.ctaLabel}</a>}
+          {design.secondaryLabel && design.secondaryHref && <a class="hero-button hero-button-secondary" href={design.secondaryHref}>{design.secondaryLabel}</a>}
+        </div>
+      </div>
+      <div class="page-hero-panel" aria-label={`${design.eyebrow} highlights`}>
+        <img src={design.image} alt="" loading="eager" />
+        <div class="page-hero-proof">
+          {(design.proof ?? []).map((item) => <span>{item}</span>)}
+        </div>
+      </div>
     </div>
   </section>
   <PageEnhancement path={path} />
@@ -43,7 +216,7 @@ const relatedLinks = currentItem?.group
     </div>
   </div>
   {
-    currentItem && (
+    currentItem && path !== '/contact/' && (
       <section class="container content-cta" aria-label="Next step">
         <div>
           <p>Ready to grow with more clarity?</p>
