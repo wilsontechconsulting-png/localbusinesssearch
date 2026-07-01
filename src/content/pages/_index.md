@@ -1,8 +1,8 @@
 ---
 title: "Business Growth Systems for Local Companies"
-description: "Marketing, websites, advertising, automation, analytics, and consulting for businesses that want clearer growth."
+description: "Marketing, websites, advertising, automation, business tools, resources, and consulting for companies that want practical growth support."
 ---
 
 # Business Growth Systems for Local Companies
 
-We help businesses get found, earn trust, convert more opportunities, and understand what is actually driving growth.
+We help businesses get found, earn trust, improve their marketing, and build toward useful services, products, recommendations, and resources.

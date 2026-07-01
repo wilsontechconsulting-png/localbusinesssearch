@@ -34,25 +34,25 @@ const defaultHero: HeroDesign = {
   ctaHref: '/contact/',
   secondaryLabel: 'Explore Services',
   secondaryHref: '/services/',
-  proof: ['Strategy', 'Execution', 'Reporting'],
+  proof: ['Strategy', 'Execution', 'Resources'],
 };
 
 const heroDesigns: Record<string, HeroDesign> = {
   '/services/': {
     eyebrow: 'Growth Services',
-    headline: 'One growth system for visibility, conversion, follow-up, and clarity.',
+    headline: 'Business growth services with room to expand into tools, products, and resources.',
     subheadline:
-      'We connect marketing, websites, advertising, automation, analytics, and consulting so owners can see what is working and move faster.',
+      'We connect marketing, websites, search visibility, advertising, automation, and consulting while building toward a practical resource ecosystem for business owners.',
     image: '/images/blog/seo-llm-2026.jpg',
     proof: ['Digital marketing', 'Websites', 'Automation'],
   },
   '/baselayer/': {
-    eyebrow: 'Websites & Conversion',
+    eyebrow: 'Professional Websites',
     headline: 'A better website should make the business easier to trust and easier to contact.',
     subheadline:
-      'We build fast, credible pages that explain the offer, support search visibility, and turn more qualified visitors into conversations.',
-    image: '/images/lbs-logo.jpg',
-    proof: ['Clear offers', 'Fast pages', 'Conversion paths'],
+      'We build fast, credible pages that explain the offer, support search visibility, and make the next step clear for visitors.',
+    image: '/images/lbs-icon.jpg',
+    proof: ['Clear offers', 'Fast pages', 'Useful content'],
   },
   '/search-seo/': {
     eyebrow: 'Search & SEO',
@@ -64,9 +64,9 @@ const heroDesigns: Record<string, HeroDesign> = {
   },
   '/advertising/': {
     eyebrow: 'Paid Advertising',
-    headline: 'Campaigns that connect spend to opportunities, not just traffic.',
+    headline: 'Campaigns built around clear offers, useful pages, and practical follow-up.',
     subheadline:
-      'We pair paid media with sharper landing pages, better routing, cleaner follow-up, and reporting owners can actually use.',
+      'We pair paid media with stronger messaging, landing pages, audience strategy, and business support that keeps campaigns grounded.',
     image: '/images/pizza-world-branson-campaign-preview.png',
     proof: ['Google', 'Social', 'Retargeting'],
   },
@@ -74,7 +74,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     eyebrow: 'Business Software',
     headline: 'Cleaner systems behind the growth so fewer opportunities slip through.',
     subheadline:
-      'CRM workflows, lead routing, reporting, reminders, and operational tools that make marketing easier to manage.',
+      'CRM workflows, lead routing, reminders, resource organization, and operational tools that make marketing easier to manage.',
     image: '/images/triple-crown-logo.jpg',
     proof: ['CRM workflows', 'Lead routing', 'Owner visibility'],
   },
@@ -87,42 +87,42 @@ const heroDesigns: Record<string, HeroDesign> = {
     proof: ['Fast response', 'Better handoffs', 'Smarter follow-up'],
   },
   '/platform/': {
-    eyebrow: 'Analytics & Reporting',
-    headline: 'Know what is working, where money is leaking, and what to fix next.',
+    eyebrow: 'Business Tools & Resources',
+    headline: 'A foundation for useful business tools, recommendations, downloads, and resources.',
     subheadline:
-      'A practical reporting layer for owners who need clearer decisions from marketing, sales, and operations data.',
-    image: '/images/blog/lead-follow-up-field-note.jpg',
-    proof: ['Attribution', 'Dashboards', 'Decisions'],
+      'The platform direction is a practical hub for business owners: service support today, productized resources and curated recommendations next.',
+    image: '/images/pizza-world-cross-creek-location.jpg',
+    proof: ['Tools', 'Guides', 'Recommendations'],
   },
   '/industries/': {
     eyebrow: 'Industries',
     headline: 'Growth systems for businesses where missed opportunities are expensive.',
     subheadline:
-      'Different markets need different playbooks, but every business needs stronger visibility, faster response, and clearer reporting.',
+      'Different markets need different playbooks, but every business needs stronger visibility, faster response, and useful resources that support the work.',
     image: '/images/blog/seo-llm-2026.jpg',
     proof: ['Home services', 'Medical', 'Legal'],
   },
   '/results/': {
     eyebrow: 'Proof & Outcomes',
-    headline: 'The work is measured by better opportunities and better decisions.',
+    headline: 'The work is built around better visibility, stronger offers, and practical next steps.',
     subheadline:
-      'Results come from connecting the full path: visibility, credibility, response, conversion, and reporting.',
+      'Momentum comes from connecting the full path: visibility, credibility, useful resources, follow-up, and consistent execution.',
     image: '/images/pizza-world-branson-campaign-preview.png',
-    proof: ['Visibility', 'Conversion', 'Accountability'],
+    proof: ['Visibility', 'Trust', 'Momentum'],
   },
   '/about/': {
     eyebrow: 'About',
     headline: 'A business growth partner built for owners who want practical execution.',
     subheadline:
-      'Local Business Search blends marketing strategy, websites, automation, software, and analytics into clear growth systems.',
-    image: '/images/lbs-logo.jpg',
+      'Local Business Search blends marketing strategy, websites, automation, software, consulting, and practical resources into a clearer growth system.',
+    image: '/images/lbs-icon.jpg',
     proof: ['Practical', 'Modern', 'Accountable'],
   },
   '/contact/': {
     eyebrow: 'Contact',
     headline: 'Start with a clear conversation about where growth is getting stuck.',
     subheadline:
-      'Tell us what you are trying to improve. We will look at visibility, website performance, lead flow, follow-up, and reporting.',
+      'Tell us what you are trying to improve. We can talk through services available now and the tools or resources that would help next.',
     image: '/images/blog/seo-llm-2026.jpg',
     ctaLabel: 'Send a Message',
     ctaHref: 'mailto:jed@powerofadvertising.com',
@@ -134,9 +134,9 @@ const heroDesigns: Record<string, HeroDesign> = {
     eyebrow: 'Demo',
     headline: 'See how a clearer growth system would work for your business.',
     subheadline:
-      'A demo is a focused walkthrough of the kind of visibility, follow-up, and reporting structure your business may need.',
+      'A demo is a focused walkthrough of the service support, resource structure, and practical tools your business may need.',
     image: '/images/blog/lead-follow-up-field-note.jpg',
-    proof: ['Website', 'Follow-up', 'Reporting'],
+    proof: ['Website', 'Services', 'Resources'],
   },
   '/privacy-policy/': {
     eyebrow: 'Privacy',
@@ -164,11 +164,11 @@ const industryHero = path.startsWith('/industries/')
       headline: `${title} growth systems built around visibility, response, and follow-through.`,
       subheadline:
         description ??
-        'A practical blend of search visibility, websites, advertising, automation, and reporting for this market.',
+        'A practical blend of search visibility, websites, advertising, automation, and business resources for this market.',
       image: path.includes('local-retail') || path.includes('franchises') || path.includes('municipalities')
         ? '/images/pizza-world-cross-creek-location.jpg'
         : '/images/blog/lead-follow-up-field-note.jpg',
-      proof: ['Get found', 'Respond faster', 'Measure better'],
+      proof: ['Get found', 'Respond faster', 'Grow smarter'],
     }
   : undefined;
 
@@ -220,7 +220,7 @@ const heroSubheadline = design.subheadline ?? description;
       <section class="container content-cta" aria-label="Next step">
         <div>
           <p>Ready to grow with more clarity?</p>
-          <h2>Build a practical plan for your marketing, website, follow-up, and reporting.</h2>
+          <h2>Build a practical plan for your services, website, marketing, and resource system.</h2>
         </div>
         <a href="/contact/">Request a Consultation</a>
       </section>

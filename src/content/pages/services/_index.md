@@ -1,11 +1,11 @@
 ---
 title: "Services"
-description: "Digital marketing, websites, paid advertising, local SEO, automation, analytics, software, and consulting for businesses that want clearer growth."
+description: "Digital marketing, websites, paid advertising, local SEO, automation, software, consulting, and business resources for companies that want practical growth support."
 ---
 
 # Services
 
-Local Business Search helps businesses grow by connecting the work that usually gets managed in separate lanes: marketing, search visibility, websites, advertising, follow-up, software, automation, and reporting.
+Local Business Search helps businesses grow by connecting the work that usually gets managed in separate lanes: marketing, search visibility, websites, advertising, follow-up, software, automation, consulting, and useful business resources.
 
 ## Digital Marketing
 
@@ -27,13 +27,13 @@ Customers need to find you before they can trust you. We improve the signals tha
 - Structured data
 - Review and reputation signals
 
-## Websites That Convert
+## Professional Websites
 
-A professional website should make the business easier to understand, easier to trust, and easier to contact. We design around clarity, speed, credibility, and conversion.
+A professional website should make the business easier to understand, easier to trust, and easier to contact. We design around clarity, speed, credibility, strong content, and useful next steps.
 
 - Site strategy
 - Landing pages
-- Conversion paths
+- Clear next-step paths
 - Hosting and maintenance
 - Performance support
 
@@ -45,18 +45,22 @@ Advertising is most useful when it points to a strong offer and a clean follow-u
 - Paid social
 - Retargeting
 - Programmatic, OTT, and CTV
-- Campaign reporting
+- Campaign management
 
-## Automation, Software, and Analytics
+## Automation, Software, and Business Tools
 
-Modern technology should reduce friction. We use automation, AI, CRM workflows, and reporting where they make the business faster, clearer, or more consistent.
+Modern technology should reduce friction. We use automation, AI, CRM workflows, recommended tools, and practical systems where they make the business faster, clearer, or more consistent.
 
 - Lead response
 - CRM and workflow design
-- Reporting dashboards
-- Source attribution
+- Recommended tools and resources
+- Digital downloads and productized help
 - Business process consulting
+
+## Products and Resources Direction
+
+The site is also moving toward a broader business resource layer: guides, affiliate-style recommendations, templates, digital downloads, software picks, and shop-ready products that help owners take action even when they are not ready for a custom project.
 
 ## Ready to Improve the System?
 
-[Contact us](/contact/) to talk through where your marketing, website, and follow-up are leaking opportunity.
+[Contact us](/contact/) to talk through the business services or resources that would help most right now.

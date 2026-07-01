@@ -1,42 +1,42 @@
 ---
-title: "Growth Analytics and Operating Visibility"
-description: "A clearer view of marketing performance, lead handling, customer activity, and the next actions that should guide business growth."
+title: "Business Tools and Resource Platform"
+description: "A practical foundation for business services, recommended tools, digital resources, affiliate-style recommendations, and future shop-ready products."
 ---
 
-Most businesses have data, but not clarity. The ad platform says one thing. The website says another. The CRM has partial history. The owner still has to guess.
+Local Business Search is moving toward more than a services website.
 
-The platform layer is designed to make growth easier to manage.
+The platform direction is a practical resource hub for business owners: useful guides, recommended tools, digital downloads, productized help, affiliate-style recommendations, and shop-ready resources that can support the services we already provide.
 
-## What It Connects
+## What It Can Become
 
-### Traffic
-Search, paid advertising, social, direct visits, referral traffic, and campaign activity.
+### Recommended Tools
+Curated software, platforms, business services, and vendor recommendations that make sense for local businesses.
 
-### Conversion
-Forms, calls, booking paths, landing pages, and follow-up workflows.
+### Digital Resources
+Checklists, planning worksheets, templates, guides, and downloadable assets that help owners move faster.
 
-### Operations
-CRM stages, appointment activity, missed opportunities, customer status, and repeated tasks.
+### Productized Help
+Smaller service packages, setup kits, audits, and repeatable business tools that do not require a full custom engagement.
 
-### Decisions
-Plain-English summaries of what changed, what is working, where money is leaking, and what should happen next.
+### Business Services
+Marketing, websites, search visibility, paid advertising, automation, and consulting remain available for companies that need direct help.
 
 ---
 
-## Why It Matters
+## Why This Direction Matters
 
-Marketing is only valuable when the business can see what it produces. We help connect the numbers that usually live in separate tools so owners can make better decisions faster.
+Business owners need a trustworthy place to find practical help. Sometimes that means hiring a service partner. Sometimes it means buying a template, choosing the right tool, reading a guide, or starting with a smaller productized resource.
 
-- Which campaigns create quality opportunities
-- Which services or locations are gaining traction
-- Which leads are not being followed up quickly enough
-- Which pages, ads, or offers need improvement
-- Which next action deserves attention now
+- Service support when the business needs hands-on help
+- Tool recommendations when the owner needs the right platform
+- Digital resources when a smaller next step is enough
+- Shop-style products for repeatable business needs
+- Educational content that helps owners understand what to do next
 
 ---
 
 ## Built for Expansion
 
-This foundation can grow into software products, business tools, resources, downloads, and marketplace-style recommendations later. The first priority is a strong operating view for the business today.
+This foundation can grow into software products, business tools, resources, downloads, affiliate recommendations, and marketplace-style pages over time. The goal is to make Local Business Search a practical growth resource, not just a service menu.
 
-[Talk through your growth system](/contact/)
+[Talk through services and resources](/contact/)

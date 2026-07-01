@@ -1,6 +1,6 @@
 baseURL = 'https://localbusinesssearch.com/'
 languageCode = 'en-us'
-title = 'Local Business Search - AI. Business Process.'
+title = 'Local Business Search - Business Growth Systems'
 theme = 'lbs'
 
 [markup]
@@ -9,10 +9,10 @@ theme = 'lbs'
       unsafe = true
 
 [params]
-  description = 'AI-driven business systems for local companies. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations.'
+  description = 'Business growth services, websites, automation, business tools, resources, and consulting for companies that want practical support.'
   author = 'Local Business Search'
   businessName = 'Local Business Search'
-  businessTagline = 'AI. Business Process.'
+  businessTagline = 'Business Growth Systems'
   businessType = 'ProfessionalService'
   businessEmail = 'jed@powerofadvertising.com'
   businessPhone = '+1-618-741-6143'
@@ -31,12 +31,13 @@ theme = 'lbs'
   serviceArea = ['United States', 'Florida', 'local and regional service businesses']
   sameAs = ['https://twitter.com/Jed_X_Wilson']
   knowsAbout = [
-    'AI automation for local businesses',
+    'digital marketing for local businesses',
     'business process automation',
     'digital advertising management',
-    'lead response automation',
+    'professional website strategy',
+    'business tools and resource libraries',
     'CRM and operations integration',
-    'marketing attribution',
+    'affiliate recommendations for business owners',
     'local business systems'
   ]
 

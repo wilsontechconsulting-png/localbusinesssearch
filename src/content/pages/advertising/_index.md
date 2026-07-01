@@ -1,19 +1,21 @@
 ---
 title: "Paid Advertising That Supports Business Growth"
-description: "Google, social, retargeting, programmatic, OTT, and CTV campaigns connected to stronger landing pages, follow-up, and reporting."
+description: "Google, social, retargeting, programmatic, OTT, and CTV campaigns connected to stronger offers, better pages, and practical follow-up."
 ---
 
-Advertising is not the whole business. It is one growth lever. It works best when the offer is clear, the landing page is strong, the lead is handled quickly, and the numbers are reviewed honestly.
+Advertising is not the whole business. It is one growth lever.
 
-## The Right Traffic, Sent to the Right System
+It works best when the offer is clear, the landing page is strong, the audience is right, and the business is ready to respond.
 
-We plan campaigns around the full path from attention to revenue:
+## The Right Traffic, Sent to the Right Place
+
+We plan campaigns around the full path from attention to action:
 
 - The customer intent behind the search, impression, or click
 - The offer and page that should receive the traffic
-- The form, phone, or booking path that captures the opportunity
+- The form, phone, or booking path that makes the next step easy
 - The follow-up workflow that keeps the conversation moving
-- The reporting that shows what is worth improving
+- The resources or content that help buyers understand the offer
 
 ## Advertising Channels
 
@@ -35,12 +37,12 @@ Follow-up media that brings back visitors who were interested but not ready to a
 
 - Campaign strategy tied to business goals
 - Clearer offers and landing page direction
-- Conversion tracking and source reporting
-- Budget review based on performance
+- Practical audience and channel planning
+- Creative support that matches the offer
 - Ongoing optimization without hiding behind vanity metrics
 
 ---
 
-## Make the Spend Accountable
+## Make the Spend Useful
 
-[Request a consultation](/contact/) and we will review where your advertising fits inside the larger growth system.
+[Request a consultation](/contact/) and we will review where advertising fits inside the larger business growth system.

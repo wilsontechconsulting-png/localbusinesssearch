@@ -18,13 +18,13 @@ type Enhancement = {
 const enhancements: Record<string, Enhancement> = {
   '/services/': {
     eyebrow: 'Growth Services',
-    title: 'Marketing, websites, automation, and analytics built to work together.',
+    title: 'Business services now, with products and resources built into the direction.',
     intro:
-      'The service mix is built around a simple business goal: help more qualified people find you, trust you, contact you, and become customers.',
+      'The service mix is built around a simple business goal: help people find you, trust you, understand the offer, and take the next step.',
     cards: [
       {
         title: 'Marketing and advertising',
-        body: 'Campaign strategy, Google, Meta, retargeting, local media, and campaign management connected to real conversion paths.',
+        body: 'Campaign strategy, Google, Meta, retargeting, local media, and campaign management connected to clear business offers.',
         href: '/advertising/',
       },
       {
@@ -33,15 +33,15 @@ const enhancements: Record<string, Enhancement> = {
         href: '/baselayer/',
       },
       {
-        title: 'Software, automation, and analytics',
-        body: 'CRM workflows, reporting, follow-up automation, and practical consulting so growth does not disappear into manual work.',
+        title: 'Tools, automation, and resources',
+        body: 'CRM workflows, follow-up automation, practical consulting, recommended tools, and productized resources that support business owners.',
         href: '/business-operations/',
       },
     ],
     metrics: [
       { value: '01', label: 'Get found' },
-      { value: '02', label: 'Convert interest' },
-      { value: '03', label: 'Measure growth' },
+      { value: '02', label: 'Explain offers' },
+      { value: '03', label: 'Add resources' },
     ],
     image: '/images/lbs-icon.jpg',
     imageAlt: 'Local Business Search brand mark',
@@ -50,26 +50,26 @@ const enhancements: Record<string, Enhancement> = {
     eyebrow: 'Paid Growth',
     title: 'Advertising works harder when every click has a job to do.',
     intro:
-      'The campaign is only the front door. The lift comes from pairing media spend with stronger offers, better landing pages, clean tracking, and fast follow-up.',
+      'The campaign is only the front door. The lift comes from pairing media spend with stronger offers, better landing pages, useful content, and fast follow-up.',
     cards: [
       { title: 'Channel strategy', body: 'Google, paid social, programmatic, OTT, CTV, and retargeting planned around intent and local market fit.' },
-      { title: 'Conversion path', body: 'Landing pages, forms, CRM routing, and tracking designed before the campaign starts spending.' },
-      { title: 'Decision loop', body: 'Ad spend, lead quality, bookings, and revenue roll up into reporting owners can actually use.' },
+      { title: 'Next-step path', body: 'Landing pages, forms, CRM routing, and follow-up designed before the campaign starts spending.' },
+      { title: 'Resource support', body: 'Campaigns can be supported by guides, offers, product picks, and useful downloads that help buyers decide.' },
     ],
     image: '/images/pizza-world-branson-campaign-preview.png',
     imageAlt: 'Example local business advertising creative',
   },
   '/baselayer/': {
-    eyebrow: 'Websites & Conversion',
+    eyebrow: 'Professional Websites',
     title: 'A website should clarify the offer, build confidence, and make the next step obvious.',
     intro:
       'The site is where search traffic, paid clicks, referrals, and repeat visitors decide whether the business feels credible enough to contact.',
     cards: [
       { title: 'Clear positioning', body: 'Page structure, headlines, and calls to action explain what the company does and why it is the right choice.' },
-      { title: 'Conversion paths', body: 'Forms, phone calls, contact pages, and landing pages guide visitors toward action without making them hunt.' },
-      { title: 'Performance foundation', body: 'Fast static pages, clean metadata, accessible structure, and practical analytics support long-term growth.' },
+      { title: 'Next-step paths', body: 'Forms, phone calls, contact pages, landing pages, and resource links guide visitors without making them hunt.' },
+      { title: 'Resource foundation', body: 'Fast static pages, clean metadata, accessible structure, and useful content support long-term growth.' },
     ],
-    image: '/images/lbs-logo.jpg',
+    image: '/images/lbs-icon.jpg',
     imageAlt: 'Local Business Search logo on website system',
   },
   '/search-seo/': {
@@ -80,7 +80,7 @@ const enhancements: Record<string, Enhancement> = {
     cards: [
       { title: 'Local discovery', body: 'Service-area clarity, internal links, technical cleanup, and location relevance help the right local customers find you.' },
       { title: 'Service authority', body: 'Pages answer the questions buyers ask before they compare, call, book, or request a quote.' },
-      { title: 'Visibility reporting', body: 'Search work is connected to calls, forms, booked opportunities, and the next improvement cycle.' },
+      { title: 'Resource-ready structure', body: 'Search work supports articles, guides, recommendations, and pages that can grow into a broader resource library.' },
     ],
     image: '/images/blog/seo-llm-2026.jpg',
     imageAlt: 'Search visibility strategy for modern search and AI answers',
@@ -89,10 +89,10 @@ const enhancements: Record<string, Enhancement> = {
     eyebrow: 'Business Systems',
     title: 'Better growth needs cleaner operations behind it.',
     intro:
-      'We help connect marketing, lead handling, customer data, reporting, and repeated work so owners can see what is happening and act sooner.',
+      'We help connect marketing, lead handling, customer data, resources, and repeated work so owners can move with less friction.',
     cards: [
-      { title: 'CEO visibility', body: 'A clear view of what is working, what is stuck, and where decisions need to happen.' },
-      { title: 'CFO clarity', body: 'Spend, leads, booked work, and revenue tracked together instead of reviewed separately.' },
+      { title: 'Owner clarity', body: 'A clear view of what is available, what is stuck, and where the next practical move should happen.' },
+      { title: 'Resource organization', body: 'Services, tools, recommendations, and workflows can be organized instead of scattered across accounts.' },
       { title: 'COO execution', body: 'Response, booking, reminders, and handoffs handled consistently without adding busywork.' },
     ],
     image: '/images/triple-crown-logo.jpg',
@@ -112,27 +112,27 @@ const enhancements: Record<string, Enhancement> = {
     imageAlt: 'Lead follow-up comparison for local businesses',
   },
   '/platform/': {
-    eyebrow: 'Analytics & Reporting',
-    title: 'Better reporting turns marketing from a cost center into a decision system.',
+    eyebrow: 'Business Tools & Resources',
+    title: 'A practical foundation for products, recommendations, downloads, and shop-style resources.',
     intro:
-      'Owners need to see what is working, what is stuck, and which next move has the highest business impact.',
+      'The platform direction is bigger than a services menu. It is a place for business owners to find services, recommended tools, useful guides, and digital resources.',
     cards: [
-      { title: 'Source clarity', body: 'Campaigns, search traffic, forms, calls, and follow-up are easier to compare when reporting is structured correctly.' },
-      { title: 'Owner-ready views', body: 'The report should explain what happened, why it matters, and what should happen next.' },
-      { title: 'Decision rhythm', body: 'Monthly and weekly review loops turn data into corrections instead of more dashboard noise.' },
+      { title: 'Recommended tools', body: 'Curated software, platforms, and services can be organized into useful recommendations for owners.' },
+      { title: 'Digital downloads', body: 'Templates, checklists, guides, and productized resources can support businesses that are not ready for full service.' },
+      { title: 'Shop-ready structure', body: 'The site can grow naturally into a marketplace-style resource layer without abandoning business services.' },
     ],
-    image: '/images/social-card-default.png',
-    imageAlt: 'Local Business Search reporting system overview',
+    image: '/images/pizza-world-cross-creek-location.jpg',
+    imageAlt: 'Local business storefront example',
   },
   '/results/': {
     eyebrow: 'Proof & Outcomes',
     title: 'Business growth improves when every stage of the customer path is connected.',
     intro:
-      'The strongest gains usually come from fixing more than one layer: visibility, credibility, response, follow-up, and measurement.',
+      'The strongest gains usually come from improving more than one layer: visibility, credibility, useful content, services, resources, and follow-up.',
     cards: [
       { title: 'Visibility', body: 'Search and advertising put the business in front of more qualified prospects.' },
-      { title: 'Conversion', body: 'Websites, offers, and follow-up help more of those prospects take action.' },
-      { title: 'Accountability', body: 'Reporting shows where performance is improving and where attention is needed.' },
+      { title: 'Trust', body: 'Websites, offers, resources, and follow-up help prospects understand why the business is worth contacting.' },
+      { title: 'Resources', body: 'Guides, recommendations, and productized tools give owners more ways to get help.' },
     ],
     image: '/images/pizza-world-branson-campaign-preview.png',
     imageAlt: 'Local campaign performance creative example',
@@ -141,11 +141,11 @@ const enhancements: Record<string, Enhancement> = {
     eyebrow: 'About Local Business Search',
     title: 'Built for business owners who want modern marketing without needless complexity.',
     intro:
-      'The work combines strategy, creative, websites, advertising, automation, software, analytics, and practical consulting into one growth system.',
+      'The work combines strategy, creative, websites, advertising, automation, software, resources, and practical consulting into one growth system.',
     cards: [
       { title: 'Business-first', body: 'The recommendation starts with the growth problem, not with a favorite platform or trend.' },
       { title: 'Technology-aware', body: 'Modern tools, including AI, are used where they improve speed, clarity, and execution.' },
-      { title: 'Outcome-focused', body: 'The goal is more qualified opportunities, stronger follow-up, and clearer decisions.' },
+      { title: 'Resource-minded', body: 'The long-term direction includes products, recommendations, guides, and useful business tools.' },
     ],
     image: '/images/lbs-icon.jpg',
     imageAlt: 'Local Business Search mark',
@@ -154,13 +154,13 @@ const enhancements: Record<string, Enhancement> = {
     eyebrow: 'Industry Fit',
     title: 'Different markets lose opportunities in different places.',
     intro:
-      'The system changes by business type, but the goal is consistent: stronger visibility, faster response, fewer missed opportunities, and cleaner reporting.',
+      'The system changes by business type, but the goal is consistent: stronger visibility, faster response, useful resources, and cleaner execution.',
     cards: [
-      { title: 'Home Services', body: 'Missed call recovery, job booking, no-show reduction, and ad-to-job tracking.', href: '/industries/home-services/' },
-      { title: 'Medical', body: 'New patient response, appointment reminders, reactivation, and patient acquisition tracking.', href: '/industries/medical/' },
-      { title: 'Legal', body: 'Case intake, qualification, consultation scheduling, and retainer visibility.', href: '/industries/legal/' },
+      { title: 'Home Services', body: 'Missed call recovery, job booking, reminders, and practical owner resources.', href: '/industries/home-services/' },
+      { title: 'Medical', body: 'New patient response, appointment reminders, reactivation, and clear service information.', href: '/industries/medical/' },
+      { title: 'Legal', body: 'Case intake, qualification, consultation scheduling, and trust-building content.', href: '/industries/legal/' },
       { title: 'Local Retail', body: 'Customer retention, loyalty, reviews, events, and repeat-visit campaigns.', href: '/industries/local-retail/' },
-      { title: 'Franchises', body: 'Centralized reporting, location routing, campaign consistency, and multi-location rollout.', href: '/industries/franchises/' },
+      { title: 'Franchises', body: 'Location routing, campaign consistency, resource libraries, and multi-location rollout.', href: '/industries/franchises/' },
       { title: 'Municipalities', body: 'Public messaging, resident engagement, event promotion, and budget-conscious communication.', href: '/industries/municipalities/' },
     ],
     image: '/images/pizza-world-cross-creek-location.jpg',
@@ -176,7 +176,7 @@ const industryEnhancements: Record<string, Enhancement> = {
     cards: [
       { title: 'Missed call recovery', body: 'A fast text and booking path keeps job opportunities from disappearing while the team is busy.' },
       { title: 'Scheduling flow', body: 'Direct booking and reminders reduce phone tag, no-shows, and wasted dispatch time.' },
-      { title: 'Job-level visibility', body: 'Ad spend connects to leads, booked jobs, and revenue instead of stopping at form counts.' },
+      { title: 'Job-level support', body: 'Advertising, booking, reminders, and follow-up can support the work from first inquiry through completed job.' },
     ],
   },
   '/industries/medical/': {
@@ -185,7 +185,7 @@ const industryEnhancements: Record<string, Enhancement> = {
     intro: 'Designed around patient response, booking discipline, reactivation, and careful data handling.',
     cards: [
       { title: 'New patient response', body: 'Inquiries get a fast path to booking before attention moves to another provider.' },
-      { title: 'No-show control', body: 'Reminder and follow-up sequences protect chair time, provider time, and revenue.' },
+      { title: 'No-show control', body: 'Reminder and follow-up sequences protect schedules and reduce wasted staff time.' },
       { title: 'Reactivation', body: 'Inactive patients can be brought back with structured, compliant communication workflows.' },
     ],
   },

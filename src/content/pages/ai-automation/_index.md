@@ -1,6 +1,6 @@
 ---
 title: "Automation That Improves Follow-Up"
-description: "Practical automation for lead response, appointment booking, customer follow-up, and reporting without adding more manual work."
+description: "Practical automation for lead response, appointment booking, customer follow-up, resource delivery, and repeated business workflows."
 ---
 
 Automation should help the business respond faster, follow up more consistently, and keep better records without making customers feel like they are trapped in a machine.
@@ -16,7 +16,7 @@ The biggest leaks are often not inside the ad account. They happen after someone
 **No-shows that waste time.**  
 **Customers who slip through the cracks.**
 
-Practical automation improves the operational details that determine whether marketing turns into revenue.
+Practical automation improves the operational details that keep marketing, service, and customer communication moving.
 
 ---
 
@@ -34,8 +34,8 @@ Qualified leads can move directly into a calendar or intake workflow without day
 ### Follow-Up Sequences
 Email and SMS follow-up can continue after the first contact without relying on staff memory.
 
-### Reactivation Campaigns
-Past customers who went quiet can be brought back with structured, relevant outreach.
+### Resource Delivery
+Guides, checklists, downloads, and recommended next steps can be delivered automatically when they are useful.
 
 ### Missed Call Recovery
 When the business cannot answer, a fast text and booking path can keep the opportunity alive.
@@ -44,18 +44,18 @@ When the business cannot answer, a fast text and booking path can keep the oppor
 
 ## Where AI Fits
 
-Artificial intelligence can help with qualification, routing, summarization, research, response drafting, and analysis. It is useful when it makes the business faster or clearer.
+Artificial intelligence can help with qualification, routing, summarization, research, response drafting, and organization. It is useful when it makes the business faster or clearer.
 
-It is not the offer by itself. The offer is a better growth system.
+It is not the offer by itself. The offer is better business support.
 
 ---
 
 ## Works With Your Existing Tools
 
-The goal is not to rip everything out. We look at the CRM, calendar, phone system, forms, and reporting already in place, then improve the handoffs that matter most.
+The goal is not to rip everything out. We look at the CRM, calendar, phone system, forms, and tools already in place, then improve the handoffs that matter most.
 
 ---
 
-## See Where Revenue Is Leaking
+## See Where Automation Can Help
 
 [Schedule your audit](/contact/) and we will map your current follow-up process, then show where automation can help without overcomplicating the business.

@@ -1,140 +1,51 @@
 ---
-title: "We Used to Just Run Ads. Then We Realized That Wasn't Enough."
-description: "The story of how we evolved from a digital advertising agency into a business systems company that helps local businesses actually operate better."
+title: "About Local Business Search"
+description: "Local Business Search helps companies grow with marketing, websites, search visibility, advertising, automation, consulting, and practical business resources."
 layout: "about"
 ---
 
-The story of how we evolved from a digital advertising agency into a business systems company that helps local businesses actually operate better.
+Local Business Search helps companies grow through better visibility, stronger websites, smarter advertising, practical automation, and useful business resources.
+
+The direction is simple: provide hands-on business services today, then keep expanding into products, tools, guides, recommendations, and shop-ready resources that help owners make better decisions without getting buried in complexity.
 
 ---
 
 ## The Story
 
-We started like every other marketing agency:
+Local businesses do not need more random tactics. They need help that is practical, understandable, and connected to how the business actually works.
 
-**Run ads. Get leads. Send a report. Repeat.**
+That can mean a better website. It can mean stronger search visibility. It can mean advertising, automation, a CRM cleanup, a recommended tool, a planning guide, or a simple productized resource that helps the owner move forward.
 
-And it worked—sort of. Our clients got leads. But they weren't converting them. Why?
-
-- They called back too slow
-- They got buried in manual work
-- They had no idea which marketing made money
-- Their operations were a mess
-
-**We were generating leads. But we were also watching them die.**
-
-So we asked a better question:
-
-### "What if we didn't just bring in traffic? What if we built the systems to actually convert it?"
-
-That's when everything changed.
-
-We stopped being a marketing agency. We became a **business systems company**.
+Local Business Search exists to bring those pieces together.
 
 ---
 
-## Our Mission
+## What We Do
 
-### Make Local Businesses Unstoppable
+### Business Growth Services
+Marketing strategy, websites, search visibility, paid advertising, automation, software support, and consulting.
 
-Not by running ads harder. By building better systems.
+### Practical Business Tools
+CRM workflows, follow-up systems, recommended platforms, resource organization, and simple operating improvements.
 
-**Systems that:**
-- Capture every lead
-- Respond instantly
-- Automate operations
-- Track ROI clearly
-- Give owners visibility and control
-
-**We build the infrastructure. You run the business.**
-
----
-
-## Why This Matters
-
-Most local businesses operate like it's 2005:
-- Manual follow-up
-- Phone tag for scheduling
-- No tracking beyond "how many clicks?"
-- Disconnected tools
-- Gut-feel decisions
-
-Meanwhile, enterprise companies have:
-- Automated workflows
-- AI-powered systems
-- Full attribution tracking
-- Unified dashboards
-- Data-driven decision making
-
-**Why should only big companies have this?**
-
-They shouldn't. So we built it for local businesses.
+### Product and Resource Direction
+Guides, templates, digital downloads, affiliate-style recommendations, and future shop-ready resources for owners who need practical help.
 
 ---
 
 ## What Makes Us Different
 
-### We're Not a Marketing Agency
+### We Start With the Business
 
-We don't just send you leads and hope you close them.
+The recommendation starts with what the business needs, not with a favorite platform, trend, or buzzword.
 
-We build the systems that capture, qualify, nurture, and convert those leads—automatically.
+### We Keep Technology Practical
 
-### We Connect All Four Business Functions
+AI and automation are useful when they improve speed, organization, consistency, or execution. They are tools inside the system, not the identity of the company.
 
-- **CEO** → Visibility across the entire business
-- **CFO** → ROI tracking and financial clarity
-- **CMO** → Growth systems (that's where ads fit)
-- **COO** → Operational automation and efficiency
+### We Are Building Beyond Services
 
-**One system. Not four disconnected tools.**
-
-### We Measure What Actually Matters
-
-Not vanity metrics. Real business outcomes:
-- Cost per acquisition
-- Lifetime value
-- Revenue per campaign
-- Time saved on manual work
-- Conversion rates across the funnel
-
-**If it doesn't drive revenue or save time, we don't track it.**
-
----
-
-## Our Values
-
-### 1. Systems Over Tactics
-We don't chase trends. We build infrastructure that works long-term.
-
-### 2. Results Over Reports
-Pretty dashboards don't pay the bills. We optimize for revenue and efficiency.
-
-### 3. Automation Over Manual Work
-If a human has to do it repeatedly, we automate it.
-
-### 4. Clarity Over Complexity
-Business owners shouldn't need a PhD to understand their systems.
-
-### 5. Partnership Over Transactions
-We succeed when our clients succeed. Simple as that.
-
----
-
-## Who We Work With
-
-We work with local businesses that:
-- ✅ Have leads (but aren't converting them well)
-- ✅ Want to automate repetitive work
-- ✅ Need better visibility into what's working
-- ✅ Are ready to invest in systems, not just tactics
-- ✅ Generate at least $20K/month in revenue
-
-We're probably not a fit if:
-- ❌ You don't have leads yet (start with basic marketing first)
-- ❌ You want quick fixes or growth hacks
-- ❌ You're not willing to implement systems
-- ❌ You're just starting out (< $20K/month revenue)
+The long-term plan is to make Local Business Search a trusted place for services, products, recommendations, educational content, business tools, and digital resources.
 
 ---
 
@@ -151,16 +62,6 @@ We're probably not a fit if:
 
 ## The Vision
 
-**Give every local business the same advantages that enterprise companies have.**
+Build a practical growth ecosystem for business owners: trusted services when they need direct help, useful products when they need a smaller next step, and clear recommendations when they need to choose the right tool.
 
-AI-powered automation. Intelligent systems. Full visibility. Efficient operations.
-
-Not someday. Right now.
-
----
-
-## Ready to Build Systems That Actually Work?
-
-We'll audit your current setup and show you exactly where you're losing time and revenue.
-
-[Schedule Your Free Audit →](/demo/)
+[Start the conversation](/contact/)

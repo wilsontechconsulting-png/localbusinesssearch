@@ -1,110 +1,42 @@
 ---
-title: "The Growth System That Runs While You Sleep"
-description: "Most businesses just run ads and hope. We build intelligent systems that capture leads, automate follow-up, and convert traffic into revenue—24/7."
+title: "Business Tools and Resource Platform"
+description: "A practical foundation for business services, recommended tools, digital resources, affiliate-style recommendations, and future shop-ready products."
 ---
 
-Most businesses just run ads and hope. We build intelligent systems that capture leads, automate follow-up, and convert traffic into revenue—24/7.
+Local Business Search is moving toward more than a services website.
 
-## The Problem
+The platform direction is a practical resource hub for business owners: useful guides, recommended tools, digital downloads, productized help, affiliate-style recommendations, and shop-ready resources that can support the services we already provide.
 
-### You're Spending Money on Ads. But Are You Capturing Every Lead?
+## What It Can Become
 
-- Leads slip through the cracks
-- Manual follow-up takes forever
-- No-shows waste your time
-- Customers forget about you
+### Recommended Tools
+Curated software, platforms, business services, and vendor recommendations that make sense for local businesses.
 
-**You need more than ads. You need a system.**
+### Digital Resources
+Checklists, planning worksheets, templates, guides, and downloadable assets that help owners move faster.
 
-## The System
+### Productized Help
+Smaller service packages, setup kits, audits, and repeatable business tools that do not require a full custom engagement.
 
-### Stage 1: Traffic
-Strategic ads (Google, Meta, Programmatic) targeting the right audience with the right offer.
-
-### Stage 2: Capture
-Optimized landing pages with lead forms connected to your CRM. Instant confirmation sent.
-
-### Stage 3: Qualify (AI)
-AI analyzes lead intent, scores priority, and routes to the right workflow automatically.
-
-### Stage 4: Follow-Up (Automation)
-- Missed call? Instant text back
-- Lead nurture sequences
-- Appointment reminders
-- Reactivation campaigns
-
-### Stage 5: Convert
-Booked appointments. Qualified sales calls. Revenue in the door.
+### Business Services
+Marketing, websites, search visibility, paid advertising, automation, and consulting remain available for companies that need direct help.
 
 ---
 
-## How the Roles Connect
+## Why This Direction Matters
 
-Your business isn't separate departments. It's connected systems.
+Business owners need a trustworthy place to find practical help. Sometimes that means hiring a service partner. Sometimes it means buying a template, choosing the right tool, reading a guide, or starting with a smaller productized resource.
 
-### CEO → Needs Visibility
-- Real-time dashboard
-- Performance across all functions
-- Decision-making data
-
-### CFO → Needs ROI Clarity
-- Ad spend → lead → revenue tracking
-- Cost per acquisition
-- Lifetime value metrics
-
-### CMO → Needs Growth Systems
-- Traffic generation (ads)
-- Conversion optimization
-- Campaign attribution
-
-### COO → Needs Efficient Operations
-- Lead handling automation
-- Appointment booking
-- Follow-up workflows
-- Process efficiency
-
-**The Platform connects all four.**
-
-No more disconnected tools. No more manual handoffs. No more guessing.
-
-One system. Full visibility. Efficient execution.
+- Service support when the business needs hands-on help
+- Tool recommendations when the owner needs the right platform
+- Digital resources when a smaller next step is enough
+- Shop-style products for repeatable business needs
+- Educational content that helps owners understand what to do next
 
 ---
 
-## Use Cases
+## Built for Expansion
 
-### Missed Call Recovery
-Lead calls but you miss it → AI sends instant SMS: "Hey! We saw you called. Here's a link to book a time." → Automated booking flow
+This foundation can grow into software products, business tools, resources, downloads, affiliate recommendations, and marketplace-style pages over time. The goal is to make Local Business Search a practical growth resource, not just a service menu.
 
-### Lead Nurturing
-Lead isn't ready yet → AI sends value-driven follow-ups over 30 days → Converts when timing is right
-
-### Appointment Reminders
-Booked appointment → Auto-reminder 24 hours before → Reduces no-shows by 40%
-
-### Reactivation
-Past customer goes cold → AI triggers win-back campaign → Brings them back automatically
-
-## Before vs After
-
-### Without the System
-- Ads run, leads come in
-- Manual follow-up (slow)
-- Leads forget about you
-- No-shows waste time
-- Revenue leaks everywhere
-
-### With the System
-- Ads run, leads captured instantly
-- AI follows up in < 60 seconds
-- Automated nurture keeps you top-of-mind
-- Reminders reduce no-shows 40%
-- Every lead gets worked, nothing lost
-
----
-
-## See It In Action
-
-Book a demo → we'll show you the exact system for your business.
-
-[Schedule Your Demo](/demo/)
+[Talk through services and resources](/contact/)
