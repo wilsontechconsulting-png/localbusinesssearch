@@ -1,111 +1,61 @@
 ---
-title: "Stop Losing Leads to Slow Follow-Up"
-description: "AI-powered automation that responds instantly, books appointments automatically, and turns more leads into revenue—without adding to your workload."
+title: "Automation That Improves Follow-Up"
+description: "Practical automation for lead response, appointment booking, customer follow-up, and reporting without adding more manual work."
 ---
 
-AI-powered automation that responds instantly, books appointments automatically, and turns more leads into revenue—without adding to your workload.
+Automation should help the business respond faster, follow up more consistently, and keep better records without making customers feel like they are trapped in a machine.
 
 ---
 
-## This Isn't Just About Leads. It's About Operations.
+## This Is About Operations
 
-Most businesses think AI automation is just for marketing.
+The biggest leaks are often not inside the ad account. They happen after someone raises their hand.
 
-But the biggest inefficiencies aren't in your ads—they're in your operations.
-
-**Manual follow-up.**  
+**Slow follow-up.**  
 **Scheduling back-and-forth.**  
 **No-shows that waste time.**  
 **Customers who slip through the cracks.**
 
-AI automation fixes your operations. So your business runs efficiently, not chaotically.
+Practical automation improves the operational details that determine whether marketing turns into revenue.
 
 ---
 
-## The Problem
-
-**Every minute you wait to follow up, your lead is calling someone else.**
-
-### 78% of customers buy from the first company to respond.
-
-How fast is your follow-up?
-
----
-
-## What AI Automation Does
+## What Automation Does
 
 ### Instant Lead Response
-Missed call or form fill? AI responds in < 60 seconds via SMS/email. No more "sorry we missed you" hours later.
+Missed call or form fill? The system sends a fast, useful response by SMS or email so good opportunities do not sit untouched.
 
-### Smart Lead Qualification
-AI scores leads based on intent signals. Routes hot leads to sales, nurtures cold leads automatically.
+### Smart Lead Routing
+Lead details can be routed by service need, urgency, location, budget, or next best action.
 
 ### Appointment Booking
-Leads book directly into your calendar. No back-and-forth, no phone tag.
+Qualified leads can move directly into a calendar or intake workflow without days of phone tag.
 
 ### Follow-Up Sequences
-Automated email + SMS nurture campaigns. Personalized, timely, no manual work.
+Email and SMS follow-up can continue after the first contact without relying on staff memory.
 
 ### Reactivation Campaigns
-Past customers who went cold? AI brings them back. Win-back offers, re-engagement flows.
+Past customers who went quiet can be brought back with structured, relevant outreach.
 
 ### Missed Call Recovery
-Someone called and you didn't answer? Instant text with booking link. Capture leads even when you're busy.
+When the business cannot answer, a fast text and booking path can keep the opportunity alive.
 
 ---
 
-## Cross-Department Impact
+## Where AI Fits
 
-### For the COO (Operations)
-- Eliminates manual follow-up
-- Automates appointment booking
-- Reduces no-shows by 40%
-- Frees up 15-20 hours/week of staff time
+Artificial intelligence can help with qualification, routing, summarization, research, response drafting, and analysis. It is useful when it makes the business faster or clearer.
 
-### For the CMO (Marketing)
-- Instant lead response (< 60 seconds)
-- Higher conversion rates (automated nurture)
-- Campaign performance visibility
-
-### For the CFO (Finance)
-- Clear cost per lead
-- Revenue attribution by campaign
-- ROI tracking across all channels
-
-### For the CEO (Strategy)
-- Full operational visibility
-- Data-driven insights
-- Confidence in your systems
-
-**This is why AI automation isn't a "nice to have." It's infrastructure.**
-
----
-
-## Before/After: Home Services Company
-
-### Before
-- 30 leads/month from ads
-- Manual follow-up (calls back in 2-4 hours)
-- Converts 6 leads (20%)
-
-### After (with AI automation)
-- 30 leads/month
-- AI responds in < 1 minute
-- Automated booking + nurture
-- Converts 15 leads (50%)
-
-**Result: +150% conversion, zero extra work**
+It is not the offer by itself. The offer is a better growth system.
 
 ---
 
 ## Works With Your Existing Tools
 
-Connects to your CRM, calendar, phone system. No rip-and-replace.
+The goal is not to rip everything out. We look at the CRM, calendar, phone system, forms, and reporting already in place, then improve the handoffs that matter most.
 
 ---
 
-## See How Much Time (and Revenue) You're Losing
+## See Where Revenue Is Leaking
 
-Book a free audit → we'll map your current process and show you where AI can help.
-
-[Schedule Your Audit](/demo/)
+[Schedule your audit](/contact/) and we will map your current follow-up process, then show where automation can help without overcomplicating the business.

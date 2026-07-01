@@ -140,14 +140,15 @@ Tasks:
 
 ### Step 4 - Components And Redesign
 
-Status: in progress. Homepage, global layout, header, footer, blog listing, blog post pages, taxonomy pages, shared interior pages, service pages, industry pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is production workflow cutover after GitHub auth is fixed and Jed approves the switch.
+Status: in progress. Homepage, global layout, header, footer, blog listing, blog post pages, taxonomy pages, shared interior pages, service pages, industry pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. The latest pass repositioned the Astro site as a premium business growth, marketing, websites, automation, analytics, and consulting company, with AI framed as an enabling technology rather than the primary offer. Remaining work is production workflow cutover after GitHub auth is fixed and Jed approves the switch.
 
 Tasks:
 
 - Build Astro components for layout, header, footer, navigation, SEO, schema, cards, CTA bands, related-page navigation, feature sections, industry pages, service pages, and blog filters.
-- Redesign the visual system with a serious AI/business operations feel.
+- Redesign the visual system with a premium, confident growth-company feel.
 - Keep responsive behavior strong at 320px, 768px, 1024px, and 1440px.
 - Avoid generic AI styling and preserve Local Business Search brand assets.
+- Keep the visual system expandable for future software products, tools, resources, recommendations, marketplace, and digital download sections.
 
 ### Step 5 - Verification
 

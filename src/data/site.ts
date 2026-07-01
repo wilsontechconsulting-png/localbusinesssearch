@@ -1,12 +1,12 @@
 export const site = {
   baseUrl: 'https://localbusinesssearch.com',
-  title: 'Local Business Search - AI. Business Process.',
+  title: 'Local Business Search - Business Growth, Marketing, Websites, and Automation',
   language: 'en-us',
   description:
-    'AI-driven business systems for local companies. We build intelligent systems that improve how your business operates-from lead generation to financial visibility to automated operations.',
+    'Local Business Search helps businesses grow with digital marketing, search visibility, professional websites, paid advertising, automation, analytics, and practical consulting.',
   author: 'Local Business Search',
   businessName: 'Local Business Search',
-  businessTagline: 'AI. Business Process.',
+  businessTagline: 'Business Growth Systems',
   businessType: 'ProfessionalService',
   businessEmail: 'jed@powerofadvertising.com',
   businessPhone: '+1-618-741-6143',
@@ -24,12 +24,15 @@ export const site = {
   serviceArea: ['United States', 'Florida', 'local and regional service businesses'],
   sameAs: ['https://twitter.com/Jed_X_Wilson'],
   knowsAbout: [
-    'AI automation for local businesses',
-    'business process automation',
+    'digital marketing for local businesses',
+    'local SEO and search visibility',
+    'professional website strategy',
     'digital advertising management',
-    'lead response automation',
+    'paid advertising management',
+    'business process automation',
     'CRM and operations integration',
     'marketing attribution',
+    'AI automation for local businesses',
     'local business systems',
   ],
 };
@@ -43,36 +46,38 @@ export type NavItem = {
 
 export const mainNav = [
   {
-    name: 'Business Processes',
-    href: '/platform/',
+    name: 'Services',
+    href: '/services/',
     children: [
-      { name: 'The Platform', href: '/platform/', group: 'Core Systems' },
-      { name: 'Business Systems', href: '/business-operations/', group: 'Core Systems' },
-      { name: 'Advertising', href: '/advertising/', group: 'Core Systems' },
-      { name: 'Baselayer', href: '/baselayer/', group: 'Core Systems' },
-      { name: 'AI Automation', href: '/ai-automation/', group: 'AI & Model Research' },
+      { name: 'Services Overview', href: '/services/', group: 'Growth Services' },
+      { name: 'Digital Advertising', href: '/advertising/', group: 'Growth Services' },
+      { name: 'Search Visibility', href: '/blog/?category=SEO', group: 'Growth Services' },
+      { name: 'Websites & Conversion', href: '/baselayer/', group: 'Growth Services' },
+      { name: 'Business Software', href: '/business-operations/', group: 'Technology & Operations' },
+      { name: 'Automation', href: '/ai-automation/', group: 'Technology & Operations' },
+      { name: 'Analytics & Reporting', href: '/platform/', group: 'Technology & Operations' },
       {
         name: 'Artificial Analysis Models',
         href: 'https://artificialanalysis.ai/leaderboards/models',
-        group: 'AI & Model Research',
+        group: 'AI Research Links',
         external: true,
       },
       {
         name: 'Vellum LLM Leaderboard',
         href: 'https://www.vellum.ai/open-llm-leaderboard',
-        group: 'AI & Model Research',
+        group: 'AI Research Links',
         external: true,
       },
       {
         name: 'Hugging Face Leaderboard',
         href: 'https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard',
-        group: 'AI & Model Research',
+        group: 'AI Research Links',
         external: true,
       },
       {
         name: 'OpenRouter Rankings',
         href: 'https://openrouter.ai/rankings',
-        group: 'AI & Model Research',
+        group: 'AI Research Links',
         external: true,
       },
       { name: 'Industries', href: '/industries/', group: 'Markets & Proof' },
@@ -88,16 +93,17 @@ export const mainNav = [
   },
 ];
 
-export const navGroups = ['Core Systems', 'AI & Model Research', 'Markets & Proof', 'Resources', 'Company'];
+export const navGroups = ['Growth Services', 'Technology & Operations', 'Markets & Proof', 'Resources', 'Company', 'AI Research Links'];
 
 export const footerGroups = [
   {
-    title: 'Systems',
+    title: 'Services',
     links: [
-      { name: 'The Platform', href: '/platform/' },
-      { name: 'Business Systems', href: '/business-operations/' },
-      { name: 'AI Automation', href: '/ai-automation/' },
+      { name: 'Services Overview', href: '/services/' },
       { name: 'Advertising', href: '/advertising/' },
+      { name: 'Websites & Conversion', href: '/baselayer/' },
+      { name: 'Automation', href: '/ai-automation/' },
+      { name: 'Analytics', href: '/platform/' },
     ],
   },
   {

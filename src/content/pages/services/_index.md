@@ -1,44 +1,62 @@
 ---
-title: "Our Services"
-description: "Digital advertising, AI automation, and business process solutions"
+title: "Services"
+description: "Digital marketing, websites, paid advertising, local SEO, automation, analytics, software, and consulting for businesses that want clearer growth."
 ---
 
-# Our Services
+# Services
 
-Comprehensive solutions to power your local business growth.
+Local Business Search helps businesses grow by connecting the work that usually gets managed in separate lanes: marketing, search visibility, websites, advertising, follow-up, software, automation, and reporting.
 
-## Digital Advertising
+## Digital Marketing
 
-Strategic ad campaigns across Google, Facebook, and local platforms:
+We help shape the message, offer, channel mix, and customer journey so marketing is tied to real business outcomes instead of activity for its own sake.
 
-- Google Ads Management
-- Facebook/Instagram Advertising
-- Local Search Optimization
-- Retargeting Campaigns
-- Performance Analytics
+- Growth strategy
+- Campaign planning
+- Creative direction
+- Content structure
+- Performance review
 
-## AI Automation
+## Search Visibility
 
-Intelligent systems that work while you focus on your business:
+Customers need to find you before they can trust you. We improve the signals that help your business show up clearly in local search, organic search, and answer-driven discovery.
 
-- Lead Generation Automation
-- Customer Communication
-- Data Analysis & Insights
-- Process Optimization
-- Reporting Automation
+- Local SEO
+- Technical site cleanup
+- Content and service pages
+- Structured data
+- Review and reputation signals
 
-## Business Process
+## Websites That Convert
 
-Streamlined operations for maximum efficiency:
+A professional website should make the business easier to understand, easier to trust, and easier to contact. We design around clarity, speed, credibility, and conversion.
 
-- Workflow Design
-- System Integration
-- CRM Setup & Management
-- Team Training
-- Ongoing Support
+- Site strategy
+- Landing pages
+- Conversion paths
+- Hosting and maintenance
+- Performance support
 
----
+## Paid Advertising
 
-## Ready to Get Started?
+Advertising is most useful when it points to a strong offer and a clean follow-up process. We connect media spend to the systems that turn attention into opportunities.
 
-[Contact us](/contact/) to discuss your business needs.
+- Google Ads
+- Paid social
+- Retargeting
+- Programmatic, OTT, and CTV
+- Campaign reporting
+
+## Automation, Software, and Analytics
+
+Modern technology should reduce friction. We use automation, AI, CRM workflows, and reporting where they make the business faster, clearer, or more consistent.
+
+- Lead response
+- CRM and workflow design
+- Reporting dashboards
+- Source attribution
+- Business process consulting
+
+## Ready to Improve the System?
+
+[Contact us](/contact/) to talk through where your marketing, website, and follow-up are leaking opportunity.

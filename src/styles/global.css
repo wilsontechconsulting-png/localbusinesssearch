@@ -1,12 +1,14 @@
 :root {
   color-scheme: light;
   --navy: #0a1628;
-  --blue: #0066ff;
+  --blue: #0758d8;
+  --accent: #24a865;
+  --gold: #c9972f;
   --ink: #172033;
   --muted: #5d6878;
-  --line: #d8dee8;
+  --line: #dfe5ee;
   --surface: #ffffff;
-  --surface-subtle: #f6f8fb;
+  --surface-subtle: #f7f9fc;
   --footer: #07111f;
   --max: 1180px;
 }
@@ -61,9 +63,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid rgba(216, 222, 232, 0.9);
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(223, 229, 238, 0.92);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(18px);
 }
 
 .header-container {
@@ -88,8 +90,9 @@ img {
 .logo-icon {
   width: 44px;
   height: 44px;
-  border-radius: 0.5rem;
+  border-radius: 0.65rem;
   object-fit: cover;
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.1);
 }
 
 .logo-type {
@@ -137,7 +140,7 @@ img {
   align-items: center;
   gap: 0.35rem;
   min-height: 42px;
-  border-radius: 0.375rem;
+  border-radius: 0.45rem;
   padding: 0 0.8rem;
   color: var(--navy);
   font-size: 0.92rem;
@@ -147,7 +150,7 @@ img {
 
 .dropdown-toggle:hover,
 .dropdown-toggle.active {
-  background: var(--surface-subtle);
+  background: #f1f5fb;
 }
 
 .dropdown-menu {
@@ -160,7 +163,7 @@ img {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   border: 1px solid var(--line);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   background: white;
   padding: 1rem;
   opacity: 0;
@@ -211,6 +214,7 @@ img {
 .header-cta {
   background: var(--blue);
   color: white;
+  box-shadow: 0 10px 24px rgba(7, 88, 216, 0.18);
 }
 
 .mobile-toggle {
@@ -267,14 +271,15 @@ img {
 }
 
 .page-hero {
-  background: var(--navy);
+  background:
+    linear-gradient(135deg, rgba(7, 17, 31, 0.98), rgba(13, 37, 68, 0.94));
   color: white;
   padding: clamp(4rem, 8vw, 7rem) 0;
 }
 
 .hero-kicker {
   margin: 0 0 0.85rem;
-  color: #2fbf71;
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0;
@@ -382,6 +387,17 @@ img {
   padding-block: clamp(2.5rem, 6vw, 4.5rem);
 }
 
+.enhancement-top {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(300px, 0.72fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.enhancement-top-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .enhancement-header {
   display: grid;
   gap: 0.75rem;
@@ -391,7 +407,7 @@ img {
 .enhancement-header h2 {
   margin: 0;
   color: var(--navy);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 3.35rem);
   line-height: 1;
 }
 
@@ -403,11 +419,27 @@ img {
   line-height: 1.65;
 }
 
+.enhancement-image {
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: white;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(10, 22, 40, 0.08);
+}
+
+.enhancement-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
 .enhancement-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   border: 1px solid var(--line);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   background: white;
 }
 
@@ -424,7 +456,7 @@ img {
 }
 
 .enhancement-metrics span {
-  color: #2fbf71;
+  color: var(--accent);
   font-size: 0.95rem;
   font-weight: 900;
 }
@@ -451,7 +483,7 @@ img {
   gap: 0.65rem;
   min-height: 180px;
   border: 1px solid var(--line);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   background: white;
   padding: 1.25rem;
   text-decoration: none;
@@ -471,7 +503,7 @@ img {
 }
 
 a.enhancement-card:hover {
-  border-color: #b8c7dd;
+  border-color: rgba(7, 88, 216, 0.36);
   color: inherit;
 }
 
@@ -481,7 +513,7 @@ a.enhancement-card:hover {
   gap: 1.5rem;
   align-items: center;
   border: 1px solid var(--line);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   background: var(--navy);
   color: white;
   margin-bottom: clamp(3rem, 7vw, 5rem);
@@ -490,7 +522,7 @@ a.enhancement-card:hover {
 
 .content-cta p {
   margin: 0 0 0.4rem;
-  color: #2fbf71;
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -508,7 +540,7 @@ a.enhancement-card:hover {
   align-items: center;
   justify-content: center;
   min-height: 46px;
-  border-radius: 0.375rem;
+  border-radius: 0.45rem;
   background: var(--blue);
   color: white;
   font-weight: 900;
@@ -741,6 +773,7 @@ a.enhancement-card:hover {
   .post-card,
   .content-shell,
   .content-cta,
+  .enhancement-top,
   .enhancement-grid,
   .enhancement-grid-wide {
     grid-template-columns: 1fr;

@@ -1,8 +1,8 @@
 ---
-title: "AI-Driven Business Systems for Local Companies"
-description: "We don't just run ads. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations."
+title: "Business Growth Systems for Local Companies"
+description: "Marketing, websites, advertising, automation, analytics, and consulting for businesses that want clearer growth."
 ---
 
-# AI-Driven Business Systems for Local Companies
+# Business Growth Systems for Local Companies
 
-We don't just run ads. We build intelligent systems that improve how your business operates—from lead generation to financial visibility to automated operations—while you focus on growth.
+We help businesses get found, earn trust, convert more opportunities, and understand what is actually driving growth.

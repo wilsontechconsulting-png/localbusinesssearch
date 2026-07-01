@@ -11,75 +11,85 @@ type Enhancement = {
   intro: string;
   cards: EnhancementCard[];
   metrics?: { value: string; label: string }[];
+  image?: string;
+  imageAlt?: string;
 };
 
 const enhancements: Record<string, Enhancement> = {
   '/services/': {
-    eyebrow: 'Service Stack',
-    title: 'One build that connects demand, response, and reporting.',
+    eyebrow: 'Growth Services',
+    title: 'Marketing, websites, automation, and analytics built to work together.',
     intro:
-      'The service mix is intentionally narrow: get better traffic, answer faster, and make the numbers visible enough to act on.',
+      'The service mix is built around a simple business goal: help more qualified people find you, trust you, contact you, and become customers.',
     cards: [
       {
-        title: 'Digital advertising',
-        body: 'Campaigns across Google, Meta, retargeting, and local platforms that point at conversion systems instead of loose traffic.',
+        title: 'Marketing and advertising',
+        body: 'Campaign strategy, Google, Meta, retargeting, local media, and campaign management connected to real conversion paths.',
         href: '/advertising/',
       },
       {
-        title: 'AI automation',
-        body: 'Instant response, qualification, booking, follow-up, and reactivation workflows that reduce manual handoffs.',
-        href: '/ai-automation/',
+        title: 'Websites and search visibility',
+        body: 'Professional websites, local SEO, content structure, and technical cleanup that make the business easier to find and trust.',
+        href: '/baselayer/',
       },
       {
-        title: 'Business process',
-        body: 'CRM, reporting, workflow design, and operating visibility so growth does not disappear into spreadsheets.',
+        title: 'Software, automation, and analytics',
+        body: 'CRM workflows, reporting, follow-up automation, and practical consulting so growth does not disappear into manual work.',
         href: '/business-operations/',
       },
     ],
     metrics: [
-      { value: '01', label: 'Traffic' },
-      { value: '02', label: 'Follow-up' },
-      { value: '03', label: 'Revenue visibility' },
+      { value: '01', label: 'Get found' },
+      { value: '02', label: 'Convert interest' },
+      { value: '03', label: 'Measure growth' },
     ],
+    image: '/images/lbs-icon.jpg',
+    imageAlt: 'Local Business Search brand mark',
   },
   '/advertising/': {
-    eyebrow: 'Connected Media',
-    title: 'Advertising works harder when every click has somewhere useful to go.',
+    eyebrow: 'Paid Growth',
+    title: 'Advertising works harder when every click has a job to do.',
     intro:
-      'The campaign is only the front door. The real lift comes from pairing channels with lead capture, qualification, attribution, and follow-up.',
+      'The campaign is only the front door. The lift comes from pairing media spend with stronger offers, better landing pages, clean tracking, and fast follow-up.',
     cards: [
       { title: 'Channel strategy', body: 'Google, paid social, programmatic, OTT, CTV, and retargeting planned around intent and local market fit.' },
       { title: 'Conversion path', body: 'Landing pages, forms, CRM routing, and tracking designed before the campaign starts spending.' },
       { title: 'Decision loop', body: 'Ad spend, lead quality, bookings, and revenue roll up into reporting owners can actually use.' },
     ],
+    image: '/images/pizza-world-branson-campaign-preview.png',
+    imageAlt: 'Example local business advertising creative',
   },
   '/business-operations/': {
-    eyebrow: 'Operating Model',
-    title: 'The work is not more marketing. It is making the business easier to run.',
+    eyebrow: 'Business Systems',
+    title: 'Better growth needs cleaner operations behind it.',
     intro:
-      'The pages in this section map the CEO, CFO, CMO, and COO functions into one connected operating system for local companies.',
+      'We help connect marketing, lead handling, customer data, reporting, and repeated work so owners can see what is happening and act sooner.',
     cards: [
       { title: 'CEO visibility', body: 'A clear view of what is working, what is stuck, and where decisions need to happen.' },
       { title: 'CFO clarity', body: 'Spend, leads, booked work, and revenue tracked together instead of reviewed separately.' },
       { title: 'COO execution', body: 'Response, booking, reminders, and handoffs handled consistently without adding busywork.' },
     ],
+    image: '/images/triple-crown-logo.jpg',
+    imageAlt: 'Example client brand asset',
   },
   '/ai-automation/': {
-    eyebrow: 'Response System',
-    title: 'Automation should remove delay, not add another dashboard.',
+    eyebrow: 'Automation',
+    title: 'Automation should make the business faster, not make it feel less human.',
     intro:
-      'The strongest use case is operational speed: respond while intent is fresh, route the lead, book the next action, and keep the follow-up alive.',
+      'Artificial intelligence is useful when it improves response time, consistency, research, analysis, or handoffs. It is one tool inside a broader growth system.',
     cards: [
       { title: 'Instant response', body: 'Missed calls and forms get a fast reply instead of waiting for someone to check a queue.' },
       { title: 'Smart routing', body: 'Qualified leads move to the right workflow, calendar, or team member with less manual sorting.' },
       { title: 'Follow-up memory', body: 'Nurture, reactivation, reminders, and review requests continue without relying on staff bandwidth.' },
     ],
+    image: '/images/blog/lead-follow-up-field-note.jpg',
+    imageAlt: 'Lead follow-up comparison for local businesses',
   },
   '/industries/': {
     eyebrow: 'Industry Fit',
-    title: 'Different markets leak revenue in different places.',
+    title: 'Different markets lose opportunities in different places.',
     intro:
-      'The system changes by business type, but the goal is consistent: faster response, fewer missed opportunities, and cleaner visibility.',
+      'The system changes by business type, but the goal is consistent: stronger visibility, faster response, fewer missed opportunities, and cleaner reporting.',
     cards: [
       { title: 'Home Services', body: 'Missed call recovery, job booking, no-show reduction, and ad-to-job tracking.', href: '/industries/home-services/' },
       { title: 'Medical', body: 'New patient response, appointment reminders, reactivation, and patient acquisition tracking.', href: '/industries/medical/' },
@@ -88,6 +98,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Franchises', body: 'Centralized reporting, location routing, campaign consistency, and multi-location rollout.', href: '/industries/franchises/' },
       { title: 'Municipalities', body: 'Public messaging, resident engagement, event promotion, and budget-conscious communication.', href: '/industries/municipalities/' },
     ],
+    image: '/images/pizza-world-cross-creek-location.jpg',
+    imageAlt: 'Local business storefront example',
   },
 };
 
@@ -166,10 +178,17 @@ const enhancement = enhancements[path] ?? industryEnhancements[path];
   enhancement && (
     <section class="page-enhancement" aria-label={`${enhancement.eyebrow} overview`}>
       <div class="container enhancement-shell">
-        <div class="enhancement-header">
-          <p class="hero-kicker">{enhancement.eyebrow}</p>
-          <h2>{enhancement.title}</h2>
-          <p>{enhancement.intro}</p>
+        <div class:list={['enhancement-top', !enhancement.image && 'enhancement-top-single']}>
+          <div class="enhancement-header">
+            <p class="hero-kicker">{enhancement.eyebrow}</p>
+            <h2>{enhancement.title}</h2>
+            <p>{enhancement.intro}</p>
+          </div>
+          {enhancement.image && (
+            <figure class="enhancement-image">
+              <img src={enhancement.image} alt={enhancement.imageAlt ?? ''} loading="lazy" />
+            </figure>
+          )}
         </div>
         {enhancement.metrics && (
           <div class="enhancement-metrics" aria-label="System sequence">
