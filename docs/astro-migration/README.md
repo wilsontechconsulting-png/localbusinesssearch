@@ -139,11 +139,11 @@ Tasks:
 
 ### Step 4 - Components And Redesign
 
-Status: in progress. Homepage, global layout, header, footer, blog listing, taxonomy pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is deeper page-by-page visual refinement.
+Status: in progress. Homepage, global layout, header, footer, blog listing, blog post pages, taxonomy pages, shared interior pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is page-specific refinement for the highest-value service and industry sections.
 
 Tasks:
 
-- Build Astro components for layout, header, footer, navigation, SEO, schema, cards, CTA bands, feature sections, industry pages, service pages, and blog filters.
+- Build Astro components for layout, header, footer, navigation, SEO, schema, cards, CTA bands, related-page navigation, feature sections, industry pages, service pages, and blog filters.
 - Redesign the visual system with a serious AI/business operations feel.
 - Keep responsive behavior strong at 320px, 768px, 1024px, and 1440px.
 - Avoid generic AI styling and preserve Local Business Search brand assets.
@@ -165,7 +165,7 @@ Latest verification:
   - Missing required assets: 0
   - Broken internal Astro references: 0
 - `npm run screenshots:astro`: pass with no horizontal overflow at 390px or 1440px
-- Manual screenshot review covered the Astro homepage desktop, homepage mobile, and blog mobile views.
+- Manual screenshot review covered the Astro homepage desktop, homepage mobile, platform desktop, platform mobile, and blog mobile views.
 - `npm audit --omit=dev`: pass. Full dev audit still reports a moderate transitive `yaml-language-server` advisory through `@astrojs/check`; it does not affect the production dependency set.
 
 Tasks:

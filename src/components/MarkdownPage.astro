@@ -1,20 +1,54 @@
 ---
+import { mainNav } from '@/data/site';
+
 type Props = {
   title: string;
   description?: string;
+  path?: string;
 };
 
-const { title, description } = Astro.props;
+const { title, description, path = '/' } = Astro.props;
+const internalNav = mainNav.flatMap((item) => item.children ?? []).filter((item) => !item.external);
+const currentItem = internalNav.find((item) => item.href.split('?')[0] === path);
+const relatedLinks = currentItem?.group
+  ? internalNav.filter((item) => item.group === currentItem.group && !item.href.includes('?'))
+  : [];
 ---
 
 <article class="markdown-page">
   <section class="page-hero">
     <div class="container">
+      {currentItem?.group && <p class="hero-kicker">{currentItem.group}</p>}
       <h1>{title}</h1>
       {description && <p>{description}</p>}
     </div>
   </section>
-  <div class="container prose">
-    <slot />
+  <div class="container content-shell">
+    {
+      relatedLinks.length > 1 && (
+        <aside class="content-aside" aria-label={`${currentItem?.group} navigation`}>
+          <p>{currentItem?.group}</p>
+          <nav>
+            {relatedLinks.map((link) => (
+              <a href={link.href} class:list={[link.href === path && 'active']}>{link.name}</a>
+            ))}
+          </nav>
+        </aside>
+      )
+    }
+    <div class="prose content-body">
+      <slot />
+    </div>
   </div>
+  {
+    currentItem && (
+      <section class="container content-cta" aria-label="Next step">
+        <div>
+          <p>Ready to connect the pieces?</p>
+          <h2>Build the system around the way your business already sells.</h2>
+        </div>
+        <a href="/demo/">Book a Demo</a>
+      </section>
+    )
+  }
 </article>

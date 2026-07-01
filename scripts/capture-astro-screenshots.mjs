@@ -5,11 +5,13 @@ import { chromium } from 'playwright-core';
 const chromePath =
   process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const outputDir = path.join(process.cwd(), 'tmp/astro-screenshots');
-const baseUrl = process.env.ASTRO_PREVIEW_URL || 'http://127.0.0.1:4322';
+const baseUrl = process.env.ASTRO_PREVIEW_URL || 'http://localhost:4322';
 
 const shots = [
   { name: 'home-desktop', url: '/', width: 1440, height: 1200 },
   { name: 'home-mobile', url: '/', width: 390, height: 1200 },
+  { name: 'platform-desktop', url: '/platform/', width: 1440, height: 1200 },
+  { name: 'platform-mobile', url: '/platform/', width: 390, height: 1200 },
   { name: 'blog-mobile', url: '/blog/', width: 390, height: 1200 },
 ];
 

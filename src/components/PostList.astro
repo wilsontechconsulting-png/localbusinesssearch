@@ -15,18 +15,25 @@ const { posts } = Astro.props;
       const categories = getPostCategories(post);
       return (
         <article class="post-card">
-          {getImage(post) && <img src={getImage(post)} alt="" loading="lazy" />}
-          <div>
+          {getImage(post) && (
+            <a class="post-card-image" href={`/blog/${post.id}/`} aria-label={post.data.title}>
+              <img src={getImage(post)} alt="" loading="lazy" />
+            </a>
+          )}
+          <div class="post-card-body">
             <p class="post-meta">
               {post.data.date.toLocaleDateString('en-US', {
                 month: 'short',
                 day: 'numeric',
                 year: 'numeric',
-              })}
+            })}
             </p>
             <h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
             {post.data.description && <p>{post.data.description}</p>}
-            {categories.length > 0 && <p class="post-taxonomy">{categories.join(', ')}</p>}
+            <div class="post-card-footer">
+              {categories.length > 0 && <p class="post-taxonomy">{categories.join(', ')}</p>}
+              <a href={`/blog/${post.id}/`}>Read</a>
+            </div>
           </div>
         </article>
       );
