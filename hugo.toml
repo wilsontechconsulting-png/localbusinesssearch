@@ -42,122 +42,117 @@ theme = 'lbs'
 
 [menu]
   [[menu.main]]
-    name = 'Business Process'
+    name = 'Business Processes'
     url = '/platform/'
     weight = 1
   [[menu.main]]
     name = 'The Platform'
     url = '/platform/'
-    parent = 'Business Process'
+    parent = 'Business Processes'
     weight = 1
   [[menu.main]]
     name = 'Business Systems'
     url = '/business-operations/'
-    parent = 'Business Process'
+    parent = 'Business Processes'
     weight = 2
   [[menu.main]]
     name = 'Advertising'
     url = '/advertising/'
-    parent = 'Business Process'
+    parent = 'Business Processes'
     weight = 3
   [[menu.main]]
     name = 'Baselayer'
     url = '/baselayer/'
-    parent = 'Business Process'
+    parent = 'Business Processes'
     weight = 4
-  [[menu.main]]
-    name = 'Artificial Intelligence'
-    url = '/ai-automation/'
-    weight = 2
   [[menu.main]]
     name = 'AI Automation'
     url = '/ai-automation/'
-    parent = 'Artificial Intelligence'
-    weight = 1
+    parent = 'Business Processes'
+    weight = 5
   [[menu.main]]
     name = 'Artificial Analysis Models'
     url = 'https://artificialanalysis.ai/leaderboards/models'
-    parent = 'Artificial Intelligence'
-    weight = 2
+    parent = 'Business Processes'
+    weight = 6
     [menu.main.params]
       external = true
   [[menu.main]]
     name = 'Vellum LLM Leaderboard'
     url = 'https://www.vellum.ai/open-llm-leaderboard'
-    parent = 'Artificial Intelligence'
-    weight = 3
+    parent = 'Business Processes'
+    weight = 7
     [menu.main.params]
       external = true
   [[menu.main]]
     name = 'Hugging Face Leaderboard'
     url = 'https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard'
-    parent = 'Artificial Intelligence'
-    weight = 4
+    parent = 'Business Processes'
+    weight = 8
     [menu.main.params]
       external = true
   [[menu.main]]
     name = 'OpenRouter Rankings'
     url = 'https://openrouter.ai/rankings'
-    parent = 'Artificial Intelligence'
-    weight = 5
+    parent = 'Business Processes'
+    weight = 9
     [menu.main.params]
       external = true
   [[menu.main]]
     name = 'Industries'
     url = '/industries/'
-    weight = 3
+    parent = 'Business Processes'
+    weight = 10
   [[menu.main]]
     name = 'Results'
     url = '/results/'
-    weight = 4
-  [[menu.main]]
-    name = 'Resources'
-    url = '/blog/'
-    weight = 5
+    parent = 'Business Processes'
+    weight = 11
   [[menu.main]]
     name = 'All Articles'
     url = '/blog/'
-    parent = 'Resources'
-    weight = 1
+    parent = 'Business Processes'
+    weight = 12
   [[menu.main]]
-    name = 'AI Automation'
+    name = 'AI Automation Articles'
     url = '/blog/'
-    parent = 'Resources'
-    weight = 2
+    parent = 'Business Processes'
+    weight = 13
     [menu.main.params]
       href = '/blog/?category=AI%20Automation'
   [[menu.main]]
-    name = 'Business Systems'
+    name = 'Business Systems Articles'
     url = '/blog/'
-    parent = 'Resources'
-    weight = 3
+    parent = 'Business Processes'
+    weight = 14
     [menu.main.params]
       href = '/blog/?category=Business%20Systems'
   [[menu.main]]
-    name = 'Advertising'
+    name = 'Advertising Articles'
     url = '/blog/'
-    parent = 'Resources'
-    weight = 4
+    parent = 'Business Processes'
+    weight = 15
     [menu.main.params]
       href = '/blog/?category=Advertising'
   [[menu.main]]
     name = 'SEO & AI Search'
     url = '/blog/'
-    parent = 'Resources'
-    weight = 5
+    parent = 'Business Processes'
+    weight = 16
     [menu.main.params]
       href = '/blog/?category=SEO'
   [[menu.main]]
     name = 'Business Tools'
     url = '/blog/'
-    parent = 'Resources'
-    weight = 6
+    parent = 'Business Processes'
+    weight = 17
     [menu.main.params]
       href = '/blog/?category=Business%20Tools'
   [[menu.main]]
     name = 'About'
     url = '/about/'
-    weight = 6
+    parent = 'Business Processes'
+    weight = 18
 
 # SEO Settings
 enableRobotsTXT = true
