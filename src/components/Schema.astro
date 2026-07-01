@@ -166,4 +166,4 @@ const faqSchema =
 const schemas = [websiteSchema, localBusinessSchema, breadcrumbSchema, blogPostSchema, serviceSchema, faqSchema].filter(Boolean);
 ---
 
-{schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+{schemas.map((schema) => <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />)}

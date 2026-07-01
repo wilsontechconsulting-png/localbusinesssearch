@@ -13,7 +13,7 @@ Current baseline counts:
 
 - Markdown content files: 90
 - Hugo-listed content records: 84
-- Generated URL/file endpoints: 352
+- Generated URL/file endpoints: 355
 - Source/template/asset files tracked for migration: 171
 - Portable static assets: 14
 
@@ -116,6 +116,8 @@ Tasks:
 
 ### Step 2 - Astro Scaffold
 
+Status: complete.
+
 Tasks:
 
 - Add Astro project files beside the existing Hugo source.
@@ -126,6 +128,8 @@ Tasks:
 
 ### Step 3 - Content And Route Migration
 
+Status: complete for the current Hugo content set.
+
 Tasks:
 
 - Convert Markdown content to Astro content collections.
@@ -135,6 +139,8 @@ Tasks:
 
 ### Step 4 - Components And Redesign
 
+Status: in progress. Homepage, global layout, header, footer, blog listing, taxonomy pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is deeper page-by-page visual refinement.
+
 Tasks:
 
 - Build Astro components for layout, header, footer, navigation, SEO, schema, cards, CTA bands, feature sections, industry pages, service pages, and blog filters.
@@ -143,6 +149,24 @@ Tasks:
 - Avoid generic AI styling and preserve Local Business Search brand assets.
 
 ### Step 5 - Verification
+
+Status: active.
+
+Latest verification:
+
+- `hugo --minify`: pass
+- `npm run check:astro`: pass with 0 errors, 0 warnings, 0 hints
+- `npm run build:astro`: pass
+- `npm run verify:astro`: pass
+  - Hugo route files: 355
+  - Astro route files: 355
+  - Missing Astro routes: 0
+  - Extra Astro routes: 0
+  - Missing required assets: 0
+  - Broken internal Astro references: 0
+- `npm run screenshots:astro`: pass with no horizontal overflow at 390px or 1440px
+- Manual screenshot review covered the Astro homepage desktop, homepage mobile, and blog mobile views.
+- `npm audit --omit=dev`: pass. Full dev audit still reports a moderate transitive `yaml-language-server` advisory through `@astrojs/check`; it does not affect the production dependency set.
 
 Tasks:
 

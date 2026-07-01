@@ -37,7 +37,7 @@ img {
 }
 
 .container {
-  width: min(100% - 2rem, var(--max));
+  width: min(calc(100% - 2rem), var(--max));
   margin-inline: auto;
 }
 
@@ -67,7 +67,7 @@ img {
 }
 
 .header-container {
-  width: min(100% - 2rem, 1240px);
+  width: min(calc(100% - 2rem), 1240px);
   min-height: 76px;
   margin-inline: auto;
   display: flex;
@@ -79,6 +79,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
+  flex: 0 1 auto;
   min-width: 260px;
   color: var(--navy);
   text-decoration: none;
@@ -94,6 +95,7 @@ img {
 .logo-type {
   display: grid;
   gap: 0.15rem;
+  min-width: 0;
   font-size: 0.9rem;
   line-height: 1;
 }
@@ -481,7 +483,12 @@ img {
 
 @media (max-width: 520px) {
   .logo-lockup {
+    flex: 1 1 auto;
     min-width: 0;
+  }
+
+  .mobile-toggle {
+    flex: 0 0 44px;
   }
 
   .logo-type {

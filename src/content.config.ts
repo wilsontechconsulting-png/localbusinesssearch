@@ -1,5 +1,6 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const baseContentSchema = z.object({
   title: z.string(),
@@ -24,14 +25,14 @@ const blog = defineCollection({
     thumbnail: z.string().optional(),
     cover: z.string().optional(),
     image_credit: z.string().optional(),
-    image_credit_url: z.string().url().optional(),
+    image_credit_url: z.url().optional(),
     summary: z.string().optional(),
   }),
 });
 
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
-  schema: baseContentSchema.passthrough(),
+  schema: baseContentSchema.catchall(z.unknown()),
 });
 
 export const collections = { blog, pages };

@@ -8,7 +8,9 @@
     "build:astro": "astro build",
     "preview:astro": "astro preview --host 127.0.0.1 --port 4322",
     "check:astro": "astro check",
-    "build:hugo": "hugo --minify"
+    "build:hugo": "hugo --minify",
+    "verify:astro": "node scripts/verify-astro-parity.mjs",
+    "screenshots:astro": "node scripts/capture-astro-screenshots.mjs"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,6 @@
   ],
   "author": "Local Business Search",
   "license": "UNLICENSED",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/wilsontechconsulting-png/localbusinesssearch/issues"
   },
@@ -30,5 +31,10 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.0.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.2",
+    "playwright-core": "^1.61.1",
+    "typescript": "^5.9.3"
   }
 }
