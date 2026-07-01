@@ -25,7 +25,7 @@ const relatedLinks = currentItem?.group
     </div>
   </section>
   <PageEnhancement path={path} />
-  <div class="container content-shell">
+  <div class:list={['container', 'content-shell', relatedLinks.length <= 1 && 'content-shell-wide']}>
     {
       relatedLinks.length > 1 && (
         <aside class="content-aside" aria-label={`${currentItem?.group} navigation`}>

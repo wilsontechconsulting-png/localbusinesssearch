@@ -324,6 +324,10 @@ img {
   padding-block: clamp(3rem, 7vw, 5rem);
 }
 
+.content-shell-wide {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .content-body {
   min-width: 0;
 }

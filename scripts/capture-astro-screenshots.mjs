@@ -17,6 +17,10 @@ const shots = [
   { name: 'industries-desktop', url: '/industries/', width: 1440, height: 1200 },
   { name: 'industries-mobile', url: '/industries/', width: 390, height: 1200 },
   { name: 'home-services-mobile', url: '/industries/home-services/', width: 390, height: 1200 },
+  { name: 'about-desktop', url: '/about/', width: 1440, height: 1200 },
+  { name: 'demo-mobile', url: '/demo/', width: 390, height: 1200 },
+  { name: 'contact-mobile', url: '/contact/', width: 390, height: 1200 },
+  { name: 'hidden-mobile', url: '/maven-says/', width: 390, height: 1200 },
   { name: 'blog-mobile', url: '/blog/', width: 390, height: 1200 },
 ];
 

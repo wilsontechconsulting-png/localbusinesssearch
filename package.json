@@ -10,6 +10,7 @@
     "check:astro": "astro check",
     "build:hugo": "hugo --minify",
     "verify:astro": "node scripts/verify-astro-parity.mjs",
+    "verify:astro:launch": "node scripts/verify-astro-launch.mjs",
     "screenshots:astro": "node scripts/capture-astro-screenshots.mjs"
   },
   "repository": {

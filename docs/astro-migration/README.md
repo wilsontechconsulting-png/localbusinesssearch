@@ -8,6 +8,7 @@ This folder is the working control center for converting Local Business Search f
 - `generated-url-inventory.txt` - Generated public URL/file inventory from the current Hugo build.
 - `source-file-inventory.txt` - Source content, layout, data, static, and theme file inventory.
 - `asset-inventory.txt` - Static asset inventory that must remain available at the same public paths.
+- `cutover-checklist.md` - Final Astro launch gates, production checks, and rollback plan.
 
 Current baseline counts:
 
@@ -139,7 +140,7 @@ Tasks:
 
 ### Step 4 - Components And Redesign
 
-Status: in progress. Homepage, global layout, header, footer, blog listing, blog post pages, taxonomy pages, shared interior pages, service pages, industry pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is final visual review across the remaining lower-priority public pages and launch-readiness cleanup.
+Status: in progress. Homepage, global layout, header, footer, blog listing, blog post pages, taxonomy pages, shared interior pages, service pages, industry pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is production workflow cutover after GitHub auth is fixed and Jed approves the switch.
 
 Tasks:
 
@@ -164,8 +165,12 @@ Latest verification:
   - Extra Astro routes: 0
   - Missing required assets: 0
   - Broken internal Astro references: 0
+- `npm run verify:astro:launch`: pass
+  - Public launch pages checked: 7
+  - Private/noindex pages checked: 5
+  - Launch metadata/schema failures: 0
 - `npm run screenshots:astro`: pass with no horizontal overflow at 390px or 1440px
-- Manual screenshot review covered the Astro homepage desktop, homepage mobile, platform desktop, platform mobile, services desktop, services mobile, industries desktop, industries mobile, home services mobile, and blog mobile views.
+- Manual screenshot review covered the Astro homepage desktop, homepage mobile, platform desktop, platform mobile, services desktop, services mobile, industries desktop, industries mobile, home services mobile, about desktop, demo mobile, contact mobile, hidden mobile, and blog mobile views.
 - `npm audit --omit=dev`: pass. Full dev audit still reports a moderate transitive `yaml-language-server` advisory through `@astrojs/check`; it does not affect the production dependency set.
 
 Tasks:
@@ -177,6 +182,17 @@ Tasks:
 - Check schema and sitemap/RSS output.
 - Run desktop and mobile screenshots.
 - Only then replace the production build path.
+
+### Step 6 - Cutover
+
+Status: blocked until GitHub auth/push is fixed and Jed approves production replacement.
+
+Tasks:
+
+- Confirm whether GitHub Pages should build Astro directly or publish a prepared `dist-astro/` artifact.
+- Update the production workflow on a reviewable commit.
+- Run all pre-cutover gates from `cutover-checklist.md`.
+- Deploy, perform first-hour production checks, and keep Hugo source available for rollback.
 
 ## Current Branch
 
