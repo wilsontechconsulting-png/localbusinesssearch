@@ -1,0 +1,34 @@
+{
+  "name": "local-business-search",
+  "version": "1.0.0",
+  "description": "Local Business Search Astro migration build.",
+  "type": "module",
+  "scripts": {
+    "dev:astro": "astro dev --host 127.0.0.1 --port 4321",
+    "build:astro": "astro build",
+    "preview:astro": "astro preview --host 127.0.0.1 --port 4322",
+    "check:astro": "astro check",
+    "build:hugo": "hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsontechconsulting-png/localbusinesssearch.git"
+  },
+  "keywords": [
+    "astro",
+    "hugo-migration",
+    "local-business-search"
+  ],
+  "author": "Local Business Search",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wilsontechconsulting-png/localbusinesssearch/issues"
+  },
+  "homepage": "https://github.com/wilsontechconsulting-png/localbusinesssearch#readme",
+  "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.0.4"
+  }
+}

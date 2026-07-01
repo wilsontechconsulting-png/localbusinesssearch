@@ -1,0 +1,69 @@
+---
+import { site } from '@/data/site';
+
+type Props = {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  image?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article';
+};
+
+const {
+  title = site.title,
+  description = site.description,
+  canonicalPath = '/',
+  image = site.defaultSocialImage,
+  noindex = false,
+  type = 'website',
+} = Astro.props;
+
+const pageTitle = title === site.title ? title : `${title} | ${site.title}`;
+const canonical = new URL(canonicalPath, site.baseUrl).toString();
+const socialImage = image.startsWith('http') ? image : new URL(image, site.baseUrl).toString();
+const robots = noindex ? 'noindex, nofollow, noarchive, nosnippet' : 'index, follow';
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<meta name="author" content={site.author} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content={robots} />
+<meta name="googlebot" content={robots} />
+<meta name="language" content="English" />
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={socialImage} />
+<meta property="og:image:secure_url" content={socialImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={`${title} - ${site.title}`} />
+<meta property="og:site_name" content={site.title} />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content={site.twitterHandle} />
+<meta name="twitter:creator" content={site.twitterHandle} />
+<meta name="twitter:url" content={canonical} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={socialImage} />
+<meta name="twitter:image:alt" content={`${title} - ${site.title}`} />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<meta name="theme-color" content="#0A1628" />
+<meta name="format-detection" content="telephone=yes" />
+<meta name="geo.region" content={`${site.businessCountry}-${site.businessRegion}`} />
+<meta name="geo.placename" content={site.businessCity} />
+<meta name="geo.position" content={`${site.businessLatitude};${site.businessLongitude}`} />
+<meta name="ICBM" content={`${site.businessLatitude}, ${site.businessLongitude}`} />
+<meta name="contact" content={site.businessEmail} />
+<meta name="telephone" content={site.businessPhone} />
+<meta
+  name="address"
+  content={`${site.businessStreet}, ${site.businessCity}, ${site.businessRegion} ${site.businessPostalCode}`}
+/>
