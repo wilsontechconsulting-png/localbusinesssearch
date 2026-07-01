@@ -1,0 +1,19 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import MarkdownPage from '@/components/MarkdownPage.astro';
+import PostList from '@/components/PostList.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import { postDateSort } from '@/utils/content';
+
+const page = await getEntry('pages', 'blog/_index');
+if (!page) throw new Error('Missing blog index content');
+const { Content } = await render(page);
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(postDateSort);
+---
+
+<BaseLayout title={page.data.title} description={page.data.description} canonicalPath="/blog/">
+  <MarkdownPage title={page.data.title} description={page.data.description}>
+    <Content />
+  </MarkdownPage>
+  <PostList posts={posts} />
+</BaseLayout>

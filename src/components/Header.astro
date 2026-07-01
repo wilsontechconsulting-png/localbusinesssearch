@@ -1,0 +1,119 @@
+---
+import { mainNav, navGroups } from '@/data/site';
+
+const currentPath = Astro.url.pathname;
+
+function isActive(href: string, external?: boolean) {
+  return !external && href !== '/' && currentPath.startsWith(href.split('?')[0]);
+}
+---
+
+<header class="site-header" data-site-header>
+  <div class="header-container">
+    <a href="/" class="logo-lockup" aria-label="Local Business Search home">
+      <img src="/images/lbs-icon.jpg" alt="" class="logo-icon" />
+      <span class="logo-type">
+        <span><strong>LOCAL</strong> <em>BUSINESS</em> <strong>SEARCH</strong></span>
+        <small><em>AI.</em> BUSINESS PROCESS.</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <ul>
+        {
+          mainNav.map((item) => {
+            const activeParent = item.children?.some((child) => isActive(child.href, child.external));
+            return (
+              <li class:list={['has-dropdown', activeParent && 'is-active']}>
+                <a href={item.href} class:list={['dropdown-toggle', activeParent && 'active']} aria-current={activeParent ? 'page' : undefined}>
+                  {item.name}
+                  <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                </a>
+                <div class="dropdown-menu">
+                  {navGroups.map((group) => {
+                    const items = item.children?.filter((child) => child.group === group) ?? [];
+                    if (!items.length) return null;
+                    return (
+                      <section class="dropdown-group" aria-label={group}>
+                        <span class="dropdown-group-label">{group}</span>
+                        <ul>
+                          {items.map((child) => (
+                            <li>
+                              <a
+                                href={child.href}
+                                class:list={[isActive(child.href, child.external) && 'active']}
+                                aria-current={isActive(child.href, child.external) ? 'page' : undefined}
+                                target={child.external ? '_blank' : undefined}
+                                rel={child.external ? 'noopener noreferrer' : undefined}
+                              >
+                                {child.name}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </section>
+                    );
+                  })}
+                </div>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+
+    <a href="/contact/" class="header-cta">Contact</a>
+    <button class="mobile-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-mobile-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+    {
+      mainNav.map((item) => (
+        <details open={item.children?.some((child) => isActive(child.href, child.external))}>
+          <summary>{item.name}</summary>
+          {navGroups.map((group) => {
+            const items = item.children?.filter((child) => child.group === group) ?? [];
+            if (!items.length) return null;
+            return (
+              <div class="mobile-group">
+                <span>{group}</span>
+                {items.map((child) => (
+                  <a
+                    href={child.href}
+                    class:list={[isActive(child.href, child.external) && 'active']}
+                    target={child.external ? '_blank' : undefined}
+                    rel={child.external ? 'noopener noreferrer' : undefined}
+                  >
+                    {child.name}
+                  </a>
+                ))}
+              </div>
+            );
+          })}
+        </details>
+      ))
+    }
+    <a class="mobile-cta" href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<script>
+  const header = document.querySelector('[data-site-header]');
+  const toggle = document.querySelector('[data-mobile-toggle]');
+  const mobileNav = document.querySelector('[data-mobile-nav]');
+
+  window.addEventListener('scroll', () => {
+    header?.classList.toggle('is-scrolled', window.scrollY > 24);
+  });
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = mobileNav?.classList.toggle('is-open') ?? false;
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.classList.toggle('nav-open', isOpen);
+  });
+</script>
+

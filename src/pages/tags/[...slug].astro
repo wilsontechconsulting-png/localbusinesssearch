@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PostList from '@/components/PostList.astro';
+import { getCollection } from 'astro:content';
+import { postDateSort, taxonomySlug } from '@/utils/content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const tagMap = new Map<string, string>();
+  posts.flatMap((post) => post.data.tags ?? []).forEach((tag) => {
+    const slug = taxonomySlug(tag);
+    if (!tagMap.has(slug)) tagMap.set(slug, tag);
+  });
+  return Array.from(tagMap.entries()).map(([slug, tag]) => ({
+    params: { slug },
+    props: {
+      tag,
+      slug,
+      posts: posts
+        .filter((post) => (post.data.tags ?? []).some((postTag) => taxonomySlug(postTag) === slug))
+        .sort(postDateSort),
+    },
+  }));
+}
+
+const { tag, slug, posts } = Astro.props;
+---
+
+<BaseLayout title={tag} description={`Articles tagged ${tag}.`} canonicalPath={`/tags/${slug}/`}>
+  <section class="page-hero">
+    <div class="container">
+      <h1>{tag}</h1>
+      <p>{posts.length} Local Business Search articles tagged with this topic.</p>
+    </div>
+  </section>
+  <PostList posts={posts} />
+</BaseLayout>

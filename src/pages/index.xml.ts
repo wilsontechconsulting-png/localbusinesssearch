@@ -1,0 +1,12 @@
+import type { APIContext } from 'astro';
+import { getCollection } from 'astro:content';
+import { site } from '@/data/site';
+import { postDateSort } from '@/utils/content';
+import { blogFeed } from '@/utils/rss';
+
+export const trailingSlash = 'never';
+
+export async function GET(context: APIContext) {
+  const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(postDateSort);
+  return blogFeed(context, site.title, site.description, posts);
+}

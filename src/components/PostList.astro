@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getImage, getPostCategories } from '@/utils/content';
+
+type Props = {
+  posts: CollectionEntry<'blog'>[];
+};
+
+const { posts } = Astro.props;
+---
+
+<section class="container blog-list">
+  {
+    posts.map((post) => (
+      <article class="post-card">
+        {getImage(post) && <img src={getImage(post)} alt="" loading="lazy" />}
+        <div>
+          <p class="post-meta">
+            {post.data.date.toLocaleDateString('en-US', {
+              month: 'short',
+              day: 'numeric',
+              year: 'numeric',
+            })}
+          </p>
+          <h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
+          {post.data.description && <p>{post.data.description}</p>}
+          <p class="post-taxonomy">{getPostCategories(post).join(', ')}</p>
+        </div>
+      </article>
+    ))
+  }
+</section>

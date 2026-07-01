@@ -1,0 +1,25 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { getPostArchiveCategories, postDateSort, taxonomySlug } from '@/utils/content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(postDateSort);
+const categories = Array.from(new Set(posts.flatMap(getPostArchiveCategories))).sort((a, b) => a.localeCompare(b));
+---
+
+<BaseLayout title="Categories" description="Browse Local Business Search articles by category." canonicalPath="/categories/">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Categories</h1>
+      <p>Browse Local Business Search articles by category.</p>
+    </div>
+  </section>
+  <section class="container taxonomy-grid">
+    {categories.map((category) => (
+      <a href={`/categories/${taxonomySlug(category)}/`}>
+        <span>{category}</span>
+        <small>{posts.filter((post) => getPostArchiveCategories(post).includes(category)).length} articles</small>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

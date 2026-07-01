@@ -1,0 +1,169 @@
+---
+import { mainNav, site } from '@/data/site';
+
+type Props = {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  type?: 'website' | 'article';
+  section?: string;
+  date?: Date;
+  image?: string;
+};
+
+const {
+  title = site.title,
+  description = site.description,
+  canonicalPath = '/',
+  type = 'website',
+  section = '',
+  date,
+  image = site.defaultSocialImage,
+} = Astro.props;
+
+const url = new URL(canonicalPath, site.baseUrl).toString();
+const imageUrl = image.startsWith('http') ? image : new URL(image, site.baseUrl).toString();
+const topLevel = canonicalPath.split('/').filter(Boolean)[0] ?? '';
+const serviceSections = ['advertising', 'ai-automation', 'business-operations', 'platform', 'industries', 'baselayer', 'services'];
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${site.baseUrl}/#website`,
+  name: site.title,
+  url: site.baseUrl,
+  description: site.description,
+  publisher: { '@id': `${site.baseUrl}/#organization` },
+  about: { '@id': `${site.baseUrl}/#localbusiness` },
+  inLanguage: 'en-US',
+  hasPart: [
+    ...mainNav.map((item) => ({
+      '@type': 'SiteNavigationElement',
+      name: item.name,
+      url: new URL(item.href, site.baseUrl).toString(),
+    })),
+    { '@type': 'SiteNavigationElement', name: 'Contact', url: new URL('/contact/', site.baseUrl).toString() },
+  ],
+};
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['LocalBusiness', site.businessType],
+  '@id': `${site.baseUrl}/#localbusiness`,
+  name: site.businessName,
+  alternateName: 'LBS',
+  slogan: site.businessTagline,
+  description: site.description,
+  url: site.baseUrl,
+  logo: new URL('/images/lbs-logo.jpg', site.baseUrl).toString(),
+  image: new URL('/images/social-card-default.png', site.baseUrl).toString(),
+  telephone: site.businessPhone,
+  email: site.businessEmail,
+  priceRange: site.businessPriceRange,
+  openingHours: site.businessHours,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: site.businessStreet,
+    addressLocality: site.businessCity,
+    addressRegion: site.businessRegion,
+    postalCode: site.businessPostalCode,
+    addressCountry: site.businessCountry,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: site.businessLatitude,
+    longitude: site.businessLongitude,
+  },
+  areaServed: site.serviceArea,
+  sameAs: site.sameAs,
+  knowsAbout: site.knowsAbout,
+};
+
+const breadcrumbSchema =
+  canonicalPath === '/'
+    ? null
+    : {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        '@id': `${url}#breadcrumb`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: site.baseUrl },
+          { '@type': 'ListItem', position: 2, name: title, item: url },
+        ],
+      };
+
+const blogPostSchema =
+  type === 'article'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        '@id': `${url}#blogposting`,
+        headline: title,
+        description,
+        image: imageUrl,
+        url,
+        mainEntityOfPage: { '@id': `${url}#webpage` },
+        author: {
+          '@type': 'Person',
+          name: 'Jed Wilson',
+          url: new URL('/about/', site.baseUrl).toString(),
+          worksFor: { '@id': `${site.baseUrl}/#organization` },
+        },
+        publisher: { '@id': `${site.baseUrl}/#organization` },
+        datePublished: date?.toISOString(),
+        dateModified: date?.toISOString(),
+        inLanguage: 'en-US',
+      }
+    : null;
+
+const serviceSchema =
+  serviceSections.includes(section || topLevel)
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        '@id': `${url}#service`,
+        name: title,
+        serviceType: title,
+        url,
+        description,
+        provider: { '@id': `${site.baseUrl}/#localbusiness` },
+        brand: { '@id': `${site.baseUrl}/#organization` },
+        areaServed: site.serviceArea,
+        audience: {
+          '@type': 'BusinessAudience',
+          audienceType: 'Local business owners, operators, and marketing leaders',
+        },
+      }
+    : null;
+
+const faqSchema =
+  canonicalPath === '/demo/'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'How much does it cost?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Pricing depends on the business. Small local businesses are typically listed at $2,500-$4,000 per month, while multi-location or high-volume businesses are typically listed at $5,000-$7,500 per month.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Are there long-term contracts?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'No. Local Business Search works month-to-month, and clients can cancel if the system is not delivering results.',
+            },
+          },
+        ],
+      }
+    : null;
+
+const schemas = [websiteSchema, localBusinessSchema, breadcrumbSchema, blogPostSchema, serviceSchema, faqSchema].filter(Boolean);
+---
+
+{schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}

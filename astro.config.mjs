@@ -1,11 +1,10 @@
 import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://localbusinesssearch.com',
   output: 'static',
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
   publicDir: './static',
   outDir: './dist-astro',
-  integrations: [sitemap()],
+  integrations: [],
 });

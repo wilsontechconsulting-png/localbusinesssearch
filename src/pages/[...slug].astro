@@ -1,0 +1,32 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import MarkdownPage from '@/components/MarkdownPage.astro';
+import { getCollection, render } from 'astro:content';
+import { pagePathFromId, slugParamFromPath } from '@/utils/content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', ({ data }) => !data.draft);
+  return pages
+    .map((page) => ({ page, path: pagePathFromId(page.id) }))
+    .filter(({ page, path }) => page.id !== '_index' && !path.startsWith('/blog/'))
+    .map(({ page, path }) => ({
+      params: { slug: slugParamFromPath(path) },
+      props: { page, path },
+    }));
+}
+
+const { page, path } = Astro.props;
+const { Content } = await render(page);
+---
+
+<BaseLayout
+  title={page.data.title}
+  description={page.data.description}
+  canonicalPath={path}
+  noindex={page.data.noindex}
+  section={path.split('/').filter(Boolean)[0]}
+>
+  <MarkdownPage title={page.data.title} description={page.data.description}>
+    <Content />
+  </MarkdownPage>
+</BaseLayout>

@@ -1,0 +1,47 @@
+---
+import { footerGroups } from '@/data/site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo" aria-label="Local Business Search home">
+        <img src="/images/lbs-logo.jpg" alt="Local Business Search" />
+      </a>
+      <p>AI-driven business systems for local companies. We build the infrastructure. You run the business.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      {
+        footerGroups.map((group) => (
+          <section>
+            <h2>{group.title}</h2>
+            <ul>
+              {group.links.map((link) => (
+                <li><a href={link.href}>{link.name}</a></li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </nav>
+  </div>
+
+  <div class="container footer-disclosure">
+    <p>
+      <strong>Important Disclosure:</strong> Past performance and case study results shown on this site do not
+      guarantee or predict future outcomes. Every business is unique, and results will vary based on situation,
+      market conditions, implementation, and many other factors.
+    </p>
+    <p>
+      The AI and automation industry is evolving rapidly. We're navigating this transformation alongside our
+      clients-learning, adapting, and building as the technology advances.
+    </p>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; {year} Local Business Search. All rights reserved.</p>
+    <a href="/maven-says/" rel="nofollow">cprops</a>
+  </div>
+</footer>

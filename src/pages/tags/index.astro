@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { postDateSort, taxonomySlug } from '@/utils/content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(postDateSort);
+const tagMap = new Map<string, string>();
+posts.flatMap((post) => post.data.tags ?? []).forEach((tag) => {
+  const slug = taxonomySlug(tag);
+  if (!tagMap.has(slug)) tagMap.set(slug, tag);
+});
+const tags = Array.from(tagMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
+---
+
+<BaseLayout title="Tags" description="Browse Local Business Search articles by tag." canonicalPath="/tags/">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Tags</h1>
+      <p>Browse Local Business Search articles by tag.</p>
+    </div>
+  </section>
+  <section class="container taxonomy-grid">
+    {tags.map(([slug, tag]) => (
+      <a href={`/tags/${slug}/`}>
+        <span>{tag}</span>
+        <small>{posts.filter((post) => (post.data.tags ?? []).some((postTag) => taxonomySlug(postTag) === slug)).length} articles</small>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

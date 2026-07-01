@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PostList from '@/components/PostList.astro';
+import { getCollection } from 'astro:content';
+import { getPostArchiveCategories, postDateSort, taxonomySlug } from '@/utils/content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const categories = Array.from(new Set(posts.flatMap(getPostArchiveCategories)));
+  return categories.map((category) => ({
+    params: { slug: taxonomySlug(category) },
+    props: {
+      category,
+      posts: posts.filter((post) => getPostArchiveCategories(post).includes(category)).sort(postDateSort),
+    },
+  }));
+}
+
+const { category, posts } = Astro.props;
+---
+
+<BaseLayout title={category} description={`Articles in ${category}.`} canonicalPath={`/categories/${taxonomySlug(category)}/`}>
+  <section class="page-hero">
+    <div class="container">
+      <h1>{category}</h1>
+      <p>{posts.length} Local Business Search articles in this category.</p>
+    </div>
+  </section>
+  <PostList posts={posts} />
+</BaseLayout>

@@ -1,5 +1,8 @@
 ---
 import Seo from '@/components/Seo.astro';
+import Schema from '@/components/Schema.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
 import '@/styles/global.css';
 
 type Props = {
@@ -8,9 +11,13 @@ type Props = {
   canonicalPath?: string;
   image?: string;
   noindex?: boolean;
+  type?: 'website' | 'article';
+  date?: Date;
+  tags?: string[];
+  section?: string;
 };
 
-const { title, description, canonicalPath, image, noindex } = Astro.props;
+const { title, description, canonicalPath, image, noindex, type, date, tags, section } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,12 +29,26 @@ const { title, description, canonicalPath, image, noindex } = Astro.props;
       canonicalPath={canonicalPath}
       image={image}
       noindex={noindex}
+      type={type}
+      date={date}
+      tags={tags}
+    />
+    <Schema
+      title={title}
+      description={description}
+      canonicalPath={canonicalPath}
+      image={image}
+      type={type}
+      date={date}
+      section={section}
     />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
     <main id="main">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
