@@ -13,7 +13,7 @@ Current baseline counts:
 
 - Markdown content files: 90
 - Hugo-listed content records: 84
-- Generated URL/file endpoints: 353
+- Generated URL/file endpoints: 352
 - Source/template/asset files tracked for migration: 171
 - Portable static assets: 14
 

@@ -234,7 +234,6 @@
 /tags/lead-generation/index.xml
 /tags/lead-tracking/index.html
 /tags/lead-tracking/index.xml
-/tags/llms.txt
 /tags/llms.txt/index.html
 /tags/llms.txt/index.xml
 /tags/local-ai/index.html

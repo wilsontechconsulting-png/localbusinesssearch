@@ -772,10 +772,10 @@ We implement these exact systems for local businesses every week. If you'd rathe
 
 ## Related Reading
 
-- [How to Set Up Google Business Profile for Maximum Local SEO](https://localbusinesssearch.com/blog/google-business-profile-setup)
-- [The Complete Guide to Local Citations and NAP Consistency](https://localbusinesssearch.com/blog/local-citations-guide)
-- [Why Your Website Speed Affects Google Rankings (and How to Fix It)](https://localbusinesssearch.com/blog/website-speed-seo)
-- [Schema Markup for Service Businesses: A Visual Guide](https://localbusinesssearch.com/blog/schema-markup-guide)
+- [The 5-Item Pre-Launch SEO Checklist Most Sites Skip](https://localbusinesssearch.com/blog/2026-06-12-pre-launch-seo-checklist-five-minutes/)
+- [Why Local Service Businesses Score Well on Technical SEO but Fail AI Citability](https://localbusinesssearch.com/blog/2026-06-09-local-service-business-geo-citability-gap/)
+- [Why JSON-LD Schema Is the Most Overlooked Pre-Launch Task](https://localbusinesssearch.com/blog/2026-06-12-json-ld-schema-local-authority-sites/)
+- [From 35 to 93: What Actually Moves Structured Data Scores for Local Businesses](https://localbusinesssearch.com/blog/structured-data-35-to-93-local-business-schema/)
 
 ---
 
