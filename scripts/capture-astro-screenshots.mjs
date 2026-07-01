@@ -12,6 +12,11 @@ const shots = [
   { name: 'home-mobile', url: '/', width: 390, height: 1200 },
   { name: 'platform-desktop', url: '/platform/', width: 1440, height: 1200 },
   { name: 'platform-mobile', url: '/platform/', width: 390, height: 1200 },
+  { name: 'services-desktop', url: '/services/', width: 1440, height: 1200 },
+  { name: 'services-mobile', url: '/services/', width: 390, height: 1200 },
+  { name: 'industries-desktop', url: '/industries/', width: 1440, height: 1200 },
+  { name: 'industries-mobile', url: '/industries/', width: 390, height: 1200 },
+  { name: 'home-services-mobile', url: '/industries/home-services/', width: 390, height: 1200 },
   { name: 'blog-mobile', url: '/blog/', width: 390, height: 1200 },
 ];
 

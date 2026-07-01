@@ -139,7 +139,7 @@ Tasks:
 
 ### Step 4 - Components And Redesign
 
-Status: in progress. Homepage, global layout, header, footer, blog listing, blog post pages, taxonomy pages, shared interior pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is page-specific refinement for the highest-value service and industry sections.
+Status: in progress. Homepage, global layout, header, footer, blog listing, blog post pages, taxonomy pages, shared interior pages, service pages, industry pages, hidden routes, metadata, schema, sitemap, and feeds have Astro equivalents. Remaining work is final visual review across the remaining lower-priority public pages and launch-readiness cleanup.
 
 Tasks:
 
@@ -165,7 +165,7 @@ Latest verification:
   - Missing required assets: 0
   - Broken internal Astro references: 0
 - `npm run screenshots:astro`: pass with no horizontal overflow at 390px or 1440px
-- Manual screenshot review covered the Astro homepage desktop, homepage mobile, platform desktop, platform mobile, and blog mobile views.
+- Manual screenshot review covered the Astro homepage desktop, homepage mobile, platform desktop, platform mobile, services desktop, services mobile, industries desktop, industries mobile, home services mobile, and blog mobile views.
 - `npm audit --omit=dev`: pass. Full dev audit still reports a moderate transitive `yaml-language-server` advisory through `@astrojs/check`; it does not affect the production dependency set.
 
 Tasks:

@@ -1,0 +1,206 @@
+---
+type EnhancementCard = {
+  title: string;
+  body: string;
+  href?: string;
+};
+
+type Enhancement = {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  cards: EnhancementCard[];
+  metrics?: { value: string; label: string }[];
+};
+
+const enhancements: Record<string, Enhancement> = {
+  '/services/': {
+    eyebrow: 'Service Stack',
+    title: 'One build that connects demand, response, and reporting.',
+    intro:
+      'The service mix is intentionally narrow: get better traffic, answer faster, and make the numbers visible enough to act on.',
+    cards: [
+      {
+        title: 'Digital advertising',
+        body: 'Campaigns across Google, Meta, retargeting, and local platforms that point at conversion systems instead of loose traffic.',
+        href: '/advertising/',
+      },
+      {
+        title: 'AI automation',
+        body: 'Instant response, qualification, booking, follow-up, and reactivation workflows that reduce manual handoffs.',
+        href: '/ai-automation/',
+      },
+      {
+        title: 'Business process',
+        body: 'CRM, reporting, workflow design, and operating visibility so growth does not disappear into spreadsheets.',
+        href: '/business-operations/',
+      },
+    ],
+    metrics: [
+      { value: '01', label: 'Traffic' },
+      { value: '02', label: 'Follow-up' },
+      { value: '03', label: 'Revenue visibility' },
+    ],
+  },
+  '/advertising/': {
+    eyebrow: 'Connected Media',
+    title: 'Advertising works harder when every click has somewhere useful to go.',
+    intro:
+      'The campaign is only the front door. The real lift comes from pairing channels with lead capture, qualification, attribution, and follow-up.',
+    cards: [
+      { title: 'Channel strategy', body: 'Google, paid social, programmatic, OTT, CTV, and retargeting planned around intent and local market fit.' },
+      { title: 'Conversion path', body: 'Landing pages, forms, CRM routing, and tracking designed before the campaign starts spending.' },
+      { title: 'Decision loop', body: 'Ad spend, lead quality, bookings, and revenue roll up into reporting owners can actually use.' },
+    ],
+  },
+  '/business-operations/': {
+    eyebrow: 'Operating Model',
+    title: 'The work is not more marketing. It is making the business easier to run.',
+    intro:
+      'The pages in this section map the CEO, CFO, CMO, and COO functions into one connected operating system for local companies.',
+    cards: [
+      { title: 'CEO visibility', body: 'A clear view of what is working, what is stuck, and where decisions need to happen.' },
+      { title: 'CFO clarity', body: 'Spend, leads, booked work, and revenue tracked together instead of reviewed separately.' },
+      { title: 'COO execution', body: 'Response, booking, reminders, and handoffs handled consistently without adding busywork.' },
+    ],
+  },
+  '/ai-automation/': {
+    eyebrow: 'Response System',
+    title: 'Automation should remove delay, not add another dashboard.',
+    intro:
+      'The strongest use case is operational speed: respond while intent is fresh, route the lead, book the next action, and keep the follow-up alive.',
+    cards: [
+      { title: 'Instant response', body: 'Missed calls and forms get a fast reply instead of waiting for someone to check a queue.' },
+      { title: 'Smart routing', body: 'Qualified leads move to the right workflow, calendar, or team member with less manual sorting.' },
+      { title: 'Follow-up memory', body: 'Nurture, reactivation, reminders, and review requests continue without relying on staff bandwidth.' },
+    ],
+  },
+  '/industries/': {
+    eyebrow: 'Industry Fit',
+    title: 'Different markets leak revenue in different places.',
+    intro:
+      'The system changes by business type, but the goal is consistent: faster response, fewer missed opportunities, and cleaner visibility.',
+    cards: [
+      { title: 'Home Services', body: 'Missed call recovery, job booking, no-show reduction, and ad-to-job tracking.', href: '/industries/home-services/' },
+      { title: 'Medical', body: 'New patient response, appointment reminders, reactivation, and patient acquisition tracking.', href: '/industries/medical/' },
+      { title: 'Legal', body: 'Case intake, qualification, consultation scheduling, and retainer visibility.', href: '/industries/legal/' },
+      { title: 'Local Retail', body: 'Customer retention, loyalty, reviews, events, and repeat-visit campaigns.', href: '/industries/local-retail/' },
+      { title: 'Franchises', body: 'Centralized reporting, location routing, campaign consistency, and multi-location rollout.', href: '/industries/franchises/' },
+      { title: 'Municipalities', body: 'Public messaging, resident engagement, event promotion, and budget-conscious communication.', href: '/industries/municipalities/' },
+    ],
+  },
+};
+
+const industryEnhancements: Record<string, Enhancement> = {
+  '/industries/home-services/': {
+    eyebrow: 'Home Services',
+    title: 'Capture the call, book the job, and show which work came from which spend.',
+    intro: 'Built for operators who are often in the field when the next high-intent lead comes in.',
+    cards: [
+      { title: 'Missed call recovery', body: 'A fast text and booking path keeps job opportunities from disappearing while the team is busy.' },
+      { title: 'Scheduling flow', body: 'Direct booking and reminders reduce phone tag, no-shows, and wasted dispatch time.' },
+      { title: 'Job-level visibility', body: 'Ad spend connects to leads, booked jobs, and revenue instead of stopping at form counts.' },
+    ],
+  },
+  '/industries/medical/': {
+    eyebrow: 'Medical & Healthcare',
+    title: 'Protect the schedule and bring patient demand into a measurable system.',
+    intro: 'Designed around patient response, booking discipline, reactivation, and careful data handling.',
+    cards: [
+      { title: 'New patient response', body: 'Inquiries get a fast path to booking before attention moves to another provider.' },
+      { title: 'No-show control', body: 'Reminder and follow-up sequences protect chair time, provider time, and revenue.' },
+      { title: 'Reactivation', body: 'Inactive patients can be brought back with structured, compliant communication workflows.' },
+    ],
+  },
+  '/industries/legal/': {
+    eyebrow: 'Legal',
+    title: 'Move good cases from inquiry to consultation before another firm answers.',
+    intro: 'Built for intake speed, qualification, attorney focus, and clearer ROI by practice area.',
+    cards: [
+      { title: 'Case qualification', body: 'Screening questions help route high-value matters without burning attorney time.' },
+      { title: 'Consultation booking', body: 'Qualified leads can move straight to an available calendar instead of waiting on callbacks.' },
+      { title: 'Retainer visibility', body: 'Signed cases, unsigned cases, and marketing sources become easier to compare.' },
+    ],
+  },
+  '/industries/local-retail/': {
+    eyebrow: 'Local Retail',
+    title: 'Turn one-time visits into repeat behavior you can actually measure.',
+    intro: 'The focus is retention, reviews, events, loyalty, and customer lifetime value.',
+    cards: [
+      { title: 'Win-back campaigns', body: 'Timed offers bring inactive customers back without manual list work.' },
+      { title: 'Loyalty automation', body: 'Digital rewards, birthdays, and visit-based triggers replace fragile punch-card systems.' },
+      { title: 'Event lift', body: 'Promotions for menus, sales, classes, or openings reach the customers most likely to act.' },
+    ],
+  },
+  '/industries/franchises/': {
+    eyebrow: 'Franchises',
+    title: 'Central control with local execution for every location.',
+    intro: 'Built for owners who need consistency, comparison, and scalable rollout across multiple markets.',
+    cards: [
+      { title: 'Location intelligence', body: 'Performance by location becomes visible in one place, not scattered across accounts.' },
+      { title: 'Routing rules', body: 'Leads move to the nearest or best-fit location with consistent workflows.' },
+      { title: 'Reusable playbooks', body: 'What works in one market can be deployed across the system faster.' },
+    ],
+  },
+  '/industries/municipalities/': {
+    eyebrow: 'Municipalities',
+    title: 'Reach residents with measurable communication instead of hoping posts get seen.',
+    intro: 'Built for public service messaging, events, engagement, and budget-conscious outreach.',
+    cards: [
+      { title: 'Public messages', body: 'Important service updates can reach residents beyond organic social reach.' },
+      { title: 'Event attendance', body: 'Town halls, festivals, meetings, and programs get targeted promotion and tracking.' },
+      { title: 'Resident feedback', body: 'Surveys, registrations, and follow-up loops make engagement easier to manage.' },
+    ],
+  },
+};
+
+type Props = {
+  path: string;
+};
+
+const { path } = Astro.props;
+const enhancement = enhancements[path] ?? industryEnhancements[path];
+---
+
+{
+  enhancement && (
+    <section class="page-enhancement" aria-label={`${enhancement.eyebrow} overview`}>
+      <div class="container enhancement-shell">
+        <div class="enhancement-header">
+          <p class="hero-kicker">{enhancement.eyebrow}</p>
+          <h2>{enhancement.title}</h2>
+          <p>{enhancement.intro}</p>
+        </div>
+        {enhancement.metrics && (
+          <div class="enhancement-metrics" aria-label="System sequence">
+            {enhancement.metrics.map((metric) => (
+              <div>
+                <span>{metric.value}</span>
+                <p>{metric.label}</p>
+              </div>
+            ))}
+          </div>
+        )}
+        <div class:list={['enhancement-grid', enhancement.cards.length > 3 && 'enhancement-grid-wide']}>
+          {enhancement.cards.map((card) => {
+            const content = (
+              <>
+                <h3>{card.title}</h3>
+                <p>{card.body}</p>
+              </>
+            );
+            return card.href ? (
+              <a class="enhancement-card" href={card.href}>
+                {content}
+              </a>
+            ) : (
+              <div class="enhancement-card">
+                {content}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}

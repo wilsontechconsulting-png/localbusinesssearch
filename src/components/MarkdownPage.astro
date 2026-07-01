@@ -1,5 +1,6 @@
 ---
 import { mainNav } from '@/data/site';
+import PageEnhancement from './PageEnhancement.astro';
 
 type Props = {
   title: string;
@@ -23,6 +24,7 @@ const relatedLinks = currentItem?.group
       {description && <p>{description}</p>}
     </div>
   </section>
+  <PageEnhancement path={path} />
   <div class="container content-shell">
     {
       relatedLinks.length > 1 && (
