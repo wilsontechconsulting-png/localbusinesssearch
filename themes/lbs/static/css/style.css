@@ -2467,7 +2467,12 @@ footer p {
 }
 
 .desktop-nav .dropdown-menu {
-  display: grid;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+  align-items: start;
+  margin: 0;
+  padding: 1.25rem;
 }
 
 .has-dropdown:hover .dropdown-menu,
