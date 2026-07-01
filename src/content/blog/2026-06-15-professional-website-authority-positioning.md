@@ -2,6 +2,7 @@
 title: "Why Most Professional Websites Fail to Establish Authority in 3 Seconds"
 date: 2026-06-15T06:00:00-05:00
 draft: false
+category: "Web Development"
 description: "Most professional websites bury their best credibility signal below the fold. Here's why above-the-fold authority positioning is the highest-leverage change you can make — and how to do it."
 tags: ["web design", "conversion", "local business", "authority", "UX", "professional websites"]
 image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80&auto=format&fit=crop"

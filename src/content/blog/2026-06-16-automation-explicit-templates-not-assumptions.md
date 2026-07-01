@@ -2,6 +2,7 @@
 title: "Automation Fails at Optional Fields. Make Them Required."
 date: 2026-06-16T06:00:00-05:00
 draft: false
+category: "Business Systems"
 description: "When you automate content generation, AI agents skip optional fields every time. The fix is simple: make required fields explicit with examples, not implicit with hope."
 tags: ["automation", "AI", "productivity", "business systems", "content"]
 image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=1200&q=80&auto=format&fit=crop"

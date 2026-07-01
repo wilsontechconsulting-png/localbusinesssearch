@@ -2,6 +2,7 @@
 title: "Telnyx and the Rise of AI Voice Agents for Small Business"
 date: 2026-05-24T06:00:00-05:00
 draft: false
+category: "Business Systems"
 categories: ["AI Automation"]
 tags: ["AI", "Voice AI", "Business Automation", "AI Agents", "Lead Follow-Up"]
 author: "Jed Wilson"

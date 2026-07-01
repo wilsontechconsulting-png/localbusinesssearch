@@ -2,6 +2,7 @@
 title: "Why Your Link Looks Wrong in a Text Message (And the 10-Minute Fix)"
 date: 2026-06-17T06:00:00-05:00
 draft: false
+category: "Web Development"
 description: "When you share a website link in a text message, iMessage pulls the og:image. If it's missing or wrong, your site looks unprofessional. Here's how to fix it in 10 minutes."
 tags: ["web-development", "seo", "local-business", "conversion", "meta-tags"]
 image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80&auto=format&fit=crop"

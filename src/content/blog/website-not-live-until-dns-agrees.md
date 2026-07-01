@@ -2,6 +2,7 @@
 title: "A Website Is Not Live Until DNS Says So"
 date: 2026-06-30T06:00:00-05:00
 draft: false
+category: "Web Development"
 description: "A clean production deployment can still point visitors to the wrong place. Launch QA should verify DNS, custom domains, redirects, robots.txt, and sitemaps from the public URL."
 tags: ["deployment", "web development", "website QA", "dns", "technical seo"]
 image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80&auto=format&fit=crop"

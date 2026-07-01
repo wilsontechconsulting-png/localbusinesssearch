@@ -2,6 +2,7 @@
 title: "Why Local Service Businesses Score Well on Technical SEO but Fail AI Citability"
 date: 2026-06-09T06:00:00-05:00
 draft: false
+category: "AI Visibility"
 description: "Local service businesses often have solid technical SEO — HTTPS, schema, sitemap, fast load times. But when it comes to AI citability, they're invisible. Here's the structural reason why."
 categories: ["GEO", "Local SEO", "AI Visibility"]
 tags: ["GEO", "local business", "AI search", "citability", "structured data", "content strategy"]

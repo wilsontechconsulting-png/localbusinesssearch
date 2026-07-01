@@ -2,6 +2,7 @@
 title: "The 5-Item Pre-Launch SEO Checklist Most Sites Skip"
 date: 2026-06-12T06:00:00-05:00
 draft: false
+category: "Web Development"
 description: "Five technical SEO tasks that take under 20 minutes total and compound over time. Most sites launch without all of them."
 tags: ["SEO", "web development", "Next.js", "pre-launch", "technical SEO", "accessibility"]
 image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&q=80&auto=format&fit=crop"

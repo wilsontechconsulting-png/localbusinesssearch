@@ -2,6 +2,7 @@
 title: "This Blog Post Is Writing Itself: A Real-Time Look at ProductiveBot.AI in Action"
 date: 2026-04-24T06:00:00-05:00
 draft: false
+category: "Business Systems"
 categories: ["AI Automation"]
 tags: ["AI", "Business Automation", "Productivity", "Real-Time", "ProductiveBot"]
 author: "Jed Wilson"

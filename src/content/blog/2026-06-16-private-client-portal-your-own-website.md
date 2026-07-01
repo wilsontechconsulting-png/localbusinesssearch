@@ -2,6 +2,7 @@
 title: "The Private Client Portal You Already Have (And Aren't Using)"
 date: 2026-06-16T06:00:00-05:00
 draft: false
+category: "Business Systems"
 description: "Most agencies use Notion, Google Docs, or expensive proposal tools to share deliverables with clients. You already have a better option sitting on your own website."
 tags: ["business systems", "web design", "client management", "automation", "local business"]
 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop"

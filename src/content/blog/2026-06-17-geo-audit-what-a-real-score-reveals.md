@@ -2,6 +2,7 @@
 title: "We Ran a Real GEO Audit. The Score Was 56/100. Here's What That Means."
 date: 2026-06-17T06:00:00-05:00
 draft: false
+category: "AI Visibility"
 description: "A real Generative Engine Optimization audit across four dimensions — technical, citability, schema, and brand. Here's what the scores actually revealed and what to do about them."
 tags: ["geo", "ai-search", "ai-visibility", "schema", "structured-data", "seo"]
 image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop"
