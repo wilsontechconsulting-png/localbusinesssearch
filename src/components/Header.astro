@@ -2,9 +2,18 @@
 import { mainNav, navGroups } from '@/data/site';
 
 const currentPath = Astro.url.pathname;
+const currentSearch = Astro.url.search;
 
 function isActive(href: string, external?: boolean) {
-  return !external && href !== '/' && currentPath.startsWith(href.split('?')[0]);
+  if (external || href === '/') return false;
+
+  const [path, query] = href.split('?');
+
+  if (query) {
+    return currentPath === path && currentSearch === `?${query}`;
+  }
+
+  return currentPath === path || currentPath.startsWith(path);
 }
 ---
 
