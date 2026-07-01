@@ -50,32 +50,43 @@ theme = 'lbs'
     url = '/platform/'
     parent = 'Business Processes'
     weight = 1
+    [menu.main.params]
+      group = 'Core Systems'
   [[menu.main]]
     name = 'Business Systems'
     url = '/business-operations/'
     parent = 'Business Processes'
     weight = 2
+    [menu.main.params]
+      group = 'Core Systems'
   [[menu.main]]
     name = 'Advertising'
     url = '/advertising/'
     parent = 'Business Processes'
     weight = 3
+    [menu.main.params]
+      group = 'Core Systems'
   [[menu.main]]
     name = 'Baselayer'
     url = '/baselayer/'
     parent = 'Business Processes'
     weight = 4
+    [menu.main.params]
+      group = 'Core Systems'
   [[menu.main]]
     name = 'AI Automation'
     url = '/ai-automation/'
     parent = 'Business Processes'
     weight = 5
+    [menu.main.params]
+      group = 'AI & Model Research'
   [[menu.main]]
     name = 'Artificial Analysis Models'
     url = 'https://artificialanalysis.ai/leaderboards/models'
     parent = 'Business Processes'
     weight = 6
     [menu.main.params]
+      group = 'AI & Model Research'
       external = true
   [[menu.main]]
     name = 'Vellum LLM Leaderboard'
@@ -83,6 +94,7 @@ theme = 'lbs'
     parent = 'Business Processes'
     weight = 7
     [menu.main.params]
+      group = 'AI & Model Research'
       external = true
   [[menu.main]]
     name = 'Hugging Face Leaderboard'
@@ -90,6 +102,7 @@ theme = 'lbs'
     parent = 'Business Processes'
     weight = 8
     [menu.main.params]
+      group = 'AI & Model Research'
       external = true
   [[menu.main]]
     name = 'OpenRouter Rankings'
@@ -97,28 +110,36 @@ theme = 'lbs'
     parent = 'Business Processes'
     weight = 9
     [menu.main.params]
+      group = 'AI & Model Research'
       external = true
   [[menu.main]]
     name = 'Industries'
     url = '/industries/'
     parent = 'Business Processes'
     weight = 10
+    [menu.main.params]
+      group = 'Markets & Proof'
   [[menu.main]]
     name = 'Results'
     url = '/results/'
     parent = 'Business Processes'
     weight = 11
+    [menu.main.params]
+      group = 'Markets & Proof'
   [[menu.main]]
     name = 'All Articles'
     url = '/blog/'
     parent = 'Business Processes'
     weight = 12
+    [menu.main.params]
+      group = 'Resources'
   [[menu.main]]
     name = 'AI Automation Articles'
     url = '/blog/'
     parent = 'Business Processes'
     weight = 13
     [menu.main.params]
+      group = 'Resources'
       href = '/blog/?category=AI%20Automation'
   [[menu.main]]
     name = 'Business Systems Articles'
@@ -126,6 +147,7 @@ theme = 'lbs'
     parent = 'Business Processes'
     weight = 14
     [menu.main.params]
+      group = 'Resources'
       href = '/blog/?category=Business%20Systems'
   [[menu.main]]
     name = 'Advertising Articles'
@@ -133,6 +155,7 @@ theme = 'lbs'
     parent = 'Business Processes'
     weight = 15
     [menu.main.params]
+      group = 'Resources'
       href = '/blog/?category=Advertising'
   [[menu.main]]
     name = 'SEO & AI Search'
@@ -140,6 +163,7 @@ theme = 'lbs'
     parent = 'Business Processes'
     weight = 16
     [menu.main.params]
+      group = 'Resources'
       href = '/blog/?category=SEO'
   [[menu.main]]
     name = 'Business Tools'
@@ -147,12 +171,15 @@ theme = 'lbs'
     parent = 'Business Processes'
     weight = 17
     [menu.main.params]
+      group = 'Resources'
       href = '/blog/?category=Business%20Tools'
   [[menu.main]]
     name = 'About'
     url = '/about/'
     parent = 'Business Processes'
     weight = 18
+    [menu.main.params]
+      group = 'Company'
 
 # SEO Settings
 enableRobotsTXT = true

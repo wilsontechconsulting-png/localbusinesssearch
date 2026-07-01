@@ -30,9 +30,28 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                {{ range .Children }}
-                  {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
-                  <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                {{ $children := .Children }}
+                {{ $groups := slice "Core Systems" "AI & Model Research" "Markets & Proof" "Resources" "Company" }}
+                {{ range $group := $groups }}
+                  {{ $items := slice }}
+                  {{ range $child := $children }}
+                    {{ if eq ($child.Params.group | default "") $group }}
+                      {{ $items = $items | append $child }}
+                    {{ end }}
+                  {{ end }}
+                  {{ if gt (len $items) 0 }}
+                    <li class="dropdown-group-label">{{ $group }}</li>
+                    {{ range $items }}
+                      {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+                      <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                {{ range $child := $children }}
+                  {{ if not ($child.Params.group | default "") }}
+                    {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+                    <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                  {{ end }}
                 {{ end }}
               </ul>
             </li>
@@ -69,9 +88,28 @@
                 <span class="dropdown-caret">▾</span>
               </a>
               <ul class="mobile-submenu">
-                {{ range .Children }}
-                  {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
-                  <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                {{ $children := .Children }}
+                {{ $groups := slice "Core Systems" "AI & Model Research" "Markets & Proof" "Resources" "Company" }}
+                {{ range $group := $groups }}
+                  {{ $items := slice }}
+                  {{ range $child := $children }}
+                    {{ if eq ($child.Params.group | default "") $group }}
+                      {{ $items = $items | append $child }}
+                    {{ end }}
+                  {{ end }}
+                  {{ if gt (len $items) 0 }}
+                    <li class="mobile-dropdown-group-label">{{ $group }}</li>
+                    {{ range $items }}
+                      {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+                      <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                {{ range $child := $children }}
+                  {{ if not ($child.Params.group | default "") }}
+                    {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+                    <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                  {{ end }}
                 {{ end }}
               </ul>
             </li>
