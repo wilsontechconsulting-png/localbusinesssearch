@@ -22,8 +22,16 @@
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <!-- Parent item with dropdown -->
-            <li class="has-dropdown{{ if or (eq .Name "Resources") (eq .Name "About") }} dropdown-align-right{{ end }}">
-              <a href="{{ .URL }}" class="dropdown-toggle">
+            {{ $currentPath := $.RelPermalink }}
+            {{ $isCurrentParent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) (eq .URL $currentPath) }}
+            {{ range .Children }}
+              {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+              {{ if and (not .Params.external) (ne $childURL "/") (hasPrefix $currentPath $childURL) }}
+                {{ $isCurrentParent = true }}
+              {{ end }}
+            {{ end }}
+            <li class="has-dropdown{{ if $isCurrentParent }} is-active{{ end }}{{ if or (eq .Name "Resources") (eq .Name "About") }} dropdown-align-right{{ end }}">
+              <a href="{{ .URL }}" class="dropdown-toggle{{ if $isCurrentParent }} active{{ end }}"{{ if $isCurrentParent }} aria-current="page"{{ end }}>
                 {{ .Name }}
                 <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,17 +48,23 @@
                     {{ end }}
                   {{ end }}
                   {{ if gt (len $items) 0 }}
-                    <li class="dropdown-group-label">{{ $group }}</li>
-                    {{ range $items }}
-                      {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
-                      <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
-                    {{ end }}
+                    <li class="dropdown-group">
+                      <span class="dropdown-group-label">{{ $group }}</span>
+                      <ul class="dropdown-group-list">
+                        {{ range $items }}
+                          {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+                          {{ $isCurrentChild := and (not .Params.external) (ne $childURL "/") (hasPrefix $.RelPermalink $childURL) }}
+                          <li><a href="{{ $childURL }}" class="{{ if $isCurrentChild }}active{{ end }}"{{ if $isCurrentChild }} aria-current="page"{{ end }}{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                        {{ end }}
+                      </ul>
+                    </li>
                   {{ end }}
                 {{ end }}
                 {{ range $child := $children }}
                   {{ if not ($child.Params.group | default "") }}
                     {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
-                    <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                    {{ $isCurrentChild := and (not .Params.external) (ne $childURL "/") (hasPrefix $.RelPermalink $childURL) }}
+                    <li><a href="{{ $childURL }}" class="{{ if $isCurrentChild }}active{{ end }}"{{ if $isCurrentChild }} aria-current="page"{{ end }}{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
                   {{ end }}
                 {{ end }}
               </ul>
@@ -58,7 +72,8 @@
           {{ else }}
             <!-- Regular menu item -->
             {{ $itemURL := cond (isset .Params "href") .Params.href .URL }}
-            <li><a href="{{ $itemURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+            {{ $isCurrentItem := and (not .Params.external) (ne $itemURL "/") (hasPrefix $.RelPermalink $itemURL) }}
+            <li><a href="{{ $itemURL }}" class="{{ if $isCurrentItem }}active{{ end }}"{{ if $isCurrentItem }} aria-current="page"{{ end }}{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
           {{ end }}
         {{ end }}
       </ul>
@@ -82,8 +97,16 @@
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <!-- Parent item with submenu -->
-            <li class="mobile-has-dropdown">
-              <a href="{{ .URL }}" class="mobile-dropdown-toggle" aria-expanded="false">
+            {{ $currentPath := $.RelPermalink }}
+            {{ $isCurrentParent := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) (eq .URL $currentPath) }}
+            {{ range .Children }}
+              {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+              {{ if and (not .Params.external) (ne $childURL "/") (hasPrefix $currentPath $childURL) }}
+                {{ $isCurrentParent = true }}
+              {{ end }}
+            {{ end }}
+            <li class="mobile-has-dropdown{{ if $isCurrentParent }} is-active{{ end }}">
+              <a href="{{ .URL }}" class="mobile-dropdown-toggle{{ if $isCurrentParent }} active{{ end }}" aria-expanded="false"{{ if $isCurrentParent }} aria-current="page"{{ end }}>
                 <span>{{ .Name }}</span>
                 <span class="dropdown-caret">▾</span>
               </a>
@@ -98,17 +121,23 @@
                     {{ end }}
                   {{ end }}
                   {{ if gt (len $items) 0 }}
-                    <li class="mobile-dropdown-group-label">{{ $group }}</li>
-                    {{ range $items }}
-                      {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
-                      <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
-                    {{ end }}
+                    <li class="mobile-dropdown-group">
+                      <span class="mobile-dropdown-group-label">{{ $group }}</span>
+                      <ul class="mobile-dropdown-group-list">
+                        {{ range $items }}
+                          {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
+                          {{ $isCurrentChild := and (not .Params.external) (ne $childURL "/") (hasPrefix $.RelPermalink $childURL) }}
+                          <li><a href="{{ $childURL }}" class="{{ if $isCurrentChild }}active{{ end }}"{{ if $isCurrentChild }} aria-current="page"{{ end }}{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                        {{ end }}
+                      </ul>
+                    </li>
                   {{ end }}
                 {{ end }}
                 {{ range $child := $children }}
                   {{ if not ($child.Params.group | default "") }}
                     {{ $childURL := cond (isset .Params "href") .Params.href .URL }}
-                    <li><a href="{{ $childURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+                    {{ $isCurrentChild := and (not .Params.external) (ne $childURL "/") (hasPrefix $.RelPermalink $childURL) }}
+                    <li><a href="{{ $childURL }}" class="{{ if $isCurrentChild }}active{{ end }}"{{ if $isCurrentChild }} aria-current="page"{{ end }}{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
                   {{ end }}
                 {{ end }}
               </ul>
@@ -116,7 +145,8 @@
           {{ else }}
             <!-- Regular menu item -->
             {{ $itemURL := cond (isset .Params "href") .Params.href .URL }}
-            <li><a href="{{ $itemURL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+            {{ $isCurrentItem := and (not .Params.external) (ne $itemURL "/") (hasPrefix $.RelPermalink $itemURL) }}
+            <li><a href="{{ $itemURL }}" class="{{ if $isCurrentItem }}active{{ end }}"{{ if $isCurrentItem }} aria-current="page"{{ end }}{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
           {{ end }}
         {{ end }}
         <li class="mobile-cta-item">
