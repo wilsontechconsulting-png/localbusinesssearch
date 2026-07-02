@@ -4,7 +4,7 @@ date: 2026-06-08T06:00:00-05:00
 draft: false
 author: "Jed Wilson"
 category: "Security"
-tags: ["WordPress", "Security", "HTTP Headers", "SiteGround", "Managed Hosting", ".htaccess"]
+tags: ["WordPress", "Security", "HTTP Headers", "SiteGround", "Managed Hosting", "Apache Config"]
 image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&auto=format&fit=crop&q=80"
 image_credit: "Franck on Unsplash"
 image_credit_url: "https://unsplash.com/@franckinjapan"
