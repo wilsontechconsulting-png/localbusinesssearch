@@ -1,3 +1,5 @@
+import { pageImages } from './pageImages';
+
 export type ShopCategory = {
   name: string;
   slug: string;
@@ -18,7 +20,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Curated business software, marketing platforms, scheduling tools, finance apps, CRM options, and operational systems for owners who want practical help choosing the right stack.',
     examples: ['CRM and follow-up tools', 'Scheduling and booking', 'Marketing platforms', 'Finance and admin software'],
-    image: '/images/social-card-default.png',
+    image: pageImages.workflowAutomation,
     featured: true,
   },
   {
@@ -29,7 +31,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Desk setups, office supplies, printers, shipping materials, signage support, and day-to-day products that keep a small business moving.',
     examples: ['Desk and workspace gear', 'Printers and paper', 'Shipping supplies', 'Organization tools'],
-    image: '/images/lbs-logo.jpg',
+    image: pageImages.officeWorkspace,
   },
   {
     name: 'Industrial & Business Supplies',
@@ -39,7 +41,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Work supplies, facility basics, safety products, storage, maintenance items, and operational gear for companies that need more than a laptop to do the work.',
     examples: ['Safety and PPE', 'Facility supplies', 'Storage and shelving', 'Crew basics'],
-    image: '/images/pizza-world-cross-creek-location.jpg',
+    image: pageImages.shopTools,
   },
   {
     name: 'Electronics',
@@ -49,7 +51,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Useful electronics for business owners, teams, creators, home offices, and local operators who need dependable devices instead of trendy clutter.',
     examples: ['Phones and accessories', 'Cameras and audio', 'Networking gear', 'Charging and cables'],
-    image: '/images/blog/seo-llm-2026.jpg',
+    image: pageImages.automationDashboard,
     featured: true,
   },
   {
@@ -60,7 +62,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Computer hardware and accessories for better workstations, creative production, admin work, field teams, and modern business operations.',
     examples: ['Laptops and desktops', 'Monitors and docks', 'Keyboards and mice', 'Storage and backup'],
-    image: '/images/social-card-default.png',
+    image: pageImages.websiteWork,
   },
   {
     name: 'Smart Home & Security',
@@ -70,7 +72,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Smart security and connected-device recommendations for offices, shops, rental spaces, home offices, and small facilities.',
     examples: ['Security cameras', 'Smart locks', 'Wi-Fi systems', 'Sensors and alarms'],
-    image: '/images/blog/lead-follow-up-field-note.jpg',
+    image: pageImages.homeServiceTech,
   },
   {
     name: 'Home & Kitchen',
@@ -80,7 +82,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Useful home and kitchen products for owners, teams, hospitality businesses, break rooms, rentals, and everyday organization.',
     examples: ['Kitchen tools', 'Storage and organization', 'Cleaning supplies', 'Break room basics'],
-    image: '/images/pizza-world-cross-creek-location.jpg',
+    image: pageImages.localStorefront,
     featured: true,
   },
   {
@@ -91,7 +93,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Tool and home-improvement picks for owners, facilities, home service operators, rentals, shops, and hands-on business needs.',
     examples: ['Power and hand tools', 'Lighting', 'Hardware', 'Repair supplies'],
-    image: '/images/blog/lead-follow-up-field-note.jpg',
+    image: pageImages.homeServiceTools,
   },
   {
     name: 'Patio, Lawn & Garden',
@@ -101,7 +103,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Outdoor products for homes, rentals, storefronts, hospitality patios, landscaping, and property upkeep.',
     examples: ['Outdoor furniture', 'Lawn care', 'Garden tools', 'Property upkeep'],
-    image: '/images/pizza-world-cross-creek-location.jpg',
+    image: pageImages.craftWork,
   },
   {
     name: 'Health & Wellness',
@@ -111,7 +113,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Health and wellness recommendations for owners, teams, active families, and businesses that want practical personal-care resources.',
     examples: ['Vitamins and supplements', 'Recovery tools', 'Fitness basics', 'Workplace wellness'],
-    image: '/images/triple-crown-logo.jpg',
+    image: pageImages.medicalTechnology,
   },
   {
     name: 'Beauty & Personal Care',
@@ -121,7 +123,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Personal-care products, grooming gear, salon-adjacent essentials, and routine items that can support future retail and affiliate recommendations.',
     examples: ['Skin care', 'Hair care', 'Grooming tools', 'Daily essentials'],
-    image: '/images/social-card-default.png',
+    image: pageImages.localRetail,
   },
   {
     name: 'Clothing, Shoes & Jewelry',
@@ -131,7 +133,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Clothing and accessory categories for workwear, branded team needs, local retail picks, gifts, travel, and everyday use.',
     examples: ['Workwear', 'Shoes', 'Accessories', 'Team apparel'],
-    image: '/images/lbs-logo.jpg',
+    image: pageImages.franchiseStorefront,
   },
   {
     name: 'Sports & Outdoors',
@@ -141,7 +143,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Sports, outdoor, recreation, and fitness products that fit future guide content, recommendations, and lifestyle-focused shop collections.',
     examples: ['Golf gear', 'Fitness equipment', 'Outdoor gear', 'Travel accessories'],
-    image: '/images/pizza-world-cross-creek-location.jpg',
+    image: pageImages.publicCity,
     featured: true,
   },
   {
@@ -152,7 +154,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Automotive products for work vehicles, field teams, family vehicles, fleet care, cleaning, tools, and on-the-road readiness.',
     examples: ['Vehicle accessories', 'Cleaning and detailing', 'Fleet basics', 'Emergency kits'],
-    image: '/images/blog/lead-follow-up-field-note.jpg',
+    image: pageImages.constructionWork,
   },
   {
     name: 'Pet Supplies',
@@ -162,7 +164,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Pet supplies and recommendations that can support everyday shoppers, local pet-related businesses, and future affiliate collections.',
     examples: ['Food and treats', 'Pet care', 'Travel supplies', 'Cleaning products'],
-    image: '/images/social-card-default.png',
+    image: pageImages.localStorefront,
   },
   {
     name: 'Baby & Kids',
@@ -172,7 +174,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Baby, kids, school, toy, family, and learning products for practical household recommendations and future curated gift guides.',
     examples: ['Baby essentials', 'Kids learning', 'School supplies', 'Family travel'],
-    image: '/images/lbs-logo.jpg',
+    image: pageImages.educationResources,
   },
   {
     name: 'Books, Media & Learning',
@@ -182,7 +184,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Books, courses, media, learning resources, and business education picks that can naturally connect with the site resource library.',
     examples: ['Business books', 'Training resources', 'Guides', 'Creative media'],
-    image: '/images/blog/seo-llm-2026.jpg',
+    image: pageImages.educationResources,
   },
   {
     name: 'Grocery & Gourmet',
@@ -192,7 +194,7 @@ export const shopCategories: ShopCategory[] = [
     description:
       'Food and grocery categories for pantry picks, office snacks, coffee, hospitality supplies, local retail ideas, and future recommendation content.',
     examples: ['Coffee and drinks', 'Snacks', 'Pantry supplies', 'Specialty food'],
-    image: '/images/pizza-world-cross-creek-location.jpg',
+    image: pageImages.localRetail,
   },
 ];
 

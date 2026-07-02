@@ -1,5 +1,6 @@
 ---
 import { mainNav } from '@/data/site';
+import { pageImages } from '@/data/pageImages';
 import PageEnhancement from './PageEnhancement.astro';
 
 type Props = {
@@ -29,7 +30,7 @@ type HeroDesign = {
 
 const defaultHero: HeroDesign = {
   eyebrow: currentItem?.group ?? 'Local Business Search',
-  image: '/images/blog/seo-llm-2026.jpg',
+  image: pageImages.localStorefront,
   ctaLabel: 'Request a Consultation',
   ctaHref: '/contact/',
   secondaryLabel: 'Explore Services',
@@ -43,7 +44,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'Business growth services with room to expand into tools, products, and resources.',
     subheadline:
       'We connect marketing, websites, search visibility, advertising, automation, and consulting while building toward a practical resource ecosystem for business owners.',
-    image: '/images/blog/seo-llm-2026.jpg',
+    image: pageImages.servicePlanning,
     proof: ['Digital marketing', 'Websites', 'Automation'],
   },
   '/baselayer/': {
@@ -51,7 +52,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'A better website should make the business easier to trust and easier to contact.',
     subheadline:
       'We build fast, credible pages that explain the offer, support search visibility, and make the next step clear for visitors.',
-    image: '/images/lbs-icon.jpg',
+    image: pageImages.websiteWork,
     proof: ['Clear offers', 'Fast pages', 'Useful content'],
   },
   '/search-seo/': {
@@ -59,7 +60,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'Get found by the people already looking for what you sell.',
     subheadline:
       'Local SEO, technical search structure, service pages, and answer-ready content built around real customer intent.',
-    image: '/images/blog/seo-llm-2026.jpg',
+    image: pageImages.searchDashboard,
     proof: ['Local discovery', 'Service pages', 'Search clarity'],
   },
   '/advertising/': {
@@ -67,15 +68,47 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'Campaigns built around clear offers, useful pages, and practical follow-up.',
     subheadline:
       'We pair paid media with stronger messaging, landing pages, audience strategy, and business support that keeps campaigns grounded.',
-    image: '/images/pizza-world-branson-campaign-preview.png',
+    image: pageImages.socialAdvertising,
     proof: ['Google', 'Social', 'Retargeting'],
+  },
+  '/advertising/google-ads/': {
+    eyebrow: 'Google Ads',
+    headline: 'Capture demand from people already searching for the service.',
+    subheadline:
+      'Search campaigns need strong offers, useful landing pages, local intent, and follow-up that makes every qualified click easier to convert.',
+    image: pageImages.searchDashboard,
+    proof: ['Search intent', 'Landing pages', 'Lead tracking'],
+  },
+  '/advertising/paid-social/': {
+    eyebrow: 'Paid Social',
+    headline: 'Use social campaigns to create demand and bring the right buyers back.',
+    subheadline:
+      'Paid social works best when creative, audiences, offers, landing pages, and follow-up are planned as one system.',
+    image: pageImages.socialAdvertising,
+    proof: ['Creative', 'Audiences', 'Offers'],
+  },
+  '/advertising/programmatic/': {
+    eyebrow: 'Programmatic Advertising',
+    headline: 'Reach defined audiences across the places they already spend attention.',
+    subheadline:
+      'Programmatic campaigns help local businesses extend reach beyond search and social while keeping targeting and measurement practical.',
+    image: pageImages.marketingAnalytics,
+    proof: ['Audience reach', 'Display', 'Measurement'],
+  },
+  '/advertising/retargeting/': {
+    eyebrow: 'Retargeting',
+    headline: 'Bring back visitors who already showed interest.',
+    subheadline:
+      'Retargeting keeps the business visible after the first visit and helps qualified prospects return when they are ready to act.',
+    image: pageImages.socialMedia,
+    proof: ['Return visits', 'Recall', 'Conversion'],
   },
   '/business-operations/': {
     eyebrow: 'Business Software',
     headline: 'Cleaner systems behind the growth so fewer opportunities slip through.',
     subheadline:
       'CRM workflows, lead routing, reminders, resource organization, and operational tools that make marketing easier to manage.',
-    image: '/images/triple-crown-logo.jpg',
+    image: pageImages.operationsDesk,
     proof: ['CRM workflows', 'Lead routing', 'Owner visibility'],
   },
   '/ai-automation/': {
@@ -83,7 +116,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'Automation that improves speed and consistency without making the business feel robotic.',
     subheadline:
       'AI is one tool in the system. We use it where it improves response, research, analysis, and follow-up.',
-    image: '/images/blog/lead-follow-up-field-note.jpg',
+    image: pageImages.automationDashboard,
     proof: ['Fast response', 'Better handoffs', 'Smarter follow-up'],
   },
   '/platform/': {
@@ -91,7 +124,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'A foundation for useful business tools, recommendations, downloads, and resources.',
     subheadline:
       'The platform direction is a practical hub for business owners: service support today, productized resources and curated recommendations next.',
-    image: '/images/pizza-world-cross-creek-location.jpg',
+    image: pageImages.workflowAutomation,
     proof: ['Tools', 'Guides', 'Recommendations'],
   },
   '/industries/': {
@@ -99,7 +132,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'Growth systems for businesses where missed opportunities are expensive.',
     subheadline:
       'Different markets need different playbooks, but every business needs stronger visibility, faster response, and useful resources that support the work.',
-    image: '/images/blog/seo-llm-2026.jpg',
+    image: pageImages.localStorefront,
     proof: ['Home services', 'Medical', 'Legal'],
   },
   '/results/': {
@@ -107,7 +140,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'The work is built around better visibility, stronger offers, and practical next steps.',
     subheadline:
       'Momentum comes from connecting the full path: visibility, credibility, useful resources, follow-up, and consistent execution.',
-    image: '/images/pizza-world-branson-campaign-preview.png',
+    image: pageImages.marketingAnalytics,
     proof: ['Visibility', 'Trust', 'Momentum'],
   },
   '/about/': {
@@ -115,7 +148,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'A business growth partner built for owners who want practical execution.',
     subheadline:
       'Local Business Search blends marketing strategy, websites, automation, software, consulting, and practical resources into a clearer growth system.',
-    image: '/images/lbs-icon.jpg',
+    image: pageImages.strategyMeeting,
     proof: ['Practical', 'Modern', 'Accountable'],
   },
   '/contact/': {
@@ -123,7 +156,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'Start with a clear conversation about where growth is getting stuck.',
     subheadline:
       'Tell us what you are trying to improve. We can talk through services available now and the tools or resources that would help next.',
-    image: '/images/blog/seo-llm-2026.jpg',
+    image: pageImages.officeWorkspace,
     ctaLabel: 'Send a Message',
     ctaHref: 'mailto:jed@powerofadvertising.com',
     secondaryLabel: 'View Services',
@@ -135,14 +168,14 @@ const heroDesigns: Record<string, HeroDesign> = {
     headline: 'See how a clearer growth system would work for your business.',
     subheadline:
       'A demo is a focused walkthrough of the service support, resource structure, and practical tools your business may need.',
-    image: '/images/blog/lead-follow-up-field-note.jpg',
+    image: pageImages.businessCharts,
     proof: ['Website', 'Services', 'Resources'],
   },
   '/privacy-policy/': {
     eyebrow: 'Privacy',
     headline: 'Plain-language privacy information for visitors, prospects, and clients.',
     subheadline: 'How we handle contact details, analytics, communication data, and service-related information.',
-    image: '/images/lbs-icon.jpg',
+    image: pageImages.legalDocs,
     secondaryLabel: 'Contact Us',
     secondaryHref: '/contact/',
     proof: ['No data sales', 'Trusted tools', 'Clear use'],
@@ -151,7 +184,7 @@ const heroDesigns: Record<string, HeroDesign> = {
     eyebrow: 'Terms',
     headline: 'General terms for using the Local Business Search website.',
     subheadline: 'A straightforward explanation of website use, service expectations, and performance disclosures.',
-    image: '/images/lbs-icon.jpg',
+    image: pageImages.legalJustice,
     secondaryLabel: 'Contact Us',
     secondaryHref: '/contact/',
     proof: ['Clear scope', 'Written work', 'No guarantees'],
@@ -165,9 +198,17 @@ const industryHero = path.startsWith('/industries/')
       subheadline:
         description ??
         'A practical blend of search visibility, websites, advertising, automation, and business resources for this market.',
-      image: path.includes('local-retail') || path.includes('franchises') || path.includes('municipalities')
-        ? '/images/pizza-world-cross-creek-location.jpg'
-        : '/images/blog/lead-follow-up-field-note.jpg',
+      image: path.includes('home-services')
+        ? pageImages.homeServiceTech
+        : path.includes('medical')
+          ? pageImages.medicalOffice
+          : path.includes('legal')
+            ? pageImages.legalJustice
+            : path.includes('franchises')
+              ? pageImages.franchiseStorefront
+              : path.includes('municipalities')
+                ? pageImages.municipalBuilding
+                : pageImages.localRetail,
       proof: ['Get found', 'Respond faster', 'Grow smarter'],
     }
   : undefined;

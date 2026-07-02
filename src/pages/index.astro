@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import PostList from '@/components/PostList.astro';
+import { pageImages } from '@/data/pageImages';
 import { getCollection, getEntry } from 'astro:content';
 import { postDateSort } from '@/utils/content';
 
@@ -35,8 +36,8 @@ const services = [
     href: '/business-operations/',
   },
   {
-    title: 'Products and resources',
-    text: 'Guides, tool recommendations, digital resources, and shop-ready business assets built to support owners beyond service work.',
+    title: 'Tools and resources',
+    text: 'Guides, tool recommendations, digital resources, and practical business assets that support owners beyond custom service work.',
     href: '/platform/',
   },
 ];
@@ -59,40 +60,40 @@ const industries = [
 ---
 
 <BaseLayout title="Local Business Search - Business Growth Partner" description="Local Business Search helps businesses grow with marketing, websites, search visibility, advertising, automation, business tools, resources, and consulting." canonicalPath="/">
-  <section class="home-hero">
+  <section class="home-hero" style={`--home-hero-image: url('${pageImages.localStorefront}')`}>
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Business services, tools, and growth resources</p>
-        <h1>A growth partner building the next layer of business resources.</h1>
+        <p class="eyebrow">Marketing, websites, search, and automation</p>
+        <h1>Practical growth systems for local businesses.</h1>
         <p>
-          Local Business Search helps companies grow with better marketing, stronger websites,
-          search visibility, advertising, automation, and practical resources business owners can use.
+          Local Business Search helps business owners get found, earn trust, follow up faster,
+          and turn scattered marketing activity into a clearer growth system.
         </p>
         <div class="hero-actions">
           <a href="/contact/" class="btn primary">Request a Consultation</a>
-          <a href="/platform/" class="btn secondary">Explore Resources</a>
+          <a href="/services/" class="btn secondary">Explore Services</a>
         </div>
         <dl class="hero-trust" aria-label="Growth system focus areas">
-          <div><dt>Services</dt><dd>Marketing, sites, ads</dd></div>
-          <div><dt>Resources</dt><dd>Guides, tools, templates</dd></div>
-          <div><dt>Shop Direction</dt><dd>Products, picks, downloads</dd></div>
+          <div><dt>Visibility</dt><dd>Search, content, ads</dd></div>
+          <div><dt>Trust</dt><dd>Websites, proof, offers</dd></div>
+          <div><dt>Follow-up</dt><dd>Automation, CRM, reporting</dd></div>
         </dl>
       </div>
 
       <div class="hero-showcase" aria-label="Local Business Search growth system preview">
         <div class="showcase-card brand-card">
-          <img src="/images/lbs-icon.jpg" alt="Local Business Search brand mark" />
+          <img src={pageImages.websiteWork} alt="Business team reviewing website and marketing work" />
           <div>
-            <strong>Local Business Search</strong>
-            <span>Services, tools, and business resources</span>
+            <strong>Local growth system</strong>
+            <span>Website, visibility, follow-up, and resources working together</span>
           </div>
         </div>
         <div class="showcase-card performance-card">
-          <p>Business Growth Ecosystem</p>
-          <div class="metric-row"><span>Search visibility</span><strong>High intent</strong></div>
-          <div class="metric-row"><span>Business services</span><strong>Available</strong></div>
-          <div class="metric-row"><span>Product resources</span><strong>Expanding</strong></div>
-          <div class="metric-row"><span>Tool recommendations</span><strong>Curated</strong></div>
+          <p>Business Growth System</p>
+          <div class="metric-row"><span>Search visibility</span><strong>Findable</strong></div>
+          <div class="metric-row"><span>Website clarity</span><strong>Trustworthy</strong></div>
+          <div class="metric-row"><span>Lead response</span><strong>Faster</strong></div>
+          <div class="metric-row"><span>Owner visibility</span><strong>Clearer</strong></div>
         </div>
       </div>
     </div>
@@ -100,11 +101,11 @@ const industries = [
 
   <section class="trust-band" aria-label="Trust indicators">
     <div class="container trust-grid">
-      <p>Built for business owners who need useful services now and better resources next.</p>
+      <p>Built for business owners who need clearer marketing, stronger websites, and better follow-through.</p>
       <span>Strategy</span>
       <span>Execution</span>
+      <span>Automation</span>
       <span>Resources</span>
-      <span>Products</span>
     </div>
   </section>
 
@@ -112,16 +113,16 @@ const industries = [
     <div class="container split-section">
       <div class="section-copy">
         <p class="eyebrow">What We Are Building</p>
-        <h2>Business services today, practical products and resources next.</h2>
+        <h2>A practical growth partner, not another disconnected vendor.</h2>
         <p>
-          The service work is still here: marketing, websites, search, advertising, automation,
-          and consulting. The larger direction is a trusted resource hub with recommended tools,
-          digital downloads, business products, and shop-style support for owners.
+          The work connects the pieces owners already care about: marketing, websites, search,
+          advertising, automation, reporting, and useful resources. The goal is simple: make the
+          business easier to find, understand, trust, and work with.
         </p>
       </div>
       <figure class="image-frame">
-        <img src="/images/pizza-world-cross-creek-location.jpg" alt="Local business storefront example" loading="lazy" />
-        <figcaption>Services, resources, recommendations, and business tools moving into one ecosystem.</figcaption>
+        <img src={pageImages.localStorefront} alt="Independent local business storefront" loading="lazy" />
+        <figcaption>Growth works better when visibility, trust, response, and reporting are connected.</figcaption>
       </figure>
     </div>
   </section>
@@ -130,7 +131,7 @@ const industries = [
     <div class="container section-heading split">
       <div>
         <p class="eyebrow">Services</p>
-        <h2>Services and resources that help owners move faster.</h2>
+        <h2>Services that make the business easier to find, trust, and contact.</h2>
       </div>
       <a href="/services/">View all services</a>
     </div>
@@ -148,8 +149,8 @@ const industries = [
   <section class="proof-section">
     <div class="container proof-grid">
       <div class="proof-media">
-        <img src="/images/pizza-world-branson-campaign-preview.png" alt="Example local restaurant campaign creative" loading="lazy" />
-        <img src="/images/pizza-world-cross-creek-location.jpg" alt="Local business storefront example" loading="lazy" />
+        <img src={pageImages.marketingAnalytics} alt="Marketing analytics shown on a smartphone" loading="lazy" />
+        <img src={pageImages.strategyMeeting} alt="Business team planning growth strategy" loading="lazy" />
       </div>
       <div class="section-copy">
         <p class="eyebrow">Why It Works</p>
@@ -194,7 +195,7 @@ const industries = [
         </div>
       </div>
       <figure class="image-frame">
-        <img src="/images/blog/lead-follow-up-field-note.jpg" alt="Lead follow-up comparison for local businesses" loading="lazy" />
+        <img src={pageImages.workflowAutomation} alt="Automation workflow across business devices" loading="lazy" />
         <figcaption>Simple systems and useful resources help local businesses keep momentum.</figcaption>
       </figure>
     </div>
@@ -215,7 +216,7 @@ const industries = [
     <div class="container final-cta-grid">
       <div>
         <p class="eyebrow">Next Step</p>
-        <h2>Start with the services you need now and the resource system you can grow into.</h2>
+        <h2>Start with the growth problem that is costing the business momentum.</h2>
       </div>
       <a href="/contact/" class="btn primary">Start the Conversation</a>
     </div>
@@ -227,8 +228,8 @@ const industries = [
     position: relative;
     overflow: hidden;
     background:
-      linear-gradient(135deg, rgba(7, 17, 31, 0.98), rgba(13, 37, 68, 0.94)),
-      url('/images/pizza-world-cross-creek-location.jpg') center / cover;
+      linear-gradient(135deg, rgba(7, 17, 31, 0.9), rgba(13, 37, 68, 0.78)),
+      var(--home-hero-image) center / cover;
     color: white;
     padding: clamp(4.5rem, 9vw, 8rem) 0 clamp(3.5rem, 7vw, 6rem);
   }
@@ -237,8 +238,8 @@ const industries = [
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(90deg, rgba(7, 17, 31, 0.95) 0%, rgba(7, 17, 31, 0.86) 46%, rgba(7, 17, 31, 0.54) 100%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 38%);
+      linear-gradient(90deg, rgba(7, 17, 31, 0.9) 0%, rgba(7, 17, 31, 0.74) 46%, rgba(7, 17, 31, 0.34) 100%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 38%);
     content: '';
   }
 
@@ -369,9 +370,11 @@ const industries = [
   .brand-card img {
     display: block;
     flex: 0 0 auto;
-    width: clamp(4.5rem, 8vw, 6.5rem);
-    max-width: 6.5rem;
+    width: clamp(8rem, 13vw, 12rem);
+    max-width: 12rem;
+    aspect-ratio: 4 / 3;
     border-radius: 0.5rem;
+    object-fit: cover;
   }
 
   .brand-card div {

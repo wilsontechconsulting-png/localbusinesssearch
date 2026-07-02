@@ -1,4 +1,6 @@
 ---
+import { pageImages } from '@/data/pageImages';
+
 type EnhancementCard = {
   title: string;
   body: string;
@@ -43,8 +45,8 @@ const enhancements: Record<string, Enhancement> = {
       { value: '02', label: 'Explain offers' },
       { value: '03', label: 'Add resources' },
     ],
-    image: '/images/lbs-icon.jpg',
-    imageAlt: 'Local Business Search brand mark',
+    image: pageImages.servicePlanning,
+    imageAlt: 'Business team planning local growth strategy',
   },
   '/advertising/': {
     eyebrow: 'Paid Growth',
@@ -56,8 +58,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Next-step path', body: 'Landing pages, forms, CRM routing, and follow-up designed before the campaign starts spending.' },
       { title: 'Resource support', body: 'Campaigns can be supported by guides, offers, product picks, and useful downloads that help buyers decide.' },
     ],
-    image: '/images/pizza-world-branson-campaign-preview.png',
-    imageAlt: 'Example local business advertising creative',
+    image: pageImages.socialAdvertising,
+    imageAlt: 'Paid social advertising shown on a smartphone',
   },
   '/baselayer/': {
     eyebrow: 'Professional Websites',
@@ -69,8 +71,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Next-step paths', body: 'Forms, phone calls, contact pages, landing pages, and resource links guide visitors without making them hunt.' },
       { title: 'Resource foundation', body: 'Fast static pages, clean metadata, accessible structure, and useful content support long-term growth.' },
     ],
-    image: '/images/lbs-icon.jpg',
-    imageAlt: 'Local Business Search logo on website system',
+    image: pageImages.websiteWork,
+    imageAlt: 'Team reviewing website and campaign work on laptops',
   },
   '/search-seo/': {
     eyebrow: 'Search & SEO',
@@ -82,8 +84,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Service authority', body: 'Pages answer the questions buyers ask before they compare, call, book, or request a quote.' },
       { title: 'Resource-ready structure', body: 'Search work supports articles, guides, recommendations, and pages that can grow into a broader resource library.' },
     ],
-    image: '/images/blog/seo-llm-2026.jpg',
-    imageAlt: 'Search visibility strategy for modern search and AI answers',
+    image: pageImages.searchDashboard,
+    imageAlt: 'Analytics dashboard for search visibility and performance',
   },
   '/business-operations/': {
     eyebrow: 'Business Systems',
@@ -95,8 +97,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Resource organization', body: 'Services, tools, recommendations, and workflows can be organized instead of scattered across accounts.' },
       { title: 'COO execution', body: 'Response, booking, reminders, and handoffs handled consistently without adding busywork.' },
     ],
-    image: '/images/triple-crown-logo.jpg',
-    imageAlt: 'Example client brand asset',
+    image: pageImages.operationsDesk,
+    imageAlt: 'Business team reviewing operational reports',
   },
   '/ai-automation/': {
     eyebrow: 'Automation',
@@ -108,8 +110,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Smart routing', body: 'Qualified leads move to the right workflow, calendar, or team member with less manual sorting.' },
       { title: 'Follow-up memory', body: 'Nurture, reactivation, reminders, and review requests continue without relying on staff bandwidth.' },
     ],
-    image: '/images/blog/lead-follow-up-field-note.jpg',
-    imageAlt: 'Lead follow-up comparison for local businesses',
+    image: pageImages.automationDashboard,
+    imageAlt: 'Automation dashboard on a laptop',
   },
   '/platform/': {
     eyebrow: 'Business Tools & Resources',
@@ -121,8 +123,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Digital downloads', body: 'Templates, checklists, guides, and productized resources can support businesses that are not ready for full service.' },
       { title: 'Shop-ready structure', body: 'The site can grow naturally into a marketplace-style resource layer without abandoning business services.' },
     ],
-    image: '/images/pizza-world-cross-creek-location.jpg',
-    imageAlt: 'Local business storefront example',
+    image: pageImages.workflowAutomation,
+    imageAlt: 'Automation workflow shown across devices',
   },
   '/results/': {
     eyebrow: 'Proof & Outcomes',
@@ -134,8 +136,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Trust', body: 'Websites, offers, resources, and follow-up help prospects understand why the business is worth contacting.' },
       { title: 'Resources', body: 'Guides, recommendations, and productized tools give owners more ways to get help.' },
     ],
-    image: '/images/pizza-world-branson-campaign-preview.png',
-    imageAlt: 'Local campaign performance creative example',
+    image: pageImages.marketingAnalytics,
+    imageAlt: 'Marketing analytics on a smartphone',
   },
   '/about/': {
     eyebrow: 'About Local Business Search',
@@ -147,8 +149,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Technology-aware', body: 'Modern tools, including AI, are used where they improve speed, clarity, and execution.' },
       { title: 'Resource-minded', body: 'The long-term direction includes products, recommendations, guides, and useful business tools.' },
     ],
-    image: '/images/lbs-icon.jpg',
-    imageAlt: 'Local Business Search mark',
+    image: pageImages.strategyMeeting,
+    imageAlt: 'Business team collaborating around a strategy board',
   },
   '/industries/': {
     eyebrow: 'Industry Fit',
@@ -163,8 +165,8 @@ const enhancements: Record<string, Enhancement> = {
       { title: 'Franchises', body: 'Location routing, campaign consistency, resource libraries, and multi-location rollout.', href: '/industries/franchises/' },
       { title: 'Municipalities', body: 'Public messaging, resident engagement, event promotion, and budget-conscious communication.', href: '/industries/municipalities/' },
     ],
-    image: '/images/pizza-world-cross-creek-location.jpg',
-    imageAlt: 'Local business storefront example',
+    image: pageImages.localStorefront,
+    imageAlt: 'Independent local storefront',
   },
 };
 
@@ -178,6 +180,8 @@ const industryEnhancements: Record<string, Enhancement> = {
       { title: 'Scheduling flow', body: 'Direct booking and reminders reduce phone tag, no-shows, and wasted dispatch time.' },
       { title: 'Job-level support', body: 'Advertising, booking, reminders, and follow-up can support the work from first inquiry through completed job.' },
     ],
+    image: pageImages.homeServiceTech,
+    imageAlt: 'Home service technician working on site',
   },
   '/industries/medical/': {
     eyebrow: 'Medical & Healthcare',
@@ -188,6 +192,8 @@ const industryEnhancements: Record<string, Enhancement> = {
       { title: 'No-show control', body: 'Reminder and follow-up sequences protect schedules and reduce wasted staff time.' },
       { title: 'Reactivation', body: 'Inactive patients can be brought back with structured, compliant communication workflows.' },
     ],
+    image: pageImages.medicalOffice,
+    imageAlt: 'Doctor consulting with a patient in a medical office',
   },
   '/industries/legal/': {
     eyebrow: 'Legal',
@@ -198,6 +204,8 @@ const industryEnhancements: Record<string, Enhancement> = {
       { title: 'Consultation booking', body: 'Qualified leads can move straight to an available calendar instead of waiting on callbacks.' },
       { title: 'Retainer visibility', body: 'Signed cases, unsigned cases, and marketing sources become easier to compare.' },
     ],
+    image: pageImages.legalJustice,
+    imageAlt: 'Legal and justice symbol for law firm intake',
   },
   '/industries/local-retail/': {
     eyebrow: 'Local Retail',
@@ -208,6 +216,8 @@ const industryEnhancements: Record<string, Enhancement> = {
       { title: 'Loyalty automation', body: 'Digital rewards, birthdays, and visit-based triggers replace fragile punch-card systems.' },
       { title: 'Event lift', body: 'Promotions for menus, sales, classes, or openings reach the customers most likely to act.' },
     ],
+    image: pageImages.localRetail,
+    imageAlt: 'Independent local storefront',
   },
   '/industries/franchises/': {
     eyebrow: 'Franchises',
@@ -218,6 +228,8 @@ const industryEnhancements: Record<string, Enhancement> = {
       { title: 'Routing rules', body: 'Leads move to the nearest or best-fit location with consistent workflows.' },
       { title: 'Reusable playbooks', body: 'What works in one market can be deployed across the system faster.' },
     ],
+    image: pageImages.franchiseStorefront,
+    imageAlt: 'Franchise storefront and signage',
   },
   '/industries/municipalities/': {
     eyebrow: 'Municipalities',
@@ -228,6 +240,8 @@ const industryEnhancements: Record<string, Enhancement> = {
       { title: 'Event attendance', body: 'Town halls, festivals, meetings, and programs get targeted promotion and tracking.' },
       { title: 'Resident feedback', body: 'Surveys, registrations, and follow-up loops make engagement easier to manage.' },
     ],
+    image: pageImages.municipalBuilding,
+    imageAlt: 'Municipal building with public signage',
   },
 };
 

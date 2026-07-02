@@ -34,8 +34,8 @@ export const site = {
     'business process automation',
     'CRM and operations integration',
     'business tools and resource libraries',
-    'affiliate recommendations for business owners',
-    'local business products and digital resources',
+    'practical resources for business owners',
+    'local business digital resources',
     'AI automation for local businesses',
     'local business systems',
   ],
@@ -88,10 +88,10 @@ export const mainNav: { name: string; href: string; children: NavItem[] }[] = [
     ] satisfies NavItem[],
   },
   {
-    name: 'Shop Now',
+    name: 'Tools',
     href: '/shop/',
     children: [
-      { name: 'Shop Overview', href: '/shop/', group: 'Shop Home' },
+      { name: 'Tools Overview', href: '/shop/', group: 'Tools Home' },
       ...shopCategories.map((category) => ({
         name: category.name,
         href: shopCategoryHref(category),
@@ -116,7 +116,7 @@ export const navGroups = [
   'Technology & Operations',
   'Industries',
   'Resources',
-  'Shop Home',
+  'Tools Home',
   'Business Essentials',
   'Technology',
   'Home & Lifestyle',
@@ -160,9 +160,9 @@ export const footerGroups = [
     ],
   },
   {
-    title: 'Shop',
+    title: 'Tools',
     links: [
-      { name: 'Shop Overview', href: '/shop/' },
+      { name: 'Tools Overview', href: '/shop/' },
       { name: 'Business Tools & Software', href: '/shop/business-tools-software/' },
       { name: 'Electronics', href: '/shop/electronics/' },
       { name: 'Home & Kitchen', href: '/shop/home-kitchen/' },
