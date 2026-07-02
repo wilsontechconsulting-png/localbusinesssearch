@@ -101,11 +101,11 @@ Index: https://localbusinesssearch.com/industries/
 
 ## Recent Resources
 
-- What Real-Time Transcription Changes for Local Business Operations: https://localbusinesssearch.com/blog/voxtral-transcribe-business-processes/
-- Why Smaller AI Models Matter for Local Business Owners: https://localbusinesssearch.com/blog/turboquant-local-ai-mac-mini/
-- Local Businesses Are Losing Leads Because Nobody Follows Up: https://localbusinesssearch.com/blog/local-businesses-are-losing-leads-because-nobody-follows-up/
-- The New SEO Playbook: How to Optimize for Google AND AI in 2026: https://localbusinesssearch.com/blog/seo-llm-indexing-2026-standards/
-- Most Local Businesses Don't Need More Software - They Need Better Systems: https://localbusinesssearch.com/blog/why-local-businesses-dont-need-more-software/
+- Page Images Need a System, Not a Search Spree: https://localbusinesssearch.com/blog/page-images-need-a-system/
+- When a Services Website Needs to Become a Resource Platform: https://localbusinesssearch.com/blog/service-websites-to-resource-platforms/
+- Static Site Migrations Need a URL Contract Before a Redesign: https://localbusinesssearch.com/blog/static-site-migrations-need-url-contracts/
+- Monthly Reviews Should Produce Corrections, Not Just Reports: https://localbusinesssearch.com/blog/monthly-reviews-should-produce-corrections/
+- Dropdown Navigation Needs Structure and Feedback: https://localbusinesssearch.com/blog/dropdown-navigation-needs-feedback/
 
 ## Machine-Readable Site Notes
 
