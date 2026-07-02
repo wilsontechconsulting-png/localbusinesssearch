@@ -5,10 +5,20 @@ import { getCollection, render } from 'astro:content';
 import { pagePathFromId, slugParamFromPath } from '@/utils/content';
 
 export async function getStaticPaths() {
+  const customPagePaths = new Set([
+    '/maven-says/',
+    '/pizza-world-branson/',
+    '/pizza-world-branson-quote/',
+    '/pizza-world-branson-may-report/',
+    '/pizza-world-granite-city-facebook-report/',
+    '/triple-crown-chiropractic/',
+    '/triple-crown-social/',
+  ]);
+
   const pages = await getCollection('pages', ({ data }) => !data.draft);
   return pages
     .map((page) => ({ page, path: pagePathFromId(page.id) }))
-    .filter(({ page, path }) => page.id !== '_index' && !path.startsWith('/blog/'))
+    .filter(({ page, path }) => page.id !== '_index' && !path.startsWith('/blog/') && !customPagePaths.has(path))
     .map(({ page, path }) => ({
       params: { slug: slugParamFromPath(path) },
       props: { page, path },

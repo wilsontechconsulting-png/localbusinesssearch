@@ -1,0 +1,9 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PrivateClientPage from '@/components/PrivateClientPage.astro';
+import { pizzaWorldBransonQuote as page } from '@/data/clientPrivatePages';
+---
+
+<BaseLayout title={page.title} description={page.description} canonicalPath={page.canonicalPath} noindex section="private">
+  <PrivateClientPage page={page} />
+</BaseLayout>

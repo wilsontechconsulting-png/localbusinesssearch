@@ -1,0 +1,21 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ShopExplorer from '@/components/ShopExplorer.astro';
+import { shopCategories, shopCategoryHref } from '@/data/shopCategories';
+
+export function getStaticPaths() {
+  return shopCategories.map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const canonicalPath = shopCategoryHref(category);
+const title = `${category.name} Shop`;
+const description = `${category.description} Browse the Local Business Search shop category foundation for curated products, tools, resources, and recommendations.`;
+---
+
+<BaseLayout title={title} description={description} canonicalPath={canonicalPath} section="shop">
+  <ShopExplorer currentCategory={category} />
+</BaseLayout>

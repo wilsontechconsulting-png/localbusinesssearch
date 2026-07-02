@@ -1,0 +1,72 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { privateClientGroups } from '@/data/privateResources';
+
+const title = 'Private Client Area';
+const description = 'Private client link area for Local Business Search.';
+const totalResources = privateClientGroups.reduce((total, group) => total + group.resources.length, 0);
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/maven-says/" noindex section="private">
+  <article class="maven-says-page">
+    <section class="maven-says-hero">
+      <div class="container maven-says-hero-content">
+        <p class="hero-kicker">Maven Says</p>
+        <h1>Private Client Area</h1>
+        <p>A private index for client-facing pages, quotes, estimates, campaign previews, and other client links that need to be sent quickly.</p>
+      </div>
+    </section>
+
+    <section class="maven-says-section">
+      <div class="container maven-says-shell">
+        <aside class="maven-says-sidebar" aria-label="Client resource groups">
+          <span class="maven-says-sidebar-label">Clients</span>
+          {privateClientGroups.map((group, index) => (
+            <a class:list={['maven-says-client-nav', index === 0 && 'active']} href={`#${group.id}`}>
+              <strong>{group.name}</strong>
+              <small>{group.resources.length} {group.resources.length === 1 ? 'link' : 'links'}</small>
+            </a>
+          ))}
+        </aside>
+
+        <div class="maven-says-directory">
+          <div class="maven-says-directory-header">
+            <div>
+              <span class="maven-says-label">Private Client Area</span>
+              <h2>Client Links</h2>
+            </div>
+            <span class="maven-says-status">No-index</span>
+          </div>
+
+          <p class="maven-says-summary">
+            {totalResources} private links are available here. These pages are intentionally excluded from search indexing and public navigation.
+          </p>
+
+          {privateClientGroups.map((group) => (
+            <article class="maven-says-client-card" id={group.id}>
+              <div class="maven-says-client-card-header">
+                <div>
+                  <span class="maven-says-client-type">{group.type}</span>
+                  <h3>{group.name}</h3>
+                </div>
+                <span class="maven-says-count">{group.resources.length} {group.resources.length === 1 ? 'resource' : 'resources'}</span>
+              </div>
+
+              <div class="maven-says-resource-list">
+                {group.resources.map((resource) => (
+                  <a class="maven-says-resource" href={resource.href} rel="nofollow" data-nosnippet>
+                    <div>
+                      <span>{resource.label}</span>
+                      <small>{resource.description}</small>
+                    </div>
+                    <em>Open</em>
+                  </a>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

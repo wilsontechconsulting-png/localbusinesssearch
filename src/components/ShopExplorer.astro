@@ -1,0 +1,156 @@
+---
+import { shopCategories, shopGroups, shopCategoryHref, type ShopCategory } from '@/data/shopCategories';
+
+type Props = {
+  currentCategory?: ShopCategory;
+};
+
+const { currentCategory } = Astro.props;
+const isCategoryPage = Boolean(currentCategory);
+const featuredCategories = shopCategories.filter((category) => category.featured);
+const relatedCategories = currentCategory
+  ? shopCategories.filter((category) => category.group === currentCategory.group && category.slug !== currentCategory.slug).slice(0, 4)
+  : featuredCategories;
+
+const productSlots = currentCategory
+  ? currentCategory.examples.map((example) => ({
+      title: example,
+      body: `Curated ${currentCategory.name.toLowerCase()} picks will live here once the product list is ready.`,
+    }))
+  : [
+      {
+        title: 'Recommended business tools',
+        body: 'Software, subscriptions, services, and products that support owners instead of adding noise.',
+      },
+      {
+        title: 'Digital resources',
+        body: 'Templates, checklists, guides, downloads, and productized help that can be sold directly.',
+      },
+      {
+        title: 'Affiliate collections',
+        body: 'Curated product recommendations organized by business need, category, and use case.',
+      },
+    ];
+
+const heroImage = currentCategory?.image ?? '/images/social-card-default.png';
+const title = currentCategory ? currentCategory.name : 'Shop';
+const eyebrow = currentCategory ? currentCategory.group : 'Local Business Search Shop';
+const headline = currentCategory
+  ? `${currentCategory.name} recommendations built for practical buyers.`
+  : 'A curated shop foundation for business tools, products, resources, and recommendations.';
+const subheadline = currentCategory
+  ? currentCategory.description
+  : 'This is the starting structure for a Local Business Search store: product categories, affiliate recommendations, digital resources, and business-ready tools organized in one clean place.';
+---
+
+<article class="shop-page">
+  <section class="shop-hero" style={`--shop-hero-image: url('${heroImage}')`}>
+    <div class="container shop-hero-grid">
+      <div class="shop-hero-copy">
+        <p class="hero-kicker">{eyebrow}</p>
+        <h1>{headline}</h1>
+        <p>{subheadline}</p>
+        <div class="page-hero-actions">
+          <a class="hero-button hero-button-primary" href="/contact/">Talk Through Products</a>
+          <a class="hero-button hero-button-secondary" href="/services/">View Business Services</a>
+        </div>
+      </div>
+      <div class="shop-hero-panel" aria-label={`${title} highlights`}>
+        <img src={heroImage} alt="" loading="eager" />
+        <div>
+          <span>Services</span>
+          <span>Products</span>
+          <span>Resources</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop-intro">
+    <div class="container shop-intro-grid">
+      <div>
+        <p class="hero-kicker">Store Direction</p>
+        <h2>{isCategoryPage ? 'Products will be curated around usefulness, not clutter.' : 'Built to support services now and a real store later.'}</h2>
+      </div>
+      <p>
+        {isCategoryPage
+          ? 'The category pages are ready for product cards, affiliate links, digital downloads, lead magnets, and recommended bundles. For now, each page gives the category a real home instead of sending visitors to an unfinished menu item.'
+          : 'The shop is organized like a marketplace, but it still fits the larger business-growth brand. Visitors can browse major categories now, and the structure can later support direct products, affiliate recommendations, shop collections, and downloadable resources.'}
+      </p>
+    </div>
+  </section>
+
+  <section class="container shop-category-shell" aria-label="Shop categories">
+    <div class="shop-section-heading">
+      <p class="hero-kicker">{isCategoryPage ? 'Related Categories' : 'Main Categories'}</p>
+      <h2>{isCategoryPage ? `More in ${currentCategory?.group}` : 'Browse the major shop categories.'}</h2>
+    </div>
+
+    {!isCategoryPage && (
+      <div class="shop-groups">
+        {shopGroups.map((group) => (
+          <section class="shop-group" aria-label={group}>
+            <div class="shop-group-header">
+              <h3>{group}</h3>
+              <span>{shopCategories.filter((category) => category.group === group).length} categories</span>
+            </div>
+            <div class="shop-category-grid">
+              {shopCategories
+                .filter((category) => category.group === group)
+                .map((category) => (
+                  <a class="shop-category-card" href={shopCategoryHref(category)}>
+                    <img src={category.image} alt="" loading="lazy" />
+                    <span>{category.name}</span>
+                    <p>{category.shortDescription}</p>
+                  </a>
+                ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    )}
+
+    {isCategoryPage && (
+      <div class="shop-category-grid shop-category-grid-related">
+        {relatedCategories.map((category) => (
+          <a class="shop-category-card" href={shopCategoryHref(category)}>
+            <img src={category.image} alt="" loading="lazy" />
+            <span>{category.name}</span>
+            <p>{category.shortDescription}</p>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <section class="shop-products-band">
+    <div class="container shop-products-grid">
+      <div class="shop-section-heading">
+        <p class="hero-kicker">{isCategoryPage ? 'Product Slots' : 'Store Foundation'}</p>
+        <h2>{isCategoryPage ? 'Ready for products, guides, bundles, and affiliate picks.' : 'The store can grow without rebuilding the site again.'}</h2>
+        <p>
+          {isCategoryPage
+            ? 'Each slot can become a product card, affiliate recommendation, comparison guide, or downloadable resource.'
+            : 'This first pass creates the structure. The next pass can add real products, pricing, external affiliate links, filters, and featured collections.'}
+        </p>
+      </div>
+      <div class="shop-product-slots">
+        {productSlots.map((slot, index) => (
+          <article class="shop-product-slot">
+            <small>{String(index + 1).padStart(2, '0')}</small>
+            <h3>{slot.title}</h3>
+            <p>{slot.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="container content-cta" aria-label="Shop next step">
+    <div>
+      <p>Ready to stock the shop?</p>
+      <h2>Start with the products, tools, downloads, or affiliate recommendations that fit the business direction.</h2>
+    </div>
+    <a href="/contact/">Plan the Shop</a>
+  </section>
+</article>

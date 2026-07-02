@@ -1,0 +1,125 @@
+---
+import type { PrivateClientPage } from '@/data/clientPrivatePages';
+
+type Props = {
+  page: PrivateClientPage;
+};
+
+const { page } = Astro.props;
+---
+
+<article class="private-client-page">
+  <section class="private-client-hero">
+    <div class="container private-client-hero-grid">
+      <div class="private-client-hero-copy">
+        <p class="hero-kicker">{page.kicker}</p>
+        <h1>{page.client}</h1>
+        {page.period && <p class="private-client-period">{page.period}</p>}
+        <p>{page.summary}</p>
+        <div class="private-client-badges" aria-label="Page details">
+          {page.badges.map((badge) => <span>{badge}</span>)}
+        </div>
+      </div>
+
+      <aside class="private-client-panel" aria-label="Private page summary">
+        {page.logo && <img src={page.logo} alt={`${page.client} logo`} loading="eager" decoding="async" />}
+        <span>Private Resource</span>
+        <strong>{page.title}</strong>
+        <small>No-index client page</small>
+      </aside>
+    </div>
+  </section>
+
+  <section class="private-client-section">
+    <div class="container private-client-shell">
+      {page.image && (
+        <figure class="private-client-feature-image">
+          <img src={page.image.src} alt={page.image.alt} loading="lazy" decoding="async" />
+          <figcaption>{page.image.caption}</figcaption>
+        </figure>
+      )}
+
+      {page.metrics && (
+        <div class="private-client-metrics" aria-label="Key metrics">
+          {page.metrics.map((metric) => (
+            <div class:list={['private-client-metric', metric.tone]}>
+              <span>{metric.label}</span>
+              <strong>{metric.value}</strong>
+              {metric.note && <small>{metric.note}</small>}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {page.sections.map((section) => (
+        <section class="private-client-card">
+          {section.eyebrow && <p class="private-client-label">{section.eyebrow}</p>}
+          <h2>{section.title}</h2>
+          {section.body && <p class="private-client-body">{section.body}</p>}
+
+          {section.cards && (
+            <div class="private-client-card-grid">
+              {section.cards.map((card) => (
+                <article class="private-client-mini-card">
+                  <h3>{card.title}</h3>
+                  {card.body && <p>{card.body}</p>}
+                  {card.metrics && (
+                    <div class="private-client-inline-metrics">
+                      {card.metrics.map((metric) => (
+                        <div>
+                          <span>{metric.label}</span>
+                          <strong>{metric.value}</strong>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {card.items && (
+                    <ul>
+                      {card.items.map((item) => <li>{item}</li>)}
+                    </ul>
+                  )}
+                </article>
+              ))}
+            </div>
+          )}
+
+          {section.table && (
+            <div class="private-client-table-wrap">
+              <div class="private-client-table-header">
+                <strong>{section.table.title}</strong>
+                {section.table.note && <span>{section.table.note}</span>}
+              </div>
+              <table class="private-client-table">
+                <thead>
+                  <tr>
+                    {section.table.headers.map((header) => <th>{header}</th>)}
+                  </tr>
+                </thead>
+                <tbody>
+                  {section.table.rows.map((row) => (
+                    <tr>
+                      {row.map((cell) => <td>{cell}</td>)}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </section>
+      ))}
+
+      {page.cta && (
+        <section class="private-client-cta">
+          {page.cta.href ? (
+            <a href={page.cta.href} target="_blank" rel="noopener nofollow">{page.cta.label}</a>
+          ) : (
+            <span>{page.cta.label}</span>
+          )}
+          {page.cta.note && <p>{page.cta.note}</p>}
+        </section>
+      )}
+
+      {page.privateNote && <p class="private-client-private-note">{page.privateNote}</p>}
+    </div>
+  </section>
+</article>

@@ -1,0 +1,12 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ShopExplorer from '@/components/ShopExplorer.astro';
+
+const title = 'Shop';
+const description =
+  'A curated shop foundation for business tools, software, electronics, home products, lifestyle categories, digital resources, and affiliate recommendations from Local Business Search.';
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/shop/" section="shop">
+  <ShopExplorer />
+</BaseLayout>

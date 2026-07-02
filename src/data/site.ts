@@ -1,3 +1,5 @@
+import { shopCategories, shopCategoryHref } from './shopCategories';
+
 export const site = {
   baseUrl: 'https://localbusinesssearch.com',
   title: 'Local Business Search - Business Growth, Marketing, Websites, and Automation',
@@ -86,6 +88,18 @@ export const mainNav: { name: string; href: string; children: NavItem[] }[] = [
     ] satisfies NavItem[],
   },
   {
+    name: 'Shop Now',
+    href: '/shop/',
+    children: [
+      { name: 'Shop Overview', href: '/shop/', group: 'Shop Home' },
+      ...shopCategories.map((category) => ({
+        name: category.name,
+        href: shopCategoryHref(category),
+        group: category.group,
+      })),
+    ] satisfies NavItem[],
+  },
+  {
     name: 'Results',
     href: '/results/',
     children: [
@@ -97,7 +111,19 @@ export const mainNav: { name: string; href: string; children: NavItem[] }[] = [
   },
 ];
 
-export const navGroups = ['Growth Services', 'Technology & Operations', 'Industries', 'Resources', 'Proof', 'Company'];
+export const navGroups = [
+  'Growth Services',
+  'Technology & Operations',
+  'Industries',
+  'Resources',
+  'Shop Home',
+  'Business Essentials',
+  'Technology',
+  'Home & Lifestyle',
+  'Marketplace',
+  'Proof',
+  'Company',
+];
 
 export const footerGroups = [
   {
@@ -131,6 +157,16 @@ export const footerGroups = [
       { name: 'Local Retail', href: '/industries/local-retail/' },
       { name: 'Franchises', href: '/industries/franchises/' },
       { name: 'Municipalities', href: '/industries/municipalities/' },
+    ],
+  },
+  {
+    title: 'Shop',
+    links: [
+      { name: 'Shop Overview', href: '/shop/' },
+      { name: 'Business Tools & Software', href: '/shop/business-tools-software/' },
+      { name: 'Electronics', href: '/shop/electronics/' },
+      { name: 'Home & Kitchen', href: '/shop/home-kitchen/' },
+      { name: 'Sports & Outdoors', href: '/shop/sports-outdoors/' },
     ],
   },
   {
