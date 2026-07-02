@@ -2,6 +2,7 @@ import type { APIContext } from 'astro';
 import { getCollection } from 'astro:content';
 import { getPostArchiveCategories, pagePathFromId, postDateSort, taxonomySlug } from '@/utils/content';
 import { site } from '@/data/site';
+import { shopCategories, shopCategoryHref } from '@/data/shopCategories';
 
 export async function GET(_context: APIContext) {
   const pages = await getCollection('pages', ({ data }) => !data.draft && !data.noindex);
@@ -13,6 +14,8 @@ export async function GET(_context: APIContext) {
   posts.forEach((post) => urls.add(`/blog/${post.id}/`));
   urls.add('/categories/');
   urls.add('/tags/');
+  urls.add('/shop/');
+  shopCategories.forEach((category) => urls.add(shopCategoryHref(category)));
 
   posts.flatMap(getPostArchiveCategories).forEach((category) => urls.add(`/categories/${taxonomySlug(category)}/`));
   posts.flatMap((post) => post.data.tags ?? []).forEach((tag) => urls.add(`/tags/${taxonomySlug(tag)}/`));

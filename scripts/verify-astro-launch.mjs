@@ -25,7 +25,17 @@ const privatePages = [
   '/emerge-it-audit/',
   '/maven-says/',
   '/pizza-world-branson/',
+  '/pizza-world-branson-quote/',
+  '/pizza-world-branson-may-report/',
+  '/pizza-world-granite-city-facebook-report/',
   '/triple-crown-chiropractic/',
+  '/triple-crown-social/',
+];
+
+const shopCategorySource = await readFile(path.join(root, 'src/data/shopCategories.ts'), 'utf8');
+const shopPages = [
+  '/shop/',
+  ...Array.from(shopCategorySource.matchAll(/slug:\s*'([^']+)'/g), (match) => `/shop/${match[1]}/`),
 ];
 
 function fileForPage(urlPath) {
@@ -132,6 +142,9 @@ const sitemapPath = path.join(distDir, 'sitemap.xml');
 expect(existsSync(sitemapPath), 'sitemap.xml: missing');
 if (existsSync(sitemapPath)) {
   const sitemap = await readFile(sitemapPath, 'utf8');
+  for (const urlPath of shopPages) {
+    expect(sitemap.includes(`${baseUrl}${urlPath}`), `sitemap.xml: missing shop route ${urlPath}`);
+  }
   for (const urlPath of privatePages) {
     expect(!sitemap.includes(`${baseUrl}${urlPath}`), `sitemap.xml: private route included ${urlPath}`);
   }
@@ -139,6 +152,7 @@ if (existsSync(sitemapPath)) {
 
 console.log(`Public launch pages checked: ${publicPages.length}`);
 console.log(`Private/noindex pages checked: ${privatePages.length}`);
+console.log(`Shop sitemap routes checked: ${shopPages.length}`);
 console.log(`Launch metadata/schema failures: ${failures.length}`);
 
 for (const failure of failures) console.log(`- ${failure}`);
