@@ -5,9 +5,9 @@ draft: false
 author: "Jed Wilson"
 category: "Business Systems"
 tags: ["Lead Follow-Up", "Local Business", "Advertising", "Business Operations", "Facebook Leads"]
-image: "/images/blog/lead-follow-up-field-note.jpg"
-image_credit: "Local Business Search"
-image_credit_url: "https://localbusinesssearch.com/"
+image: "https://images.unsplash.com/photo-1557804506-e969d7b32a4b?w=1200&q=80&auto=format&fit=crop"
+image_credit: "Austin Distel on Unsplash"
+image_credit_url: "https://unsplash.com/@austindistel"
 description: "Most local businesses do not have an advertising problem first. They have a follow-up problem. Here is what we are noticing from the field."
 summary: "A field note from Jed Wilson: many local businesses are not losing because advertising stopped working. They are losing because leads come in, sit there, and never get properly followed up on."
 ---

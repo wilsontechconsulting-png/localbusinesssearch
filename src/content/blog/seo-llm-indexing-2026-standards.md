@@ -8,8 +8,8 @@ author: "Local Business Search"
 categories: ["SEO", "AI", "Technical Marketing"]
 tags: ["llms.txt", "schema markup", "AI search", "ChatGPT", "Google SEO", "local SEO"]
 featured: true
-image: "/images/blog/seo-llm-2026.jpg"
-image_credit: "Photo by Carlos Muza on Unsplash"
+image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop"
+image_credit: "Carlos Muza on Unsplash"
 image_credit_url: "https://unsplash.com/@kmuza"
 ---
 
