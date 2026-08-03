@@ -19,6 +19,11 @@ const { page } = Astro.props;
         <div class="private-client-badges" aria-label="Page details">
           {page.badges.map((badge) => <span>{badge}</span>)}
         </div>
+        {page.heroCta && page.cta?.href && (
+          <div class="private-client-hero-cta">
+            <a href={page.cta.href} target="_blank" rel="noopener nofollow">{page.cta.label}</a>
+          </div>
+        )}
       </div>
 
       <aside class="private-client-panel" aria-label="Private page summary">

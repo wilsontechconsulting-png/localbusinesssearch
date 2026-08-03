@@ -938,6 +938,24 @@ img {
   color: rgba(255, 255, 255, 0.64);
 }
 
+.private-client-hero-cta {
+  margin-top: 1.25rem;
+}
+
+.private-client-hero-cta a {
+  background: var(--blue);
+  border-radius: 0.65rem;
+  color: #fff;
+  display: inline-flex;
+  font-weight: 900;
+  padding: 0.95rem 1.35rem;
+  text-decoration: none;
+}
+
+.private-client-hero-cta a:hover {
+  background: #0b5fcc;
+}
+
 .private-client-section {
   background: #f4f7fb;
   padding: clamp(2.5rem, 6vw, 5rem) 0;

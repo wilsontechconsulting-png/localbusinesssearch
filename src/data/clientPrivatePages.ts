@@ -47,6 +47,7 @@ export type PrivateClientPage = {
     href?: string;
     note?: string;
   };
+  heroCta?: boolean;
   privateNote?: string;
 };
 
@@ -283,7 +284,7 @@ export const pizzaWorldBransonJulyBillingReview: PrivateClientPage = {
     'Google Ads generated 5,284 clicks and 1,701 Google-hosted actions across June and July, while the July Facebook and Instagram awareness campaign reached 39,039 people at a very efficient $2.73 CPM. Google ad spend was already paid directly by credit card, so this review bills only the 20% Google management fee, plus July Meta reimbursement and management.',
   badges: ['Google Ads', 'Facebook + Instagram', 'Billing review', 'No-index private page'],
   metrics: [
-    { label: 'Total due for review', value: '$685.98', note: 'Before payment link is added', tone: 'primary' },
+    { label: 'Total invoice due', value: '$685.98', note: 'Pay securely through Stripe', tone: 'primary' },
     { label: 'Google clicks', value: '5,284', note: 'June + July' },
     { label: 'Google actions', value: '1,701', note: 'Calls and directions', tone: 'good' },
     { label: 'Google avg CPC', value: '$0.28', note: '$1,486.38 spend / 5,284 clicks', tone: 'good' },
@@ -389,9 +390,9 @@ export const pizzaWorldBransonJulyBillingReview: PrivateClientPage = {
             'The July Meta campaign bought cheap reach. The next improvement should be creative testing: pizza, wings, lunch/dinner offers, family meal messaging, and short video built for Reels and Stories.',
         },
         {
-          title: 'Add the payment link after approval',
+          title: 'Payment link is ready',
           body:
-            'This page is ready for client review. Once the amount is approved, the payment link can be added to the call-to-action section below.',
+            'The invoice payment link has been added to this private review page so the approved balance can be paid securely through Stripe.',
         },
       ],
     },
@@ -409,9 +410,11 @@ export const pizzaWorldBransonJulyBillingReview: PrivateClientPage = {
     },
   ],
   cta: {
-    label: 'Payment link will be added after approval',
-    note: 'Current amount for review: $685.98. This includes Google management fees, July Meta ad spend reimbursement, and July Meta management.',
+    label: 'Pay Invoice - $685.98',
+    href: 'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WMFR0Nk9BNDVUMENZeDBwN0JKdjhTR0JXYUx1TUdFLDE3NjMzMTgwNw0200ej5MX8S5?s=db',
+    note: 'Secure payment through Stripe. This includes Google management fees, July Meta ad spend reimbursement, and July Meta management.',
   },
+  heroCta: true,
   privateNote: 'Private client billing review. This page is noindex/nofollow and should not appear in search engines.',
 };
 
