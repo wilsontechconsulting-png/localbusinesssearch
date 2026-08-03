@@ -271,6 +271,150 @@ export const pizzaWorldBransonMayReport: PrivateClientPage = {
   privateNote: 'Private client report. This page is noindex/nofollow.',
 };
 
+export const pizzaWorldBransonJulyBillingReview: PrivateClientPage = {
+  title: 'Pizza World Branson July Campaign and Billing Review',
+  description: 'Private July 2026 campaign performance and billing review for Pizza World Branson.',
+  canonicalPath: '/pizza-world-branson-july-billing-review/',
+  kicker: 'Private Campaign + Billing Review',
+  client: 'Pizza World Branson',
+  period: 'June 1-July 31, 2026 Google Ads | July 1-31, 2026 Facebook and Instagram',
+  logo: '/images/lbs-icon.jpg',
+  summary:
+    'Google Ads generated 5,284 clicks and 1,701 Google-hosted actions across June and July, while the July Facebook and Instagram awareness campaign reached 39,039 people at a very efficient $2.73 CPM. Google ad spend was already paid directly by credit card, so this review bills only the 20% Google management fee, plus July Meta reimbursement and management.',
+  badges: ['Google Ads', 'Facebook + Instagram', 'Billing review', 'No-index private page'],
+  metrics: [
+    { label: 'Total due for review', value: '$685.98', note: 'Before payment link is added', tone: 'primary' },
+    { label: 'Google clicks', value: '5,284', note: 'June + July' },
+    { label: 'Google actions', value: '1,701', note: 'Calls and directions', tone: 'good' },
+    { label: 'Google avg CPC', value: '$0.28', note: '$1,486.38 spend / 5,284 clicks', tone: 'good' },
+    { label: 'Meta reach', value: '39,039', note: 'July awareness campaign' },
+    { label: 'Meta CPM', value: '$2.73', note: 'Cost per 1,000 impressions', tone: 'good' },
+  ],
+  sections: [
+    {
+      title: 'Billing summary',
+      body:
+        'No June Facebook or Instagram billing is included. The June line below is Google Ads management only because the ad spend itself was already paid directly through the client credit card. July includes Google Ads management, plus reimbursement for Facebook and Instagram ad spend and the 20% Meta management fee.',
+      table: {
+        title: 'Amount due after direct ad-spend payments',
+        headers: ['Item', 'Ad spend basis', 'Billing treatment', 'Amount due'],
+        rows: [
+          ['June Google Ads management', '$582.68', '20% management fee only', '$116.54'],
+          ['July Google Ads management', '$903.70', '20% management fee only', '$180.74'],
+          ['July Facebook + Instagram ad reimbursement', '$323.92', 'Reimburse Meta ad spend', '$323.92'],
+          ['July Facebook + Instagram management', '$323.92', '20% management fee', '$64.78'],
+          ['Total due', '$1,810.30 total managed spend basis', 'Google management + Meta reimbursement + Meta management', '$685.98'],
+        ],
+      },
+    },
+    {
+      title: 'Google Ads June and July performance',
+      body:
+        'The Google campaigns scaled in July without losing efficiency. Spend increased from June to July, but clicks grew faster than spend, average CPC improved from about $0.31 to $0.27, and cost per Google-hosted action improved from $0.92 to $0.85.',
+      table: {
+        title: 'Google Ads combined Branson locations',
+        headers: ['Period', 'Spend', 'Impressions', 'Clicks', 'CTR', 'Actions', 'Cost / action', 'Avg CPC'],
+        rows: [
+          ['June 2026', '$582.68', '31,032', '1,906', '6.14%', '632', '$0.92', '$0.31'],
+          ['July 2026', '$903.70', '48,699', '3,378', '6.94%', '1,069', '$0.85', '$0.27'],
+          ['June + July', '$1,486.38', '79,731', '5,284', '6.63%', '1,701', '$0.87', '$0.28'],
+        ],
+      },
+    },
+    {
+      title: 'July Google campaign readout',
+      cards: [
+        {
+          title: 'Extreme Racing location',
+          body:
+            'This campaign delivered the larger volume in July: 32,111 impressions, 2,063 clicks, 666 Google-hosted actions, and a $0.89 cost per action. That is strong scale for a restaurant campaign because it kept action cost under one dollar while producing meaningful local search activity.',
+        },
+        {
+          title: 'Cross Creek location',
+          body:
+            'Cross Creek produced 16,588 impressions, 1,315 clicks, 403 Google-hosted actions, and a $0.78 cost per action. The campaign was limited by budget, which means Google saw more available demand than the daily budget allowed it to capture.',
+        },
+        {
+          title: 'CMO assessment',
+          body:
+            'The Google spend is justified. The campaigns are producing restaurant-intent behavior: clicks, calls, and direction requests from people already in-market. The July increase was not wasteful because efficiency improved while volume increased.',
+        },
+      ],
+    },
+    {
+      title: 'Facebook and Instagram July performance',
+      body:
+        'The Meta campaign was built as a Branson awareness campaign, so the main job was affordable local reach and repeated exposure, not pure click volume. It reached 39,039 people, delivered 118,543 impressions, and averaged 3.04 views per person for $323.92.',
+      table: {
+        title: 'Meta July 1-31, 2026',
+        headers: ['Spend', 'Reach', 'Impressions', 'Frequency', 'CPM', 'Link clicks', 'Link CPC', 'All clicks'],
+        rows: [
+          ['$323.92', '39,039', '118,543', '3.04', '$2.73', '196', '$1.65', '322'],
+        ],
+      },
+    },
+    {
+      title: 'Benchmark comparison',
+      body:
+        'Benchmarks are directional because restaurant campaigns vary by objective. Google Performance Max is not the same as search-only advertising, and the Meta campaign was awareness/reach, not a traffic campaign. Even with that caveat, the Branson numbers are efficient where it matters.',
+      cards: [
+        {
+          title: 'Google Ads',
+          body:
+            'LocaliQ 2026 search benchmarks put Restaurants & Food around a 6.83% CTR and $2.05 average CPC. Branson Google produced a 6.94% July CTR and about $0.27 CPC, so click efficiency was far better than typical restaurant search benchmarks.',
+        },
+        {
+          title: 'Meta awareness',
+          body:
+            '2026 Meta benchmark summaries commonly show CPMs in the mid-teens, and platform/placement comparisons often show Facebook and Instagram CPMs around $6-$15. Branson July came in at $2.73 CPM, which is very efficient for local awareness.',
+        },
+        {
+          title: 'Click-through context',
+          body:
+            'Meta link CTR was lower than restaurant traffic benchmarks, but this was an awareness campaign optimized for reach. For this objective, the stronger signals are low CPM, healthy frequency, and broad local market coverage.',
+        },
+      ],
+    },
+    {
+      title: 'Recommendation',
+      cards: [
+        {
+          title: 'Continue Google at the current structure',
+          body:
+            'Both locations are producing low-cost calls and directions. The Cross Creek campaign being limited by budget is a sign that a modest budget increase could capture more demand if the business wants more volume.',
+        },
+        {
+          title: 'Keep Meta focused on food-first creative',
+          body:
+            'The July Meta campaign bought cheap reach. The next improvement should be creative testing: pizza, wings, lunch/dinner offers, family meal messaging, and short video built for Reels and Stories.',
+        },
+        {
+          title: 'Add the payment link after approval',
+          body:
+            'This page is ready for client review. Once the amount is approved, the payment link can be added to the call-to-action section below.',
+        },
+      ],
+    },
+    {
+      title: 'Benchmark sources used',
+      table: {
+        title: 'Reference points',
+        headers: ['Source', 'Benchmark used'],
+        rows: [
+          ['LocaliQ 2026 Search Advertising Benchmarks', 'Restaurants & Food average CPC around $2.05 and average CTR around 6.83%.'],
+          ['LocaliQ / WordStream Facebook benchmarks', 'Restaurants & Food traffic CPC around $0.72 and CTR around 1.67%; objective matters.'],
+          ['2026 Meta benchmark summaries', 'Common CPM ranges are materially higher than Branson July at $2.73 CPM.'],
+        ],
+      },
+    },
+  ],
+  cta: {
+    label: 'Payment link will be added after approval',
+    note: 'Current amount for review: $685.98. This includes Google management fees, July Meta ad spend reimbursement, and July Meta management.',
+  },
+  privateNote: 'Private client billing review. This page is noindex/nofollow and should not appear in search engines.',
+};
+
 export const pizzaWorldGraniteCityReport: PrivateClientPage = {
   title: 'Pizza World Granite City Facebook Campaign Report',
   description: 'Private Facebook and Instagram campaign report for Pizza World Granite City.',

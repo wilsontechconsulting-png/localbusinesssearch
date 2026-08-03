@@ -32,6 +32,11 @@ export const privateClientGroups: PrivateClientGroup[] = [
         description: 'Executive dashboard with advertising results and billing summary.',
         href: '/pizza-world-branson-may-report/',
       },
+      {
+        label: 'July Campaign & Billing Review',
+        description: 'Google and Meta performance review with June/July billing summary.',
+        href: '/pizza-world-branson-july-billing-review/',
+      },
     ],
   },
   {
