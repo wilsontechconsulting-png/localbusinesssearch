@@ -410,7 +410,7 @@ export const pizzaWorldBransonJulyBillingReview: PrivateClientPage = {
     },
   ],
   cta: {
-    label: 'Pay Invoice - $685.98',
+    label: 'Pay invoice here',
     href: 'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WMFR0Nk9BNDVUMENZeDBwN0JKdjhTR0JXYUx1TUdFLDE3NjMzMTgwNw0200ej5MX8S5?s=db',
     note: 'Secure payment through Stripe. This includes Google management fees, July Meta ad spend reimbursement, and July Meta management.',
   },
