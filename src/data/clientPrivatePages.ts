@@ -639,3 +639,204 @@ export const tripleCrownSocial: PrivateClientPage = {
   privateNote:
     'Estimates are projections only and not guarantees of spend or results. This page is private and noindex.',
 };
+
+export const tripleCrownEmailSocialProposal: PrivateClientPage = {
+  title: 'Triple Crown Chiropractic Email and Social Patient Story Campaign Proposal',
+  description:
+    'Private proposal for a 20-email patient story campaign supported by social media and Google Ads for Triple Crown Chiropractic.',
+  canonicalPath: '/triple-crown-email-social-proposal/',
+  kicker: 'Email + Social Campaign Proposal',
+  client: 'Triple Crown Chiropractic',
+  period: 'August 2026',
+  logo: '/images/triple-crown-logo.jpg',
+  summary:
+    'A patient-story marketing system built to turn the practice\'s existing education and case-style ideas into appointment demand across email, organic social, paid social, and Google Ads.',
+  badges: ['20-email campaign', 'Meta + organic social', 'Google Ads tie-in', 'Healthcare-aware'],
+  metrics: [
+    { label: 'Core asset', value: '20 emails', note: 'Patient-story campaign', tone: 'primary' },
+    { label: 'Social rollout', value: '60+ posts', note: 'Short-form adaptations' },
+    { label: 'Ad angles', value: '5 tracks', note: 'Back, neck, sciatica, headaches, shoulder' },
+    { label: 'Primary goal', value: 'New visits', note: 'Consultation bookings' },
+    { label: 'Launch window', value: '30 days', note: 'Build, approve, deploy' },
+  ],
+  sections: [
+    {
+      eyebrow: 'CMO recommendation',
+      title: 'Campaign strategy',
+      body:
+        'The idea is strong because it leads with story, not a hard medical claim. Each email should open with a relatable patient situation, explain the clinical thinking in plain English, and move the reader toward a low-friction consultation request.',
+      cards: [
+        {
+          title: 'Positioning',
+          body:
+            'Triple Crown becomes the local guide for people who have been normalizing pain, stiffness, headaches, sciatica, or reduced mobility.',
+        },
+        {
+          title: 'Audience',
+          body:
+            'Existing patients, inactive patients, referral audiences, and cold local prospects in Walton, Covington, and nearby Northern Kentucky communities.',
+        },
+        {
+          title: 'Primary CTA',
+          body:
+            'Schedule a consultation or request an appointment. The CTA should stay consistent so every channel trains the same behavior.',
+        },
+      ],
+    },
+    {
+      title: 'The 20-email patient story campaign',
+      body:
+        'The email sequence should run as a nurture and reactivation campaign. The first eight ideas below come directly from the supplied concept list, then the remaining twelve complete the arc across the most valuable patient concerns.',
+      table: {
+        title: 'Email sequence',
+        note: 'Story-led subjects and patient visit intent',
+        headers: ['Email', 'Subject', 'Core angle'],
+        rows: [
+          ['1', "I Almost Didn't Meet This Patient...", 'Pain had become normal until the patient decided to get checked.'],
+          ['2', 'Your MRI Might Not Tell the Whole Story', 'Movement, compensation, posture, and nerve irritation can matter even when imaging looks normal.'],
+          ['3', 'The Neck Pain That Was Actually Causing Headaches', 'Headache frequency can be connected to upper-neck restriction and tension.'],
+          ['4', 'Why Your Back Hurts Every Morning', 'Morning stiffness may be a signal that joints and muscles need help moving again.'],
+          ['5', "Sciatica Isn't Always What You Think", 'Leg pain should be evaluated before assuming surgery is the only path.'],
+          ['6', '"I Just Thought I Was Getting Older"', 'Aging is real, but constant pain does not have to be accepted as normal.'],
+          ['7', "The Shoulder Pain That Wouldn't Go Away", 'Shoulder pain can have multiple causes, so guessing is the wrong strategy.'],
+          ['8', "Knee Pain Doesn't Always Start at the Knee", 'Hip, ankle, gait, and spine mechanics can overload the knee.'],
+          ['9', 'The Patient Who Stopped Planning Around Their Pain', 'Show how care can support daily life, family time, and confidence.'],
+          ['10', 'Why Stretching Alone Does Not Always Fix It', 'Mobility work helps, but underlying joint restriction may still need evaluation.'],
+          ['11', 'The Difference Between Relief and Correction', 'Explain short-term comfort versus a plan that addresses the source.'],
+          ['12', 'When Sitting All Day Starts Showing Up Everywhere', 'Tie desk posture to neck, back, shoulder, and headache complaints.'],
+          ['13', 'The Weekend Warrior Problem', 'Sports, yard work, and lifting can expose movement problems that built up over time.'],
+          ['14', 'Why Pain Keeps Coming Back', 'Recurring symptoms usually mean the source was never fully addressed.'],
+          ['15', 'What Happens at the First Visit', 'Reduce anxiety by walking through the consultation, exam, and care plan process.'],
+          ['16', 'Two Locations, One Simple Next Step', 'Make Walton and Covington access clear and easy.'],
+          ['17', 'What Patients Wish They Had Done Sooner', 'Create urgency without fear-based language.'],
+          ['18', 'A Better Question Than "Will This Go Away?"', 'Shift the reader toward finding what is causing the problem.'],
+          ['19', 'Your Body Is Giving You Information', 'Frame symptoms as signals worth understanding, not something to ignore.'],
+          ['20', 'Ready to Find Out What Is Really Going On?', 'Final conversion email with direct consultation CTA.'],
+        ],
+      },
+    },
+    {
+      title: 'Email execution plan',
+      cards: [
+        {
+          title: 'List approach',
+          items: [
+            'Segment current patients, inactive patients, new leads, and downloaded-resource leads.',
+            'Send two emails per week for ten weeks, or one email per week for a slower twenty-week nurture.',
+            'Keep every email short, story-first, and focused on one patient concern.',
+            'Use reply-friendly language so patients can ask questions instead of only clicking a button.',
+          ],
+        },
+        {
+          title: 'Compliance guardrails',
+          items: [
+            'Use anonymized or composite stories unless written patient authorization exists.',
+            'Avoid implying a specific reader has a medical condition.',
+            'Include accurate sender information, a physical mailing address, and an unsubscribe option.',
+            'Do not promise cures, guaranteed outcomes, or specific results from care.',
+          ],
+        },
+      ],
+    },
+    {
+      title: 'Social media rollout',
+      body:
+        'Each email becomes a social content cluster. This prevents the campaign from depending on one channel and gives the practice consistent visibility while the email list is being nurtured.',
+      cards: [
+        {
+          title: 'Organic social',
+          items: [
+            'Turn each email into one educational post, one short story post, and one question-style engagement post.',
+            'Record Dr. Simms giving a 30-60 second plain-English version of the strongest emails.',
+            'Post location-aware content for Walton and Covington without making the feed feel repetitive.',
+            'Use appointment CTAs sparingly but consistently at the end of story and education posts.',
+          ],
+        },
+        {
+          title: 'Paid social',
+          items: [
+            'Promote the strongest story angles as awareness and traffic campaigns.',
+            'Use benefit-led copy such as "Chiropractic care for back pain, neck pain, headaches, and sciatica in Northern Kentucky."',
+            'Avoid copy like "Do you have back pain?" because health-related personal-attribute wording can trigger Meta policy issues.',
+            'Retarget broad website visitors carefully and avoid uploading sensitive health-condition lists.',
+          ],
+        },
+      ],
+    },
+    {
+      title: 'Google Ads tie-in',
+      body:
+        'Google Ads should capture the demand created by email and social. When someone sees the story campaign and later searches for help, Triple Crown should be present for the exact condition and location terms.',
+      cards: [
+        {
+          title: 'Search campaign tracks',
+          items: [
+            'Chiropractor Walton KY and chiropractor Covington KY',
+            'Back pain chiropractor near me',
+            'Sciatica chiropractor Northern Kentucky',
+            'Neck pain and headache chiropractor',
+            'Shoulder pain and sports injury chiropractor',
+          ],
+        },
+        {
+          title: 'Landing page alignment',
+          items: [
+            'Send condition keywords to matching condition pages instead of the homepage.',
+            'Use one appointment CTA across landing pages, emails, and ads.',
+            'Track calls, forms, and appointment requests separately by channel.',
+            'Use the email/social stories to inform ad headlines and landing-page FAQs.',
+          ],
+        },
+      ],
+    },
+    {
+      title: 'Recommended launch plan',
+      table: {
+        title: '30-day setup and rollout',
+        headers: ['Phase', 'Work', 'Outcome'],
+        rows: [
+          ['Week 1', 'Finalize campaign angle, list segments, compliance review, and CTA path.', 'Approved campaign map.'],
+          ['Week 2', 'Write and format all 20 emails plus social post adaptations.', 'Ready-to-schedule content library.'],
+          ['Week 3', 'Build email automation, tracking links, Meta audiences, and Google Ads campaign structure.', 'Launch-ready system.'],
+          ['Week 4', 'Launch email sequence, publish first social wave, and activate Google Ads demand capture.', 'Live campaign with early reporting.'],
+        ],
+      },
+    },
+    {
+      title: 'Suggested budget structure',
+      cards: [
+        {
+          title: 'Content and setup',
+          body:
+            'Campaign copywriting, email buildout, automation setup, landing-page adjustments, tracking, and creative prep can be billed from the existing development/content rate structure.',
+        },
+        {
+          title: 'Ongoing management',
+          body:
+            'Paid social and Google Ads management can follow the existing 20% of ad spend model. Organic social scheduling and email reporting can be scoped as a monthly add-on if they want Local Business Search handling execution.',
+        },
+      ],
+    },
+    {
+      title: 'Policy references used',
+      cards: [
+        {
+          title: 'Why the copy stays careful',
+          items: [
+            'Meta Advertising Standards restrict ads that imply personal attributes such as health conditions: https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/',
+            'Google Ads restricts health-related personalized advertising: https://support.google.com/adspolicy/answer/16701855',
+            'FTC CAN-SPAM guidance requires accurate headers, non-deceptive subject lines, sender address, and opt-out handling: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business',
+            'HHS HIPAA guidance requires authorization for marketing uses or disclosures of protected health information unless an exception applies: https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/marketing/index.html',
+          ],
+        },
+      ],
+    },
+  ],
+  cta: {
+    label: 'Approve campaign buildout',
+    note:
+      'Recommended next step: approve the campaign direction, confirm the email platform/list source, and decide whether Local Business Search will also manage organic social scheduling.',
+  },
+  privateNote:
+    'Private proposal. This page is noindex/nofollow/noarchive/nosnippet and is not intended to appear in search engines.',
+};

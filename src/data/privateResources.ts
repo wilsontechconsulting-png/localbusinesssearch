@@ -66,6 +66,11 @@ export const privateClientGroups: PrivateClientGroup[] = [
         description: 'Website redesign proposal and strategy page.',
         href: '/triple-crown-chiropractic/',
       },
+      {
+        label: 'Email + Social Patient Story Proposal',
+        description: '20-email patient story campaign with social media and Google Ads tie-in.',
+        href: '/triple-crown-email-social-proposal/',
+      },
     ],
   },
   {
