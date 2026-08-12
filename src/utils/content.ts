@@ -33,7 +33,10 @@ export function getPostArchiveCategories(post: CollectionEntry<'blog'>): string[
 }
 
 export function postDateSort(a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>): number {
-  return b.data.date.getTime() - a.data.date.getTime();
+  const dateDelta = b.data.date.getTime() - a.data.date.getTime();
+  if (dateDelta !== 0) return dateDelta;
+
+  return b.id.localeCompare(a.id);
 }
 
 export function getImage(post: CollectionEntry<'blog'>): string | undefined {
