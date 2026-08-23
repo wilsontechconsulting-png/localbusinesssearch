@@ -4,8 +4,13 @@ User-agent: *
 Allow: /
 Allow: /llms.txt
 Disallow: /pizza-world-branson/
+Disallow: /pizza-world-branson-july-billing-review/
+Disallow: /pizza-world-branson-may-report/
 Disallow: /pizza-world-branson-quote/
 Disallow: /pizza-world-granite-city-facebook-report/
+Disallow: /triple-crown-chiropractic/
+Disallow: /triple-crown-email-social-proposal/
+Disallow: /triple-crown-social/
 Disallow: /emerge-it-audit/
 Disallow: /maven-says/
 

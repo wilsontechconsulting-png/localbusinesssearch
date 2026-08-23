@@ -69,7 +69,7 @@ This matters for three reasons:
 2. **SEO** — search engines use alt text to understand image context and rank in image search
 3. **AI visibility** — AI search tools use image descriptions to build page context, especially for people, places, and visual proof points
 
-Alt text shouldn't be keyword-stuffed. It should describe what the image actually shows, clearly and briefly. "Judge Patrick King speaking at the Madison County Courthouse" is correct. "Best judge Illinois circuit court 2026 election" is not.
+Alt text shouldn't be keyword-stuffed. It should describe what the image actually shows, clearly and briefly. "A local official speaking at a courthouse podium" is correct. "Best local official election campaign" is not.
 
 ---
 
