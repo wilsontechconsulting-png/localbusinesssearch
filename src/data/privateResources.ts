@@ -73,16 +73,4 @@ export const privateClientGroups: PrivateClientGroup[] = [
       },
     ],
   },
-  {
-    id: 'emerge-it',
-    name: 'Emerge IT Solutions',
-    type: 'Technology / IT Services',
-    resources: [
-      {
-        label: 'Search & AI Visibility Audit',
-        description: 'Private SEO, schema, AEO, and SCO audit summary.',
-        href: '/emerge-it-audit/',
-      },
-    ],
-  },
 ];
