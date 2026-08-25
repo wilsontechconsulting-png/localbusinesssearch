@@ -851,22 +851,22 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
   period: 'June 15-July 31, 2026',
   logo: '/images/triple-crown-logo.jpg',
   summary:
-    'Triple Crown Chiropractic spent $2,012.07 on Google Search ads from June 15 through July 31, 2026. The campaign generated 227 clicks from 5,396 impressions at a 4.21% click-through rate and an $8.86 average cost per click. The account export shows conversion tracking is incomplete, so lead volume, cost per lead, and return on ad spend cannot be judged accurately from this report alone.',
-  badges: ['Google Search', 'Chiropractic benchmark', 'Retainer-covered fee', 'Private report'],
+    'Triple Crown Chiropractic spent $2,012.07 on Google Search ads from June 15 through July 31, 2026. The campaign generated 227 paid search visits from 5,396 impressions at a 4.21% click-through rate and an $8.86 average cost per click. For a first campaign in a competitive chiropractic market, this is enough data to start separating high-intent patient searches from competitor spillover and broad research searches.',
+  badges: ['Google Search', 'Chiropractic keyword benchmark', 'Retainer-covered fee', 'Private report'],
   metrics: [
     { label: 'Google ad spend', value: '$2,012.07', note: 'June 15-July 31', tone: 'primary' },
     { label: 'Clicks', value: '227', note: 'Search campaign traffic' },
     { label: 'Impressions', value: '5,396', note: 'Times ads were shown' },
-    { label: 'CTR', value: '4.21%', note: 'Below healthcare benchmarks', tone: 'warning' },
-    { label: 'Avg CPC', value: '$8.86', note: 'High, but within chiropractic range', tone: 'warning' },
-    { label: 'Tracked conversions', value: '0', note: 'Tracking setup incomplete', tone: 'warning' },
+    { label: 'CTR', value: '4.21%', note: 'Early-campaign baseline' },
+    { label: 'Avg CPC', value: '$8.86', note: 'Targeted chiropractor clicks cost more', tone: 'warning' },
+    { label: 'Visible search-term clicks', value: '129', note: 'From the search terms export' },
   ],
   sections: [
     {
       eyebrow: 'Campaign export',
       title: 'Performance summary',
       body:
-        'The campaign was active as a 15-mile-radius Search campaign using a $55 daily budget and Maximize Conversions bidding. Google marked the campaign eligible but limited because conversion tracking setup is incomplete.',
+        'The campaign was active as a 15-mile-radius Search campaign using a $55 daily budget. As a first campaign, the useful read is not whether every number is perfect on day one. The useful read is whether paid search is finding people with patient intent, what those clicks cost, and which keyword themes deserve more budget control.',
       table: {
         title: 'Campaign totals',
         note: 'Source: Google Ads campaign export for June 15, 2026 through July 31, 2026.',
@@ -875,9 +875,9 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
           ['Spend', '$2,012.07', 'Total Google media spend for the report period.'],
           ['Clicks', '227', 'Paid search visitors generated from the campaign.'],
           ['Impressions', '5,396', 'Search-result visibility in the target area.'],
-          ['CTR', '4.21%', 'The ad earned clicks, but the click rate trails current healthcare benchmarks.'],
-          ['Average CPC', '$8.86', 'Clicks are expensive, which is normal in competitive chiropractic searches but still worth tightening.'],
-          ['Conversions', '0 tracked', 'The export says conversion tracking is incomplete, so this should not be treated as zero real leads.'],
+          ['CTR', '4.21%', 'A workable first-campaign baseline, especially while the account is still learning which searches are worth paying for.'],
+          ['Average CPC', '$8.86', 'Higher than broad healthcare averages, but normal for targeted chiropractor, near-me, back-pain, and competitor-adjacent searches.'],
+          ['Daily pace', '$42.81/day', 'A moderate test budget that can identify patterns before scaling spend.'],
         ],
       },
     },
@@ -885,15 +885,52 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
       eyebrow: 'Benchmark context',
       title: 'How the campaign compares',
       body:
-        'The closest public benchmark data points are healthcare, health and fitness, physicians, physical therapy, and chiropractic-specific paid search studies. These are directional benchmarks, not guarantees, because actual performance depends on market, keywords, landing pages, call tracking, offer, and radius.',
+        'The closest public benchmark data points are healthcare, health and medical, and chiropractor-specific paid search ranges. Those are directional, not absolute, because a chiropractor paying for "near me" and pain-related searches will usually pay more than a broad healthcare advertiser buying general awareness traffic.',
       table: {
         title: 'Benchmark comparison',
         headers: ['Metric', 'Triple Crown result', 'Relevant benchmark', 'Read'],
         rows: [
-          ['CTR', '4.21%', 'Healthcare Search avg: 6.07%; Health & Fitness: 5.81%; Physicians & Surgeons: 6.61%; Chiropractic undifferentiated: 4.8%', 'Below healthcare averages and slightly under undifferentiated chiropractic benchmark.'],
-          ['Average CPC', '$8.86', 'Healthcare Search avg: $5.64; Health & Fitness: $6.17; Physicians & Surgeons: $4.76; Chiropractic range: $4.50-$9.80', 'Higher than broad healthcare averages, but still inside the reported chiropractic keyword range.'],
-          ['Conversion rate', '0.00% tracked', 'Healthcare Search avg: 8.09%; Health & Fitness: 6.94%; Physicians & Surgeons: 12.43%; Physical Therapy: 15.35%', 'Not usable until call/form conversion tracking is repaired.'],
-          ['Cost per lead', 'Not measurable', 'Healthcare Search avg: $66.02; Physicians & Surgeons: $40.04; Physical Therapy: $32.79; Chiropractic segmented: $40-$50', 'No fair lead-cost comparison can be made until conversions are tracking correctly.'],
+          ['CTR', '4.21%', 'Healthcare benchmark references commonly range from roughly 3.27% to 6.07% for search.', 'Not a red flag for a first campaign. The stronger signal is that several patient-intent terms are far above the account average.'],
+          ['Average CPC', '$8.86', 'Chiropractor search terms are commonly reported around $2.50-$8.00, with competitive markets and top intent terms reaching $10-$25.', 'Slightly above the common range, but explainable because the campaign is buying targeted chiropractor and near-me demand.'],
+          ['Search term CTR', '4.27%', 'Visible search terms produced 129 clicks from 3,019 impressions.', 'The search-term export lines up with the account-level CTR, which means the campaign has a usable baseline for cleanup.'],
+          ['Early-stage read', 'Learning phase', 'First campaigns often expose keyword waste before they become efficient.', 'The job now is to protect the high-intent terms and cut the searches that are clearly not new-patient opportunities.'],
+        ],
+      },
+    },
+    {
+      eyebrow: 'Search terms report',
+      title: 'Keyword intent read',
+      body:
+        'The search terms export shows the real story behind the average. Branded searches were very strong, condition searches performed well, and "near me" searches showed patient intent. The areas to tighten are competitor spillover, broad chiropractor searches outside the service area, and medical-system searches that are not clearly looking for Triple Crown.',
+      table: {
+        title: 'Search-term categories from the CSV',
+        note: 'Source: Google Ads search terms export for June 15, 2026 through July 31, 2026. Visible search terms account for 129 clicks, 3,019 impressions, and $987.60 in spend.',
+        headers: ['Keyword group', 'Clicks', 'CTR', 'Avg CPC', 'CMO read'],
+        rows: [
+          ['Brand / direct demand', '33', '28.45%', '$4.66', 'Excellent. People who searched Triple Crown by name clicked at a very high rate and at a lower cost than the account average.'],
+          ['Condition / symptom intent', '20', '14.60%', '$4.54', 'Strong. Back-pain and treatment-related searches are exactly the kind of demand a chiropractor should want.'],
+          ['High-intent near me', '13', '7.60%', '$5.67', 'Good. These searches are more targeted, so they can cost more, but they usually indicate someone actively looking for care.'],
+          ['General chiropractor intent', '31', '1.69%', '$7.57', 'Mixed. Some terms are useful, but broad chiropractor matching needs more control by location, service, and negative keywords.'],
+          ['Competitor / medical spillover', '23', '4.41%', '$12.76', 'Expensive. Some competitor-adjacent traffic may be worth testing, but medical-system searches should be watched closely.'],
+        ],
+      },
+    },
+    {
+      title: 'High-intent keyword examples',
+      body:
+        'Several keyword themes are already giving the campaign a direction. These are the terms I would protect, isolate, and build cleaner landing-page paths around before increasing spend.',
+      table: {
+        title: 'Useful search terms from the campaign',
+        headers: ['Search term', 'Clicks', 'CTR', 'Avg CPC', 'Read'],
+        rows: [
+          ['triple crown chiropractic', '21', '40.38%', '$4.92', 'Very strong brand demand. Keep protected.'],
+          ['triple crown chiropractic walton ky', '9', '19.15%', '$5.17', 'Strong local branded search.'],
+          ['chronic lower back pain', '6', '21.43%', '$5.09', 'Good condition intent at a reasonable CPC.'],
+          ['treatment of low back pain', '3', '37.50%', '$5.05', 'Strong patient-problem language.'],
+          ['treatment for lower back pain', '3', '60.00%', '$1.89', 'Excellent relevance and low cost.'],
+          ['back pain near me', '2', '7.69%', '$5.95', 'Good local intent, worth its own control.'],
+          ['back pain relief near me', '2', '66.67%', '$1.14', 'Excellent early signal, even with small volume.'],
+          ['chiropractor near me', '2', '3.13%', '$2.28', 'Core keyword. Needs strong local ad copy and landing-page match.'],
         ],
       },
     },
@@ -922,17 +959,17 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
         {
           title: 'Spend and traffic',
           body:
-            'The campaign bought a meaningful amount of search traffic, averaging about $42.81 per day over 47 days. For a chiropractic practice, that level of spend is enough to learn from, but only if the lead tracking is complete.',
+            'The campaign bought a meaningful amount of search traffic, averaging about $42.81 per day over 47 days. For a chiropractic practice, that level of spend is enough to learn which search themes deserve more budget and which terms need to be cut.',
         },
         {
-          title: 'Click quality signal',
+          title: 'Click cost signal',
           body:
-            'The $8.86 CPC suggests the campaign is competing in expensive search auctions. That may be acceptable for new patient intent, but only if the keywords, search terms, and landing page are tightly matched.',
+            'The $8.86 CPC says the campaign is competing in expensive search auctions. That is not automatically bad. Chiropractic, pain, and near-me searches can be costly because they are closer to real patient demand than broad awareness keywords.',
         },
         {
-          title: 'Tracking issue',
+          title: 'Search-term cleanup',
           body:
-            'The biggest problem is not the spend. It is measurement. Google is reporting incomplete conversion tracking, which means forms, calls, appointment requests, or qualified leads may not be getting counted.',
+            'The biggest opportunity is tightening the search terms. Brand, back-pain, treatment, and near-me queries are the keepers. Competitor spillover, physical therapy, hospital, and broad medical-system searches need stricter controls.',
         },
       ],
     },
@@ -940,11 +977,11 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
       title: 'Recommended next moves',
       cards: [
         {
-          title: 'Fix measurement first',
+          title: 'Protect the winners',
           items: [
-            'Repair Google Ads conversion tracking before making major budget decisions.',
-            'Track phone calls, forms, appointment requests, and booked new patient actions separately.',
-            'Separate existing-patient calls from true new-patient inquiries where possible.',
+            'Keep branded searches protected so competitors do not steal demand from people already looking for Triple Crown.',
+            'Break out back pain, lower back pain, and treatment-related searches into cleaner ad groups.',
+            'Give near-me searches stronger local copy tied to Walton, Covington, and Northern Kentucky.',
           ],
         },
         {
@@ -953,15 +990,15 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
             'Review the search terms report and cut irrelevant or low-intent queries.',
             'Break out high-intent themes such as chiropractor near me, back pain, neck pain, sciatica, and accident or injury care.',
             'Send each condition group to the closest matching landing page instead of one generic destination.',
-            'Add negative keywords for jobs, school, salary, free, definition, and non-patient research terms when they appear.',
+            'Add negatives around hospitals, physical therapy, orthopedics, provider phone numbers, unrelated doctors, jobs, school, salary, free, and research terms when they appear.',
           ],
         },
         {
           title: 'Benchmark goal',
           items: [
-            'Move CTR from 4.21% toward the 5.8%-6.6% healthcare/adjacent range.',
-            'Bring CPC closer to the $5.64-$6.17 healthcare and health-fitness averages where keyword quality allows.',
-            'Once tracking is fixed, evaluate cost per qualified new patient inquiry against a $40-$84 chiropractic reference range.',
+            'Move overall CTR from 4.21% toward the stronger healthcare/chiropractic search benchmark range.',
+            'Hold CPC down by removing irrelevant medical spillover before reducing spend on true patient-intent terms.',
+            'Judge the next phase by cleaner keyword mix, stronger local intent, and better landing-page alignment.',
           ],
         },
       ],
@@ -972,9 +1009,9 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
         {
           title: 'Public benchmark references',
           items: [
-            'LocaliQ 2026 healthcare search ad benchmarks: overall healthcare CTR 6.07%, CPC $5.64, CVR 8.09%, CPL $66.02.',
-            'LocaliQ 2026 search advertising benchmarks: all-industry CTR 6.64%, CPC $5.42, CVR 8.18%, CPL $66.69; Health & Fitness CPC $6.17 and CTR 5.81%; Physicians & Surgeons CPC $4.76 and CTR 6.61%.',
-            'LeadGulls 2026 chiropractic Google Ads analysis: chiropractic CPC range $4.50-$9.80, undifferentiated CTR 4.8%, condition-segmented CTR 6.9%, and segmented search CPL benchmark of $40-$50.',
+            'LocaliQ 2026 healthcare search benchmarks report rising healthcare CPC pressure and healthcare CTR softness across many subcategories.',
+            'WordStream 2026 Google Ads benchmark data reports broad search CTR and CPC ranges that are useful as directional context, not as a direct chiropractor target.',
+            'Chiropractor-specific PPC references commonly place local chiropractor CPC around $2.50-$8.00, with more competitive markets and top intent terms reaching $10-$25.',
           ],
         },
       ],
