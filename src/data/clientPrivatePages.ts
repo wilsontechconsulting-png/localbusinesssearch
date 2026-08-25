@@ -981,9 +981,11 @@ export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
     },
   ],
   cta: {
-    label: 'Review tracking and search terms before next spend decision',
+    label: 'Pay Invoice',
+    href:
+      'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WOFJEeW9ac25VMWlncERlMHBJS3l3WVNmSGljeXBtLDE3ODE2Njg5MA0200YQXGtOFs?s=db',
     note:
-      'The next useful report should include tracked calls, forms, appointment requests, and qualified new patient inquiries so cost per lead can be benchmarked accurately.',
+      'Use this secure Stripe invoice link for payment. The LBS management fee for this report period is still shown as covered by the existing retainer.',
   },
   privateNote:
     'Private Google Ads report. This page is noindex/nofollow/noarchive/nosnippet and is not intended to appear in search engines.',
