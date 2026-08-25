@@ -840,3 +840,151 @@ export const tripleCrownEmailSocialProposal: PrivateClientPage = {
   privateNote:
     'Private proposal. This page is noindex/nofollow/noarchive/nosnippet and is not intended to appear in search engines.',
 };
+
+export const tripleCrownGoogleAdsJuneJulyReport: PrivateClientPage = {
+  title: 'Triple Crown Chiropractic Google Ads Report',
+  description:
+    'Private Google Ads performance report for Triple Crown Chiropractic covering June 15 through July 31, 2026.',
+  canonicalPath: '/triple-crown-google-ads-report-june-july-2026/',
+  kicker: 'Google Ads Report',
+  client: 'Triple Crown Chiropractic',
+  period: 'June 15-July 31, 2026',
+  logo: '/images/triple-crown-logo.jpg',
+  summary:
+    'Triple Crown Chiropractic spent $2,012.07 on Google Search ads from June 15 through July 31, 2026. The campaign generated 227 clicks from 5,396 impressions at a 4.21% click-through rate and an $8.86 average cost per click. The account export shows conversion tracking is incomplete, so lead volume, cost per lead, and return on ad spend cannot be judged accurately from this report alone.',
+  badges: ['Google Search', 'Chiropractic benchmark', 'Retainer-covered fee', 'Private report'],
+  metrics: [
+    { label: 'Google ad spend', value: '$2,012.07', note: 'June 15-July 31', tone: 'primary' },
+    { label: 'Clicks', value: '227', note: 'Search campaign traffic' },
+    { label: 'Impressions', value: '5,396', note: 'Times ads were shown' },
+    { label: 'CTR', value: '4.21%', note: 'Below healthcare benchmarks', tone: 'warning' },
+    { label: 'Avg CPC', value: '$8.86', note: 'High, but within chiropractic range', tone: 'warning' },
+    { label: 'Tracked conversions', value: '0', note: 'Tracking setup incomplete', tone: 'warning' },
+  ],
+  sections: [
+    {
+      eyebrow: 'Campaign export',
+      title: 'Performance summary',
+      body:
+        'The campaign was active as a 15-mile-radius Search campaign using a $55 daily budget and Maximize Conversions bidding. Google marked the campaign eligible but limited because conversion tracking setup is incomplete.',
+      table: {
+        title: 'Campaign totals',
+        note: 'Source: Google Ads campaign export for June 15, 2026 through July 31, 2026.',
+        headers: ['Metric', 'Result', 'Plain-English read'],
+        rows: [
+          ['Spend', '$2,012.07', 'Total Google media spend for the report period.'],
+          ['Clicks', '227', 'Paid search visitors generated from the campaign.'],
+          ['Impressions', '5,396', 'Search-result visibility in the target area.'],
+          ['CTR', '4.21%', 'The ad earned clicks, but the click rate trails current healthcare benchmarks.'],
+          ['Average CPC', '$8.86', 'Clicks are expensive, which is normal in competitive chiropractic searches but still worth tightening.'],
+          ['Conversions', '0 tracked', 'The export says conversion tracking is incomplete, so this should not be treated as zero real leads.'],
+        ],
+      },
+    },
+    {
+      eyebrow: 'Benchmark context',
+      title: 'How the campaign compares',
+      body:
+        'The closest public benchmark data points are healthcare, health and fitness, physicians, physical therapy, and chiropractic-specific paid search studies. These are directional benchmarks, not guarantees, because actual performance depends on market, keywords, landing pages, call tracking, offer, and radius.',
+      table: {
+        title: 'Benchmark comparison',
+        headers: ['Metric', 'Triple Crown result', 'Relevant benchmark', 'Read'],
+        rows: [
+          ['CTR', '4.21%', 'Healthcare Search avg: 6.07%; Health & Fitness: 5.81%; Physicians & Surgeons: 6.61%; Chiropractic undifferentiated: 4.8%', 'Below healthcare averages and slightly under undifferentiated chiropractic benchmark.'],
+          ['Average CPC', '$8.86', 'Healthcare Search avg: $5.64; Health & Fitness: $6.17; Physicians & Surgeons: $4.76; Chiropractic range: $4.50-$9.80', 'Higher than broad healthcare averages, but still inside the reported chiropractic keyword range.'],
+          ['Conversion rate', '0.00% tracked', 'Healthcare Search avg: 8.09%; Health & Fitness: 6.94%; Physicians & Surgeons: 12.43%; Physical Therapy: 15.35%', 'Not usable until call/form conversion tracking is repaired.'],
+          ['Cost per lead', 'Not measurable', 'Healthcare Search avg: $66.02; Physicians & Surgeons: $40.04; Physical Therapy: $32.79; Chiropractic segmented: $40-$50', 'No fair lead-cost comparison can be made until conversions are tracking correctly.'],
+        ],
+      },
+    },
+    {
+      title: 'Billing treatment',
+      body:
+        'Local Business Search management is calculated at 20% of Google ad spend. For this report period, the management fee is covered by the existing retainer rather than billed as a separate amount due.',
+      cards: [
+        {
+          title: 'Media spend',
+          metrics: [{ label: 'Google Ads spend', value: '$2,012.07', note: 'Paid media' }],
+        },
+        {
+          title: 'LBS management fee',
+          metrics: [{ label: '20% fee', value: '$402.41', note: 'Covered by retainer', tone: 'good' }],
+        },
+        {
+          title: 'Separate amount due for fee',
+          metrics: [{ label: 'Due now', value: '$0.00', note: 'Applied against existing retainer', tone: 'good' }],
+        },
+      ],
+    },
+    {
+      title: 'What the numbers mean',
+      cards: [
+        {
+          title: 'Spend and traffic',
+          body:
+            'The campaign bought a meaningful amount of search traffic, averaging about $42.81 per day over 47 days. For a chiropractic practice, that level of spend is enough to learn from, but only if the lead tracking is complete.',
+        },
+        {
+          title: 'Click quality signal',
+          body:
+            'The $8.86 CPC suggests the campaign is competing in expensive search auctions. That may be acceptable for new patient intent, but only if the keywords, search terms, and landing page are tightly matched.',
+        },
+        {
+          title: 'Tracking issue',
+          body:
+            'The biggest problem is not the spend. It is measurement. Google is reporting incomplete conversion tracking, which means forms, calls, appointment requests, or qualified leads may not be getting counted.',
+        },
+      ],
+    },
+    {
+      title: 'Recommended next moves',
+      cards: [
+        {
+          title: 'Fix measurement first',
+          items: [
+            'Repair Google Ads conversion tracking before making major budget decisions.',
+            'Track phone calls, forms, appointment requests, and booked new patient actions separately.',
+            'Separate existing-patient calls from true new-patient inquiries where possible.',
+          ],
+        },
+        {
+          title: 'Tighten the campaign',
+          items: [
+            'Review the search terms report and cut irrelevant or low-intent queries.',
+            'Break out high-intent themes such as chiropractor near me, back pain, neck pain, sciatica, and accident or injury care.',
+            'Send each condition group to the closest matching landing page instead of one generic destination.',
+            'Add negative keywords for jobs, school, salary, free, definition, and non-patient research terms when they appear.',
+          ],
+        },
+        {
+          title: 'Benchmark goal',
+          items: [
+            'Move CTR from 4.21% toward the 5.8%-6.6% healthcare/adjacent range.',
+            'Bring CPC closer to the $5.64-$6.17 healthcare and health-fitness averages where keyword quality allows.',
+            'Once tracking is fixed, evaluate cost per qualified new patient inquiry against a $40-$84 chiropractic reference range.',
+          ],
+        },
+      ],
+    },
+    {
+      title: 'Benchmark sources used',
+      cards: [
+        {
+          title: 'Public benchmark references',
+          items: [
+            'LocaliQ 2026 healthcare search ad benchmarks: overall healthcare CTR 6.07%, CPC $5.64, CVR 8.09%, CPL $66.02.',
+            'LocaliQ 2026 search advertising benchmarks: all-industry CTR 6.64%, CPC $5.42, CVR 8.18%, CPL $66.69; Health & Fitness CPC $6.17 and CTR 5.81%; Physicians & Surgeons CPC $4.76 and CTR 6.61%.',
+            'LeadGulls 2026 chiropractic Google Ads analysis: chiropractic CPC range $4.50-$9.80, undifferentiated CTR 4.8%, condition-segmented CTR 6.9%, and segmented search CPL benchmark of $40-$50.',
+          ],
+        },
+      ],
+    },
+  ],
+  cta: {
+    label: 'Review tracking and search terms before next spend decision',
+    note:
+      'The next useful report should include tracked calls, forms, appointment requests, and qualified new patient inquiries so cost per lead can be benchmarked accurately.',
+  },
+  privateNote:
+    'Private Google Ads report. This page is noindex/nofollow/noarchive/nosnippet and is not intended to appear in search engines.',
+};

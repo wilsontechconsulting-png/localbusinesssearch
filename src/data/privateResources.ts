@@ -71,6 +71,11 @@ export const privateClientGroups: PrivateClientGroup[] = [
         description: '20-email patient story campaign with social media and Google Ads tie-in.',
         href: '/triple-crown-email-social-proposal/',
       },
+      {
+        label: 'Google Ads Report - June 15 to July 31, 2026',
+        description: 'Private Google Ads performance report with chiropractic benchmark context.',
+        href: '/triple-crown-google-ads-report-june-july-2026/',
+      },
     ],
   },
 ];
