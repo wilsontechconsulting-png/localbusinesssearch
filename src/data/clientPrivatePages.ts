@@ -421,19 +421,19 @@ export const pizzaWorldBransonJulyBillingReview: PrivateClientPage = {
 export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
   title: 'Pizza World Branson September Campaign Comparison and Billing Review',
   description:
-    'Private campaign comparison and billing status review for Pizza World Branson covering Google Ads through September 24, 2026 and the unpaid prior Meta invoice.',
+    'Private campaign comparison and billing status review for Pizza World Branson covering current Google and Facebook spend through shutoff.',
   canonicalPath: '/pizza-world-branson-september-comparison/',
   kicker: 'Private Campaign Comparison + Billing Status',
   client: 'Pizza World Branson',
-  period: 'Google Ads: August 1-September 24, 2026 | Meta reference: July 1-31, 2026',
+  period: 'Current campaign review: August 1-September 24, 2026',
   logo: '/images/lbs-icon.jpg',
   summary:
-    'The new Google export shows $900.98 in client-card-paid ad spend producing 44,712 impressions, 2,785 clicks, and 882 Google-hosted actions at a $1.02 cost per action. The client does not owe reimbursement for that Google ad spend because it was paid on her card; she owes only the 20% Google management fee. The Meta/Facebook spend in the provided export is the same July campaign that remains covered by the prior unpaid invoice, so this review separates the new Google management fee from the unpaid July invoice balance.',
+    'The new Google export shows $900.98 in client-card-paid ad spend producing 44,712 impressions, 2,785 clicks, and 882 Google-hosted actions at a $1.02 cost per action. The client does not owe reimbursement for that Google ad spend because it was paid on her card; she owes only the 20% Google management fee. The Facebook export shows $323.92 in ad spend, which should be billed back along with the 20% Facebook management fee of $64.78.',
   badges: ['Google Ads', 'Facebook + Instagram', 'Billing status', 'No-index private page'],
   metrics: [
-    { label: 'New Google management due', value: '$180.20', note: '20% of $900.98 card-paid Google spend', tone: 'primary' },
-    { label: 'Prior unpaid invoice', value: '$685.98', note: 'Still outstanding from previous billing review', tone: 'warning' },
-    { label: 'Total outstanding', value: '$866.18', note: 'Prior unpaid invoice + new Google management', tone: 'primary' },
+    { label: 'Uploaded-file total due', value: '$568.90', note: 'Google management + Facebook spend + Facebook management', tone: 'primary' },
+    { label: 'Google management due', value: '$180.20', note: '20% of $900.98 card-paid Google spend' },
+    { label: 'Facebook total due', value: '$388.70', note: '$323.92 spend + $64.78 management', tone: 'warning' },
     { label: 'Google clicks', value: '2,785', note: 'Aug 1-Sep 24' },
     { label: 'Google actions', value: '882', note: '$1.02 cost per action', tone: 'good' },
     { label: 'Google avg CPC', value: '$0.32', note: 'Still far below restaurant search benchmarks', tone: 'good' },
@@ -442,31 +442,30 @@ export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
     {
       title: 'Billing summary',
       body:
-        'Google Ads spend from the new export was paid directly by the client credit card, so it should be shown for transparency but not billed back as ad reimbursement. The amount due from the new Google data is the 20% management fee. The Facebook/Instagram export supplied with this review shows the July campaign that was already included on the prior unpaid invoice, so it is listed as an outstanding prior balance instead of duplicated as a new charge.',
+        'Google Ads spend from the new export was paid directly by the client credit card, so it should be shown for transparency but not billed back as ad reimbursement. The amount due from the Google data is the 20% management fee. The Facebook/Instagram export shows paid media spend that should be reimbursed, plus the 20% management fee on that Facebook spend.',
       table: {
         title: 'Amounts owed and billing treatment',
         headers: ['Item', 'Spend basis', 'Billing treatment', 'Amount due'],
         rows: [
           ['Google Ads spend, Aug 1-Sep 24', '$900.98', 'Paid directly by client credit card; show for record only', '$0.00 reimbursement'],
           ['Google Ads management, Aug 1-Sep 24', '$900.98', '20% management fee', '$180.20'],
-          ['Prior unpaid invoice', '$1,810.30 managed spend basis', 'Still unpaid from previous June/July review', '$685.98'],
-          ['Total current outstanding', 'New Google management + prior unpaid invoice', 'Amount that still needs to be collected if prior invoice remains unpaid', '$866.18'],
+          ['Facebook + Instagram ad spend', '$323.92', 'Client owes reimbursement for ad spend', '$323.92'],
+          ['Facebook + Instagram management', '$323.92', '20% management fee', '$64.78'],
+          ['Uploaded-file total due', '$1,224.90 total managed spend basis', 'Google management + Facebook reimbursement + Facebook management', '$568.90'],
         ],
       },
     },
     {
-      title: 'Prior unpaid invoice detail',
+      title: 'Prior unpaid invoice status',
       body:
-        'The previous invoice already included June and July Google management plus July Facebook and Instagram ad spend reimbursement and the 20% Meta management fee. That invoice remains the clean place to collect the July Meta balance instead of billing the same Facebook campaign twice.',
+        'There is also an older unpaid Stripe invoice. That old unpaid invoice is separate from the current uploaded campaign files. The current total due from the uploaded files is $568.90. The older invoice is linked here only so it is clear there is still a previous unpaid balance on top of the current campaign billing.',
       table: {
-        title: 'Prior invoice components',
-        headers: ['Component', 'Amount'],
+        title: 'Previous unpaid balance',
+        headers: ['Item', 'Status', 'Amount'],
         rows: [
-          ['June Google Ads management fee', '$116.54'],
-          ['July Google Ads management fee', '$180.74'],
-          ['July Facebook + Instagram ad reimbursement', '$323.92'],
-          ['July Facebook + Instagram management fee', '$64.78'],
-          ['Prior unpaid invoice total', '$685.98'],
+          ['Older Stripe invoice', 'Unpaid / still needs to be addressed separately', '$685.98'],
+          ['Current uploaded-file billing', 'New current Google management + current Facebook spend and management', '$568.90'],
+          ['Total if both remain unpaid', 'Previous unpaid invoice + current uploaded-file billing', '$1,254.88'],
         ],
       },
     },
@@ -501,12 +500,12 @@ export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
     {
       title: 'Facebook and Instagram status',
       body:
-        'The Meta export supplied with the new files covers July 1-31, 2026 and matches the earlier Branson Awareness Campaign billing data. That campaign reached 39,039 people, delivered 118,543 impressions, and averaged a $2.73 CPM for $323.92 in ad spend. Since that campaign is already part of the previous unpaid invoice, it should be referenced here as unpaid prior work, not rebilled as a new campaign.',
+        'The Facebook/Instagram export is the current Facebook spend from August 1 through the shutoff date. It reached 39,039 people, delivered 118,543 impressions, and averaged a $2.73 CPM for $323.92 in ad spend. The clean billing breakdown is the ad spend reimbursement of $323.92 plus the 20% management fee of $64.78, for a current Facebook total due of $388.70.',
       table: {
-        title: 'Meta July campaign, still unpaid through prior invoice',
-        headers: ['Spend', 'Reach', 'Impressions', 'Frequency', 'CPM', 'Link clicks', 'All clicks', 'Billing status'],
+        title: 'Facebook + Instagram billing and performance',
+        headers: ['Period', 'Ad spend', '20% management fee', 'Total Facebook due', 'Reach', 'Impressions', 'Frequency', 'CPM', 'Link clicks', 'All clicks'],
         rows: [
-          ['$323.92', '39,039', '118,543', '3.04', '$2.73', '196', '322', 'Included on prior unpaid invoice'],
+          ['Aug 1 through shutoff', '$323.92', '$64.78', '$388.70', '39,039', '118,543', '3.04', '$2.73', '196', '322'],
         ],
       },
     },
@@ -536,7 +535,7 @@ export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
         {
           title: 'Collect before more work continues',
           body:
-            'The performance case is strong, but the billing status is not. The prior invoice remains unpaid, and the new Google management fee is now due. Continued campaign work should be tied to clearing the outstanding balance.',
+            'The performance case is strong, but the billing status is not. The uploaded-file billing total is $568.90, and there is also an older unpaid invoice on record. Continued campaign work should be tied to clearing the outstanding balance.',
         },
         {
           title: 'Keep Google if the account is active again',
@@ -555,7 +554,7 @@ export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
     label: 'Open prior unpaid invoice',
     href: 'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WMFR0Nk9BNDVUMENZeDBwN0JKdjhTR0JXYUx1TUdFLDE4MDkwMzk4MA0200vImAYk2K?s=db',
     note:
-      'The prior invoice remains outstanding. The new $180.20 Google management fee should be added to a replacement invoice or collected separately.',
+      'The current uploaded-file billing total is $568.90: $180.20 Google management, $323.92 Facebook ad spend reimbursement, and $64.78 Facebook management. The older unpaid Stripe invoice is separate and still needs to be addressed.',
   },
   heroCta: true,
   privateNote:
