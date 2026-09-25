@@ -131,11 +131,18 @@ const { page } = Astro.props;
 
       {page.cta && (
         <section class="private-client-cta">
-          {page.cta.href ? (
-            <a href={page.cta.href} target="_blank" rel="noopener nofollow">{page.cta.label}</a>
-          ) : (
-            <span>{page.cta.label}</span>
-          )}
+          <div class="private-client-cta-actions">
+            {page.cta.href ? (
+              <a href={page.cta.href} target="_blank" rel="noopener nofollow">{page.cta.label}</a>
+            ) : (
+              <span>{page.cta.label}</span>
+            )}
+            {page.cta.secondaryHref && page.cta.secondaryLabel && (
+              <a class="secondary" href={page.cta.secondaryHref} target="_blank" rel="noopener nofollow">
+                {page.cta.secondaryLabel}
+              </a>
+            )}
+          </div>
           {page.cta.note && <p>{page.cta.note}</p>}
         </section>
       )}

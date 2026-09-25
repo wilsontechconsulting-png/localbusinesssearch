@@ -51,6 +51,8 @@ export type PrivateClientPage = {
   cta?: {
     label: string;
     href?: string;
+    secondaryLabel?: string;
+    secondaryHref?: string;
     note?: string;
   };
   heroCta?: boolean;
@@ -567,8 +569,11 @@ export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
   cta: {
     label: 'Pay current bill immediately',
     href: 'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WS0xDdXNkd1ZobXdxWVgxUU82VDZJNHNlQmNQZmdTLDE4MDkxMjI0Nw0200OavbmKlU?s=db',
+    secondaryLabel: 'Pay past-due invoice',
+    secondaryHref:
+      'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WMFR0Nk9BNDVUMENZeDBwN0JKdjhTR0JXYUx1TUdFLDE4MDkxMzI3MQ0200kgkBUBZ6?s=db',
     note:
-      'The current uploaded-file billing total is $568.90: $180.20 Google management, $323.92 Facebook ad spend reimbursement, and $64.78 Facebook management. Advertising has been suspended for nonpayment. The older unpaid Stripe invoice is separate and still needs to be addressed.',
+      'The current uploaded-file billing total is $568.90: $180.20 Google management, $323.92 Facebook ad spend reimbursement, and $64.78 Facebook management. Advertising has been suspended for nonpayment. The past-due invoice is separate and still needs to be paid.',
   },
   heroCta: true,
   privateNote:

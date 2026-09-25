@@ -1193,6 +1193,13 @@ img {
   text-align: center;
 }
 
+.private-client-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
 .private-client-cta a,
 .private-client-cta span {
   background: var(--blue);
@@ -1202,6 +1209,10 @@ img {
   font-weight: 900;
   padding: 0.9rem 1.4rem;
   text-decoration: none;
+}
+
+.private-client-cta a.secondary {
+  background: #dc2626;
 }
 
 .private-client-cta p {
