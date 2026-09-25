@@ -1,0 +1,8 @@
+Campaign report
+"August 1, 2026 - September 24, 2026"
+Campaign status,Campaign,Budget,Budget name,Budget type,Currency code,Status,Status reasons,Optimization score,Campaign type,Conv. value,Conversions,Conv. rate,Cost / conv.,Impr.,Clicks,CTR,Cost
+Paused,Branson - Cross Creek,9.69, --,Daily,USD,Paused,campaign paused, --,Performance Max,337.00,337.00,29.59%,0.95,"15,024","1,139",7.58%,318.89
+Paused,Branson - PW - Extreme Racing,17.49, --,Daily,USD,Paused,campaign paused, --,Performance Max,545.00,545.00,33.11%,1.07,"29,688","1,646",5.54%,582.08
+Total: Campaigns, --, --, --, --,USD, --,, --, --,882.00,882.00,31.67%,1.02,"44,712","2,785",6.23%,900.98
+Total: Account,,,,,USD,,,,,882.00,882.00,31.67%,1.02,"44,712","2,785",6.23%,900.98
+Total: Performance Max,,,,,USD,,,,Performance Max,882.00,882.00,31.67%,1.02,"44,712","2,785",6.23%,900.98

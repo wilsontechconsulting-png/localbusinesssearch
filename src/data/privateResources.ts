@@ -37,6 +37,11 @@ export const privateClientGroups: PrivateClientGroup[] = [
         description: 'Google and Meta performance review with June/July billing summary.',
         href: '/pizza-world-branson-july-billing-review/',
       },
+      {
+        label: 'September Comparison & Billing Status',
+        description: 'Google performance comparison with current and prior unpaid billing status.',
+        href: '/pizza-world-branson-september-comparison/',
+      },
     ],
   },
   {

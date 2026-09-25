@@ -418,6 +418,150 @@ export const pizzaWorldBransonJulyBillingReview: PrivateClientPage = {
   privateNote: 'Private client billing review. This page is noindex/nofollow and should not appear in search engines.',
 };
 
+export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
+  title: 'Pizza World Branson September Campaign Comparison and Billing Review',
+  description:
+    'Private campaign comparison and billing status review for Pizza World Branson covering Google Ads through September 24, 2026 and the unpaid prior Meta invoice.',
+  canonicalPath: '/pizza-world-branson-september-comparison/',
+  kicker: 'Private Campaign Comparison + Billing Status',
+  client: 'Pizza World Branson',
+  period: 'Google Ads: August 1-September 24, 2026 | Meta reference: July 1-31, 2026',
+  logo: '/images/lbs-icon.jpg',
+  summary:
+    'The new Google export shows $900.98 in client-card-paid ad spend producing 44,712 impressions, 2,785 clicks, and 882 Google-hosted actions at a $1.02 cost per action. The client does not owe reimbursement for that Google ad spend because it was paid on her card; she owes only the 20% Google management fee. The Meta/Facebook spend in the provided export is the same July campaign that remains covered by the prior unpaid invoice, so this review separates the new Google management fee from the unpaid July invoice balance.',
+  badges: ['Google Ads', 'Facebook + Instagram', 'Billing status', 'No-index private page'],
+  metrics: [
+    { label: 'New Google management due', value: '$180.20', note: '20% of $900.98 card-paid Google spend', tone: 'primary' },
+    { label: 'Prior unpaid invoice', value: '$685.98', note: 'Still outstanding from previous billing review', tone: 'warning' },
+    { label: 'Total outstanding', value: '$866.18', note: 'Prior unpaid invoice + new Google management', tone: 'primary' },
+    { label: 'Google clicks', value: '2,785', note: 'Aug 1-Sep 24' },
+    { label: 'Google actions', value: '882', note: '$1.02 cost per action', tone: 'good' },
+    { label: 'Google avg CPC', value: '$0.32', note: 'Still far below restaurant search benchmarks', tone: 'good' },
+  ],
+  sections: [
+    {
+      title: 'Billing summary',
+      body:
+        'Google Ads spend from the new export was paid directly by the client credit card, so it should be shown for transparency but not billed back as ad reimbursement. The amount due from the new Google data is the 20% management fee. The Facebook/Instagram export supplied with this review shows the July campaign that was already included on the prior unpaid invoice, so it is listed as an outstanding prior balance instead of duplicated as a new charge.',
+      table: {
+        title: 'Amounts owed and billing treatment',
+        headers: ['Item', 'Spend basis', 'Billing treatment', 'Amount due'],
+        rows: [
+          ['Google Ads spend, Aug 1-Sep 24', '$900.98', 'Paid directly by client credit card; show for record only', '$0.00 reimbursement'],
+          ['Google Ads management, Aug 1-Sep 24', '$900.98', '20% management fee', '$180.20'],
+          ['Prior unpaid invoice', '$1,810.30 managed spend basis', 'Still unpaid from previous June/July review', '$685.98'],
+          ['Total current outstanding', 'New Google management + prior unpaid invoice', 'Amount that still needs to be collected if prior invoice remains unpaid', '$866.18'],
+        ],
+      },
+    },
+    {
+      title: 'Prior unpaid invoice detail',
+      body:
+        'The previous invoice already included June and July Google management plus July Facebook and Instagram ad spend reimbursement and the 20% Meta management fee. That invoice remains the clean place to collect the July Meta balance instead of billing the same Facebook campaign twice.',
+      table: {
+        title: 'Prior invoice components',
+        headers: ['Component', 'Amount'],
+        rows: [
+          ['June Google Ads management fee', '$116.54'],
+          ['July Google Ads management fee', '$180.74'],
+          ['July Facebook + Instagram ad reimbursement', '$323.92'],
+          ['July Facebook + Instagram management fee', '$64.78'],
+          ['Prior unpaid invoice total', '$685.98'],
+        ],
+      },
+    },
+    {
+      title: 'Google Ads August-September performance',
+      body:
+        'The Google campaign continued to produce strong restaurant-intent behavior. Even with lower daily delivery than the heavier July period, the campaigns generated 2,785 clicks and 882 Google-hosted actions at roughly $0.32 per click and $1.02 per action.',
+      table: {
+        title: 'Google Ads by Branson location',
+        headers: ['Campaign', 'Spend', 'Impressions', 'Clicks', 'CTR', 'Actions', 'Cost / action', 'Avg CPC'],
+        rows: [
+          ['Branson - Cross Creek', '$318.89', '15,024', '1,139', '7.58%', '337', '$0.95', '$0.28'],
+          ['Branson - PW - Extreme Racing', '$582.08', '29,688', '1,646', '5.54%', '545', '$1.07', '$0.35'],
+          ['Combined', '$900.98', '44,712', '2,785', '6.23%', '882', '$1.02', '$0.32'],
+        ],
+      },
+    },
+    {
+      title: 'Google comparison with prior review',
+      body:
+        'The best read is that Google stayed efficient, but the later period was delivered across a longer date range and at a lower average daily spend than July. That is why total volume came down while the cost-per-action stayed very low for a restaurant campaign.',
+      table: {
+        title: 'Google trend comparison',
+        headers: ['Period', 'Spend', 'Impressions', 'Clicks', 'CTR', 'Actions', 'Cost / action', 'Avg CPC'],
+        rows: [
+          ['July 2026', '$903.70', '48,699', '3,378', '6.94%', '1,069', '$0.85', '$0.27'],
+          ['Aug 1-Sep 24, 2026', '$900.98', '44,712', '2,785', '6.23%', '882', '$1.02', '$0.32'],
+          ['Readout', 'Nearly same spend', 'Slightly lower volume', 'Still strong traffic', 'Healthy CTR', 'Strong intent', 'Still around $1', 'Still excellent'],
+        ],
+      },
+    },
+    {
+      title: 'Facebook and Instagram status',
+      body:
+        'The Meta export supplied with the new files covers July 1-31, 2026 and matches the earlier Branson Awareness Campaign billing data. That campaign reached 39,039 people, delivered 118,543 impressions, and averaged a $2.73 CPM for $323.92 in ad spend. Since that campaign is already part of the previous unpaid invoice, it should be referenced here as unpaid prior work, not rebilled as a new campaign.',
+      table: {
+        title: 'Meta July campaign, still unpaid through prior invoice',
+        headers: ['Spend', 'Reach', 'Impressions', 'Frequency', 'CPM', 'Link clicks', 'All clicks', 'Billing status'],
+        rows: [
+          ['$323.92', '39,039', '118,543', '3.04', '$2.73', '196', '322', 'Included on prior unpaid invoice'],
+        ],
+      },
+    },
+    {
+      title: 'Performance comparison that matters',
+      cards: [
+        {
+          title: 'Google is still efficient',
+          body:
+            'The campaign generated restaurant-intent actions for about $1.02 each. That is a strong result for a local restaurant trying to capture people already searching, mapping, calling, or requesting directions.',
+        },
+        {
+          title: 'The Google CPC is still very low',
+          body:
+            'The new Google average CPC is about $0.32. Prior benchmark context used in the earlier review put restaurant search CPC around $2.05, so Pizza World Branson is still buying attention at a much lower cost than typical restaurant search traffic.',
+        },
+        {
+          title: 'Meta did its job',
+          body:
+            'The Facebook/Instagram campaign was built for awareness, not direct-response ordering attribution. It bought 118,543 impressions at a $2.73 CPM, which is still a strong awareness cost for a local restaurant market.',
+        },
+      ],
+    },
+    {
+      title: 'Management recommendation',
+      cards: [
+        {
+          title: 'Collect before more work continues',
+          body:
+            'The performance case is strong, but the billing status is not. The prior invoice remains unpaid, and the new Google management fee is now due. Continued campaign work should be tied to clearing the outstanding balance.',
+        },
+        {
+          title: 'Keep Google if the account is active again',
+          body:
+            'If Pizza World Branson wants to keep campaigns active, Google should remain the core channel because it is capturing people already showing restaurant intent at low click and action costs.',
+        },
+        {
+          title: 'Use Meta as support, not the whole plan',
+          body:
+            'Facebook and Instagram are valuable for keeping the restaurant visible to locals and visitors, but Google is the stronger direct-intent channel based on the data supplied.',
+        },
+      ],
+    },
+  ],
+  cta: {
+    label: 'Open prior unpaid invoice',
+    href: 'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WMFR0Nk9BNDVUMENZeDBwN0JKdjhTR0JXYUx1TUdFLDE4MDkwMzk4MA0200vImAYk2K?s=db',
+    note:
+      'The prior invoice remains outstanding. The new $180.20 Google management fee should be added to a replacement invoice or collected separately.',
+  },
+  heroCta: true,
+  privateNote:
+    'Private client comparison and billing status page. This page is noindex/nofollow and should not appear in search engines.',
+};
+
 export const pizzaWorldGraniteCityReport: PrivateClientPage = {
   title: 'Pizza World Granite City Facebook Campaign Report',
   description: 'Private Facebook and Instagram campaign report for Pizza World Granite City.',
