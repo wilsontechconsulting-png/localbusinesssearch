@@ -23,6 +23,12 @@ export type PrivateClientPage = {
   title: string;
   description: string;
   canonicalPath: string;
+  alert?: {
+    title: string;
+    body: string;
+    ctaLabel?: string;
+    ctaHref?: string;
+  };
   kicker: string;
   client: string;
   period?: string;
@@ -423,6 +429,14 @@ export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
   description:
     'Private campaign comparison and billing status review for Pizza World Branson covering current Google and Facebook spend through shutoff.',
   canonicalPath: '/pizza-world-branson-september-comparison/',
+  alert: {
+    title: 'Advertising suspended for nonpayment',
+    body:
+      'Pizza World Branson advertising has been shut off. No additional advertising work or ad spend will be performed until the current bill is paid immediately and the older unpaid invoice is addressed.',
+    ctaLabel: 'Pay current bill immediately',
+    ctaHref:
+      'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WS0xDdXNkd1ZobXdxWVgxUU82VDZJNHNlQmNQZmdTLDE4MDkxMjI0Nw0200OavbmKlU?s=db',
+  },
   kicker: 'Private Campaign Comparison + Billing Status',
   client: 'Pizza World Branson',
   period: 'Current campaign review: August 1-September 24, 2026',
@@ -551,10 +565,10 @@ export const pizzaWorldBransonSeptemberComparison: PrivateClientPage = {
     },
   ],
   cta: {
-    label: 'Open prior unpaid invoice',
-    href: 'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WMFR0Nk9BNDVUMENZeDBwN0JKdjhTR0JXYUx1TUdFLDE4MDkwMzk4MA0200vImAYk2K?s=db',
+    label: 'Pay current bill immediately',
+    href: 'https://invoice.stripe.com/i/acct_17bKd4JpTGe7VUqE/live_YWNjdF8xN2JLZDRKcFRHZTdWVXFFLF9WS0xDdXNkd1ZobXdxWVgxUU82VDZJNHNlQmNQZmdTLDE4MDkxMjI0Nw0200OavbmKlU?s=db',
     note:
-      'The current uploaded-file billing total is $568.90: $180.20 Google management, $323.92 Facebook ad spend reimbursement, and $64.78 Facebook management. The older unpaid Stripe invoice is separate and still needs to be addressed.',
+      'The current uploaded-file billing total is $568.90: $180.20 Google management, $323.92 Facebook ad spend reimbursement, and $64.78 Facebook management. Advertising has been suspended for nonpayment. The older unpaid Stripe invoice is separate and still needs to be addressed.',
   },
   heroCta: true,
   privateNote:

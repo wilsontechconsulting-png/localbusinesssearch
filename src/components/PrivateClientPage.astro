@@ -9,6 +9,22 @@ const { page } = Astro.props;
 ---
 
 <article class="private-client-page">
+  {page.alert && (
+    <section class="private-client-alert" aria-label="Account status alert">
+      <div class="container private-client-alert-inner">
+        <div>
+          <strong>{page.alert.title}</strong>
+          <p>{page.alert.body}</p>
+        </div>
+        {page.alert.ctaHref && page.alert.ctaLabel && (
+          <a href={page.alert.ctaHref} target="_blank" rel="noopener nofollow">
+            {page.alert.ctaLabel}
+          </a>
+        )}
+      </div>
+    </section>
+  )}
+
   <section class="private-client-hero">
     <div class="container private-client-hero-grid">
       <div class="private-client-hero-copy">
